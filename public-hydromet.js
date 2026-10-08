@@ -4,7 +4,7 @@
    on its own origin, or, for the static GitHub Pages copy, the proxy that
    scripts/build-proxy.cjs builds from the same Worker template. */
 'use strict';
-const LCRA_PROXY='';
+const LCRA_PROXY='https://austin-swim-map-lcra.austin-swim-map-public-site.workers.dev';
 const CITY_HYDROMET_API=String(globalThis.location?.hostname||'').endsWith('.github.io')?LCRA_PROXY:'';
 const CITY_HYDROMET_SOURCE='https://hydromet.lcra.org/api/GetDataForAllSites';
 const CITY_HYDROMET_VIEWER='https://hydromet.lcra.org/HistoricalData/Coa';
