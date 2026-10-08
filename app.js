@@ -2,7 +2,7 @@
    Static files provide the place inventory, rules and geometry. Personal visit records are excluded. */
 'use strict';
 const $=s=>document.querySelector(s);
-const APP_VERSION='2026-10-08-hours-2';
+const APP_VERSION='2026-10-08-river-beaches';
 const detailBody=$('#detail-body'), detailPanel=$('#detail'), list=$('#place-list'), poolList=$('#pool-list'), freshness=$('#freshness');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const AUSTIN_BOUNDS=[[30.16,-97.93],[30.44,-97.66]];
@@ -109,7 +109,7 @@ function kindOf(p){
   const a=effective(p);
   if(a.expired) return {key:'expired',label:'Snapshot expired'};
   if(a.operator_override) return {key:'closed',label:'Official swimming closure'};
-  if(a.category==='managed_pool'||a.category==='lake_park'||a.category==='lake_beach'||p.place_role==='managed_pool'||p.place_role==='lake_beach'){
+  if(a.category==='managed_pool'||a.category==='lake_park'||a.category==='lake_beach'||p.place_role==='managed_pool'||isBeach(p)){
     if(a.status==='green') return {key:'scheduled',label:cityHoursView==='today'?'Open sometime today':'Scheduled open now'};
     if(a.status==='red') return {key:'closed',label:'Closed / outside hours'};
     if(a.conflict) return {key:'unknown',label:isAustin(p)?'Conflicting City notices':'Conflicting operator notices'};
@@ -143,7 +143,7 @@ function symbolFor(p){ return isBeach(p)?'≈':p.place_role==='managed_pool'?'�
 function shapeClass(p){ return isBeach(p)?'beach':p.place_role==='managed_pool'?'pool':p.place_role==='park_reference'?'park':p.place_role==='creek_context'?'ctx':'star'; }
 function unverified(p){ return ['derived_on_centerline','park_centroid','park_reference','unresolved','geocoded_address'].includes(p.coordinate_method)||(!p.coordinate_method&&isAustin(p)); }
 function categoryOf(p){ return isBeach(p)?'beach':p.place_role==='managed_pool'?'pool':p.place_role==='park_reference'?'park':p.place_role==='creek_context'?'context':'creek'; }
-function isBeach(p){ return p.place_role==='lake_beach'||p.kind==='lake park'; }
+function isBeach(p){ return p.place_role==='lake_beach'||p.place_role==='river_beach'||p.kind==='lake park'; }
 function layerForPlace(p){ return isBeach(p)?'beaches':p.place_role==='managed_pool'?'pools':p.place_role==='creek_context'?'context':'holes'; }
 function visiblePlace(p){ return layerChoice[layerForPlace(p)]&&!(hideClosed&&kindOf(p).key==='closed'); }
 function revealPlaceLayer(p){ const key=layerForPlace(p); if(layerChoice[key]) return; layerChoice[key]=true; $('#show-'+key).checked=true; saveLayerChoice(); buildGroups(); renderRim(); }
@@ -206,7 +206,7 @@ function groupPie(group){
     return `${colors[status]} ${start}% ${cursor}%`;
   });
   const kind=categoryOf(group[0]);
-  const kinds={beach:['lake beaches','≈'],pool:['pools and splash pads','◉'],park:['park references','⌂'],context:['creek context points','○'],creek:['swimming holes','★']};
+  const kinds={beach:['lake and river beaches','≈'],pool:['pools and splash pads','◉'],park:['park references','⌂'],context:['creek context points','○'],creek:['swimming holes','★']};
   return {counts,background:slices.length?`conic-gradient(from -90deg, ${slices.join(', ')})`:'var(--paper)',
     what:kinds[kind][0],glyph:kinds[kind][1],
     summary:Object.entries(counts).filter(([,count])=>count).map(([status,count])=>`${count} ${status==='unrated'?'without a current rating':status}`).join(' · ')};
@@ -369,12 +369,14 @@ function selectPlace(p,reveal=true){
   selectedId=p.id; render();
   const a=effective(p), k=kindOf(p), gauge=gauges.find(g=>g.id===p.gauge), v=visitRows(p), notices=a.notices||noticeContext[p.id]||[], rows=relationRows(p);
   const measured= rows.length?`<p class="muted">Measured at the station, not at the place.</p>${rows.map(stationBlock).join('')}`
+    : p.place_role==='river_beach'?'<p>No river flow or water quality is pulled into this card. The Colorado below Austin rises with Longhorn Dam releases and rain.</p>'
     : p.place_role==='lake_beach'?'<p>No water measurement is pulled into this card. Lake level and water quality are not checked here.</p>'
     : p.place_role==='managed_pool'||p.place_role==='park_reference'?`<p>No water measurement applies. This card is about the ${isAustin(p)?'City’s':'operator’s'} schedule and notices only.</p>`
     : p.creek==='Blunn Creek'?blunnCityBlock(p)
     : `<p>No gauge reading is pulled into this place card. ${esc(p.gauge_context||'Nearby stations, if any, are shown separately as station context.')}</p>`;
   const bandCaveat=a.hypothetical?'This pale cue is a site-specific station-flow guess. It has no measured depth or condition calibration at this place. A rapid rise can signal flood danger.':(a.evidence||'').includes('limited evidence')?'This provisional band comes from a small set of recorded visits and has no independent validation.':'This band is a recorded third-party flow cue with no independent swimming validation.';
-  const depth=p.place_role==='lake_beach'?'<p>No depth is measured at this beach, and the shoreline moves with the lake level.</p>'
+  const depth=p.place_role==='river_beach'?'<p>No depth is measured at this beach; the river’s level changes with releases and rain.</p>'
+    :p.place_role==='lake_beach'?'<p>No depth is measured at this beach, and the shoreline moves with the lake level.</p>'
     :p.place_role==='managed_pool'?'<p>No verified pool depth range is stored here. Check the City pool page for facility details.</p>'
     :p.place_role==='park_reference'||p.place_role==='creek_context'?'<p>No swimming area or water depth is established for this reference point.</p>'
     :gauge||p.creek==='Blunn Creek'?'<p>Station discharge is this map’s proxy for likely water at the reach. No direct depth measurement exists here; station stage uses the gauge’s own reference point.</p><p class="evidence"><a href="https://www.usgs.gov/faqs/why-doesnt-usgs-measure-gage-height-bottom-stream" target="_blank" rel="noreferrer">How USGS defines gage height ↗</a></p>'
@@ -382,7 +384,7 @@ function selectPlace(p,reveal=true){
   const inferred= a.operator_override?`<p>${esc(a.reason)}</p><p class="muted">Official operator access decision, checked ${fmt(a.observed_at)}. The station-flow guess is separate and does not reopen swimming.</p>`
     :a.rule_source&&!a.expired?`<p>${esc(a.reason)}</p><p class="muted">${esc(a.evidence)}. ${bandCaveat} It does not measure reach depth, clarity, bacteria, or access.</p>`
     : a.expired?`<p>${esc(a.reason)}</p>`
-    : p.place_role==='managed_pool'||p.place_role==='lake_beach'||a.category==='lake_park'?`<p>${esc(a.reason)}</p><p class="muted">${esc(a.evidence||'')}</p>`
+    : p.place_role==='managed_pool'||isBeach(p)||a.category==='lake_park'?`<p>${esc(a.reason)}</p><p class="muted">${esc(a.evidence||'')}</p>`
     : `<p>${esc(a.reason)}</p>${p.rule?`<p class="muted">A recorded rule exists for this place (${esc(p.rule)}), but it can only color the marker with a fresh compatible reading.</p>`:''}`;
   const operator=(a.category||p.place_role==='managed_pool'||p.hours)?`
       ${p.operator&&!isAustin(p)?`<p><b>Operator:</b> ${esc(p.operator)}</p>`:''}

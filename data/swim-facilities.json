@@ -1,6 +1,6 @@
 {
   "generated_by": "tools/city_pool_places.py normalize",
-  "capture": "data/raw/city-pool-places/20261008T220616Z",
+  "capture": "data/raw/city-pool-places/20261008T224137Z",
   "sources": {
     "austin_index": {
       "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
@@ -10,7 +10,8 @@
     },
     "inventories": {
       "data/outlying-pools.json": "7d693898870b4ea2494727c7a00233f08de0cabf59e631e8268f4c69d722df03",
-      "data/lake-beaches.json": "e7e1002f4d7707b09978f4764512e083ff61662e6f37aa75adf7c1118dad80c3"
+      "data/lake-beaches.json": "e7e1002f4d7707b09978f4764512e083ff61662e6f37aa75adf7c1118dad80c3",
+      "data/river-beaches.json": "3d8c34dd9fc92b53b4e654c6f8cfa24330f8a809656eb4fc611e988be7172325"
     }
   },
   "meaning": "Locations and posted hours. Austin City status comes live from the City index.",
@@ -19,8 +20,9 @@
     "austin_splash_pads": 11,
     "outlying": 38,
     "lake_beaches": 21,
-    "osm_points": 59,
-    "address_points": 33,
+    "river_beaches": 3,
+    "osm_points": 61,
+    "address_points": 34,
     "park_centroids": 9
   },
   "places": [
@@ -60,9 +62,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-bartholomew-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-bartholomew-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1800+E.+51st+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:17.107702+00:00",
+          "retrieved_at": "2026-10-08T22:41:38.624313+00:00",
           "status": 200,
           "sha256": "79da77b4eff25e7fafabf884871962aa0edbf76844126842d638a109132734f4",
           "error": null,
@@ -70,9 +72,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/900539165",
           "name": null,
           "name_match": false,
@@ -117,9 +119,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-colony-park-district-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-colony-park-district-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=7400+Loyola+Ln.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:17.912945+00:00",
+          "retrieved_at": "2026-10-08T22:41:39.591865+00:00",
           "status": 200,
           "sha256": "3c3080a797da05a8fd5e240e341101df48b13e94c719ebb2cdb82eeff6094fb4",
           "error": null,
@@ -165,9 +167,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-springwoods-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-springwoods-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=13320+Lyndhurst+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:18.648111+00:00",
+          "retrieved_at": "2026-10-08T22:41:40.233467+00:00",
           "status": 200,
           "sha256": "a7a29e516fb20742b2c70b55111689c6f420a2c4a6d7e0c076cab2f7a8ba8e70",
           "error": null,
@@ -175,9 +177,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/31064109",
           "name": "Springwoods Pool",
           "name_match": true,
@@ -224,9 +226,9 @@
         "address_point": null,
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/110165334",
           "name": "Balcones Pool",
           "name_match": true,
@@ -271,9 +273,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-brentwood-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-brentwood-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=6710+Arroyo+Seco+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:20.417625+00:00",
+          "retrieved_at": "2026-10-08T22:41:44.275704+00:00",
           "status": 200,
           "sha256": "eeb68338607ec155fe2d60a9b876b815b693698ca381e3b2015923ab6ccf54b6",
           "error": null,
@@ -281,9 +283,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/206610754",
           "name": null,
           "name_match": false,
@@ -328,9 +330,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-canyon-vista-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-canyon-vista-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=8455+Spicewood+Springs+Rd.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:20.723885+00:00",
+          "retrieved_at": "2026-10-08T22:41:45.205528+00:00",
           "status": 200,
           "sha256": "85527230a675459a0c7ef6be5e656cbcd8dbbc9f0931361ea81f4f0b55fbe498",
           "error": null,
@@ -376,9 +378,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-civitan-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-civitan-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=513+Vargas+Rd.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:21.020541+00:00",
+          "retrieved_at": "2026-10-08T22:41:46.114066+00:00",
           "status": 200,
           "sha256": "ffcaaf4b587c67b0dc5056fd218d515b33a0729239f6d710605a003c91d4e53c",
           "error": null,
@@ -386,9 +388,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/206757211",
           "name": null,
           "name_match": false,
@@ -433,9 +435,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-dick-nichols-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-dick-nichols-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=8011+Beckett+Rd.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:21.711564+00:00",
+          "retrieved_at": "2026-10-08T22:41:46.856748+00:00",
           "status": 200,
           "sha256": "252678d7150f6f1bd714d082eceff0c94cf79ef62d60ef3a4cbcea9cbefa4ed5",
           "error": null,
@@ -443,9 +445,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/44622902",
           "name": null,
           "name_match": false,
@@ -490,9 +492,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-dittmar-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-dittmar-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1009+W.+Dittmar+Dr.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:22.381708+00:00",
+          "retrieved_at": "2026-10-08T22:41:47.673752+00:00",
           "status": 200,
           "sha256": "5b0230066ee54e2fd31ac771a5e9d22d61bec978de15406f3c6e17148895065b",
           "error": null,
@@ -500,9 +502,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/431249555",
           "name": "Dittmar Pool",
           "name_match": true,
@@ -547,9 +549,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-dottie-jordan-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-dottie-jordan-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2803+Loyola+Ln.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:23.762313+00:00",
+          "retrieved_at": "2026-10-08T22:41:48.377870+00:00",
           "status": 200,
           "sha256": "d0ff96c18239aa2931460385b7ce5ae8ac1d221e66b802ba67d20c866e64c518",
           "error": null,
@@ -557,9 +559,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/309269114",
           "name": null,
           "name_match": false,
@@ -604,9 +606,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-dove-springs-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-dove-springs-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=5801+Ainez+Dr.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:24.538274+00:00",
+          "retrieved_at": "2026-10-08T22:41:49.131812+00:00",
           "status": 200,
           "sha256": "894eaa690c9a437d2cf91350c54be8056ad76bfdafb5ad4f3d2fef20bc724fe9",
           "error": null,
@@ -614,9 +616,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/767456791",
           "name": null,
           "name_match": false,
@@ -661,9 +663,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-garrison-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-garrison-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=6001+Menchaca+Rd.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:25.459408+00:00",
+          "retrieved_at": "2026-10-08T22:41:49.903646+00:00",
           "status": 200,
           "sha256": "7790df2932fd24dc9a967d94845539a22eb20e0e1230673806c27304a23909a0",
           "error": null,
@@ -709,9 +711,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-gillis-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-gillis-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2410+Durwood+Ave.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:26.367917+00:00",
+          "retrieved_at": "2026-10-08T22:41:50.751254+00:00",
           "status": 200,
           "sha256": "d7e01829e1b45afe28393327f9a82578c7ca8ff42e0be5c1f678a9e9c9df2b9d",
           "error": null,
@@ -719,9 +721,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/734614904",
           "name": null,
           "name_match": false,
@@ -766,9 +768,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-givens-district-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-givens-district-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3811+E.+12th+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:26.972273+00:00",
+          "retrieved_at": "2026-10-08T22:41:52.024845+00:00",
           "status": 200,
           "sha256": "040b01149e13cb92a49b7110e2b04c31d9b46af7bf7744c31b686804af9f1a0e",
           "error": null,
@@ -776,9 +778,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/583734038",
           "name": "Givens Pool",
           "name_match": true,
@@ -823,9 +825,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-govalle-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-govalle-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=5200+Bolm+Rd.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:27.542249+00:00",
+          "retrieved_at": "2026-10-08T22:41:52.906466+00:00",
           "status": 200,
           "sha256": "cfafee1b7e0c3019986f875e1a729683da46e8478b7aebfec46a4e8ff5dd4ff9",
           "error": null,
@@ -833,9 +835,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/368787452",
           "name": "Govalle Neighborhood Pool",
           "name_match": true,
@@ -880,9 +882,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-kennemer-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-kennemer-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1031+Peyton+Gin+Rd.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:28.308147+00:00",
+          "retrieved_at": "2026-10-08T22:41:53.645724+00:00",
           "status": 200,
           "sha256": "83cce0ff926756ae4e1e70cd036c0baf09f56c86965c00173e486349e8706736",
           "error": null,
@@ -890,9 +892,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/1253443448",
           "name": null,
           "name_match": false,
@@ -937,9 +939,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-mabel-davis-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-mabel-davis-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3427+Parker+Ln.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:29.026437+00:00",
+          "retrieved_at": "2026-10-08T22:41:54.478877+00:00",
           "status": 200,
           "sha256": "a63c7f28c1042c169938a6eaf6481c472fbbb330bbb8159ed1ec77b111820bdc",
           "error": null,
@@ -947,9 +949,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/548032234",
           "name": null,
           "name_match": false,
@@ -994,9 +996,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-martin-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-martin-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1626+Nash+Hernandez+Sr.+Dr.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:29.815708+00:00",
+          "retrieved_at": "2026-10-08T22:41:55.278664+00:00",
           "status": 200,
           "sha256": "ff8d549eeeeb4e19ae733e72ea3ccf3b65776f8115b163560ddfae5eae67043f",
           "error": null,
@@ -1004,9 +1006,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/1232070526",
           "name": "Martin Pool",
           "name_match": true,
@@ -1051,9 +1053,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-metz-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-metz-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2309+Canterbury+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:30.198354+00:00",
+          "retrieved_at": "2026-10-08T22:41:56.108062+00:00",
           "status": 200,
           "sha256": "f3d63c981806e4ab8ff1ca44e55b1d8c28e453e9c966d3927a0ad537e35e364a",
           "error": null,
@@ -1061,9 +1063,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/997235527",
           "name": "Metz Swimming Pool",
           "name_match": true,
@@ -1108,9 +1110,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-montopolis-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-montopolis-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1200+Montopolis+Dr.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:30.491851+00:00",
+          "retrieved_at": "2026-10-08T22:41:56.859821+00:00",
           "status": 200,
           "sha256": "ab5c5e7469963610c569f61b030bd115b4e3c5158b2a67184e5e66b43b911fa5",
           "error": null,
@@ -1118,9 +1120,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/585192067",
           "name": null,
           "name_match": false,
@@ -1165,9 +1167,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-murchison-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-murchison-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=7022+Hart+Ln.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:30.800738+00:00",
+          "retrieved_at": "2026-10-08T22:41:57.788502+00:00",
           "status": 200,
           "sha256": "7e93b7e45d1ab6ce86caaf2057e329103774847319cef6d93601f698c7ffa5f4",
           "error": null,
@@ -1175,9 +1177,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/1069075396",
           "name": null,
           "name_match": false,
@@ -1222,9 +1224,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-parque-zaragoza-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-parque-zaragoza-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2611+Webberville+Rd.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:31.106676+00:00",
+          "retrieved_at": "2026-10-08T22:41:58.477229+00:00",
           "status": 200,
           "sha256": "f2116e172b90fcf535aafd45e89c16b44616401605911c46ec98878de3e96678",
           "error": null,
@@ -1232,9 +1234,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/1259732357",
           "name": null,
           "name_match": false,
@@ -1279,9 +1281,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-patterson-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-patterson-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4200+Brookview+Dr.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:31.443367+00:00",
+          "retrieved_at": "2026-10-08T22:41:59.040188+00:00",
           "status": 200,
           "sha256": "980b5058586b2b2a75bca303dfa3cc071e04e2a625ca76e32c965dcb84937a55",
           "error": null,
@@ -1289,9 +1291,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/210116250",
           "name": "Patterson Neighborhood Pool",
           "name_match": true,
@@ -1336,9 +1338,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-ramsey-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-ramsey-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4201+Burnet+Rd.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:31.755330+00:00",
+          "retrieved_at": "2026-10-08T22:41:59.703373+00:00",
           "status": 200,
           "sha256": "59445089202deec83e0901f419a2e3fa5eccab625696758cab1b98f772b5593b",
           "error": null,
@@ -1346,9 +1348,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/566736644",
           "name": null,
           "name_match": false,
@@ -1393,9 +1395,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-reed-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-reed-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2614+Pecos+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:32.045714+00:00",
+          "retrieved_at": "2026-10-08T22:42:00.553680+00:00",
           "status": 200,
           "sha256": "a48bacfd879dff9048ebfc19df28aae827be58f8ec574c76d6aad07ed2e7cf8b",
           "error": null,
@@ -1403,9 +1405,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/1264632944",
           "name": null,
           "name_match": false,
@@ -1450,9 +1452,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-rosewood-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-rosewood-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2300+Rosewood+Ave.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:32.335709+00:00",
+          "retrieved_at": "2026-10-08T22:42:01.424992+00:00",
           "status": 200,
           "sha256": "171e8575a280a546d0787019e54cea51c2694ef3f31e85635d5df711fbdcf950",
           "error": null,
@@ -1498,9 +1500,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-shipe-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-shipe-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4400+Avenue+G%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:32.627470+00:00",
+          "retrieved_at": "2026-10-08T22:42:02.243902+00:00",
           "status": 200,
           "sha256": "9eb7438327dba43494e6b9f2709102cd549021cec22372b08c0371b24f7efe3e",
           "error": null,
@@ -1508,9 +1510,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/944775170",
           "name": null,
           "name_match": false,
@@ -1555,9 +1557,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-beverly-s-sheffield-northwest-municipal-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-beverly-s-sheffield-northwest-municipal-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=7000+Ardath+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:32.923066+00:00",
+          "retrieved_at": "2026-10-08T22:42:02.879323+00:00",
           "status": 200,
           "sha256": "92b124c9365ad7c12ca15d2a6cc5771f4e2fa1cf2e42aedf680191f28a44a922",
           "error": null,
@@ -1565,9 +1567,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/189871190",
           "name": "Northwest Pool",
           "name_match": false,
@@ -1612,9 +1614,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-walnut-creek-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-walnut-creek-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=12138+N+Lamar+Blvd%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:33.214652+00:00",
+          "retrieved_at": "2026-10-08T22:42:03.715951+00:00",
           "status": 200,
           "sha256": "bf96f47bcf2f6c05f4c52e0ab4accf9d58c7b0cca5f7177205d4ec39e28f167c",
           "error": null,
@@ -1660,9 +1662,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-west-austin-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-west-austin-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1317+W.+10th+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:33.528249+00:00",
+          "retrieved_at": "2026-10-08T22:42:04.491365+00:00",
           "status": 200,
           "sha256": "69dcdef4074b199d0f9d865202cc7a97ef2d57498cfaff0181d39f554be3785a",
           "error": null,
@@ -1670,9 +1672,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/775668433",
           "name": null,
           "name_match": false,
@@ -1717,9 +1719,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-westenfield-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-westenfield-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2000+Enfield+Rd.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:33.831276+00:00",
+          "retrieved_at": "2026-10-08T22:42:05.383407+00:00",
           "status": 200,
           "sha256": "8430f14e4b37a77680cd2e8666379d88b996f2a7bb7ff66a3345473d94cfe5a5",
           "error": null,
@@ -1727,9 +1729,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/206162845",
           "name": null,
           "name_match": false,
@@ -1774,9 +1776,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-bailey-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-bailey-splash-pad.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1201+W.+33rd+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:34.151766+00:00",
+          "retrieved_at": "2026-10-08T22:42:06.228591+00:00",
           "status": 200,
           "sha256": "f353d98cf71e246b7990841248413ec763ee91cdedd246b86df2d008b97c1ba3",
           "error": null,
@@ -1822,9 +1824,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/nominatim-bartholomew-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/nominatim-bartholomew-splash-pad.json",
           "url": "https://nominatim.openstreetmap.org/search?street=5201+Berkman+Dr.&city=Austin&state=TX&country=USA&format=jsonv2&addressdetails=1&limit=3",
-          "retrieved_at": "2026-10-08T22:06:36.069364+00:00",
+          "retrieved_at": "2026-10-08T22:42:07.686530+00:00",
           "status": 200,
           "sha256": "8404a2a01ae4d7c595ed215e713dc03793e59490b962d4e8b0c73315c681338a",
           "error": null,
@@ -1833,9 +1835,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/900554943",
           "name": "Bartholomew Splash Pad",
           "name_match": true,
@@ -1880,9 +1882,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-chestnut-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-chestnut-splash-pad.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2205+E.+16th+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:36.973178+00:00",
+          "retrieved_at": "2026-10-08T22:42:07.999831+00:00",
           "status": 200,
           "sha256": "3299290b2eda713cb2fddb1215fef712a01bfb75fd3ac7180bbe4241c37fd9fe",
           "error": null,
@@ -1890,9 +1892,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/902489048",
           "name": "Chestnut Splash Pad",
           "name_match": true,
@@ -1937,9 +1939,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-clarksville-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-clarksville-splash-pad.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1811+W.+11th+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:37.874714+00:00",
+          "retrieved_at": "2026-10-08T22:42:08.322742+00:00",
           "status": 200,
           "sha256": "7b4076c12f686320cc7e2d3c2ce6c74170ef20d7751fe0c6cd14cd106fb7067b",
           "error": null,
@@ -1985,9 +1987,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-eastwoods-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-eastwoods-splash-pad.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3001+Harris+Park+Blvd.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:38.652393+00:00",
+          "retrieved_at": "2026-10-08T22:42:08.628638+00:00",
           "status": 200,
           "sha256": "f802ebbc008b715ab7f639571dd8e34c04f5d5170e503d10fd8e3b60a5d4d13e",
           "error": null,
@@ -1995,9 +1997,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/1222957008",
           "name": null,
           "name_match": false,
@@ -2082,9 +2084,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-lott-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-lott-splash-pad.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1180+Curve+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:41.416757+00:00",
+          "retrieved_at": "2026-10-08T22:42:11.983262+00:00",
           "status": 200,
           "sha256": "610fbf9424aaeb002faa2b97919a874a59078b7a41d5c7f26e039874883d80ba",
           "error": null,
@@ -2130,9 +2132,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-metz-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-metz-splash-pad.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2407+Canterbury+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:42.434479+00:00",
+          "retrieved_at": "2026-10-08T22:42:12.859704+00:00",
           "status": 200,
           "sha256": "21985d51dfdaaa16e5c8593d77450a3a730c01222064411cdc044ecd5544f9f8",
           "error": null,
@@ -2178,9 +2180,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-ricky-guerrero-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-ricky-guerrero-splash-pad.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1100+Brodie+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:42.976721+00:00",
+          "retrieved_at": "2026-10-08T22:42:13.610132+00:00",
           "status": 200,
           "sha256": "58ce0cae07f6599cad4cd0cde8c7821b9f6cd45ae1fae632d5e9c313e704f1a4",
           "error": null,
@@ -2226,9 +2228,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-rosewood-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-rosewood-splash-pad.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2300+Rosewood+Ave.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:43.531626+00:00",
+          "retrieved_at": "2026-10-08T22:42:13.958626+00:00",
           "status": 200,
           "sha256": "171e8575a280a546d0787019e54cea51c2694ef3f31e85635d5df711fbdcf950",
           "error": null,
@@ -2236,9 +2238,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/210286953",
           "name": "Rosewood Pool & Splash Pad",
           "name_match": true,
@@ -2283,9 +2285,9 @@
           "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-pease-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-pease-splash-pad.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1100+Kingsbury+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:44.345505+00:00",
+          "retrieved_at": "2026-10-08T22:42:14.282587+00:00",
           "status": 200,
           "sha256": "2e2c7710cc56e5acb1f40ecef44521deb8742d2873c0298066f3e374eaad3ef3",
           "error": null,
@@ -2293,9 +2295,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "node/4677333434",
           "name": "Pease Splash Pad",
           "name_match": true,
@@ -2401,9 +2403,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-cedar-park-brushy-creek-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-cedar-park-brushy-creek-splash-pad.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3300+Brushy+Creek+Road%2C+Cedar+Park%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:45.221069+00:00",
+          "retrieved_at": "2026-10-08T22:42:15.048960+00:00",
           "status": 200,
           "sha256": "815d56c5610fcf1849d38649b7954a04426dfc8a308fc5735a841e509235bf5f",
           "error": null,
@@ -2411,9 +2413,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/921114289",
           "name": "Brushy Creek Splash Pad",
           "name_match": true,
@@ -2469,9 +2471,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-cedar-park-buttercup-creek-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-cedar-park-buttercup-creek-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=411+Twin+Oaks+Trail%2C+Cedar+Park%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:45.931999+00:00",
+          "retrieved_at": "2026-10-08T22:42:15.630114+00:00",
           "status": 200,
           "sha256": "da49a038f9c8472c1d80cc8069caeac5ee1bc43d3ede5cae9e38ef940d7d037a",
           "error": null,
@@ -2572,9 +2574,9 @@
         },
         "address_point": null,
         "park_by_name": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/park-cedar-park-elizabeth-milburn-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/park-cedar-park-elizabeth-milburn-pool.json",
           "url": "https://nominatim.openstreetmap.org/search?q=Elizabeth+Milburn+Park%2C+Cedar+Park%2C+TX&format=jsonv2&limit=3",
-          "retrieved_at": "2026-10-08T22:06:47.126337+00:00",
+          "retrieved_at": "2026-10-08T22:42:17.190059+00:00",
           "status": 200,
           "sha256": "63481a58f1b9ff2b1d4d17980a51b2277daea8113e79d0fea09e423cce826367",
           "error": null,
@@ -2583,9 +2585,9 @@
           "osm_element": "way/29410636"
         },
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/1233011562",
           "name": null,
           "name_match": false,
@@ -2641,9 +2643,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-cedar-park-veterans-memorial-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-cedar-park-veterans-memorial-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2525+W+New+Hope+Drive%2C+Cedar+Park%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:49.862118+00:00",
+          "retrieved_at": "2026-10-08T22:42:19.773690+00:00",
           "status": 200,
           "sha256": "0077e4d035060cfc7fa99644a2b3d43831ca8554f884f666032d0013224d0d71",
           "error": null,
@@ -2719,9 +2721,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/nominatim-leander-robin-bledsoe-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/nominatim-leander-robin-bledsoe-pool.json",
           "url": "https://nominatim.openstreetmap.org/search?street=601+S+Bagdad+Road&city=Leander&state=TX&country=USA&format=jsonv2&addressdetails=1&limit=3",
-          "retrieved_at": "2026-10-08T22:06:51.762490+00:00",
+          "retrieved_at": "2026-10-08T22:42:21.672855+00:00",
           "status": 200,
           "sha256": "167c32ac6377be83bef4eba92b40e281481f3fc934b836ecdc85aba2d46764d8",
           "error": null,
@@ -2829,9 +2831,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/nominatim-leander-robin-bledsoe-park-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/nominatim-leander-robin-bledsoe-park-splash-pad.json",
           "url": "https://nominatim.openstreetmap.org/search?street=601+S+Bagdad+Road&city=Leander&state=TX&country=USA&format=jsonv2&addressdetails=1&limit=3",
-          "retrieved_at": "2026-10-08T22:06:53.231303+00:00",
+          "retrieved_at": "2026-10-08T22:42:24.250221+00:00",
           "status": 200,
           "sha256": "167c32ac6377be83bef4eba92b40e281481f3fc934b836ecdc85aba2d46764d8",
           "error": null,
@@ -2840,9 +2842,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/1020514098",
           "name": "Robin Bledsoe Splash Pad",
           "name_match": true,
@@ -2956,9 +2958,9 @@
         },
         "address_point": null,
         "park_by_name": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/park-leander-lakewood-park-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/park-leander-lakewood-park-splash-pad.json",
           "url": "https://nominatim.openstreetmap.org/search?q=Lakewood+Park%2C+Leander%2C+TX&format=jsonv2&limit=3",
-          "retrieved_at": "2026-10-08T22:06:54.376099+00:00",
+          "retrieved_at": "2026-10-08T22:42:25.449210+00:00",
           "status": 200,
           "sha256": "e42d412b0cfd96e35c0739c562a91dbd8211ad638c8cf1136c8b3ec29c182c66",
           "error": null,
@@ -3460,9 +3462,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-georgetown-georgetown-recreation-center-indoor-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-georgetown-georgetown-recreation-center-indoor-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1003+N.+Austin+Ave.%2C+Georgetown%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:57.033689+00:00",
+          "retrieved_at": "2026-10-08T22:42:28.200772+00:00",
           "status": 200,
           "sha256": "df7d7f4bb20f06649e021907d88adf462c5f8e3e1d90a7d19b3f645cdb621a2f",
           "error": null,
@@ -3519,9 +3521,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-georgetown-georgetown-recreation-center-outdoor-play-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-georgetown-georgetown-recreation-center-outdoor-play-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1003+N.+Austin+Ave.%2C+Georgetown%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:06:57.961919+00:00",
+          "retrieved_at": "2026-10-08T22:42:29.141631+00:00",
           "status": 200,
           "sha256": "df7d7f4bb20f06649e021907d88adf462c5f8e3e1d90a7d19b3f645cdb621a2f",
           "error": null,
@@ -3578,9 +3580,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/nominatim-georgetown-village-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/nominatim-georgetown-village-pool.json",
           "url": "https://nominatim.openstreetmap.org/search?street=370+Village+Commons+Blvd.&city=Georgetown&state=TX&country=USA&format=jsonv2&addressdetails=1&limit=3",
-          "retrieved_at": "2026-10-08T22:06:59.887600+00:00",
+          "retrieved_at": "2026-10-08T22:42:31.521787+00:00",
           "status": 200,
           "sha256": "136cd4aa01014fbeeb8e845dba2750d4bafa00d9f2107c9535fd915e1b5d561a",
           "error": null,
@@ -3681,9 +3683,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-georgetown-williams-drive-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-georgetown-williams-drive-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3201+Williams+Drive%2C+Georgetown%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:07:00.542644+00:00",
+          "retrieved_at": "2026-10-08T22:42:32.190189+00:00",
           "status": 200,
           "sha256": "b1228399c0d5cef8297bc5ff6c1095c64ec4ad229fab7c31af96edb11d8b1b54",
           "error": null,
@@ -3691,9 +3693,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/549069855",
           "name": "Williams Drive Pool",
           "name_match": true,
@@ -3798,9 +3800,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-georgetown-downtown-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-georgetown-downtown-splash-pad.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=816+S.+Main+St.%2C+Georgetown%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:07:00.947626+00:00",
+          "retrieved_at": "2026-10-08T22:42:32.989990+00:00",
           "status": 200,
           "sha256": "327c87e5990a2f8ba4acabc1cea4a105be4866292cfa47152168f18474586fb4",
           "error": null,
@@ -3907,9 +3909,9 @@
         },
         "address_point": null,
         "park_by_name": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/park-georgetown-rabbit-hill-park-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/park-georgetown-rabbit-hill-park-splash-pad.json",
           "url": "https://nominatim.openstreetmap.org/search?q=Rabbit+Hill+Park%2C+Georgetown%2C+TX&format=jsonv2&limit=3",
-          "retrieved_at": "2026-10-08T22:07:02.402080+00:00",
+          "retrieved_at": "2026-10-08T22:42:34.385828+00:00",
           "status": 200,
           "sha256": "5db088067f8c9c39f46c540e409f25db30c49147655e30768b8ccbf7715223f8",
           "error": null,
@@ -3918,9 +3920,9 @@
           "osm_element": "way/1228841986"
         },
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/1256345583",
           "name": null,
           "name_match": false,
@@ -4025,9 +4027,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-georgetown-san-jose-park-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-georgetown-san-jose-park-splash-pad.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1707+San+Jose+St.%2C+Georgetown%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:07:04.732065+00:00",
+          "retrieved_at": "2026-10-08T22:42:37.638630+00:00",
           "status": 200,
           "sha256": "b91dfb26c1a1bcd42f04ddebf3ea061c2d5fd70a63b4e639f61d3a447e26344b",
           "error": null,
@@ -4134,9 +4136,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-georgetown-garey-park-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-georgetown-garey-park-splash-pad.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=6450+RM+2243%2C+Georgetown%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:07:05.023089+00:00",
+          "retrieved_at": "2026-10-08T22:42:38.124446+00:00",
           "status": 200,
           "sha256": "1497daee854a5e8434cc11af7e72102015570d6ac27d78cd6da0c2ed98ad4dd0",
           "error": null,
@@ -4242,9 +4244,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-georgetown-san-gabriel-park-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-georgetown-san-gabriel-park-splash-pad.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=445+E.+Morrow+St.%2C+Georgetown%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:07:05.331226+00:00",
+          "retrieved_at": "2026-10-08T22:42:38.940873+00:00",
           "status": 200,
           "sha256": "ee7c84f8b2d5ef54d6f6f3dc14ada0daeaa0e00b468022e77d0980e78006e842",
           "error": null,
@@ -4333,9 +4335,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-pflugerville-gilleland-creek-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-pflugerville-gilleland-creek-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=700+N+Railroad+Ave%2C+Pflugerville%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:07:05.649937+00:00",
+          "retrieved_at": "2026-10-08T22:42:39.930109+00:00",
           "status": 200,
           "sha256": "e4e7fdb0153b1f0bdcbcaeb6051d92502043d62e92b7228c7461e5a516fedef8",
           "error": null,
@@ -4343,9 +4345,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/351286164",
           "name": "Gilleland Creek Pool",
           "name_match": true,
@@ -4421,9 +4423,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-pflugerville-scott-mentzer-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-pflugerville-scott-mentzer-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=901+Old+Austin+Hutto+Rd%2C+Pflugerville%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:07:05.947073+00:00",
+          "retrieved_at": "2026-10-08T22:42:40.884038+00:00",
           "status": 200,
           "sha256": "b673d25ae893736577fcb4c3ef9b5ccb0a3a23936900c1bd41c242c2bbd0a3dc",
           "error": null,
@@ -4481,9 +4483,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-pflugerville-windermere-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-pflugerville-windermere-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=16800+Gower+St%2C+Pflugerville%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:07:06.244686+00:00",
+          "retrieved_at": "2026-10-08T22:42:41.716953+00:00",
           "status": 200,
           "sha256": "a66076ac7c188f0b600cfdd6d004b2f3c9b3c23f2d22738e6864cff141bbde11",
           "error": null,
@@ -4491,9 +4493,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/275619224",
           "name": "Windermere Pool",
           "name_match": true,
@@ -4701,9 +4703,9 @@
         },
         "address_point": null,
         "park_by_name": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/park-pflugerville-stone-hill-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/park-pflugerville-stone-hill-splash-pad.json",
           "url": "https://nominatim.openstreetmap.org/search?q=Stone+Hill+Park%2C+Pflugerville%2C+TX&format=jsonv2&limit=3",
-          "retrieved_at": "2026-10-08T22:07:09.217041+00:00",
+          "retrieved_at": "2026-10-08T22:42:45.647879+00:00",
           "status": 200,
           "sha256": "b4d874de93d1d96ca5d0b35175af203dd539d7aaace600fc86050643bc80d78e",
           "error": null,
@@ -4810,9 +4812,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-hutto-glenwood-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-hutto-glenwood-splash-pad.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=101+Fishbaugh+Lane%2C+Hutto%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:07:12.403702+00:00",
+          "retrieved_at": "2026-10-08T22:42:48.839609+00:00",
           "status": 200,
           "sha256": "37eb9e93974f9a08f2d093e799efb7049716116dee1debf6e75fc15f92ce130e",
           "error": null,
@@ -4875,9 +4877,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-manor-east-metropolitan-park-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-manor-east-metropolitan-park-pool.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=18706+Blake+Manor+Road%2C+Manor%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:07:13.041963+00:00",
+          "retrieved_at": "2026-10-08T22:42:49.675817+00:00",
           "status": 200,
           "sha256": "5dd801c4cf4eb9bb9685d13082b722d30c3dd3a240c2405f146868edb282cdae",
           "error": null,
@@ -4944,9 +4946,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-lakeway-lakeway-swim-center.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-lakeway-lakeway-swim-center.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3103+Lakeway+Blvd%2C+Lakeway%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:07:13.413394+00:00",
+          "retrieved_at": "2026-10-08T22:42:50.381845+00:00",
           "status": 200,
           "sha256": "5b5de646e4fbabe21445d32a5296beb50549946795182403f6d48b7c4d5960ec",
           "error": null,
@@ -5052,9 +5054,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-buda-green-meadows-park-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-buda-green-meadows-park-splash-pad.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2357+Green+Meadows+Ln.%2C+Buda%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:07:13.998769+00:00",
+          "retrieved_at": "2026-10-08T22:42:51.121436+00:00",
           "status": 200,
           "sha256": "f7fc12acdafb9423a891fd9abd39b0de876cf2be5151af21c0c210c9d26acb27",
           "error": null,
@@ -5160,9 +5162,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-buda-city-park-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-buda-city-park-splash-pad.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=204+San+Antonio+Street%2C+Buda%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:07:14.915071+00:00",
+          "retrieved_at": "2026-10-08T22:42:51.841155+00:00",
           "status": 200,
           "sha256": "74ef04ad67161610ad82564cc31f871dd9885a2217988540092f58241b8ec67e",
           "error": null,
@@ -5219,9 +5221,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/nominatim-kyle-james-adkins-pool.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/nominatim-kyle-james-adkins-pool.json",
           "url": "https://nominatim.openstreetmap.org/search?street=1100+W.+Center+Street&city=Kyle&state=TX&country=USA&format=jsonv2&addressdetails=1&limit=3",
-          "retrieved_at": "2026-10-08T22:07:16.998710+00:00",
+          "retrieved_at": "2026-10-08T22:42:53.879370+00:00",
           "status": 200,
           "sha256": "c74f67dedfefb2edc7654eec8e2d3c74ddc194f392b9452027f0bb998b895269",
           "error": null,
@@ -5230,9 +5232,9 @@
         },
         "park_by_name": null,
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/274592394",
           "name": "James Adkins Pool",
           "name_match": true,
@@ -5332,9 +5334,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-kyle-gregg-clarke-park-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-kyle-gregg-clarke-park-splash-pad.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1231+W.+Center+St.%2C+Kyle%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:07:17.462349+00:00",
+          "retrieved_at": "2026-10-08T22:42:54.486957+00:00",
           "status": 200,
           "sha256": "80e0dc50812160ef698807516712e90b0f3b2ddefde5cb760c5cd196dcbd95a9",
           "error": null,
@@ -5435,9 +5437,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/nominatim-kyle-steeplechase-park-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/nominatim-kyle-steeplechase-park-splash-pad.json",
           "url": "https://nominatim.openstreetmap.org/search?street=295+Hallie+Drive&city=Kyle&state=TX&country=USA&format=jsonv2&addressdetails=1&limit=3",
-          "retrieved_at": "2026-10-08T22:07:18.933601+00:00",
+          "retrieved_at": "2026-10-08T22:42:56.274271+00:00",
           "status": 200,
           "sha256": "292bf63509414498b3bce05c9d40758bfba66101470a32cbf29c24a9c52c1605",
           "error": null,
@@ -5540,9 +5542,9 @@
         },
         "address_point": null,
         "park_by_name": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/park-kyle-la-verde-park-splash-pad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/park-kyle-la-verde-park-splash-pad.json",
           "url": "https://nominatim.openstreetmap.org/search?q=La+Verde+Park%2C+Kyle%2C+TX&format=jsonv2&limit=3",
-          "retrieved_at": "2026-10-08T22:07:20.085315+00:00",
+          "retrieved_at": "2026-10-08T22:42:57.828074+00:00",
           "status": 200,
           "sha256": "d0eb6df17c5fdd0f78a74e832d01183b00d7da0c2488aaed3f6e3c03985d273b",
           "error": null,
@@ -5644,9 +5646,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-san-marcos-san-marcos-natatorium.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-san-marcos-san-marcos-natatorium.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=501+E+Hopkins+Street%2C+San+Marcos%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:07:22.813056+00:00",
+          "retrieved_at": "2026-10-08T22:43:00.498061+00:00",
           "status": 200,
           "sha256": "d4479b067c997a893181425eea0271e30ddf6be535df55a0336dc5ddd652c324",
           "error": null,
@@ -5722,9 +5724,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-san-marcos-rio-vista-pool-splashpad.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-san-marcos-rio-vista-pool-splashpad.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=555+Cheatham+Street%2C+San+Marcos%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:07:23.230082+00:00",
+          "retrieved_at": "2026-10-08T22:43:01.101374+00:00",
           "status": 200,
           "sha256": "a11eccffcb6c1fe27ab3bf2946414347c55f4afda4f880a69aa2329b43ff9732",
           "error": null,
@@ -5830,9 +5832,9 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-lago-vista-arkansas-bend-park.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-lago-vista-arkansas-bend-park.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=16900+Cherry+Lane%2C+Lago+Vista%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:07:24.747504+00:00",
+          "retrieved_at": "2026-10-08T22:43:03.322389+00:00",
           "status": 200,
           "sha256": "b565cef250f7e405c29d319ca625a88d774acfdc47bd6be3c12279cc4be39132",
           "error": null,
@@ -5938,18 +5940,18 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-austin-bob-wentz-park.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-austin-bob-wentz-park.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=7144+Comanche+Trail%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:07:26.192815+00:00",
+          "retrieved_at": "2026-10-08T22:43:05.576477+00:00",
           "status": 200,
           "sha256": "902966da46706f5b3c0e3a0ca7095581213c8344abb79edd74b544de27a5a261",
           "error": null,
           "matched_address": "7144 COMANCHE TRL, AUSTIN, TX, 78732"
         },
         "park_by_name": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/park-austin-bob-wentz-park.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/park-austin-bob-wentz-park.json",
           "url": "https://nominatim.openstreetmap.org/search?q=Bob+Wentz+Park%2C+Austin%2C+TX&format=jsonv2&limit=3",
-          "retrieved_at": "2026-10-08T22:07:25.893543+00:00",
+          "retrieved_at": "2026-10-08T22:43:04.868464+00:00",
           "status": 200,
           "sha256": "33c1e3330ecf6eaf0045a3762ef6a4a4ff082ce9e49a1f94520a9efb2d7815fe",
           "error": null,
@@ -6057,18 +6059,18 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-austin-hippie-hollow-park.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-austin-hippie-hollow-park.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=7000+Comanche+Trail%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:07:27.661209+00:00",
+          "retrieved_at": "2026-10-08T22:43:08.160684+00:00",
           "status": 200,
           "sha256": "5ee5ff8cb9bf14fbcb8bd805685b51863bfe0ee79abd3cdc531aa5deba76d14b",
           "error": null,
           "matched_address": "7000 COMANCHE TRL, AUSTIN, TX, 78732"
         },
         "park_by_name": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/park-austin-hippie-hollow-park.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/park-austin-hippie-hollow-park.json",
           "url": "https://nominatim.openstreetmap.org/search?q=Hippie+Hollow+Park%2C+Austin%2C+TX&format=jsonv2&limit=3",
-          "retrieved_at": "2026-10-08T22:07:27.355243+00:00",
+          "retrieved_at": "2026-10-08T22:43:07.247181+00:00",
           "status": 200,
           "sha256": "0e5e4976791242d2e415c17a194ac90cc369f91ddbcb20f97195177e44e51bee",
           "error": null,
@@ -6077,9 +6079,9 @@
           "osm_element": "way/201864155"
         },
         "osm": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/osm.json",
-          "sha256": "77d4f5304d8710c2c0b37b245354c43fdbf90de8db1cd1def96830cd05c32185",
-          "retrieved_at": "2026-10-08T22:07:53.809724+00:00",
+          "file": "data/raw/city-pool-places/20261008T224137Z/osm.json",
+          "sha256": "c158d9cb079123b5f52811048d1412e1c3066db82570d79a72dc28035a26b698",
+          "retrieved_at": "2026-10-08T22:43:44.179978+00:00",
           "element": "way/1319200915",
           "name": "Hippie Hollow Beach",
           "name_match": true,
@@ -6185,18 +6187,18 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-austin-mansfield-dam-park.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-austin-mansfield-dam-park.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4370+Mansfield+Dam+Park+Road%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:07:29.164465+00:00",
+          "retrieved_at": "2026-10-08T22:43:10.809770+00:00",
           "status": 200,
           "sha256": "8f023c8bd4ab9a2edf83ca8169e1db42254badcb3d3e489bb1c9c93fdcb5c39b",
           "error": null,
           "matched_address": "4370 MANSFIELD DAM CT, AUSTIN, TX, 78734"
         },
         "park_by_name": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/park-austin-mansfield-dam-park.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/park-austin-mansfield-dam-park.json",
           "url": "https://nominatim.openstreetmap.org/search?q=Mansfield+Dam+Park%2C+Austin%2C+TX&format=jsonv2&limit=3",
-          "retrieved_at": "2026-10-08T22:07:28.835582+00:00",
+          "retrieved_at": "2026-10-08T22:43:09.790073+00:00",
           "status": 200,
           "sha256": "aa3a1a09e05710e0329b2b4e2d28f302236e723277a35a516435ff79d370f031",
           "error": null,
@@ -6304,18 +6306,18 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-spicewood-pace-bend-park.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-spicewood-pace-bend-park.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2805+Pace+Bend+Road+North%2C+Spicewood%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:07:30.632525+00:00",
+          "retrieved_at": "2026-10-08T22:43:13.266988+00:00",
           "status": 200,
           "sha256": "35800e33fd5eb9d1aec82f2891ab0db2ab58538c3f273890f69f3780e45156f3",
           "error": null,
           "matched_address": "2805 PACE BEND RD S, SPICEWOOD, TX, 78669"
         },
         "park_by_name": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/park-spicewood-pace-bend-park.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/park-spicewood-pace-bend-park.json",
           "url": "https://nominatim.openstreetmap.org/search?q=Pace+Bend+Park%2C+Spicewood%2C+TX&format=jsonv2&limit=3",
-          "retrieved_at": "2026-10-08T22:07:30.319898+00:00",
+          "retrieved_at": "2026-10-08T22:43:12.421962+00:00",
           "status": 200,
           "sha256": "9c9baea8a5b8452eab5bee9ff42a891aec249674aa2fd99b9aa73e37e04f9820",
           "error": null,
@@ -6423,9 +6425,9 @@
         },
         "address_point": null,
         "park_by_name": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/park-leander-sandy-creek-park.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/park-leander-sandy-creek-park.json",
           "url": "https://nominatim.openstreetmap.org/search?q=Sandy+Creek+Park%2C+Travis+County%2C+TX&format=jsonv2&limit=3",
-          "retrieved_at": "2026-10-08T22:07:32.186358+00:00",
+          "retrieved_at": "2026-10-08T22:43:14.834375+00:00",
           "status": 200,
           "sha256": "628b0919b60fc708455674bd763bd99a3ddc8c5e160ce095908d8f7b24dc42b5",
           "error": null,
@@ -6534,9 +6536,9 @@
         },
         "address_point": null,
         "park_by_name": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/park-austin-tom-hughes-park.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/park-austin-tom-hughes-park.json",
           "url": "https://nominatim.openstreetmap.org/search?q=Tom+Hughes+Park%2C+Austin%2C+TX&format=jsonv2&limit=3",
-          "retrieved_at": "2026-10-08T22:07:35.494530+00:00",
+          "retrieved_at": "2026-10-08T22:43:18.728748+00:00",
           "status": 200,
           "sha256": "4c3b227edad10a2589f26e931e67180966e01b17bb0aec71d36b0ffe618bfc12",
           "error": null,
@@ -7555,18 +7557,18 @@
           }
         },
         "address_point": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/geocode-lakeway-lakeway-city-park.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-lakeway-lakeway-city-park.json",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=502+Hurst+Creek+Road%2C+Lakeway%2C+TX&benchmark=Public_AR_Current&format=json",
-          "retrieved_at": "2026-10-08T22:07:38.865720+00:00",
+          "retrieved_at": "2026-10-08T22:43:23.965661+00:00",
           "status": 200,
           "sha256": "0f174ad88815882433814a60cea889fa3046f93f96cbdb6c030e108b2421b3b0",
           "error": null,
           "matched_address": "502 HURST CREEK RD, LAKEWAY, TX, 78734"
         },
         "park_by_name": {
-          "file": "data/raw/city-pool-places/20261008T220616Z/park-lakeway-lakeway-city-park.json",
+          "file": "data/raw/city-pool-places/20261008T224137Z/park-lakeway-lakeway-city-park.json",
           "url": "https://nominatim.openstreetmap.org/search?q=Lakeway+City+Park%2C+Lakeway%2C+TX&format=jsonv2&limit=3",
-          "retrieved_at": "2026-10-08T22:07:38.518286+00:00",
+          "retrieved_at": "2026-10-08T22:43:22.624673+00:00",
           "status": 200,
           "sha256": "e7af59edddbe203095bdda4c1dff122d155098f83674370a87b043b917ab0775",
           "error": null,
@@ -8154,6 +8156,275 @@
           "evidence": {
             "file": "data/raw/lake-beaches/pages/granger-lake__usace-corps-parks.html",
             "quote": "Picnic Sites and Swim Beach is open April 1 - September 30 on Friday, Saturday, Sunday and Holidays only."
+          }
+        },
+        "address_point": null,
+        "park_by_name": null,
+        "osm": null
+      }
+    },
+    {
+      "id": "austin-secret-beach",
+      "name": "Secret Beach",
+      "city_index_name": null,
+      "city": "Austin",
+      "lat": 30.247733,
+      "lon": -97.700052,
+      "region": "Colorado River below Austin",
+      "kind": "river beach",
+      "place_role": "river_beach",
+      "facility_type": "river_beach",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation (inside Roy G. Guerrero Colorado River Metropolitan Park)",
+      "address": "400 Grove Blvd.",
+      "phone": null,
+      "entry_fee": null,
+      "status_source": null,
+      "coordinate_precision": "OpenStreetMap feature named \"Secret Beach\" (natural=shingle, ODbL), on the south bank about 1.3 km downstream of Longhorn Dam; the City’s 2014 field-guide map labels Secret Beach at the same bend.",
+      "coordinate_source": "https://www.openstreetmap.org/way/455320079",
+      "access": "City of Austin Parks and Recreation (inside Roy G. Guerrero Colorado River Metropolitan Park) sets hours and access; not checked here",
+      "source": "https://austin.citycast.fm/urban-almanac/secret-beach-stairs-austin",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://austin.citycast.fm/urban-almanac/secret-beach-stairs-austin",
+        "https://web.archive.org/web/20211017165844id_/https://www.austintexas.gov/sites/default/files/files/Watershed/fieldguides/Roy-G-Guerrero-Colorado-River-Park.pdf",
+        "https://www.timeout.com/austin/attractions/secret-beach-at-roy-g-guerrero-park",
+        "https://www.kut.org/austin/2013-06-13/with-tube-rentals-east-austin-beach-not-so-secret-anymore"
+      ],
+      "map_display": "point",
+      "hours": {
+        "source_url": "https://www.austintexas.gov/parks/locations/park-directory",
+        "as_posted": "2026-10-08",
+        "text": "City parks are open 5 a.m.–10 p.m. unless otherwise posted.",
+        "verify": [
+          "all parks are open for public use each day from 5 a.m. to 10 p.m. unless otherwise posted"
+        ],
+        "periods": [
+          {
+            "from": null,
+            "to": null,
+            "weekly": {
+              "0": [
+                [
+                  "05:00",
+                  "22:00"
+                ]
+              ],
+              "1": [
+                [
+                  "05:00",
+                  "22:00"
+                ]
+              ],
+              "2": [
+                [
+                  "05:00",
+                  "22:00"
+                ]
+              ],
+              "3": [
+                [
+                  "05:00",
+                  "22:00"
+                ]
+              ],
+              "4": [
+                [
+                  "05:00",
+                  "22:00"
+                ]
+              ],
+              "5": [
+                [
+                  "05:00",
+                  "22:00"
+                ]
+              ],
+              "6": [
+                [
+                  "05:00",
+                  "22:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "closed_outside_periods": false,
+        "conflict": "Sources disagree on swimming here. Time Out (2017) says \"swimming isn’t allowed\"; City Cast (2025) calls it a place to \"enjoy a dip\"; no City page names the beach or sets its rule. City Code bans swimming in Lady Bird Lake, which ends at Longhorn Dam; this beach is downstream of the dam on the City’s 2014 map and in OpenStreetMap, though City Cast places it west of the dam."
+      },
+      "notes": "Informal beach; no City page names it or sets a rule for it. Park in the lot next to the Montopolis Youth Sports Complex and walk the trail across the street (City Cast). After storms, stay out: the City says bacteria can take at least three days to return to earlier levels, and Longhorn Dam releases can raise the river suddenly (sirens give a rising \"slow whoop\").",
+      "provenance": {
+        "inventory": {
+          "file": "data/river-beaches.json",
+          "sha256": "432232d135d44066892dd0a9102978cdbe1b04c9ee54cd6c4756e4c9b0c111ff",
+          "evidence": {
+            "file": "data/raw/colorado-river-access/pages/nongov-secret-beach-citycast-austin-stairs.html",
+            "quote": "a nice, secluded area to enjoy a dip in the water",
+            "source_kind": "non-government (City Cast Austin, 2024, updated 2025)"
+          }
+        },
+        "address_point": null,
+        "park_by_name": null,
+        "osm": null
+      }
+    },
+    {
+      "id": "austin-colorado-river-wildlife-sanctuary",
+      "name": "Colorado River Wildlife Sanctuary",
+      "city_index_name": null,
+      "city": "Austin",
+      "lat": 30.248627,
+      "lon": -97.692499,
+      "region": "Colorado River below Austin",
+      "kind": "river beach",
+      "place_role": "river_beach",
+      "facility_type": "river_beach",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation (river-access parking owned by TxDOT)",
+      "address": "5827 Levander Loop",
+      "phone": null,
+      "entry_fee": null,
+      "status_source": null,
+      "coordinate_precision": "U.S. Census geocoder address-range interpolation of 5827 Levander Loop (matched 5827 LEVANDER LOOP, AUSTIN, TX, 78702); may sit on the street in front of the facility.",
+      "coordinate_source": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=5827+Levander+Loop%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+      "access": "City of Austin Parks and Recreation (river-access parking owned by TxDOT) sets hours and access; not checked here",
+      "source": "https://www.austintexas.gov/parks/natural-resources-and-nature-based-programs",
+      "gauge": null,
+      "coordinate_method": "geocoded_address",
+      "identity_sources": [
+        "https://www.austintexas.gov/parks/natural-resources-and-nature-based-programs",
+        "https://austin.widen.net/view/pdf/zl0fky2ubf/preserves.pdf?t.download=true"
+      ],
+      "map_display": "point",
+      "hours": {
+        "source_url": "https://www.austintexas.gov/parks/locations/park-directory",
+        "as_posted": "2026-10-08",
+        "text": "\"Park curfew applies\" (City preserve list); City parks are open 5 a.m.–10 p.m. unless otherwise posted.",
+        "verify": [
+          "all parks are open for public use each day from 5 a.m. to 10 p.m. unless otherwise posted"
+        ],
+        "periods": [
+          {
+            "from": null,
+            "to": null,
+            "weekly": {
+              "0": [
+                [
+                  "05:00",
+                  "22:00"
+                ]
+              ],
+              "1": [
+                [
+                  "05:00",
+                  "22:00"
+                ]
+              ],
+              "2": [
+                [
+                  "05:00",
+                  "22:00"
+                ]
+              ],
+              "3": [
+                [
+                  "05:00",
+                  "22:00"
+                ]
+              ],
+              "4": [
+                [
+                  "05:00",
+                  "22:00"
+                ]
+              ],
+              "5": [
+                [
+                  "05:00",
+                  "22:00"
+                ]
+              ],
+              "6": [
+                [
+                  "05:00",
+                  "22:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "closed_outside_periods": false
+      },
+      "notes": "Nature preserve on the north bank, across from Roy G. Guerrero Park; a 1.3-mile trail ends at the river. No dogs. After storms, stay out: the City says bacteria can take at least three days to return to earlier levels, and Longhorn Dam releases can raise the river suddenly (sirens give a rising \"slow whoop\").",
+      "provenance": {
+        "inventory": {
+          "file": "data/river-beaches.json",
+          "sha256": "432232d135d44066892dd0a9102978cdbe1b04c9ee54cd6c4756e4c9b0c111ff",
+          "evidence": {
+            "file": "data/raw/colorado-river-access/pages/austin-nature-preserves-list-pdfbytes.pdf",
+            "quote": "the parking area is actually owned by TXDot and is a “swim at your own risk” area."
+          }
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T224137Z/geocode-austin-colorado-river-wildlife-sanctuary.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=5827+Levander+Loop%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T22:43:26.257168+00:00",
+          "status": 200,
+          "sha256": "5056f3bc7908c0042d38eeab4c99ecc72f352b0ad1668774b8b769e5be8c4cb7",
+          "error": null,
+          "matched_address": "5827 LEVANDER LOOP, AUSTIN, TX, 78702"
+        },
+        "park_by_name": null,
+        "osm": null
+      }
+    },
+    {
+      "id": "bastrop-county-nature-park",
+      "name": "Bastrop County Nature Park",
+      "city_index_name": null,
+      "city": "Bastrop",
+      "lat": 30.0735,
+      "lon": -97.3106,
+      "region": "Colorado River below Austin",
+      "kind": "river beach",
+      "place_role": "river_beach",
+      "facility_type": "river_beach",
+      "indoor": false,
+      "operator": "Bastrop County General Services",
+      "address": "375 East Riverside Drive",
+      "phone": null,
+      "entry_fee": "Free",
+      "status_source": null,
+      "coordinate_precision": "TPWD’s El Camino Real Paddling Trail take-out coordinates for \"Lost Pines Recreational Trails\" (30.0735, -97.3106), the park’s former name; the county page gives no coordinates.",
+      "coordinate_source": "https://tpwd.texas.gov/boating/paddling-trails/prairies-and-lakes/bastrop-el-camino-real/",
+      "access": "Bastrop County General Services sets hours and access; not checked here",
+      "source": "https://www.bastropcounty.gov/page/par.ourparks",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.bastropcounty.gov/page/par.ourparks",
+        "https://tpwd.texas.gov/boating/paddling-trails/prairies-and-lakes/bastrop-el-camino-real/"
+      ],
+      "map_display": "point",
+      "hours": {
+        "source_url": "https://www.bastropcounty.gov/page/par.ourparks",
+        "as_posted": "2026-10-08",
+        "text": "Hours are posted at the park entrance (county rules); LCRA’s river guide lists the park as open 24 hours a day.",
+        "verify": [
+          "Swimming allowed"
+        ],
+        "periods": [],
+        "closed_outside_periods": false
+      },
+      "notes": "River \"Beach\" area and paddling-trail take-out (formerly Lost Pines Nature Trails). No glass or alcohol.",
+      "provenance": {
+        "inventory": {
+          "file": "data/river-beaches.json",
+          "sha256": "432232d135d44066892dd0a9102978cdbe1b04c9ee54cd6c4756e4c9b0c111ff",
+          "evidence": {
+            "file": "data/raw/colorado-river-access/pages/bastrop-county-our-parks.html",
+            "quote": "\"Beach\" area Outdoor Classroom Paved parking Bathrooms (port a potty only) Swimming allowed"
           }
         },
         "address_point": null,

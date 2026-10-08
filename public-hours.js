@@ -82,7 +82,7 @@ function postedNow(place,local){
 }
 function publicHoursAssessment(place,page,at){
   const h=place.hours,local=cityNow(at),posted=`Posted hours (read ${h.as_posted}): ${h.text}`;
-  const base={id:place.id,category:place.place_role==='lake_beach'?'lake_beach':'managed_pool',rule_id:'posted-hours-v1',
+  const base={id:place.id,category:place.place_role==='lake_beach'||place.place_role==='river_beach'?'lake_beach':'managed_pool',rule_id:'posted-hours-v1',
     evidence:`${place.operator} page, re-read through this site’s proxy · posted hours only, not a water or safety measurement`,
     hours_source:h.source_url,source_retrieved_at:page.retrieved_at||null,checked_at:at.toISOString(),
     valid_until:cityColorDeadline(at,page)};
