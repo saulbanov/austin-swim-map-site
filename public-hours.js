@@ -31,6 +31,7 @@ function parseHoursPage(capture){
 }
 
 /* NOAA sunrise equation. zenith 90.833° for sunrise and sunset, 96° for civil twilight. */
+const sentence=text=>/[.!?]$/.test(text)?text:text+'.';
 const rad=d=>d*Math.PI/180,deg=r=>r*180/Math.PI,mod=(a,b)=>((a%b)+b)%b;
 function solarEvent(lat,lon,date,zenith,rising){
   const noon=new Date(`${date}T12:00:00Z`),day=Math.floor((noon-Date.UTC(noon.getUTCFullYear(),0,0))/86400000),lngHour=lon/15;
@@ -100,15 +101,16 @@ function publicHoursAssessment(place,page,at){
     base.evidence=`${place.operator} page, rendered by the Mac’s daily run at ${check.retrieved_at} · posted hours only, not a water or safety measurement`;
   }else{
   if(!page.available) return both('gray',`${posted} The operator page could not be re-checked just now.`);
+  if(page.text.length<1200) return both('gray',`${posted} The operator page came back as an error or an empty page just now.`);
   if(!(h.verify||[]).every(phrase=>page.text.includes(phrase))) return both('gray',`${posted} The operator page no longer matches that reading, so the hours cannot be confirmed now.`);
   }
   const now=postedNow(place,local),today=postedDay(place,local.date,local.day);
   base.valid_until=[base.valid_until,nextCityChange(place.id,at,t=>postedNow(place,cityNow(t)).open)].sort()[0];
   const todayFields={today_status:today.state===true?'green':today.state===false?'red':'gray',
-    today_reason:`${today.state===true?'Open sometime today · ':''}${today.note}. ${posted}`,today_valid_until:[base.valid_until,midnight].sort()[0]};
-  if(now.open===true) return {...base,...todayFields,status:'green',reason:`Open now under the posted hours · ${now.note}. ${posted}`};
-  if(now.open===false) return {...base,...todayFields,status:'red',reason:`${now.state===true?'Outside today’s posted hours · ':''}${now.note}. ${posted}`};
-  return {...base,...todayFields,status:'gray',reason:`${now.note}. ${posted}`};
+    today_reason:`${today.state===true?'Open sometime today · ':''}${sentence(today.note)} ${posted}`,today_valid_until:[base.valid_until,midnight].sort()[0]};
+  if(now.open===true) return {...base,...todayFields,status:'green',reason:`Open now under the posted hours · ${sentence(now.note)} ${posted}`};
+  if(now.open===false) return {...base,...todayFields,status:'red',reason:`${now.state===true?'Outside today’s posted hours · ':''}${sentence(now.note)} ${posted}`};
+  return {...base,...todayFields,status:'gray',reason:`${sentence(now.note)} ${posted}`};
 }
 async function acquireDailyChecks(){
   try{const response=await fetch(`data/hours-checks.json?check=${Date.now()}`,{cache:'no-store'});
