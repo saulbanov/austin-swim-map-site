@@ -27,6 +27,7 @@
     <fieldset class="layer-controls"><legend>Show on map</legend>
       <label><input id="show-holes" type="checkbox" checked> Swimming holes &amp; parks</label>
       <label><input id="show-pools" type="checkbox" checked> City pools &amp; splash pads</label>
+      <label><input id="show-beaches" type="checkbox" checked> Lake beaches</label>
       <label><input id="show-context" type="checkbox"> Creek context points</label>
       <label><input id="show-gauges" type="checkbox"> USGS gauges</label>
       <label><input id="show-cityGauges" type="checkbox"> City Hydromet gauges</label>
@@ -54,6 +55,7 @@
         <ul class="shapes">
           <li><i class="sw star">★</i> creek swimming place</li>
           <li><i class="sw pool">◉</i> City pool or splash pad</li>
+          <li><i class="sw beach">≈</i> Lake beach or swimming area</li>
           <li><i class="sw park">⌂</i> park reference (not a water entry)</li>
           <li><i class="sw ctx">○</i> creek context only (optional layer; not a swimming place)</li>
           <li><i class="sw gauge">◆</i> USGS gauge (optional layer; measures its station, not a swimming hole)</li>
@@ -120,9 +122,10 @@
 <script src="public-flow.js?v=20261008-gage-height"></script>
 <script src="public-hydromet.js?v=20261008-lcra-proxy"></script>
 <script src="public-city.js?v=20261008-pools"></script>
+<script src="public-hours.js?v=20261008-beaches-hours"></script>
 <script src="public-hazards.js?v=20261003-place-history-v35"></script>
 <script src="public-outdoor.js?v=20261001-local-forecast-v12"></script>
 <script src="history.js?v=20261008-gage-height"></script>
-<script src="app.js?v=20261008-pools"></script>
+<script src="app.js?v=20261008-beaches-hours"></script>
 </body>
 </html>
