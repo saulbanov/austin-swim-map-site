@@ -1,0 +1,199 @@
+{
+  "generated_at": "2026-09-29T12:50:20.364595+00:00",
+  "meaning": "published operator schedule and closure notices, not guaranteed admission or water quality",
+  "closure_list_retrieved_at": "2026-09-29T00:58:53.751232+00:00",
+  "places": [
+    {
+      "id": "barton-springs",
+      "category": "managed_pool",
+      "rule_id": "austin-city-pool-schedule-barton-springs",
+      "evidence": "City operator schedule + general index + closure list · not a water or safety measurement",
+      "operator_status": "open",
+      "page_status_line": null,
+      "index_source": "https://www.austintexas.gov/pools",
+      "index_retrieved_at": "2026-09-29T00:59:14.124787+00:00",
+      "source": "https://www.austintexas.gov/services/visit-barton-springs-pool",
+      "source_retrieved_at": "2026-09-29T00:58:55.384910+00:00",
+      "source_verified": true,
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "closure_retrieved_at": "2026-09-29T00:58:53.751232+00:00",
+      "checked_at": "2026-09-29T12:50:20.364595+00:00",
+      "notices": [
+        {
+          "title": "Khabele Bathhouse Rehabilitation at Barton Springs",
+          "dates_text": "February 15, 2024 until further notice",
+          "start": "2024-02-15",
+          "end": null,
+          "open_ended": true,
+          "description": "Joan Means Khabele Bathhouse at Barton Springs Pool has partially reopened. Renovated restroom and shower spaces are now available inside; please enter from the pool side of the building. The front parking lot is also reopened, except one small area that will remain fenced off for ongoing construction work. The building main entry at the rotunda and site work on the west side will remain closed to the public for construction. Read more about the partial reopening .",
+          "updated": "2026-06-24",
+          "in_effect": true,
+          "url": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures"
+        }
+      ],
+      "valid_until": "2026-09-29T14:50:20.364595+00:00",
+      "status": "green",
+      "reason": "Scheduled open · Published hours: 5 a.m.–10 p.m.; Thursday cleaning 9 a.m.–7 p.m.; City index: generally open. Confirm unplanned closures with the City."
+    },
+    {
+      "id": "deep-eddy",
+      "category": "managed_pool",
+      "rule_id": "austin-city-pool-schedule-deep-eddy",
+      "evidence": "City operator schedule + general index + closure list · not a water or safety measurement",
+      "operator_status": "open",
+      "page_status_line": "Open",
+      "index_source": "https://www.austintexas.gov/pools",
+      "index_retrieved_at": "2026-09-29T00:59:14.124787+00:00",
+      "source": "https://www.austintexas.gov/parks/locations/deep-eddy-pool",
+      "source_retrieved_at": "2026-09-29T00:58:57.170063+00:00",
+      "source_verified": true,
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "closure_retrieved_at": "2026-09-29T00:58:53.751232+00:00",
+      "checked_at": "2026-09-29T12:50:20.364595+00:00",
+      "notices": [],
+      "valid_until": "2026-09-29T14:50:20.364595+00:00",
+      "status": "red",
+      "reason": "Closed Tuesdays for cleaning; City index: generally open."
+    },
+    {
+      "id": "big-stacy-pool",
+      "category": "managed_pool",
+      "rule_id": "austin-city-pool-schedule-big-stacy-pool",
+      "evidence": "City operator schedule + general index + closure list · not a water or safety measurement",
+      "operator_status": "open",
+      "page_status_line": "Open",
+      "index_source": "https://www.austintexas.gov/pools",
+      "index_retrieved_at": "2026-09-29T00:59:14.124787+00:00",
+      "source": "https://www.austintexas.gov/parks/locations/big-stacy-pool",
+      "source_retrieved_at": "2026-09-29T00:58:58.891097+00:00",
+      "source_verified": true,
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "closure_retrieved_at": "2026-09-29T00:58:53.751232+00:00",
+      "checked_at": "2026-09-29T12:50:20.364595+00:00",
+      "notices": [],
+      "valid_until": "2026-09-29T14:50:20.364595+00:00",
+      "status": "green",
+      "reason": "Scheduled open · Published weekday hours: 6 a.m.–8 p.m.; City index: generally open. Confirm unplanned closures with the City."
+    },
+    {
+      "id": "little-stacy-pool",
+      "category": "managed_pool",
+      "rule_id": "austin-city-pool-schedule-little-stacy-pool",
+      "evidence": "City operator schedule + general index + closure list · not a water or safety measurement",
+      "operator_status": "closed",
+      "page_status_line": null,
+      "index_source": "https://www.austintexas.gov/pools",
+      "index_retrieved_at": "2026-09-29T00:59:14.124787+00:00",
+      "source": "https://www.austintexas.gov/parks/locations/little-stacy-wading-pool",
+      "source_retrieved_at": "2026-09-29T00:59:00.914592+00:00",
+      "source_verified": true,
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "closure_retrieved_at": "2026-09-29T00:58:53.751232+00:00",
+      "checked_at": "2026-09-29T12:50:20.364595+00:00",
+      "notices": [],
+      "valid_until": "2026-09-29T14:50:20.364595+00:00",
+      "status": "red",
+      "reason": "2026 wading season ended August 16; City index: generally closed."
+    },
+    {
+      "id": "commons-ford",
+      "category": "lake_park",
+      "rule_id": "austin-lake-park-operator-v1",
+      "evidence": "City park page + City closure list · not a water or safety measurement",
+      "source": "https://www.austintexas.gov/parks/locations/commons-ford-ranch",
+      "source_retrieved_at": "2026-09-29T00:59:02.194549+00:00",
+      "source_verified": true,
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "closure_retrieved_at": "2026-09-29T00:58:53.751232+00:00",
+      "checked_at": "2026-09-29T12:50:20.364595+00:00",
+      "notices": [
+        {
+          "title": "Commons Ford Ranch Metropolitan Park - Boat Ramps & Swimming",
+          "dates_text": "October 12, 2026 through November 30, 2026",
+          "start": "2026-10-12",
+          "end": "2026-11-30",
+          "open_ended": false,
+          "description": "The public boat ramp at Commons Ford Ranch Metropolitan Park will be closed and swimming at the park will be prohibited from Monday, October 12, 2026 through Monday, November 30, 2026. The City of Austin and the Lower Colorado River Authority (LCRA) are drawing down Lake Austin between Mansfield Dam and Tom Miller Dam during this period.",
+          "updated": "2026-08-20",
+          "in_effect": false,
+          "url": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures"
+        }
+      ],
+      "conflict": "The closure list (updated 2026-08-20) justifies the swimming prohibition by a Lake Austin drawdown, but the City's Emma Long page says that drawdown was canceled on 2026-09-24. The prohibition entry itself has not been withdrawn.",
+      "valid_until": "2026-09-29T14:50:20.364595+00:00",
+      "hours_source": "https://www.austintexas.gov/parks/locations/park-directory",
+      "hours_source_retrieved_at": "2026-09-29T00:59:08.043236+00:00",
+      "status": "green",
+      "reason": "Scheduled open · park hours default City park hours 5 a.m.–10 p.m. unless otherwise posted; City names a swimming area; no swimming closure is in effect today. Hours are the City default (park directory: \"all parks are open for public use each day from 5 a.m. to 10 p.m. unless otherwise posted\"); this park page publishes none, so a posted exception would not be seen here. A swimming prohibition is listed for October 12, 2026 through November 30, 2026, although the City says its stated reason (the drawdown) was canceled. Water conditions are not measured here."
+    },
+    {
+      "id": "emma-long",
+      "category": "lake_park",
+      "rule_id": "austin-lake-park-operator-v1",
+      "evidence": "City park page + City closure list · not a water or safety measurement",
+      "source": "https://www.austintexas.gov/parks/emma-long-metropolitan-park",
+      "source_retrieved_at": "2026-09-29T00:59:04.066286+00:00",
+      "source_verified": true,
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "closure_retrieved_at": "2026-09-29T00:58:53.751232+00:00",
+      "checked_at": "2026-09-29T12:50:20.364595+00:00",
+      "notices": [
+        {
+          "title": "Emma Long Metropolitan Park - Boat Ramp & Swimming",
+          "dates_text": "October 12, 2026 through November 30, 2026",
+          "start": "2026-10-12",
+          "end": "2026-11-30",
+          "open_ended": false,
+          "description": "The public boat ramp at Emma Long Metropolitan Park will be closed and swimming at the park will be prohibited from Monday, October 12, 2026 through Monday, November 30, 2026. The City of Austin and the Lower Colorado River Authority (LCRA) are drawing down Lake Austin between Mansfield Dam and Tom Miller Dam during this period.",
+          "updated": "2026-08-20",
+          "in_effect": false,
+          "url": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures"
+        },
+        {
+          "title": "Emma Long Metropolitan Park - Water Utilities",
+          "dates_text": "October 12, 2026 through January 15, 2027",
+          "start": "2026-10-12",
+          "end": "2027-01-15",
+          "open_ended": false,
+          "description": "Water utilities at Emma Long Metro Park will be shut off for scheduled maintenance beginning Monday, October 12, 2026, through Friday, January 15, 2027. Showers, sinks, water fountains, hose bibs, and other water utilities will be turned of and not accessible at the park during the maintenance period. Portable toilets will be available for day use and camping.",
+          "updated": "2026-09-24",
+          "in_effect": false,
+          "url": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures"
+        }
+      ],
+      "conflict": "The closure list (updated 2026-08-20) justifies the swimming prohibition by a Lake Austin drawdown, but the City's Emma Long page says that drawdown was canceled on 2026-09-24. The prohibition entry itself has not been withdrawn.",
+      "valid_until": "2026-09-29T14:50:20.364595+00:00",
+      "status": "green",
+      "reason": "Scheduled open · park hours 7:00am to 10:00pm year-round; City names a designated beach-entry swimming area; no swimming closure is in effect today. A day pass and vehicle capacity limit apply. A swimming prohibition is listed for October 12, 2026 through November 30, 2026, although the City says its stated reason (the drawdown) was canceled. Water conditions are not measured here."
+    }
+  ],
+  "notice_context": [
+    {
+      "id": "shoal-creek",
+      "notices": [
+        {
+          "title": "Shoal Creek Trail (24th to 29th along N. Lamar)",
+          "dates_text": "Closed Indefinitely",
+          "start": null,
+          "end": null,
+          "open_ended": false,
+          "description": "Damaged by landslide. Austin Parks and Recreation is working with Public Works and Austin Transportation and Public Works to plan, design and implement improvements to the trail detour route east of the creek. Find information about the Shoal Creek Trail Connectivity Gaps .",
+          "updated": "2026-06-11",
+          "in_effect": null,
+          "url": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures"
+        },
+        {
+          "title": "Shoal Creek Trail (Shoal Creek Blvd. to Janet Fish Bridge)",
+          "dates_text": "April 27, 2026 to November 2026",
+          "start": "2026-04-27",
+          "end": null,
+          "open_ended": false,
+          "description": "The Shoal Creek Trail will close between Shoal Creek Blvd. and the Janet Fish Bridge from Monday, April 27 until November 2026 for trail maintenance and work. The trail will detour to the sidewalk along N. Lamar Blvd.",
+          "updated": "2026-09-09",
+          "in_effect": null,
+          "url": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures"
+        }
+      ]
+    }
+  ]
+}

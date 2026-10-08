@@ -1,0 +1,971 @@
+{
+ "generated_at": "2026-09-29T13:39:06.186303+00:00",
+ "stations": [
+  {
+   "usgs_id": "08155240",
+   "usgs_name": "Barton Creek at Lost Creek Boulevard",
+   "lid": "LCKT2",
+   "nwps_name": "Lost Creek at Lost Creek Blvd",
+   "categories_ft": {},
+   "has_forecast": false
+  },
+  {
+   "usgs_id": "08154700",
+   "usgs_name": "Bull Creek at Loop 360",
+   "lid": "ABUT2",
+   "nwps_name": "Bull Creek above Loop 360",
+   "categories_ft": {
+    "major": 9,
+    "moderate": 5,
+    "minor": 5,
+    "action": 5
+   },
+   "has_forecast": false
+  },
+  {
+   "usgs_id": "08155300",
+   "usgs_name": "Barton Creek at Loop 360",
+   "lid": "ABTT2",
+   "nwps_name": "Barton Creek at Loop 360",
+   "categories_ft": {
+    "major": 12,
+    "moderate": 11,
+    "minor": 8,
+    "action": 8
+   },
+   "has_forecast": true
+  },
+  {
+   "usgs_id": "08156800",
+   "usgs_name": "Shoal Creek at W 12th",
+   "lid": "AHOT2",
+   "nwps_name": "Shoal Creek at West 12th Street",
+   "categories_ft": {
+    "major": 12,
+    "moderate": 10,
+    "minor": 7,
+    "action": 5
+   },
+   "has_forecast": false
+  },
+  {
+   "usgs_id": "08159000",
+   "usgs_name": "Onion Creek at US 183",
+   "lid": "ATIT2",
+   "nwps_name": "Onion Creek at US 183",
+   "categories_ft": {
+    "major": 27,
+    "moderate": 23,
+    "minor": 17,
+    "action": 15
+   },
+   "has_forecast": true
+  },
+  {
+   "usgs_id": "08158970",
+   "usgs_name": "Williamson Creek at Jimmy Clay",
+   "lid": "WJCT2",
+   "nwps_name": "Williamson Creek at Jimmy Clay Road near Austin 6SE",
+   "categories_ft": {},
+   "has_forecast": false
+  },
+  {
+   "usgs_id": "08158930",
+   "usgs_name": "Williamson Creek at Manchaca Road",
+   "lid": "AAIT2",
+   "nwps_name": "Williamson Creek at Manchaca Road at Austin",
+   "categories_ft": {
+    "major": 18,
+    "moderate": 14,
+    "minor": 13
+   },
+   "has_forecast": false
+  },
+  {
+   "usgs_id": "08170500",
+   "usgs_name": "San Marcos River at San Marcos",
+   "lid": "SRUT2",
+   "nwps_name": "San Marcos River at San Marcos",
+   "categories_ft": {},
+   "has_forecast": false
+  },
+  {
+   "usgs_id": "08155400",
+   "usgs_name": "Barton Creek above Barton Springs",
+   "lid": "BCCT2",
+   "nwps_name": "Barton Creek above Barton Springs",
+   "categories_ft": {},
+   "has_forecast": false
+  },
+  {
+   "usgs_id": "08169000",
+   "usgs_name": "Comal River at New Braunfels",
+   "lid": "NBCT2",
+   "nwps_name": "Comal River at New Braunfels",
+   "categories_ft": {
+    "major": 23,
+    "moderate": 15,
+    "minor": 11,
+    "action": 9
+   },
+   "has_forecast": true
+  },
+  {
+   "usgs_id": "08168500",
+   "usgs_name": "Guadalupe River above Comal River at New Braunfels",
+   "lid": "NBRT2",
+   "nwps_name": "Guadalupe River above Comal River at New Braunfels",
+   "categories_ft": {
+    "major": 14,
+    "moderate": 10,
+    "minor": 7,
+    "action": 6
+   },
+   "has_forecast": true
+  },
+  {
+   "usgs_id": "08169500",
+   "usgs_name": "Guadalupe River at New Braunfels",
+   "lid": "GBCT2",
+   "nwps_name": "Guadalupe River below Comal",
+   "categories_ft": {
+    "major": 20,
+    "moderate": 14,
+    "minor": 13,
+    "action": 13
+   },
+   "has_forecast": true
+  },
+  {
+   "usgs_id": "08195000",
+   "usgs_name": "Frio River at Concan",
+   "lid": "CNCT2",
+   "nwps_name": "Frio River at Concan",
+   "categories_ft": {
+    "major": 15,
+    "moderate": 12,
+    "minor": 11,
+    "action": 7
+   },
+   "has_forecast": true
+  }
+ ],
+ "method": "county/zone from NWS points lookup of each place's recorded coordinates; flood gauge linked only by USGS station id equality; upstream counties from the basin table in hazards.py resolved through probe coordinates",
+ "counties": {
+  "Travis": "TXC453",
+  "Hays": "TXC209",
+  "Williamson": "TXC491",
+  "Blanco": "TXC031",
+  "Comal": "TXC091",
+  "Kendall": "TXC259",
+  "Kerr": "TXC265",
+  "Real": "TXC385",
+  "Uvalde": "TXC463",
+  "Kimble": "TXC267",
+  "Gillespie": "TXC171",
+  "Burnet": "TXC053",
+  "Llano": "TXC299",
+  "Edwards": "TXC137"
+ },
+ "places": [
+  {
+   "id": "twin-falls",
+   "name": "Twin Falls",
+   "kind": "creek pool",
+   "place_role": "water_place",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [
+    "TXC209"
+   ],
+   "upstream_note": "Barton Creek rises in Hays County near Dripping Springs",
+   "upstream_applies": true,
+   "usgs_station": "08155240",
+   "usgs_station_name": "Barton Creek at Lost Creek Boulevard",
+   "flood_gauge": {
+    "lid": "LCKT2",
+    "nwps_name": "Lost Creek at Lost Creek Blvd",
+    "usgs_id": "08155240",
+    "categories_ft": {},
+    "has_forecast": false
+   },
+   "flood_gauge_note": "NWS forecast point matched by USGS station id"
+  },
+  {
+   "id": "hill-of-life",
+   "name": "Hill of Life",
+   "kind": "creek reach",
+   "place_role": "water_place",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [
+    "TXC209"
+   ],
+   "upstream_note": "Barton Creek rises in Hays County near Dripping Springs",
+   "upstream_applies": true,
+   "usgs_station": "08155240",
+   "usgs_station_name": "Barton Creek at Lost Creek Boulevard",
+   "flood_gauge": {
+    "lid": "LCKT2",
+    "nwps_name": "Lost Creek at Lost Creek Blvd",
+    "usgs_id": "08155240",
+    "categories_ft": {},
+    "has_forecast": false
+   },
+   "flood_gauge_note": "NWS forecast point matched by USGS station id"
+  },
+  {
+   "id": "sculpture-falls",
+   "name": "Sculpture Falls",
+   "kind": "creek pool",
+   "place_role": "water_place",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [
+    "TXC209"
+   ],
+   "upstream_note": "Barton Creek rises in Hays County near Dripping Springs",
+   "upstream_applies": true,
+   "usgs_station": "08155240",
+   "usgs_station_name": "Barton Creek at Lost Creek Boulevard",
+   "flood_gauge": {
+    "lid": "LCKT2",
+    "nwps_name": "Lost Creek at Lost Creek Blvd",
+    "usgs_id": "08155240",
+    "categories_ft": {},
+    "has_forecast": false
+   },
+   "flood_gauge_note": "NWS forecast point matched by USGS station id"
+  },
+  {
+   "id": "gus-fruh",
+   "name": "Gus Fruh",
+   "kind": "creek pool",
+   "place_role": "water_place",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [
+    "TXC209"
+   ],
+   "upstream_note": "Barton Creek rises in Hays County near Dripping Springs",
+   "upstream_applies": true,
+   "usgs_station": "08155300",
+   "usgs_station_name": "Barton Creek at Loop 360",
+   "flood_gauge": {
+    "lid": "ABTT2",
+    "nwps_name": "Barton Creek at Loop 360",
+    "usgs_id": "08155300",
+    "categories_ft": {
+     "major": 12,
+     "moderate": 11,
+     "minor": 8,
+     "action": 8
+    },
+    "has_forecast": true
+   },
+   "flood_gauge_note": "NWS forecast point matched by USGS station id"
+  },
+  {
+   "id": "campbells-hole",
+   "name": "Campbell\u2019s Hole",
+   "kind": "creek pool",
+   "place_role": "water_place",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [
+    "TXC209"
+   ],
+   "upstream_note": "Barton Creek rises in Hays County near Dripping Springs",
+   "upstream_applies": true,
+   "usgs_station": "08155300",
+   "usgs_station_name": "Barton Creek at Loop 360",
+   "flood_gauge": {
+    "lid": "ABTT2",
+    "nwps_name": "Barton Creek at Loop 360",
+    "usgs_id": "08155300",
+    "categories_ft": {
+     "major": 12,
+     "moderate": 11,
+     "minor": 8,
+     "action": 8
+    },
+    "has_forecast": true
+   },
+   "flood_gauge_note": "NWS forecast point matched by USGS station id"
+  },
+  {
+   "id": "the-flats",
+   "name": "The Flats",
+   "kind": "creek reach",
+   "place_role": "water_place",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [
+    "TXC209"
+   ],
+   "upstream_note": "Barton Creek rises in Hays County near Dripping Springs",
+   "upstream_applies": true,
+   "usgs_station": "08155300",
+   "usgs_station_name": "Barton Creek at Loop 360",
+   "flood_gauge": {
+    "lid": "ABTT2",
+    "nwps_name": "Barton Creek at Loop 360",
+    "usgs_id": "08155300",
+    "categories_ft": {
+     "major": 12,
+     "moderate": 11,
+     "minor": 8,
+     "action": 8
+    },
+    "has_forecast": true
+   },
+   "flood_gauge_note": "NWS forecast point matched by USGS station id"
+  },
+  {
+   "id": "bull-creek-district",
+   "name": "Bull Creek District Park",
+   "kind": "creek reach",
+   "place_role": "water_place",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [],
+   "upstream_note": "Bull Creek basin lies within Travis County",
+   "upstream_applies": true,
+   "usgs_station": "08154700",
+   "usgs_station_name": "Bull Creek at Loop 360",
+   "flood_gauge": {
+    "lid": "ABUT2",
+    "nwps_name": "Bull Creek above Loop 360",
+    "usgs_id": "08154700",
+    "categories_ft": {
+     "major": 9,
+     "moderate": 5,
+     "minor": 5,
+     "action": 5
+    },
+    "has_forecast": false
+   },
+   "flood_gauge_note": "NWS forecast point matched by USGS station id"
+  },
+  {
+   "id": "barton-springs",
+   "name": "Barton Springs Pool",
+   "kind": "managed pool",
+   "place_role": "managed_pool",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [
+    "TXC209"
+   ],
+   "upstream_note": "Barton Creek rises in Hays County near Dripping Springs",
+   "upstream_applies": false,
+   "usgs_station": null,
+   "usgs_station_name": null,
+   "flood_gauge": null,
+   "flood_gauge_note": null
+  },
+  {
+   "id": "shoal-creek",
+   "name": "Shoal Creek \u2014 W 12th context",
+   "kind": "creek context",
+   "place_role": "creek_context",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [],
+   "upstream_note": "urban creek within Travis County",
+   "upstream_applies": false,
+   "usgs_station": "08156800",
+   "usgs_station_name": "Shoal Creek at W 12th",
+   "flood_gauge": {
+    "lid": "AHOT2",
+    "nwps_name": "Shoal Creek at West 12th Street",
+    "usgs_id": "08156800",
+    "categories_ft": {
+     "major": 12,
+     "moderate": 10,
+     "minor": 7,
+     "action": 5
+    },
+    "has_forecast": false
+   },
+   "flood_gauge_note": "NWS forecast point matched by USGS station id"
+  },
+  {
+   "id": "blunn-big-stacey",
+   "name": "Blunn Creek by Big Stacey Pool",
+   "kind": "creek reach",
+   "place_role": "user_reported_creek_reach",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [],
+   "upstream_note": "urban creek within Travis County",
+   "upstream_applies": false,
+   "usgs_station": null,
+   "usgs_station_name": null,
+   "flood_gauge": null,
+   "flood_gauge_note": null
+  },
+  {
+   "id": "blunn-little-stacey",
+   "name": "Blunn Creek behind Little Stacey Park",
+   "kind": "creek reach",
+   "place_role": "user_reported_creek_reach",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [],
+   "upstream_note": "urban creek within Travis County",
+   "upstream_applies": false,
+   "usgs_station": null,
+   "usgs_station_name": null,
+   "flood_gauge": null,
+   "flood_gauge_note": null
+  },
+  {
+   "id": "mckinney-upper",
+   "name": "McKinney Falls \u2014 Upper Falls",
+   "kind": "creek pool",
+   "place_role": "water_place",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [
+    "TXC209",
+    "TXC031"
+   ],
+   "upstream_note": "Onion Creek rises in Blanco County and crosses Hays (approximate)",
+   "upstream_applies": true,
+   "usgs_station": null,
+   "usgs_station_name": null,
+   "flood_gauge": null,
+   "flood_gauge_note": null
+  },
+  {
+   "id": "mckinney-lower",
+   "name": "McKinney Falls \u2014 Lower Falls",
+   "kind": "creek pool",
+   "place_role": "water_place",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [
+    "TXC209",
+    "TXC031"
+   ],
+   "upstream_note": "Onion Creek rises in Blanco County and crosses Hays (approximate)",
+   "upstream_applies": true,
+   "usgs_station": null,
+   "usgs_station_name": null,
+   "flood_gauge": null,
+   "flood_gauge_note": null
+  },
+  {
+   "id": "williamson-creek",
+   "name": "Williamson Creek \u2014 location unresolved",
+   "kind": "creek context",
+   "place_role": "creek_context",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [],
+   "upstream_note": "Williamson Creek rises near Oak Hill in Travis County",
+   "upstream_applies": false,
+   "usgs_station": null,
+   "usgs_station_name": null,
+   "flood_gauge": null,
+   "flood_gauge_note": null
+  },
+  {
+   "id": "walnut-domain",
+   "name": "Walnut Creek by the Domain",
+   "kind": "creek context",
+   "place_role": "creek_context",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [],
+   "upstream_note": "urban creek within Travis County",
+   "upstream_applies": false,
+   "usgs_station": null,
+   "usgs_station_name": null,
+   "flood_gauge": null,
+   "flood_gauge_note": null
+  },
+  {
+   "id": "blue-hole-georgetown",
+   "name": "Blue Hole \u2014 Imhoff pool (upper)",
+   "kind": "creek pool",
+   "place_role": "water_place",
+   "county_ugc": "TXC491",
+   "zone_ugc": "TXZ173",
+   "upstream_ugc": [
+    "TXC053"
+   ],
+   "upstream_note": "South San Gabriel headwaters toward Burnet County (approximate)",
+   "upstream_applies": true,
+   "usgs_station": "08104900",
+   "usgs_station_name": "South Fork San Gabriel River at Georgetown",
+   "flood_gauge": {
+    "usgs_id": "08104900",
+    "usgs_name": "S Fk San Gabriel Rv at Georgetown, TX",
+    "lid": "GETT2",
+    "nwps_name": "San Gabriel River at Georgetown South Fork",
+    "categories_ft": {
+     "major": 26,
+     "moderate": 13,
+     "minor": 9,
+     "action": 7
+    },
+    "has_forecast": true
+   },
+   "flood_gauge_note": "NWS Georgetown flood forecast point linked to upstream USGS 08104900; stage is not pool depth"
+  },
+  {
+   "id": "blue-hole-georgetown-kiddie",
+   "name": "Blue Hole \u2014 Kiddie pool (lower)",
+   "kind": "creek pool",
+   "place_role": "water_place",
+   "county_ugc": "TXC491",
+   "zone_ugc": "TXZ173",
+   "upstream_ugc": [
+    "TXC053"
+   ],
+   "upstream_note": "South San Gabriel headwaters toward Burnet County (approximate)",
+   "upstream_applies": true,
+   "usgs_station": "08104900",
+   "usgs_station_name": "South Fork San Gabriel River at Georgetown",
+   "flood_gauge": {
+    "usgs_id": "08104900",
+    "usgs_name": "S Fk San Gabriel Rv at Georgetown, TX",
+    "lid": "GETT2",
+    "nwps_name": "San Gabriel River at Georgetown South Fork",
+    "categories_ft": {
+     "major": 26,
+     "moderate": 13,
+     "minor": 9,
+     "action": 7
+    },
+    "has_forecast": true
+   },
+   "flood_gauge_note": "NWS Georgetown flood forecast point linked to upstream USGS 08104900; stage is not pool depth"
+  },
+  {
+   "id": "blue-hole-wimberley",
+   "name": "Blue Hole \u2014 Wimberley",
+   "kind": "spring-fed pool",
+   "place_role": "water_place",
+   "county_ugc": "TXC209",
+   "zone_ugc": "TXZ191",
+   "upstream_ugc": [],
+   "upstream_note": "Cypress Creek is spring-fed within Hays County",
+   "upstream_applies": true,
+   "usgs_station": "08170990",
+   "usgs_station_name": "Jacobs Well Spring",
+   "flood_gauge": null,
+   "flood_gauge_note": "no NWS forecast point carries this USGS station id"
+  },
+  {
+   "id": "jacobs-well",
+   "name": "Jacob's Well",
+   "kind": "spring",
+   "place_role": "water_place",
+   "county_ugc": "TXC209",
+   "zone_ugc": "TXZ191",
+   "upstream_ugc": [],
+   "upstream_note": "spring within Hays County",
+   "upstream_applies": true,
+   "usgs_station": "08170990",
+   "usgs_station_name": "Jacobs Well Spring",
+   "flood_gauge": null,
+   "flood_gauge_note": "no NWS forecast point carries this USGS station id"
+  },
+  {
+   "id": "san-marcos-sewell",
+   "name": "San Marcos River \u2014 Sewell Park",
+   "kind": "river reach",
+   "place_role": "water_place",
+   "county_ugc": "TXC209",
+   "zone_ugc": "TXZ191",
+   "upstream_ugc": [],
+   "upstream_note": "spring-fed reach within Hays County",
+   "upstream_applies": true,
+   "usgs_station": "08170500",
+   "usgs_station_name": "San Marcos River at San Marcos",
+   "flood_gauge": {
+    "lid": "SRUT2",
+    "nwps_name": "San Marcos River at San Marcos",
+    "usgs_id": "08170500",
+    "categories_ft": {},
+    "has_forecast": false
+   },
+   "flood_gauge_note": "NWS forecast point matched by USGS station id"
+  },
+  {
+   "id": "san-marcos-city",
+   "name": "San Marcos River \u2014 City Park",
+   "kind": "river reach",
+   "place_role": "water_place",
+   "county_ugc": "TXC209",
+   "zone_ugc": "TXZ191",
+   "upstream_ugc": [],
+   "upstream_note": "spring-fed reach within Hays County",
+   "upstream_applies": true,
+   "usgs_station": "08170500",
+   "usgs_station_name": "San Marcos River at San Marcos",
+   "flood_gauge": {
+    "lid": "SRUT2",
+    "nwps_name": "San Marcos River at San Marcos",
+    "usgs_id": "08170500",
+    "categories_ft": {},
+    "has_forecast": false
+   },
+   "flood_gauge_note": "NWS forecast point matched by USGS station id"
+  },
+  {
+   "id": "san-marcos-rio-vista",
+   "name": "San Marcos River \u2014 Rio Vista Park",
+   "kind": "river reach",
+   "place_role": "water_place",
+   "county_ugc": "TXC209",
+   "zone_ugc": "TXZ191",
+   "upstream_ugc": [],
+   "upstream_note": "spring-fed reach within Hays County",
+   "upstream_applies": true,
+   "usgs_station": "08170500",
+   "usgs_station_name": "San Marcos River at San Marcos",
+   "flood_gauge": {
+    "lid": "SRUT2",
+    "nwps_name": "San Marcos River at San Marcos",
+    "usgs_id": "08170500",
+    "categories_ft": {},
+    "has_forecast": false
+   },
+   "flood_gauge_note": "NWS forecast point matched by USGS station id"
+  },
+  {
+   "id": "blanco-state-park",
+   "name": "Blanco State Park swimming area",
+   "kind": "river reach",
+   "place_role": "water_place",
+   "county_ugc": "TXC031",
+   "zone_ugc": "TXZ190",
+   "upstream_ugc": [
+    "TXC259"
+   ],
+   "upstream_note": "Blanco River rises in Kendall County",
+   "upstream_applies": true,
+   "usgs_station": "08170860",
+   "usgs_station_name": "Blanco River at Blanco",
+   "flood_gauge": null,
+   "flood_gauge_note": "no NWS forecast point carries this USGS station id"
+  },
+  {
+   "id": "pedernales-designated-swim",
+   "name": "Pedernales Falls State Park \u2014 designated swimming area",
+   "kind": "river reach",
+   "place_role": "water_place",
+   "county_ugc": "TXC031",
+   "zone_ugc": "TXZ190",
+   "upstream_ugc": [
+    "TXC171",
+    "TXC267"
+   ],
+   "upstream_note": "Pedernales rises in Kimble County and crosses Gillespie (approximate)",
+   "upstream_applies": true,
+   "usgs_station": null,
+   "usgs_station_name": null,
+   "flood_gauge": null,
+   "flood_gauge_note": null
+  },
+  {
+   "id": "south-llano",
+   "name": "South Llano River State Park",
+   "kind": "river reach",
+   "place_role": "water_place",
+   "county_ugc": "TXC267",
+   "zone_ugc": "TXZ169",
+   "upstream_ugc": [
+    "TXC137"
+   ],
+   "upstream_note": "South Llano rises in Edwards County",
+   "upstream_applies": true,
+   "usgs_station": null,
+   "usgs_station_name": null,
+   "flood_gauge": null,
+   "flood_gauge_note": null
+  },
+  {
+   "id": "guadalupe-river",
+   "name": "Guadalupe River State Park",
+   "kind": "river reach",
+   "place_role": "water_place",
+   "county_ugc": "TXC259",
+   "zone_ugc": "TXZ189",
+   "upstream_ugc": [
+    "TXC265",
+    "TXC091"
+   ],
+   "upstream_note": "Guadalupe headwaters in Kerr County; park is in Kendall/Comal",
+   "upstream_applies": true,
+   "usgs_station": "08167370",
+   "usgs_station_name": "Guadalupe River at Guadalupe River State Park near Spring Branch",
+   "flood_gauge": null,
+   "flood_gauge_note": "no NWS forecast point carries this USGS station id"
+  },
+  {
+   "id": "garner-frio",
+   "name": "Garner State Park \u2014 Frio River",
+   "kind": "river reach",
+   "place_role": "water_place",
+   "county_ugc": "TXC463",
+   "zone_ugc": "TXZ203",
+   "upstream_ugc": [
+    "TXC385"
+   ],
+   "upstream_note": "Frio River rises in Real County",
+   "upstream_applies": true,
+   "usgs_station": null,
+   "usgs_station_name": null,
+   "flood_gauge": null,
+   "flood_gauge_note": null
+  },
+  {
+   "id": "comal-prince-solms",
+   "name": "Comal River \u2014 Prince Solms Park / Tube Chute reach",
+   "kind": "river reach",
+   "place_role": "water_place",
+   "county_ugc": "TXC091",
+   "zone_ugc": "TXZ206",
+   "upstream_ugc": [],
+   "upstream_note": "spring-fed; Dry Comal drains Comal County",
+   "upstream_applies": true,
+   "usgs_station": "08169000",
+   "usgs_station_name": "Comal River at New Braunfels",
+   "flood_gauge": {
+    "lid": "NBCT2",
+    "nwps_name": "Comal River at New Braunfels",
+    "usgs_id": "08169000",
+    "categories_ft": {
+     "major": 23,
+     "moderate": 15,
+     "minor": 11,
+     "action": 9
+    },
+    "has_forecast": true
+   },
+   "flood_gauge_note": "NWS forecast point matched by USGS station id"
+  },
+  {
+   "id": "guadalupe-cypress-bend",
+   "name": "Guadalupe River \u2014 Cypress Bend Park reach",
+   "kind": "river reach",
+   "place_role": "water_place",
+   "county_ugc": "TXC091",
+   "zone_ugc": "TXZ206",
+   "upstream_ugc": [
+    "TXC259",
+    "TXC265"
+   ],
+   "upstream_note": "below Canyon Lake dam; releases are not checked here",
+   "upstream_applies": true,
+   "usgs_station": null,
+   "usgs_station_name": null,
+   "flood_gauge": null,
+   "flood_gauge_note": null
+  },
+  {
+   "id": "guadalupe-river-acres",
+   "name": "Guadalupe River \u2014 River Acres Park reach",
+   "kind": "river reach",
+   "place_role": "water_place",
+   "county_ugc": "TXC091",
+   "zone_ugc": "TXZ206",
+   "upstream_ugc": [
+    "TXC259",
+    "TXC265"
+   ],
+   "upstream_note": "below Canyon Lake dam; releases are not checked here",
+   "upstream_applies": true,
+   "usgs_station": null,
+   "usgs_station_name": null,
+   "flood_gauge": null,
+   "flood_gauge_note": null
+  },
+  {
+   "id": "inks-devils-waterhole",
+   "name": "Devil\u2019s Waterhole \u2014 Inks Lake",
+   "kind": "lake / pool",
+   "place_role": "water_place",
+   "county_ugc": "TXC053",
+   "zone_ugc": "TXZ172",
+   "upstream_ugc": [
+    "TXC299"
+   ],
+   "upstream_note": "Highland Lakes chain; LCRA operations are not checked here",
+   "upstream_applies": false,
+   "usgs_station": null,
+   "usgs_station_name": null,
+   "flood_gauge": null,
+   "flood_gauge_note": null
+  },
+  {
+   "id": "st-edwards",
+   "name": "St. Edward\u2019s Greenbelt \u2014 Bull Creek",
+   "kind": "creek context",
+   "place_role": "park_reference",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [],
+   "upstream_note": "Bull Creek basin lies within Travis County",
+   "upstream_applies": false,
+   "usgs_station": "08154700",
+   "usgs_station_name": "Bull Creek at Loop 360",
+   "flood_gauge": {
+    "lid": "ABUT2",
+    "nwps_name": "Bull Creek above Loop 360",
+    "usgs_id": "08154700",
+    "categories_ft": {
+     "major": 9,
+     "moderate": 5,
+     "minor": 5,
+     "action": 5
+    },
+    "has_forecast": false
+   },
+   "flood_gauge_note": "NWS forecast point matched by USGS station id"
+  },
+  {
+   "id": "commons-ford",
+   "name": "Commons Ford Ranch \u2014 Lake Austin",
+   "kind": "lake park",
+   "place_role": "park_reference",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [],
+   "upstream_note": "Lake Austin is dam-controlled; LCRA floodgate operations are not checked here",
+   "upstream_applies": false,
+   "usgs_station": null,
+   "usgs_station_name": null,
+   "flood_gauge": null,
+   "flood_gauge_note": null
+  },
+  {
+   "id": "emma-long",
+   "name": "Emma Long \u2014 Lake Austin beach",
+   "kind": "lake park",
+   "place_role": "park_reference",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [],
+   "upstream_note": "Lake Austin is dam-controlled; LCRA floodgate operations are not checked here",
+   "upstream_applies": false,
+   "usgs_station": null,
+   "usgs_station_name": null,
+   "flood_gauge": null,
+   "flood_gauge_note": null
+  },
+  {
+   "id": "deep-eddy",
+   "name": "Deep Eddy Pool",
+   "kind": "managed pool",
+   "place_role": "managed_pool",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [],
+   "upstream_note": "no upstream table entry; destination county only",
+   "upstream_applies": false,
+   "usgs_station": null,
+   "usgs_station_name": null,
+   "flood_gauge": null,
+   "flood_gauge_note": null
+  },
+  {
+   "id": "big-stacy-pool",
+   "name": "Big Stacy Pool",
+   "kind": "managed pool",
+   "place_role": "managed_pool",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [],
+   "upstream_note": "no upstream table entry; destination county only",
+   "upstream_applies": false,
+   "usgs_station": null,
+   "usgs_station_name": null,
+   "flood_gauge": null,
+   "flood_gauge_note": null
+  },
+  {
+   "id": "little-stacy-pool",
+   "name": "Little Stacy Wading Pool",
+   "kind": "managed pool",
+   "place_role": "managed_pool",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [],
+   "upstream_note": "no upstream table entry; destination county only",
+   "upstream_applies": false,
+   "usgs_station": null,
+   "usgs_station_name": null,
+   "flood_gauge": null,
+   "flood_gauge_note": null
+  },
+  {
+   "id": "williamson-west-greenbelt",
+   "name": "Williamson Creek West Greenbelt",
+   "kind": "creek context",
+   "place_role": "creek_context",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [],
+   "upstream_note": "no upstream table entry; destination county only",
+   "upstream_applies": false,
+   "usgs_station": null,
+   "usgs_station_name": null,
+   "flood_gauge": null,
+   "flood_gauge_note": null
+  },
+  {
+   "id": "williamson-central-greenbelt",
+   "name": "Williamson Creek Central Greenbelt",
+   "kind": "creek context",
+   "place_role": "creek_context",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [],
+   "upstream_note": "no upstream table entry; destination county only",
+   "upstream_applies": false,
+   "usgs_station": null,
+   "usgs_station_name": null,
+   "flood_gauge": null,
+   "flood_gauge_note": null
+  },
+  {
+   "id": "williamson-east-greenbelt",
+   "name": "Williamson Creek East Greenbelt (Dove Springs)",
+   "kind": "creek context",
+   "place_role": "creek_context",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [],
+   "upstream_note": "no upstream table entry; destination county only",
+   "upstream_applies": false,
+   "usgs_station": null,
+   "usgs_station_name": null,
+   "flood_gauge": null,
+   "flood_gauge_note": null
+  },
+  {
+   "id": "onion-creek-greenbelt-playground",
+   "name": "Onion Creek Greenbelt \u2014 by the playground (Onion Creek Dr.)",
+   "kind": "creek context",
+   "place_role": "creek_context",
+   "county_ugc": "TXC453",
+   "zone_ugc": "TXZ192",
+   "upstream_ugc": [
+    "TXC209",
+    "TXC031"
+   ],
+   "upstream_note": "Onion Creek rises in Blanco County and crosses Hays (approximate)",
+   "upstream_applies": true,
+   "usgs_station": null,
+   "usgs_station_name": null,
+   "flood_gauge": null,
+   "flood_gauge_note": null
+  }
+ ]
+}

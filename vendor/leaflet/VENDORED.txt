@@ -1,0 +1,2 @@
+
+Vendored from https://unpkg.com/leaflet@1.9.4/dist/ on 2026-09-29; leaflet.js sha256 matches the integrity hash previously pinned in app/index.html (sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=).

@@ -1,0 +1,357 @@
+{
+  "generated_at": "2026-09-28T16:15:14.082533+00:00",
+  "source": "https://www.austintexas.gov/pools",
+  "meaning": "operator general status, not a real-time open-now calculation",
+  "pools": [
+    {
+      "name": "Bartholomew",
+      "operator_status": "open",
+      "entry_fee": "Yes",
+      "phone": "512-974-1650",
+      "address": "1800 E. 51st St.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Barton Springs",
+      "operator_status": "open",
+      "entry_fee": "Yes",
+      "phone": "512-974-6300",
+      "address": "2131 William Barton Dr.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Big Stacy",
+      "operator_status": "open",
+      "entry_fee": "No",
+      "phone": "512-445-0304",
+      "address": "700 E. Live Oak St.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Colony Park",
+      "operator_status": "open",
+      "entry_fee": "No",
+      "phone": "512-974-1236",
+      "address": "7400 Loyola Ln.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Deep Eddy",
+      "operator_status": "open",
+      "entry_fee": "Yes",
+      "phone": "512-472-8546",
+      "address": "401 Deep Eddy Ave.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Springwoods",
+      "operator_status": "open",
+      "entry_fee": "Yes",
+      "phone": "512-996-8978",
+      "address": "13320 Lyndhurst St.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Balcones",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-821-2053",
+      "address": "12017 Amherst Dr.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Brentwood",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-453-1725",
+      "address": "6710 Arroyo Seco St.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Canyon Vista",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-996-8038",
+      "address": "8455 Spicewood Springs Rd.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Civitan",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-386-5743",
+      "address": "513 Vargas Rd.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Dick Nichols",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-899-0348",
+      "address": "8011 Beckett Rd.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Dittmar",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-693-4698",
+      "address": "1009 W. Dittmar Dr.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Dottie Jordan",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-928-3721",
+      "address": "2803 Loyola Ln.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Dove Springs",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-444-6136",
+      "address": "5801 Ainez Dr.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Garrison",
+      "operator_status": "open",
+      "entry_fee": "Yes",
+      "phone": "512-442-4048",
+      "address": "6001 Menchaca Rd.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Gillis",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-974-9330",
+      "address": "2410 Durwood Ave.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Givens",
+      "operator_status": "open",
+      "entry_fee": "No",
+      "phone": "512-593-6537",
+      "address": "3811 E. 12th St.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Govalle",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-974-1255",
+      "address": "5200 Bolm Rd.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Kennemer",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-821-2454",
+      "address": "1031 Peyton Gin Rd.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Mabel Davis",
+      "operator_status": "open",
+      "entry_fee": "No",
+      "phone": "512-441-5247",
+      "address": "3427 Parker Ln.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Martin",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-469-0948",
+      "address": "1626 Nash Hernandez Sr. Dr.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Metz",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-391-6212",
+      "address": "2309 Canterbury St.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Montopolis",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-389-6022",
+      "address": "1200 Montopolis Dr.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Murchison",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-241-0618",
+      "address": "7022 Hart Ln.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Parque Zaragoza",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-243-5217",
+      "address": "2611 Webberville Rd.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Patterson",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-542-9685",
+      "address": "4200 Brookview Dr.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Ramsey",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-380-9131",
+      "address": "4201 Burnet Rd.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Reed",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-542-9782",
+      "address": "2614 Pecos St.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Rosewood",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-473-8469",
+      "address": "2300 Rosewood Ave.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Shipe",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-974-1245",
+      "address": "4400 Avenue G",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Sheffield Northwest",
+      "operator_status": "open",
+      "entry_fee": "Yes",
+      "phone": "512-453-0194",
+      "address": "7000 Ardath St.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Stacy Wading",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-693-2174",
+      "address": "1401 Sunset Ln.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Walnut Creek",
+      "operator_status": "open",
+      "entry_fee": "No",
+      "phone": "512-834-0824",
+      "address": "12138 N Lamar Blvd",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "West Austin",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-236-1303",
+      "address": "1317 W. 10th St.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    },
+    {
+      "name": "Westenfield",
+      "operator_status": "closed",
+      "entry_fee": "No",
+      "phone": "512-474-2682",
+      "address": "2000 Enfield Rd.",
+      "source_url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-09-28T16:15:14.082533+00:00",
+      "raw_path": "data/raw/austin-pools/20260928T161514Z-pools.html"
+    }
+  ]
+}

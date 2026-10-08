@@ -1,0 +1,946 @@
+{
+ "generated_at": "2026-09-29T07:38:19-05:00",
+ "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
+ "date": "2026-09-29",
+ "sunrise": "07:23",
+ "sunset": "19:18",
+ "places": [
+  {
+   "id": "twin-falls",
+   "name": "Twin Falls",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 90 min",
+   "evidence": "Planning band · profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "hill-of-life",
+   "name": "Hill of Life",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 90 min",
+   "evidence": "Planning band · profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "sculpture-falls",
+   "name": "Sculpture Falls",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 90 min",
+   "evidence": "Planning band · profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "gus-fruh",
+   "name": "Gus Fruh",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 90 min",
+   "evidence": "Planning band · profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "campbells-hole",
+   "name": "Campbell’s Hole",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 90 min",
+   "evidence": "Planning band · profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "the-flats",
+   "name": "The Flats",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 90 min",
+   "evidence": "Planning band · profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "bull-creek-district",
+   "name": "Bull Creek District Park",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 90 min",
+   "evidence": "Planning band · profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "barton-springs",
+   "name": "Barton Springs Pool",
+   "status": "Yellow",
+   "status_window": "early",
+   "by_window": {
+    "early": "Yellow",
+    "midday": "Orange",
+    "evening": "Orange"
+   },
+   "best_block": [
+    "07:00",
+    "11:00"
+   ],
+   "reason": "early window Yellow; best block 07:00-11:00; early Yellow, midday Orange, evening Orange; peak heat band 3/4, UV band 3/4 for ordinary / full sun / 120 min",
+   "evidence": "Planning band · profile basis: City pool: open water and deck, no shade assumed from the record",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "shoal-creek",
+   "name": "Shoal Creek — W 12th context",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 60 min",
+   "evidence": "Planning band · profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "blunn-big-stacey",
+   "name": "Blunn Creek by Big Stacey Pool",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 90 min",
+   "evidence": "Planning band · profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "blunn-little-stacey",
+   "name": "Blunn Creek behind Little Stacey Park",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 90 min",
+   "evidence": "Planning band · profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "mckinney-upper",
+   "name": "McKinney Falls — Upper Falls",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 90 min",
+   "evidence": "Planning band · profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "mckinney-lower",
+   "name": "McKinney Falls — Lower Falls",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 90 min",
+   "evidence": "Planning band · profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "williamson-creek",
+   "name": "Williamson Creek — location unresolved",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 60 min",
+   "evidence": "Planning band · profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "walnut-domain",
+   "name": "Walnut Creek by the Domain",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 60 min",
+   "evidence": "Planning band · profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "blue-hole-georgetown",
+   "name": "Blue Hole — Imhoff pool (upper)",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 90 min",
+   "evidence": "Planning band · profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "blue-hole-georgetown-kiddie",
+   "name": "Blue Hole — Kiddie pool (lower)",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 90 min",
+   "evidence": "Planning band · profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "blue-hole-wimberley",
+   "name": "Blue Hole — Wimberley",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 90 min",
+   "evidence": "Planning band · profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "jacobs-well",
+   "name": "Jacob's Well",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 90 min",
+   "evidence": "Planning band · profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "san-marcos-city",
+   "name": "San Marcos River — City Park / Rio Vista",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 120 min",
+   "evidence": "Planning band · profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "blanco-state-park",
+   "name": "Blanco State Park swimming area",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 120 min",
+   "evidence": "Planning band · profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "pedernales-designated-swim",
+   "name": "Pedernales Falls State Park — designated swimming area",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 120 min",
+   "evidence": "Planning band · profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "south-llano",
+   "name": "South Llano River State Park",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "official caution: NWS Flood Watch (destination, upcoming, until 2026-10-02T01:00:00-05:00); NWS Special Weather Statement (destination, active, until 2026-09-29T13:00:00-05:00); early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 120 min",
+   "evidence": "Planning band · profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
+   "hazard_notice": "caution",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "guadalupe-river",
+   "name": "Guadalupe River State Park",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 120 min",
+   "evidence": "Planning band · profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "garner-frio",
+   "name": "Garner State Park — Frio River",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 120 min",
+   "evidence": "Planning band · profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "comal-prince-solms",
+   "name": "Comal River — Prince Solms Park / Tube Chute reach",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 120 min",
+   "evidence": "Planning band · profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "guadalupe-cypress-bend",
+   "name": "Guadalupe River — Cypress Bend Park reach",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 120 min",
+   "evidence": "Planning band · profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "guadalupe-river-acres",
+   "name": "Guadalupe River — River Acres Park reach",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 120 min",
+   "evidence": "Planning band · profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "inks-devils-waterhole",
+   "name": "Devil’s Waterhole — Inks Lake",
+   "status": "Yellow",
+   "status_window": "early",
+   "by_window": {
+    "early": "Yellow",
+    "midday": "Orange",
+    "evening": "Orange"
+   },
+   "best_block": [
+    "07:00",
+    "11:00"
+   ],
+   "reason": "early window Yellow; best block 07:00-11:00; early Yellow, midday Orange, evening Orange; peak heat band 3/4, UV band 3/4 for ordinary / full sun / 120 min",
+   "evidence": "Planning band · profile basis: lake beach or park: open shoreline assumed from the record",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "st-edwards",
+   "name": "St. Edward’s Greenbelt — Bull Creek",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Orange",
+    "evening": "Yellow"
+   },
+   "best_block": [
+    "07:00",
+    "13:00"
+   ],
+   "reason": "early window Green; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 60 min",
+   "evidence": "Planning band · profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "commons-ford",
+   "name": "Commons Ford Ranch — Lake Austin",
+   "status": "Yellow",
+   "status_window": "early",
+   "by_window": {
+    "early": "Yellow",
+    "midday": "Orange",
+    "evening": "Orange"
+   },
+   "best_block": [
+    "07:00",
+    "11:00"
+   ],
+   "reason": "early window Yellow; best block 07:00-11:00; early Yellow, midday Orange, evening Orange; peak heat band 3/4, UV band 3/4 for ordinary / full sun / 120 min",
+   "evidence": "Planning band · profile basis: lake beach or park: open shoreline assumed from the record",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "emma-long",
+   "name": "Emma Long — Lake Austin beach",
+   "status": "Yellow",
+   "status_window": "early",
+   "by_window": {
+    "early": "Yellow",
+    "midday": "Orange",
+    "evening": "Orange"
+   },
+   "best_block": [
+    "07:00",
+    "11:00"
+   ],
+   "reason": "early window Yellow; best block 07:00-11:00; early Yellow, midday Orange, evening Orange; peak heat band 3/4, UV band 3/4 for ordinary / full sun / 120 min",
+   "evidence": "Planning band · profile basis: lake beach or park: open shoreline assumed from the record",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "deep-eddy",
+   "name": "Deep Eddy Pool",
+   "status": "Yellow",
+   "status_window": "early",
+   "by_window": {
+    "early": "Yellow",
+    "midday": "Orange",
+    "evening": "Orange"
+   },
+   "best_block": [
+    "07:00",
+    "11:00"
+   ],
+   "reason": "early window Yellow; best block 07:00-11:00; early Yellow, midday Orange, evening Orange; peak heat band 3/4, UV band 3/4 for ordinary / full sun / 120 min",
+   "evidence": "Planning band · profile basis: City pool: open water and deck, no shade assumed from the record",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "big-stacy-pool",
+   "name": "Big Stacy Pool",
+   "status": "Yellow",
+   "status_window": "early",
+   "by_window": {
+    "early": "Yellow",
+    "midday": "Orange",
+    "evening": "Orange"
+   },
+   "best_block": [
+    "07:00",
+    "11:00"
+   ],
+   "reason": "early window Yellow; best block 07:00-11:00; early Yellow, midday Orange, evening Orange; peak heat band 3/4, UV band 3/4 for ordinary / full sun / 120 min",
+   "evidence": "Planning band · profile basis: City pool: open water and deck, no shade assumed from the record",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  },
+  {
+   "id": "little-stacy-pool",
+   "name": "Little Stacy Wading Pool",
+   "status": "Yellow",
+   "status_window": "early",
+   "by_window": {
+    "early": "Yellow",
+    "midday": "Orange",
+    "evening": "Orange"
+   },
+   "best_block": [
+    "07:00",
+    "11:00"
+   ],
+   "reason": "early window Yellow; best block 07:00-11:00; early Yellow, midday Orange, evening Orange; peak heat band 3/4, UV band 3/4 for ordinary / full sun / 120 min",
+   "evidence": "Planning band · profile basis: City pool: open water and deck, no shade assumed from the record",
+   "hazard_notice": "none found in checked sources",
+   "observed_at": "2026-09-29T07:00-05:00",
+   "valid_until": "2026-09-29T19:00-05:00",
+   "source": "https://open-meteo.com/ (forecast) · NWS/OSHA heat-index and EPA UV bands"
+  }
+ ],
+ "_provenance": {
+  "by": "outdoor-places",
+  "derived_from": [
+   "sha256:81ac15e9d203bf7eabbc1878a4f6b73a2cb0aec3c3f5faa776fd747b2e6a2fb4",
+   "sha256:bd5e86508056ccb8f611d49da1271cf7bc36ad86e123bd89f1d8a857d509fb8d",
+   "sha256:d0e97c471e98475853940c7a5cd9ca1592878fa92620da11d47f01903d4f692d",
+   "sha256:0dc641cd9b5ca67798a8d47c06dc994fff9a6a2990b6f0691c568cdafa55cb79",
+   "sha256:13a7287eeea6ab68726b6dc5415f2cdaff0db3411de0f60272572ee6281197fb",
+   "sha256:26f2d10d0a9461595a6788ef9db901c3f6e5539ad1e24c5c1edb52fadfb3285c",
+   "sha256:65b94e508ca29616295d1fc883ceba8f9f4bc2a7c67f492f1e758fb478f5e6ba",
+   "sha256:5282927b92bf3663f762c49c5535d0a4d25ed1319816931d7bf37ca6b6d97ef9",
+   "sha256:b999c4b0e8556ab3c5ce88d57fb5a46b838efec330fe49e621ad895abe057c46",
+   "sha256:5723a1eed0b08fc42ef6f9d4f0f68c17b8bce22f6d5778ce33027ef8c2dda36a",
+   "sha256:e272b278bff1eb4111f48d1ccfe2a0dc200d7e2e6c4e0e79fb9afe32de8a5e3a",
+   "sha256:3358db4060bd079730d460403031201bf99c6ec0403e2afcd30049c60e382b99",
+   "sha256:7caf5d4af4841bae6e77757098ed4174d2d13da657d68f3adfc64d44ac8a24ac",
+   "sha256:76a65e740ff5e11a24c71be3adb8a74e888331a87f311cd332ddc7f9a45d266e",
+   "sha256:201fb4b3231ee1b488c716c0e1ff31d133c596e66bf9722ceda8b7c9f49e8811",
+   "sha256:ce1ba5db91f251f4339fe4bac13017461976ed2112ee8ffc402656f010b8877c",
+   "sha256:52002c1df4531396b0db3659e215c207410fd9c36c50c9f6fdc98566178e761c",
+   "sha256:c27186e2c1ade3c085b04f94008d94fdbcd7f199ba9dd13b68bdefdab79d1194",
+   "sha256:754a87c372a1c599ab0c89d3c89784b5c21557ccb2637b1f0f71de226c8672dc",
+   "sha256:b504570e1558a2a344d3445c7024dfef21b80ccbb98e160266c638b22931e950",
+   "sha256:b8829ceb33a1ba2c6e31add0fd5c4daf8e76e977415ab667b0591408501d9263",
+   "sha256:5170d26937371878370294d12043b89e09520def835fadb8bf758a4504ca5672",
+   "sha256:7499fe0d04f05508bf247baf8066bde4a72d2e1c4c575a3bd027104cff9dfd14",
+   "sha256:c7911c1efe1f129ab15503c086dd8b3cb53dd12cff3aa73e0f44d7b1eec9100c"
+  ],
+  "source_count": 24,
+  "recorded_at": "2026-09-29T12:38:19Z",
+  "note": "sha256 identities of raw switchboard lane rows"
+ },
+ "input_rows": [
+  {
+   "lane": "weather-austin",
+   "sha256": "81ac15e9d203bf7eabbc1878a4f6b73a2cb0aec3c3f5faa776fd747b2e6a2fb4",
+   "cursor": "forecast:30.27,-97.74:2026-09-29T12",
+   "source_url": "https://api.open-meteo.com/v1/forecast",
+   "fetched_at": "2026-09-29T12:38:02.133686+00:00"
+  },
+  {
+   "lane": "nws-alerts",
+   "sha256": "bd5e86508056ccb8f611d49da1271cf7bc36ad86e123bd89f1d8a857d509fb8d",
+   "cursor": "alert:urn:oid:2.49.0.1.840.0.e367a987d7855263bedf9c0ea19a53ef6f2c6173.001.1@2026-09-29T05:38:00-06:00",
+   "source_url": "https://api.weather.gov/alerts/active?area=TX",
+   "fetched_at": "2026-09-29T12:38:00.612836+00:00"
+  },
+  {
+   "lane": "nws-alerts",
+   "sha256": "d0e97c471e98475853940c7a5cd9ca1592878fa92620da11d47f01903d4f692d",
+   "cursor": "alert:urn:oid:2.49.0.1.840.0.0a9c13a10a94b7a9abbdb9ca65bfb5b08b0143a6.001.1@2026-09-29T05:41:00-05:00",
+   "source_url": "https://api.weather.gov/alerts/active?area=TX",
+   "fetched_at": "2026-09-29T12:38:00.612836+00:00"
+  },
+  {
+   "lane": "nws-alerts",
+   "sha256": "0dc641cd9b5ca67798a8d47c06dc994fff9a6a2990b6f0691c568cdafa55cb79",
+   "cursor": "alert:urn:oid:2.49.0.1.840.0.e5ef3688234479bcf53ddab5c133f771f4a732b4.002.1@2026-09-29T04:23:00-06:00",
+   "source_url": "https://api.weather.gov/alerts/active?area=TX",
+   "fetched_at": "2026-09-29T12:38:00.612836+00:00"
+  },
+  {
+   "lane": "nws-alerts",
+   "sha256": "13a7287eeea6ab68726b6dc5415f2cdaff0db3411de0f60272572ee6281197fb",
+   "cursor": "alert:urn:oid:2.49.0.1.840.0.95befb5c8a7b7ef9b7cdff243a9cd07d76b4fc38.001.1@2026-09-29T02:54:00-05:00",
+   "source_url": "https://api.weather.gov/alerts/active?area=TX",
+   "fetched_at": "2026-09-29T12:38:00.612836+00:00"
+  },
+  {
+   "lane": "nws-alerts",
+   "sha256": "26f2d10d0a9461595a6788ef9db901c3f6e5539ad1e24c5c1edb52fadfb3285c",
+   "cursor": "alert:urn:oid:2.49.0.1.840.0.2a86b5d5e75424a71d8c0b087a3c1bfe8ead7988.001.1@2026-09-29T02:07:00-05:00",
+   "source_url": "https://api.weather.gov/alerts/active?area=TX",
+   "fetched_at": "2026-09-29T12:38:00.612836+00:00"
+  },
+  {
+   "lane": "nws-alerts",
+   "sha256": "65b94e508ca29616295d1fc883ceba8f9f4bc2a7c67f492f1e758fb478f5e6ba",
+   "cursor": "alert:urn:oid:2.49.0.1.840.0.42c765aed8ce98c7ecdac481bb15ebad257aaaad.001.1@2026-09-29T01:43:00-05:00",
+   "source_url": "https://api.weather.gov/alerts/active?area=TX",
+   "fetched_at": "2026-09-29T12:38:00.612836+00:00"
+  },
+  {
+   "lane": "nws-alerts",
+   "sha256": "5282927b92bf3663f762c49c5535d0a4d25ed1319816931d7bf37ca6b6d97ef9",
+   "cursor": "alert:urn:oid:2.49.0.1.840.0.ec96a19e5b3fe4b148205a145658ba2e70b226b4.001.1@2026-09-29T00:33:00-06:00",
+   "source_url": "https://api.weather.gov/alerts/active?area=TX",
+   "fetched_at": "2026-09-29T12:38:00.612836+00:00"
+  },
+  {
+   "lane": "nws-alerts",
+   "sha256": "b999c4b0e8556ab3c5ce88d57fb5a46b838efec330fe49e621ad895abe057c46",
+   "cursor": "alert:urn:oid:2.49.0.1.840.0.eb464936598ad9958b19a459a7212962209c4b88.001.1@2026-09-29T01:18:00-05:00",
+   "source_url": "https://api.weather.gov/alerts/active?area=TX",
+   "fetched_at": "2026-09-29T12:38:00.612836+00:00"
+  },
+  {
+   "lane": "nws-alerts",
+   "sha256": "5723a1eed0b08fc42ef6f9d4f0f68c17b8bce22f6d5778ce33027ef8c2dda36a",
+   "cursor": "alert:urn:oid:2.49.0.1.840.0.82adf4e73357e768aef33e6f0442302177975e12.001.1@2026-09-29T01:10:00-05:00",
+   "source_url": "https://api.weather.gov/alerts/active?area=TX",
+   "fetched_at": "2026-09-29T12:38:00.612836+00:00"
+  },
+  {
+   "lane": "nws-alerts",
+   "sha256": "e272b278bff1eb4111f48d1ccfe2a0dc200d7e2e6c4e0e79fb9afe32de8a5e3a",
+   "cursor": "alert:urn:oid:2.49.0.1.840.0.23d446f44ae016b7616a9d59042f3aeafff1e0a3.001.1@2026-09-28T10:54:00-05:00",
+   "source_url": "https://api.weather.gov/alerts/active?area=TX",
+   "fetched_at": "2026-09-29T01:16:34.773728+00:00"
+  },
+  {
+   "lane": "nwps-gauges",
+   "sha256": "3358db4060bd079730d460403031201bf99c6ec0403e2afcd30049c60e382b99",
+   "cursor": "gauge:AAIT2@2026-09-29T11:30:00Z",
+   "source_url": "https://api.water.noaa.gov/nwps/v1/gauges/AAIT2",
+   "fetched_at": "2026-09-29T12:38:00.632293+00:00"
+  },
+  {
+   "lane": "nwps-gauges",
+   "sha256": "7caf5d4af4841bae6e77757098ed4174d2d13da657d68f3adfc64d44ac8a24ac",
+   "cursor": "gauge:ABTT2@2026-09-29T12:00:00Z",
+   "source_url": "https://api.water.noaa.gov/nwps/v1/gauges/ABTT2",
+   "fetched_at": "2026-09-29T12:38:00.822633+00:00"
+  },
+  {
+   "lane": "nwps-gauges",
+   "sha256": "76a65e740ff5e11a24c71be3adb8a74e888331a87f311cd332ddc7f9a45d266e",
+   "cursor": "gauge:ABUT2@2026-09-29T12:00:00Z",
+   "source_url": "https://api.water.noaa.gov/nwps/v1/gauges/ABUT2",
+   "fetched_at": "2026-09-29T12:38:01.093209+00:00"
+  },
+  {
+   "lane": "nwps-gauges",
+   "sha256": "201fb4b3231ee1b488c716c0e1ff31d133c596e66bf9722ceda8b7c9f49e8811",
+   "cursor": "gauge:AHOT2@2026-09-29T11:20:00Z",
+   "source_url": "https://api.water.noaa.gov/nwps/v1/gauges/AHOT2",
+   "fetched_at": "2026-09-29T12:38:01.783944+00:00"
+  },
+  {
+   "lane": "nwps-gauges",
+   "sha256": "ce1ba5db91f251f4339fe4bac13017461976ed2112ee8ffc402656f010b8877c",
+   "cursor": "gauge:ATIT2@2026-09-29T11:20:00Z",
+   "source_url": "https://api.water.noaa.gov/nwps/v1/gauges/ATIT2",
+   "fetched_at": "2026-09-29T12:38:02.088379+00:00"
+  },
+  {
+   "lane": "nwps-gauges",
+   "sha256": "52002c1df4531396b0db3659e215c207410fd9c36c50c9f6fdc98566178e761c",
+   "cursor": "gauge:BCCT2@2026-09-29T11:20:00Z",
+   "source_url": "https://api.water.noaa.gov/nwps/v1/gauges/BCCT2",
+   "fetched_at": "2026-09-29T12:38:02.280744+00:00"
+  },
+  {
+   "lane": "nwps-gauges",
+   "sha256": "c27186e2c1ade3c085b04f94008d94fdbcd7f199ba9dd13b68bdefdab79d1194",
+   "cursor": "gauge:CNCT2@2026-09-29T12:00:00Z",
+   "source_url": "https://api.water.noaa.gov/nwps/v1/gauges/CNCT2",
+   "fetched_at": "2026-09-29T12:38:02.548142+00:00"
+  },
+  {
+   "lane": "nwps-gauges",
+   "sha256": "754a87c372a1c599ab0c89d3c89784b5c21557ccb2637b1f0f71de226c8672dc",
+   "cursor": "gauge:GBCT2@2026-09-29T11:00:00Z",
+   "source_url": "https://api.water.noaa.gov/nwps/v1/gauges/GBCT2",
+   "fetched_at": "2026-09-29T12:38:02.780533+00:00"
+  },
+  {
+   "lane": "nwps-gauges",
+   "sha256": "b504570e1558a2a344d3445c7024dfef21b80ccbb98e160266c638b22931e950",
+   "cursor": "gauge:LCKT2@2026-09-29T12:00:00Z",
+   "source_url": "https://api.water.noaa.gov/nwps/v1/gauges/LCKT2",
+   "fetched_at": "2026-09-29T12:38:03.028808+00:00"
+  },
+  {
+   "lane": "nwps-gauges",
+   "sha256": "b8829ceb33a1ba2c6e31add0fd5c4daf8e76e977415ab667b0591408501d9263",
+   "cursor": "gauge:NBCT2@2026-09-29T11:45:00Z",
+   "source_url": "https://api.water.noaa.gov/nwps/v1/gauges/NBCT2",
+   "fetched_at": "2026-09-29T12:38:03.264782+00:00"
+  },
+  {
+   "lane": "nwps-gauges",
+   "sha256": "5170d26937371878370294d12043b89e09520def835fadb8bf758a4504ca5672",
+   "cursor": "gauge:NBRT2@2026-09-29T12:00:00Z",
+   "source_url": "https://api.water.noaa.gov/nwps/v1/gauges/NBRT2",
+   "fetched_at": "2026-09-29T12:38:03.461390+00:00"
+  },
+  {
+   "lane": "nwps-gauges",
+   "sha256": "7499fe0d04f05508bf247baf8066bde4a72d2e1c4c575a3bd027104cff9dfd14",
+   "cursor": "gauge:SRUT2@2026-09-29T11:45:00Z",
+   "source_url": "https://api.water.noaa.gov/nwps/v1/gauges/SRUT2",
+   "fetched_at": "2026-09-29T12:38:03.714232+00:00"
+  },
+  {
+   "lane": "nwps-gauges",
+   "sha256": "c7911c1efe1f129ab15503c086dd8b3cb53dd12cff3aa73e0f44d7b1eec9100c",
+   "cursor": "gauge:WJCT2@2026-09-29T12:00:00Z",
+   "source_url": "https://api.water.noaa.gov/nwps/v1/gauges/WJCT2",
+   "fetched_at": "2026-09-29T12:38:03.995298+00:00"
+  }
+ ]
+}

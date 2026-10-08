@@ -1,0 +1,1331 @@
+{
+  "version": "v1",
+  "assessed_on": "2026-09-29",
+  "purpose": "One source-backed record per Austin place: what the place is, which water it is on, which measured stations relate to it and how, and what is still missing before a color may be shown. This file asserts relationships; it never asserts conditions.",
+  "how_to_read": {
+    "relationship_class": {
+      "rule_linked_product_baseline": "A third-party product maps the place to this station and publishes flow bands. Recorded as a baseline, not validated hydrology. This is the only class that currently permits a color, and only under data/rules.json.",
+      "context_station_upstream": "The station sits upstream of the place on the same mapped channel. Its reading describes water on its way to the place before any intervening inflow, loss, or control.",
+      "context_station_downstream": "The station sits downstream of the place on the same mapped channel. Its reading integrates the place's reach plus everything between.",
+      "context_same_waterbody_unpositioned": "Same named creek, but the place coordinate does not resolve to the mapped channel, so the along-channel position was not computed.",
+      "spring_discharge_context": "A spring-discharge station describes the spring that feeds a managed pool; it says nothing about hours, closures, or admission.",
+      "none": "No station relationship is recorded. The place stays gray for hydrology.",
+      "rule_linked_provisional_personal": "A provisional band authored from a local observer's recorded visits and the station's own event thresholds (data/rules.json). Permits a color with the evidence label \"limited evidence\". Not validated by holdout; revise as labels arrive.",
+      "rule_linked_hypothesis": "A low-confidence mapped station relation permits a visibly pale place-level guess under an explicit rule; the gauge does not measure swimming depth or current at the place."
+    },
+    "confidence": {
+      "medium": "Both points resolve to the same OpenStreetMap way and an along-channel position was computed; intervening tributaries, diversions, and losing reaches were not inventoried.",
+      "low": "Same waterbody, but the place coordinate is approximate or a third-party mapping is the only link.",
+      "none": "No relationship."
+    },
+    "geometry_evidence": "data/model/austin-reach-geometry.json (tools/reach_geometry.py) gives the nearest mapped node, distance to channel, and metres along the way for every point. Along-channel figures below are rounded from that file and depend on the saved place coordinate, which is often a park or trailhead reference rather than the water entry.",
+    "color_gate": "A place may be colored only when verified_entry, documented_relationship, local_rule, and fresh_data_path are all satisfied and no active closure applies (AUSTIN_SWIM_MODEL_HANDOFF.md, layer 4)."
+  },
+  "observation_place_aliases": {
+    "bull-creek-unresolved": [
+      "st-edwards",
+      "bull-creek-district"
+    ],
+    "mckinney-falls-unspecified": [
+      "mckinney-upper",
+      "mckinney-lower"
+    ]
+  },
+  "waterbody_notes": {
+    "Barton Creek": "Barton Creek crosses the Edwards Aquifer recharge zone between the Loop 360 station and Barton Springs; karst recharge through faults and fissures means flow can be lost between an upstream station and a downstream pool (source: capability-matrix entry edwards-hydrogeology, Edwards Aquifer Authority). Reach-specific loss rates were not acquired.",
+    "Bull Creek": "Bull Creek drains 22.3 square miles at USGS 08154700 (station metadata, HUC 120902050302) and enters Lake Austin just below Bull Creek District Park. Whether Lake Austin backwater affects the lowest reach was not verified.",
+    "Blunn Creek": "Blunn Creek flows north from the Blunn Creek Nature Preserve area past Big Stacy and Little Stacy parks toward Lady Bird Lake; the saved OSM way runs south to north, consistent with that direction.",
+    "Onion Creek": "Onion Creek passes the McKinney Falls State Park falls before reaching USGS 08159000 at US 183. TPWD names both Onion and Williamson creeks inside the park; whether the Williamson confluence lies between the falls and the US 183 station was not verified.",
+    "Shoal Creek": "Shoal Creek is an urban runoff creek gauged at W 12th Street (USGS 08156800). No swimming entry is verified anywhere on it.",
+    "Walnut Creek": "Walnut Creek near the Domain has no active USGS discharge station: catalog stations 08158100 (FM 1325, series ended 1986) and 08158105 (Metric Blvd, no series) were probed on 2026-09-29 (data/model/austin-candidate-station-probe.json). 08158600 (Webberville Rd, far downstream) was not probed.",
+    "Lake Austin": "Lake Austin elevation is published by LCRA Hydromet (https://hydromet.lcra.org/Reports/LakeLevel); the page renders through scripts and no machine-readable endpoint was captured on 2026-09-29. No site-specific shoreline threshold exists for either park."
+  },
+  "places": {
+    "twin-falls": {
+      "name": "Twin Falls",
+      "archetype": "runoff_creek",
+      "waterbody": "Barton Creek",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "OpenStreetMap waterfall node 'Twin Falls' (ODbL), 11 m from the City creek centerline and inside the City's Barton Creek Greenbelt boundary; a recorded third-party map reference lands 15 m away on the same centerline. The City greenbelt map names Twin Falls. Exact water entry still not surveyed.",
+        "source": "https://www.openstreetmap.org/node/858902522",
+        "coordinate_method": "sourced_point",
+        "distance_to_channel_m": 0.0,
+        "osm_way": 1384176561,
+        "metres_from_way_start": 25197.4
+      },
+      "reach_direction": "Barton Creek flows east toward Barton Springs and the Colorado River.",
+      "stations": [
+        {
+          "station_id": "08155240",
+          "position": "station ≈5.2 km upstream of the place on OSM way 1384176561 (recomputed 2026-09-29 from the audited coordinate); a recorded third-party product maps the place to this station",
+          "relationship_class": "rule_linked_product_baseline",
+          "confidence": "low",
+          "evidence": [
+            "working/greenbelter-bundle.js maps Twin Falls to USGS 08155240 (product mapping, fetched 2026-09-15)",
+            "data/rules.json barton-flow-bands-v1 records the product bands verbatim",
+            "geometry: place coordinate not resolved to the channel"
+          ]
+        }
+      ],
+      "access_source": "https://www.austintexas.gov/department/barton-creek-greenbelt",
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "third-party product mapping only",
+        "local_rule": "third-party product bands, unvalidated",
+        "fresh_data_path": "USGS 08155240 discharge via monitor.py"
+      },
+      "missing_for_color": [
+        "independently verified water-entry point",
+        "reach mechanics between Lost Creek Boulevard and the falls",
+        "independent low- and high-flow evidence for this reach"
+      ],
+      "current_treatment": "Colored only under the recorded third-party product rule when a fresh compatible reading exists; the card names it as a product baseline."
+    },
+    "hill-of-life": {
+      "name": "Hill of Life",
+      "archetype": "runoff_creek",
+      "waterbody": "Barton Creek",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "City creek centerline location nearest a recorded third-party map reference labeled 'Hill of Life Dam'. The City page lists 'Hill of Life access' from the Trail's End / Camp Craft Rd. trailhead, but the City map does not label Hill of Life and no OSM node was found. Lowest-confidence Barton placement.",
+        "source": "https://greenbelter.io/bundle.js",
+        "coordinate_method": "derived_on_centerline",
+        "distance_to_channel_m": 12.9,
+        "osm_way": 1384176561,
+        "metres_from_way_start": 21515.7
+      },
+      "reach_direction": "Barton Creek flows east.",
+      "stations": [
+        {
+          "station_id": "08155240",
+          "position": "station ≈1.5 km upstream of the place on OSM way 1384176561 (recomputed 2026-09-29 from the audited coordinate); a recorded third-party product maps the place to this station",
+          "relationship_class": "rule_linked_product_baseline",
+          "confidence": "low",
+          "evidence": [
+            "the third-party product product mapping (working/greenbelter-bundle.js)",
+            "geometry: not resolved to channel"
+          ]
+        }
+      ],
+      "access_source": "https://www.austintexas.gov/department/barton-creek-greenbelt",
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "third-party product mapping only",
+        "local_rule": "third-party product bands, unvalidated",
+        "fresh_data_path": "USGS 08155240"
+      },
+      "missing_for_color": [
+        "verified entry point",
+        "reach mechanics",
+        "independent evidence"
+      ],
+      "current_treatment": "the recorded third-party product rule only."
+    },
+    "sculpture-falls": {
+      "name": "Sculpture Falls",
+      "archetype": "runoff_creek",
+      "waterbody": "Barton Creek",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "OpenStreetMap waterfall node 'Sculpture Falls' (ODbL), 3 m from the City creek centerline and inside the City greenbelt boundary; a recorded third-party map reference lands 5 m away on the centerline. The City greenbelt map names Sculpture Falls.",
+        "source": "https://www.openstreetmap.org/node/858895978",
+        "coordinate_method": "sourced_point",
+        "distance_to_channel_m": 0.1,
+        "osm_way": 1384176561,
+        "metres_from_way_start": 23317.7
+      },
+      "reach_direction": "Barton Creek flows east.",
+      "stations": [
+        {
+          "station_id": "08155240",
+          "position": "station ≈3.3 km upstream of the place on OSM way 1384176561 (recomputed 2026-09-29 from the audited coordinate); a recorded third-party product maps the place to this station",
+          "relationship_class": "rule_linked_product_baseline",
+          "confidence": "low",
+          "evidence": [
+            "the third-party product product mapping",
+            "geometry: 08155240 at ≈20.0 km, place at ≈23.8 km on OSM way 1384176561",
+            "intervening tributaries and recharge losses not inventoried"
+          ]
+        },
+        {
+          "station_id": "08155300",
+          "position": "≈4.0 km downstream of the place on the same mapped way (recomputed 2026-09-29 from the audited coordinate)",
+          "relationship_class": "context_station_downstream",
+          "confidence": "medium",
+          "evidence": [
+            "geometry: 08155300 at ≈27.4 km on OSM way 1384176561"
+          ]
+        }
+      ],
+      "access_source": "https://www.austintexas.gov/department/barton-creek-greenbelt",
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "product mapping plus geometry-resolved upstream station",
+        "local_rule": "third-party product bands, unvalidated",
+        "fresh_data_path": "USGS 08155240"
+      },
+      "missing_for_color": [
+        "verified entry point",
+        "independent reach evidence"
+      ],
+      "current_treatment": "the recorded third-party product rule only; 08155300 shown as downstream context."
+    },
+    "gus-fruh": {
+      "name": "Gus Fruh",
+      "archetype": "runoff_creek",
+      "waterbody": "Barton Creek",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "City creek centerline location nearest a recorded third-party map reference. Cross-check: the City-listed Gus Fruh trailhead (2632 Barton Hills Dr.; OSM node 2260692112) snaps to the centerline 120 m away. The City greenbelt map names Gus Fruh. Approximate.",
+        "source": "https://greenbelter.io/bundle.js",
+        "coordinate_method": "derived_on_centerline",
+        "distance_to_channel_m": 3.5,
+        "osm_way": 1384176561,
+        "metres_from_way_start": 29939.2
+      },
+      "reach_direction": "Barton Creek flows east.",
+      "stations": [
+        {
+          "station_id": "08155300",
+          "position": "≈2.6 km upstream of the place on the same mapped way (recomputed 2026-09-29 from the audited coordinate)",
+          "relationship_class": "rule_linked_product_baseline",
+          "confidence": "medium",
+          "evidence": [
+            "geometry: not resolved to channel",
+            "barton-flow-bands-loop360-v1 (data/rules.json) records the third-party bands for this station, 2026-09-29"
+          ]
+        }
+      ],
+      "access_source": "https://www.austintexas.gov/department/barton-creek-greenbelt",
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": false,
+        "local_rule": "third-party product bands, unvalidated",
+        "fresh_data_path": "USGS 08155300 (context only)"
+      },
+      "missing_for_color": [
+        "verified entry point",
+        "documented station relationship",
+        "independent reach evidence"
+      ],
+      "current_treatment": "Colored only under the recorded third-party bands for 08155300 when a fresh compatible reading exists; the card names it as a product baseline."
+    },
+    "campbells-hole": {
+      "name": "Campbell’s Hole",
+      "archetype": "runoff_creek",
+      "waterbody": "Barton Creek",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "OpenStreetMap node named Campbell's Hole (ODbL; tagged loosely), 2 m from the City creek centerline and inside the City greenbelt boundary; a recorded third-party map reference lands 45 m away on the centerline. The City greenbelt map names Campbell's Hole.",
+        "source": "https://www.openstreetmap.org/node/13668578101",
+        "coordinate_method": "sourced_point",
+        "distance_to_channel_m": 10.1,
+        "osm_way": 1384176561,
+        "metres_from_way_start": 31996.4
+      },
+      "reach_direction": "Barton Creek flows east toward Barton Springs.",
+      "stations": [
+        {
+          "station_id": "08155300",
+          "position": "≈4.6 km upstream of the place on the same mapped way (recomputed 2026-09-29 from the audited coordinate)",
+          "relationship_class": "rule_linked_product_baseline",
+          "confidence": "medium",
+          "evidence": [
+            "geometry: 08155300 at ≈27.4 km, place at ≈32.2 km on OSM way 1384176561",
+            "reach crosses the Edwards recharge zone; losses not quantified",
+            "barton-flow-bands-loop360-v1 (data/rules.json) records the third-party bands for this station, 2026-09-29"
+          ]
+        },
+        {
+          "station_id": "08155400",
+          "position": "≈1.4 km downstream of the place on the same mapped way (recomputed 2026-09-29 from the audited coordinate)",
+          "relationship_class": "context_station_downstream",
+          "confidence": "medium",
+          "evidence": [
+            "geometry: 08155400 at ≈33.4 km on OSM way 1384176561"
+          ]
+        }
+      ],
+      "access_source": "https://www.austintexas.gov/department/barton-creek-greenbelt",
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "geometry-resolved context stations",
+        "local_rule": "third-party product bands, unvalidated",
+        "fresh_data_path": "USGS 08155300 / 08155400 (context only)"
+      },
+      "missing_for_color": [
+        "confirmed place identity and entry",
+        "independent reach evidence"
+      ],
+      "current_treatment": "Colored only under the recorded third-party bands for 08155300 when a fresh compatible reading exists; the card names it as a product baseline."
+    },
+    "the-flats": {
+      "name": "The Flats",
+      "archetype": "runoff_creek",
+      "waterbody": "Barton Creek",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "No independent OpenStreetMap node. Point is the City creek centerline location nearest a recorded third-party map reference (retrieved 2026-09-15); it falls about 50 m along the creek from Campbell's Hole, so the two markers overlap. The City greenbelt map names The Flats. Location is approximate.",
+        "source": "https://greenbelter.io/bundle.js",
+        "coordinate_method": "derived_on_centerline",
+        "distance_to_channel_m": 3.3,
+        "osm_way": 1384176561,
+        "metres_from_way_start": 32039.9
+      },
+      "reach_direction": "Barton Creek flows east.",
+      "stations": [
+        {
+          "station_id": "08155300",
+          "position": "≈4.7 km upstream of the place on the same mapped way (recomputed 2026-09-29 from the audited coordinate)",
+          "relationship_class": "rule_linked_product_baseline",
+          "confidence": "medium",
+          "evidence": [
+            "geometry: not resolved to channel",
+            "barton-flow-bands-loop360-v1 (data/rules.json) records the third-party bands for this station, 2026-09-29"
+          ]
+        }
+      ],
+      "access_source": "https://www.austintexas.gov/department/barton-creek-greenbelt",
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": false,
+        "local_rule": "third-party product bands, unvalidated",
+        "fresh_data_path": "USGS 08155300 (context only)"
+      },
+      "missing_for_color": [
+        "confirmed identity and entry",
+        "documented relationship",
+        "independent reach evidence"
+      ],
+      "current_treatment": "Colored only under the recorded third-party bands for 08155300 when a fresh compatible reading exists; the card names it as a product baseline."
+    },
+    "bull-creek-district": {
+      "name": "Bull Creek District Park",
+      "archetype": "runoff_creek",
+      "waterbody": "Bull Creek",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "Bull Creek centerline point inside Bull Creek District Park, near the mapped park falls. The particular fall and water-entry point remain unverified.",
+        "source": "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/INLANDWATERS_creeks_lines/FeatureServer/0",
+        "coordinate_method": "derived_on_centerline",
+        "distance_to_channel_m": 7.9,
+        "osm_way": 31511193,
+        "metres_from_way_start": 10933.3
+      },
+      "reach_direction": "Bull Creek flows south-southeast into Lake Austin; the park sits on the lowest reach.",
+      "stations": [
+        {
+          "station_id": "08154700",
+          "position": "≈0.5 km upstream of the park creek reference on the same mapped way (recomputed 2026-09-29 from the audited coordinate)",
+          "relationship_class": "rule_linked_provisional_personal",
+          "confidence": "medium",
+          "evidence": [
+            "geometry: 08154700 at ≈10.4 km, park reference at ≈12.0 km on OSM way 31511193; way runs from (30.419, -97.808) upstream to (30.347, -97.792) at the mouth",
+            "USGS metadata: Bull Ck at Loop 360 nr Austin, 22.3 sq mi drainage",
+            "West Bull Creek (catalog station 08154750, no series) joins near Loop 360; whether its confluence lies between the gauge and the park was not verified",
+            "possible Lake Austin backwater on the lowest reach unverified",
+            "The provisional flow band applies only to the District Park reach; the particular fall remains unresolved."
+          ]
+        }
+      ],
+      "access_source": "https://www.austintexas.gov/parks/locations/park-directory",
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "geometry-resolved upstream station",
+        "local_rule": "provisional personal-reference band, limited evidence",
+        "fresh_data_path": "USGS 08154700 (context only)"
+      },
+      "missing_for_color": [
+        "verified water-entry coordinate at the park falls",
+        "West Bull Creek confluence position",
+        "independent validation of the provisional flow band"
+      ],
+      "current_treatment": "Colored under the limited-evidence provisional band for the District Park reach; hydrograph context and notices remain separate."
+    },
+    "st-edwards": {
+      "name": "St. Edward’s Greenbelt — Bull Creek",
+      "archetype": "runoff_creek",
+      "waterbody": "Bull Creek",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "Parking/park reference inside the City PARD boundary of St. Edwards Greenbelt (7301 Spicewood Springs Rd.), 130 m from the Bull Creek centerline. Not a swimming entry.",
+        "source": "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/BOUNDARIES_city_of_austin_parks/FeatureServer/0",
+        "coordinate_method": "park_reference",
+        "distance_to_channel_m": 140.2,
+        "osm_way": 31511193,
+        "metres_from_way_start": 3327.6
+      },
+      "reach_direction": "Bull Creek flows south-southeast from the greenbelt toward Loop 360 and Lake Austin.",
+      "stations": [
+        {
+          "station_id": "08154700",
+          "position": "≈7.1 km downstream of the greenbelt reference on the same mapped way (recomputed 2026-09-29 from the audited coordinate)",
+          "relationship_class": "context_station_downstream",
+          "confidence": "medium",
+          "evidence": [
+            "geometry: greenbelt reference at ≈3.3 km, 08154700 at ≈10.4 km on OSM way 31511193",
+            "catalog station 08154645 (Bull Ck N Cem on Spicewood Spgs Rd, ≈1.6 km north of the greenbelt reference) has no time series (probe 2026-09-29), so there is no closer live station",
+            "tributaries between the greenbelt and Loop 360 not inventoried",
+            "the City historical monitoring mention is context, not a live proxy",
+            "No place-specific flow rule applies at this greenbelt reference."
+          ]
+        }
+      ],
+      "access_source": "https://www.austintexas.gov/parks/locations/park-directory",
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "geometry-resolved downstream station",
+        "local_rule": "none; the provisional band applies to the District Park reach only",
+        "fresh_data_path": "USGS 08154700 (context only)"
+      },
+      "missing_for_color": [
+        "verified water-entry reach",
+        "tributary inventory between this greenbelt and the downstream gauge",
+        "dated labels and a documented local rule for this reach"
+      ],
+      "current_treatment": "No current rating; the downstream USGS station is context only."
+    },
+    "barton-springs": {
+      "name": "Barton Springs Pool",
+      "archetype": "managed_pool",
+      "waterbody": "Barton Creek (spring-fed pool)",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "OpenStreetMap pool outline centroid (ODbL) inside the City PARD boundary of Zilker Metro Park; City address 2131 William Barton Dr.",
+        "source": "https://www.openstreetmap.org/way/27442711",
+        "coordinate_method": "sourced_point"
+      },
+      "reach_direction": "n/a (managed pool)",
+      "stations": [
+        {
+          "station_id": "08155500",
+          "position": "spring discharge at the pool",
+          "relationship_class": "spring_discharge_context",
+          "confidence": "medium",
+          "evidence": [
+            "probe 2026-09-29: Barton Spgs at Austin carries instantaneous discharge with data through 2026-09-28 (data/model/austin-candidate-station-probe.json)",
+            "not yet in the current-window collector; add before displaying"
+          ]
+        },
+        {
+          "station_id": "08155400",
+          "position": "creek station just above the pool",
+          "relationship_class": "context_same_waterbody_unpositioned",
+          "confidence": "low",
+          "evidence": [
+            "geometry: 08155400 at the end of OSM way 1384176561, ≈10 m from the channel",
+            "creek inflow is separate from spring discharge; neither sets pool availability"
+          ]
+        }
+      ],
+      "access_source": "https://www.austintexas.gov/services/visit-barton-springs-pool",
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "color_gate": {
+        "verified_entry": true,
+        "documented_relationship": "operator",
+        "local_rule": "City schedule (tools/austin_operator.py)",
+        "fresh_data_path": "City pages within 48 h"
+      },
+      "missing_for_color": [],
+      "current_treatment": "Operator schedule badge; hydrology is context only."
+    },
+    "shoal-creek": {
+      "name": "Shoal Creek — W 12th context",
+      "archetype": "runoff_creek",
+      "waterbody": "Shoal Creek",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "Shoal Creek centerline point near the W 12th St. USGS station; creek context only, no swimming entry identified.",
+        "source": "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/INLANDWATERS_creeks_lines/FeatureServer/0",
+        "coordinate_method": "derived_on_centerline",
+        "distance_to_channel_m": 2.8,
+        "osm_way": 971155652,
+        "metres_from_way_start": 2873.6
+      },
+      "reach_direction": "Shoal Creek flows south to Lady Bird Lake.",
+      "stations": [
+        {
+          "station_id": "08156800",
+          "position": "≈0.4 km upstream of the place on the same mapped way (recomputed 2026-09-29 from the audited coordinate)",
+          "relationship_class": "context_station_upstream",
+          "confidence": "medium",
+          "evidence": [
+            "geometry: 08156800 at ≈2.4 km, context point at ≈2.9 km on OSM way 971155652"
+          ]
+        }
+      ],
+      "access_source": "https://www.austintexas.gov/parks/locations/park-directory",
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "context only",
+        "local_rule": false,
+        "fresh_data_path": "USGS 08156800"
+      },
+      "missing_for_color": [
+        "any verified swimming entry on Shoal Creek",
+        "local rule"
+      ],
+      "current_treatment": "Gray creek context with the measured station card."
+    },
+    "blunn-big-stacey": {
+      "name": "Blunn Creek by Big Stacey Pool",
+      "archetype": "runoff_creek",
+      "waterbody": "Blunn Creek",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "Bridge on the Blunn Creek Greenbelt Trail by Big Stacy Park/pool, 7 m from the City Blunn Creek centerline and inside the City PARD boundary of Big Stacy Neighborhood Park. Reach as a local observer described it; public water-entry verification pending.",
+        "source": "https://311.austintexas.gov/tickets/26-00196230",
+        "coordinate_method": "reported_reach",
+        "distance_to_channel_m": 7.3,
+        "osm_way": 384228922,
+        "metres_from_way_start": 82.0
+      },
+      "reach_direction": "Blunn Creek flows north; this reach is ≈1.2 km upstream of the Little Stacy reach.",
+      "stations": [],
+      "live_candidate": {
+        "provider": "City of Austin Hydromet via LCRA",
+        "site_number": "122",
+        "name": "Blunn Creek at Stacy Park",
+        "source": "https://hydromet.lcra.org/HistoricalData/Coa",
+        "position": "about 1.5 km downstream along the same mapped Blunn Creek way",
+        "metrics": [
+          "stage",
+          "flow"
+        ],
+        "use": "provisional visit-reference flow cue; not a depth or safety rating"
+      },
+      "candidate_stations_rejected": [
+        {
+          "station_id": "08157700",
+          "reason": "Blunn Ck nr Little Stacy Pk is a real USGS station ≈1.2 km downstream, but its discharge series ended 2009-09-12 (probe 2026-09-29). Historical context only; no current data."
+        }
+      ],
+      "access_source": "https://www.austintexas.gov/parks/locations/park-directory (Big Stacy Neighborhood Park, 700 E Live Oak St.)",
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "same mapped Blunn Creek way; station about 1.5 km downstream",
+        "local_rule": "provisional visit-reference band; limited evidence",
+        "fresh_data_path": "City of Austin Hydromet site 122 via the public Site's same-origin source endpoint"
+      },
+      "missing_for_color": [
+        "independent low- and high-flow validation at this reach",
+        "verified public water entry",
+        "intervening inflows between this reach and the downstream station"
+      ],
+      "current_treatment": "Provisional flow cue from two reported good visits when City Hydromet 122 has a recent discharge reading; the separate NWS notice and unknown depth still matter."
+    },
+    "blunn-little-stacey": {
+      "name": "Blunn Creek behind Little Stacey Park",
+      "archetype": "runoff_creek",
+      "waterbody": "Blunn Creek",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "Blunn Creek Greenbelt trailhead at Little Stacy Neighborhood Park, 19 m from the City Blunn Creek centerline. Reach as a local observer described it; public water-entry verification pending.",
+        "source": "https://maps.apple.com/place?place-id=ICC7BC4BBF4638536",
+        "coordinate_method": "reported_reach",
+        "distance_to_channel_m": 16.3,
+        "osm_way": 384228922,
+        "metres_from_way_start": 1242.1
+      },
+      "reach_direction": "Blunn Creek flows north; this reach is ≈1.2 km downstream of the Big Stacy reach.",
+      "stations": [],
+      "live_candidate": {
+        "provider": "City of Austin Hydromet via LCRA",
+        "site_number": "122",
+        "name": "Blunn Creek at Stacy Park",
+        "source": "https://hydromet.lcra.org/HistoricalData/Coa",
+        "position": "about 336 m downstream along the same mapped Blunn Creek way; the trailhead point is not a verified water entry",
+        "metrics": [
+          "stage",
+          "flow"
+        ],
+        "use": "provisional visit-reference flow cue; not a depth or safety rating"
+      },
+      "candidate_stations_rejected": [
+        {
+          "station_id": "08157700",
+          "reason": "Blunn Ck nr Little Stacy Pk sits at this reach (30.2474, -97.7439) but its series ended 2009-09-12 (probe 2026-09-29). No current data."
+        }
+      ],
+      "access_source": "https://www.austintexas.gov/parks/locations/park-directory (Little Stacy Neighborhood Park, 1500 Alameda Dr.)",
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "same mapped Blunn Creek way; station about 336 m downstream",
+        "local_rule": "provisional visit-reference band; limited evidence",
+        "fresh_data_path": "City of Austin Hydromet site 122 via the public Site's same-origin source endpoint"
+      },
+      "missing_for_color": [
+        "independent low- and high-flow validation at this reach",
+        "verified public water entry",
+        "intervening inflows between this reach and the downstream station"
+      ],
+      "current_treatment": "Provisional flow cue from two reported good visits when City Hydromet 122 has a recent discharge reading; the separate NWS notice and unknown depth still matter."
+    },
+    "mckinney-upper": {
+      "name": "McKinney Falls — Upper Falls",
+      "archetype": "runoff_creek",
+      "waterbody": "Onion Creek",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "OpenStreetMap waterfall node 'Upper McKinney Falls' (ODbL), 3 m from the City Onion Creek centerline. TPWD park rules, not this map, govern swimming.",
+        "source": "https://www.openstreetmap.org/node/4514426134",
+        "coordinate_method": "sourced_point",
+        "distance_to_channel_m": 0.0,
+        "osm_way": 417039996,
+        "metres_from_way_start": 10572.5
+      },
+      "reach_direction": "Onion Creek flows east through the park to US 183.",
+      "stations": [
+        {
+          "station_id": "08159000",
+          "position": "≈4.6 km downstream of the place on the same mapped way (recomputed 2026-09-29 from the audited coordinate)",
+          "relationship_class": "rule_linked_hypothesis",
+          "confidence": "medium",
+          "evidence": [
+            "geometry: falls at ≈10.6 km, 08159000 at ≈15.2 km on OSM way 417039996",
+            "Williamson Creek confluence position relative to the station not verified",
+            "TPWD directs visitors to the park for current creek conditions; TPWD park-alert page was not retrievable (HTTP 404 on 2026-09-29)",
+            "2026-10-02: pale flow-context hypothesis only; no reach-depth calibration or access certification"
+          ]
+        }
+      ],
+      "access_source": "https://tpwd.texas.gov/state-parks/mckinney-falls",
+      "closure_source": "https://tpwd.texas.gov/state-parks/mckinney-falls",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "geometry-resolved downstream station",
+        "local_rule": "pale hypothetical flow cue only",
+        "fresh_data_path": "USGS 08159000 (context only)"
+      },
+      "missing_for_color": [
+        "reach-specific depth/condition observations",
+        "reach-specific validation"
+      ],
+      "current_treatment": "Pale station-flow hypothesis, with reach and access uncertainty stated on the card."
+    },
+    "mckinney-lower": {
+      "name": "McKinney Falls — Lower Falls",
+      "archetype": "runoff_creek",
+      "waterbody": "Onion Creek",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "OpenStreetMap waterfall node 'Lower McKinney Falls' (ODbL), 1 m from the City Onion Creek centerline. The earlier marker was 640 m off. TPWD park rules govern swimming.",
+        "source": "https://www.openstreetmap.org/node/4514426139",
+        "coordinate_method": "sourced_point",
+        "distance_to_channel_m": 0.0,
+        "osm_way": 417039996,
+        "metres_from_way_start": 11216.0
+      },
+      "reach_direction": "Onion Creek flows east; the Lower Falls lie downstream of the Upper Falls and upstream of US 183.",
+      "stations": [
+        {
+          "station_id": "08159000",
+          "position": "≈4.0 km downstream of the falls; Williamson Creek joins Onion Creek between the falls and the station",
+          "relationship_class": "rule_linked_provisional_personal",
+          "confidence": "low",
+          "evidence": [
+            "TPWD page places both falls on Onion Creek inside the park",
+            "mapped Lower Falls point is on the Onion Creek channel",
+            "the station combines Onion and Williamson Creek flow; the rule is provisional"
+          ]
+        }
+      ],
+      "access_source": "https://tpwd.texas.gov/state-parks/mckinney-falls",
+      "closure_source": "https://tpwd.texas.gov/state-parks/mckinney-falls",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "downstream station with tributary between",
+        "local_rule": "provisional flow band, limited evidence",
+        "fresh_data_path": "USGS 08159000"
+      },
+      "missing_for_color": [
+        "independent validation of the provisional band",
+        "verified water-entry point at the Lower Falls"
+      ],
+      "current_treatment": "Provisional flow cue; low confidence because the station is downstream after the Williamson confluence. TPWD rules govern swimming."
+    },
+    "williamson-creek": {
+      "name": "Williamson Creek — location unresolved",
+      "archetype": "runoff_creek",
+      "waterbody": "Williamson Creek",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "No sourced location. The earlier approximate marker sat 1.6 km from Williamson Creek, nearer Onion Creek, so it is no longer drawn on the map. Williamson Creek USGS stations remain mapped as station context.",
+        "source": "https://waterdata.usgs.gov/monitoring-location/USGS-08158970/",
+        "coordinate_method": "unresolved",
+        "osm_way": 585249961
+      },
+      "reach_direction": "Williamson Creek flows east-southeast to Onion Creek.",
+      "stations": [
+        {
+          "station_id": "08158930",
+          "position": "upper station (Manchaca Road, ≈2.0 km along the mapped way)",
+          "relationship_class": "context_same_waterbody_unpositioned",
+          "confidence": "low",
+          "evidence": [
+            "USGS station operated with the City of Austin Flood Early Warning System (data/gauges.json)"
+          ]
+        },
+        {
+          "station_id": "08158970",
+          "position": "lower station (Jimmy Clay Road, ≈13.8 km along the mapped way)",
+          "relationship_class": "context_same_waterbody_unpositioned",
+          "confidence": "low",
+          "evidence": [
+            "geometry: both stations resolve to OSM way 585249961; the place itself does not"
+          ]
+        }
+      ],
+      "access_source": "unresolved",
+      "closure_source": "unresolved",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": false,
+        "local_rule": false,
+        "fresh_data_path": "USGS 08158930 / 08158970 (context only)"
+      },
+      "missing_for_color": [
+        "the intended place",
+        "everything else"
+      ],
+      "current_treatment": "Gray creek context; both stations shown."
+    },
+    "walnut-domain": {
+      "name": "Walnut Creek by the Domain",
+      "archetype": "runoff_creek",
+      "waterbody": "Walnut Creek",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "Nearest Walnut Creek centerline point to the Domain (about 1.5 km east of the Domain itself). The intended creek segment and any entry remain unresolved; this marker only shows where the named creek is.",
+        "source": "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/INLANDWATERS_creeks_lines/FeatureServer/0",
+        "coordinate_method": "derived_on_centerline",
+        "distance_to_channel_m": 2.2,
+        "osm_way": 778923062,
+        "metres_from_way_start": 733.6
+      },
+      "reach_direction": "Walnut Creek flows south-east from the Domain area toward the Colorado River.",
+      "stations": [],
+      "candidate_stations_rejected": [
+        {
+          "station_id": "08158100",
+          "reason": "Walnut Ck at FM 1325: series ended 1986-09-07 (probe 2026-09-29)."
+        },
+        {
+          "station_id": "08158105",
+          "reason": "Walnut Ck at Metric Blvd: no time series (probe 2026-09-29)."
+        }
+      ],
+      "access_source": "https://www.austintexas.gov/parks/locations/park-directory",
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": false,
+        "local_rule": false,
+        "fresh_data_path": "none"
+      },
+      "missing_for_color": [
+        "the intended segment",
+        "an active measurement",
+        "local rule"
+      ],
+      "current_treatment": "Gray."
+    },
+    "commons-ford": {
+      "name": "Commons Ford Ranch — Lake Austin",
+      "archetype": "reservoir_or_lake_beach",
+      "waterbody": "Lake Austin",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "Centroid of the City PARD boundary of Commons Ford Ranch Metro Park (614 N Commons Ford Rd.). The swimming-area point is not separately sourced.",
+        "source": "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/BOUNDARIES_city_of_austin_parks/FeatureServer/0",
+        "coordinate_method": "park_centroid"
+      },
+      "reach_direction": "Lake Austin (Colorado River between Mansfield Dam and Tom Miller Dam).",
+      "stations": [],
+      "operator_signals": {
+        "closure_page": "City closure page (captured 2026-09-29) lists 'Commons Ford Ranch Metropolitan Park - Boat Ramps & Swimming' closed October 12–November 30, 2026 for an LCRA drawdown.",
+        "conflict": "The Emma Long page (captured 2026-09-29) says the planned drawdown was canceled as of September 24, 2026; the closure page had not been reconciled at capture time.",
+        "lake_level": "LCRA Hydromet lake level identified, not captured (no endpoint)."
+      },
+      "access_source": "https://www.austintexas.gov/parks/locations/commons-ford-ranch",
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "operator notices only",
+        "local_rule": "operator closure (conflicting)",
+        "fresh_data_path": "City pages within 48 h"
+      },
+      "missing_for_color": [
+        "City reconciliation of the October closure versus the drawdown cancellation",
+        "swimming-area coordinate",
+        "any shoreline threshold if lake level is ever used"
+      ],
+      "current_treatment": "Gray with both notices shown."
+    },
+    "emma-long": {
+      "name": "Emma Long — Lake Austin beach",
+      "archetype": "reservoir_or_lake_beach",
+      "waterbody": "Lake Austin",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "Centroid of the City PARD boundary of Emma Long Metro Park (1600 City Park Rd.). The designated beach-entry swimming area is not separately sourced.",
+        "source": "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/BOUNDARIES_city_of_austin_parks/FeatureServer/0",
+        "coordinate_method": "park_centroid"
+      },
+      "reach_direction": "Lake Austin.",
+      "stations": [],
+      "operator_signals": {
+        "park_page": "Open year-round 7:00 a.m.–10:00 p.m.; designated beach entry swimming area; day-pass and car-capacity rules; 'The planned drawdown has been canceled as of September 24, 2026.'",
+        "closure_page": "Still lists 'Emma Long Metropolitan Park - Boat Ramp & Swimming' closed October 12–November 30, 2026 (updated July 14, 2026).",
+        "conflict": "Unreconciled at capture time 2026-09-29."
+      },
+      "access_source": "https://www.austintexas.gov/parks/emma-long-metropolitan-park",
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "operator notices only",
+        "local_rule": "operator closure (conflicting)",
+        "fresh_data_path": "City pages within 48 h"
+      },
+      "missing_for_color": [
+        "City reconciliation",
+        "beach coordinate"
+      ],
+      "current_treatment": "Gray with both notices shown."
+    },
+    "deep-eddy": {
+      "name": "Deep Eddy Pool",
+      "archetype": "managed_pool",
+      "waterbody": "n/a (well-fed municipal pool beside the Colorado River)",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "OpenStreetMap pool outline centroid (ODbL) inside the City PARD boundary of Eilers (Deep Eddy) Neighborhood Park; City address 401 Deep Eddy Ave.",
+        "source": "https://www.openstreetmap.org/way/206160759",
+        "coordinate_method": "sourced_point"
+      },
+      "reach_direction": "n/a",
+      "stations": [],
+      "access_source": "https://www.austintexas.gov/parks/locations/deep-eddy-pool",
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "color_gate": {
+        "verified_entry": true,
+        "documented_relationship": "operator",
+        "local_rule": "City schedule",
+        "fresh_data_path": "City pages within 48 h"
+      },
+      "missing_for_color": [],
+      "current_treatment": "Operator schedule badge only."
+    },
+    "big-stacy-pool": {
+      "name": "Big Stacy Pool",
+      "archetype": "managed_pool",
+      "waterbody": "n/a (municipal pool beside Blunn Creek)",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "OpenStreetMap pool outline centroid (ODbL) inside the City PARD boundary of Big Stacy Neighborhood Park; City address 700 E Live Oak St. The Blunn Creek reach a local observer described is a separate marker 50 m away.",
+        "source": "https://www.openstreetmap.org/way/384228919",
+        "coordinate_method": "sourced_point"
+      },
+      "reach_direction": "n/a",
+      "stations": [],
+      "access_source": "https://www.austintexas.gov/parks/locations/big-stacy-pool",
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "color_gate": {
+        "verified_entry": true,
+        "documented_relationship": "operator",
+        "local_rule": "City schedule",
+        "fresh_data_path": "City pages within 48 h"
+      },
+      "missing_for_color": [],
+      "current_treatment": "Operator schedule badge only; the creek beside it is a separate record."
+    },
+    "little-stacy-pool": {
+      "name": "Little Stacy Wading Pool",
+      "archetype": "managed_pool",
+      "waterbody": "n/a (municipal wading pool beside Blunn Creek)",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "Centroid of the City PARD boundary of Little Stacy Neighborhood Park (1500 Alameda Dr.). No separate pool-facility point was sourced; the earlier marker reused the Blunn Creek trailhead point.",
+        "source": "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/BOUNDARIES_city_of_austin_parks/FeatureServer/0",
+        "coordinate_method": "park_centroid"
+      },
+      "reach_direction": "n/a",
+      "stations": [],
+      "access_source": "https://www.austintexas.gov/parks/locations/little-stacy-wading-pool",
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "color_gate": {
+        "verified_entry": true,
+        "documented_relationship": "operator",
+        "local_rule": "City seasonal schedule",
+        "fresh_data_path": "City pages within 48 h"
+      },
+      "missing_for_color": [],
+      "current_treatment": "Operator schedule badge only."
+    },
+    "williamson-west-greenbelt": {
+      "name": "Williamson Creek West Greenbelt",
+      "archetype": "runoff_creek",
+      "waterbody": "Williamson Creek",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "Geocoded park address (6310 Brush Country Rd., Austin, TX 78749); 49.9 m from the mapped channel; greenbelt reference only.",
+        "source": "https://nominatim.openstreetmap.org/",
+        "coordinate_method": "geocoded_address",
+        "distance_to_channel_m": 49.9,
+        "osm_way": 629217961,
+        "metres_from_way_start": 2332.4
+      },
+      "reach_direction": "Williamson Creek flows east-southeast to Onion Creek inside McKinney Falls State Park; the greenbelt sections run West → Central → East along it.",
+      "stations": [
+        {
+          "station_id": "08158930",
+          "position": "downstream of the greenbelt; distance not computed across mapped ways",
+          "relationship_class": "context_station_downstream",
+          "confidence": "low",
+          "evidence": [
+            "geometry: park reference at ≈2.3 km on OSM way 629217961; 08158930 at ≈2.0 km and 08158970 at ≈13.8 km on OSM way 585249961",
+            "sources checked 2026-09-29 (Wikipedia greenbelt article, City East Williamson Creek project page, parks.atxgo.org) describe trails and a drainage easement; none names a swimming or wading spot"
+          ]
+        },
+        {
+          "station_id": "08158970",
+          "position": "far downstream; different mapped way",
+          "relationship_class": "context_same_waterbody_unpositioned",
+          "confidence": "low",
+          "evidence": [
+            "geometry: park reference at ≈2.3 km on OSM way 629217961; 08158930 at ≈2.0 km and 08158970 at ≈13.8 km on OSM way 585249961",
+            "sources checked 2026-09-29 (Wikipedia greenbelt article, City East Williamson Creek project page, parks.atxgo.org) describe trails and a drainage easement; none names a swimming or wading spot"
+          ]
+        }
+      ],
+      "access_source": "https://www.austintexas.gov/parks/locations/park-directory",
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "geometry-resolved context stations",
+        "local_rule": false,
+        "fresh_data_path": "USGS 08158930 / 08158970 (context only)"
+      },
+      "missing_for_color": [
+        "a swimming or wading spot named by a source or by a local observer",
+        "local rule; no labels yet"
+      ],
+      "current_treatment": "Gray creek context with both station cards; ready to hold a spot once one is named."
+    },
+    "williamson-central-greenbelt": {
+      "name": "Williamson Creek Central Greenbelt",
+      "archetype": "runoff_creek",
+      "waterbody": "Williamson Creek",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "Geocoded park address (5120 S 1st St., Austin, TX 78745); 39.7 m from the mapped channel; greenbelt reference only.",
+        "source": "https://nominatim.openstreetmap.org/",
+        "coordinate_method": "geocoded_address",
+        "distance_to_channel_m": 39.7,
+        "osm_way": 585249961,
+        "metres_from_way_start": 3942.3
+      },
+      "reach_direction": "Williamson Creek flows east-southeast to Onion Creek inside McKinney Falls State Park; the greenbelt sections run West → Central → East along it.",
+      "stations": [
+        {
+          "station_id": "08158930",
+          "position": "≈2.0 km upstream of the park reference on the same mapped way",
+          "relationship_class": "rule_linked_hypothesis",
+          "confidence": "medium",
+          "evidence": [
+            "geometry: park reference at ≈3.9 km on OSM way 585249961; 08158930 at ≈2.0 km and 08158970 at ≈13.8 km on OSM way 585249961",
+            "sources checked 2026-09-29 (Wikipedia greenbelt article, City East Williamson Creek project page, parks.atxgo.org) describe trails and a drainage easement; none names a swimming or wading spot",
+            "2026-10-02: pale flow-context hypothesis only; no reach-depth calibration or access certification"
+          ]
+        },
+        {
+          "station_id": "08158970",
+          "position": "≈9.9 km downstream of the park reference on the same mapped way",
+          "relationship_class": "context_station_downstream",
+          "confidence": "medium",
+          "evidence": [
+            "geometry: park reference at ≈3.9 km on OSM way 585249961; 08158930 at ≈2.0 km and 08158970 at ≈13.8 km on OSM way 585249961",
+            "sources checked 2026-09-29 (Wikipedia greenbelt article, City East Williamson Creek project page, parks.atxgo.org) describe trails and a drainage easement; none names a swimming or wading spot"
+          ]
+        }
+      ],
+      "access_source": "https://www.austintexas.gov/parks/locations/park-directory",
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "geometry-resolved context stations",
+        "local_rule": "pale hypothetical flow cue only",
+        "fresh_data_path": "USGS 08158930 / 08158970 (context only)"
+      },
+      "missing_for_color": [
+        "reach-specific depth/condition observations",
+        "verified swimming entry"
+      ],
+      "current_treatment": "Pale station-flow hypothesis, with reach and access uncertainty stated on the card."
+    },
+    "williamson-east-greenbelt": {
+      "name": "Williamson Creek East Greenbelt (Dove Springs)",
+      "archetype": "runoff_creek",
+      "waterbody": "Williamson Creek",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "Geocoded park address (4618 E William Cannon Dr., Austin, TX 78744 (City project page: 4700–4798 Teewood Dr.)); 82.0 m from the mapped channel; greenbelt reference only.",
+        "source": "https://nominatim.openstreetmap.org/",
+        "coordinate_method": "geocoded_address",
+        "distance_to_channel_m": 82.0,
+        "osm_way": 585249961,
+        "metres_from_way_start": 10638.1
+      },
+      "reach_direction": "Williamson Creek flows east-southeast to Onion Creek inside McKinney Falls State Park; the greenbelt sections run West → Central → East along it.",
+      "stations": [
+        {
+          "station_id": "08158930",
+          "position": "≈8.7 km upstream of the park reference on the same mapped way",
+          "relationship_class": "context_station_upstream",
+          "confidence": "low",
+          "evidence": [
+            "geometry: park reference at ≈10.6 km on OSM way 585249961; 08158930 at ≈2.0 km and 08158970 at ≈13.8 km on OSM way 585249961",
+            "sources checked 2026-09-29 (Wikipedia greenbelt article, City East Williamson Creek project page, parks.atxgo.org) describe trails and a drainage easement; none names a swimming or wading spot"
+          ]
+        },
+        {
+          "station_id": "08158970",
+          "position": "≈3.2 km downstream of the park reference on the same mapped way",
+          "relationship_class": "rule_linked_hypothesis",
+          "confidence": "medium",
+          "evidence": [
+            "geometry: park reference at ≈10.6 km on OSM way 585249961; 08158930 at ≈2.0 km and 08158970 at ≈13.8 km on OSM way 585249961",
+            "sources checked 2026-09-29 (Wikipedia greenbelt article, City East Williamson Creek project page, parks.atxgo.org) describe trails and a drainage easement; none names a swimming or wading spot",
+            "2026-10-02: pale flow-context hypothesis only; no reach-depth calibration or access certification"
+          ]
+        }
+      ],
+      "access_source": "https://www.austintexas.gov/parks/locations/park-directory",
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "geometry-resolved context stations",
+        "local_rule": "pale hypothetical flow cue only",
+        "fresh_data_path": "USGS 08158930 / 08158970 (context only)"
+      },
+      "missing_for_color": [
+        "reach-specific depth/condition observations",
+        "verified swimming entry"
+      ],
+      "current_treatment": "Pale station-flow hypothesis, with reach and access uncertainty stated on the card."
+    },
+    "blue-hole-georgetown": {
+      "name": "Blue Hole — Imhoff pool (upper)",
+      "archetype": "dam_pool",
+      "waterbody": "South Fork San Gabriel River",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "Approximate pool-center point on OSM waterway within City Blue Hole Park; entry not surveyed",
+        "source": "https://www.openstreetmap.org/way/28902299",
+        "coordinate_method": "derived_on_centerline"
+      },
+      "reach_direction": "South Fork flows east through Blue Hole Park",
+      "stations": [
+        {
+          "station_id": "08104900",
+          "position": "Upstream on the same South Fork; neither dam pool has measured depth",
+          "relationship_class": "rule_linked_hypothesis",
+          "confidence": "low",
+          "evidence": [
+            "USGS station 08104900 upstream on the South Fork",
+            "City park boundary and two-dam description; pool points approximate"
+          ]
+        }
+      ],
+      "missing_for_color": [
+        "Pool-specific depth and condition observations are not yet available"
+      ],
+      "current_treatment": "Pale hypothetical flow cue from one park-level favorable observation; stage and fast-rise gates; no pool-specific validation."
+    },
+    "blue-hole-georgetown-kiddie": {
+      "name": "Blue Hole — Kiddie pool (lower)",
+      "archetype": "dam_pool",
+      "waterbody": "South Fork San Gabriel River",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "Approximate pool-center point on OSM waterway within City Blue Hole Park; entry not surveyed",
+        "source": "https://www.openstreetmap.org/way/28902299",
+        "coordinate_method": "derived_on_centerline"
+      },
+      "reach_direction": "South Fork flows east through Blue Hole Park",
+      "stations": [
+        {
+          "station_id": "08104900",
+          "position": "Upstream on the same South Fork; neither dam pool has measured depth",
+          "relationship_class": "rule_linked_hypothesis",
+          "confidence": "low",
+          "evidence": [
+            "USGS station 08104900 upstream on the South Fork",
+            "City park boundary and two-dam description; pool points approximate"
+          ]
+        }
+      ],
+      "missing_for_color": [
+        "Pool-specific depth and condition observations are not yet available"
+      ],
+      "current_treatment": "Pale hypothetical flow cue from one park-level favorable observation; stage and fast-rise gates; no pool-specific validation."
+    },
+    "jacobs-well": {
+      "name": "Jacob's Well",
+      "archetype": "spring_supported_karst",
+      "waterbody": "Jacob's Well Spring",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "Approximate named place or reach; exact water-entry point not independently verified",
+        "source": "https://www.hayscountytx.com/jacobswell/",
+        "coordinate_method": "approximate_named_reach"
+      },
+      "reach_direction": "at the named spring",
+      "stations": [
+        {
+          "station_id": "08170990",
+          "position": "at the named spring",
+          "relationship_class": "rule_linked_hypothesis",
+          "confidence": "low",
+          "evidence": [
+            "USGS names the Jacob’s Well spring station; Hays County swimming is canceled",
+            "https://waterdata.usgs.gov/monitoring-location/USGS-08170990/",
+            "2026-10-02: historical station-flow bracket is a hypothesis, not local swim-condition calibration"
+          ]
+        }
+      ],
+      "access_source": "https://www.hayscountytx.com/jacobswell/",
+      "closure_source": "https://www.hayscountytx.gov/449/Things-to-Do",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "at the named spring",
+        "local_rule": "pale hypothetical station-flow cue only",
+        "fresh_data_path": "USGS 08170990"
+      },
+      "missing_for_color": [
+        "reach-specific depth and condition observations",
+        "current operator permission independent of flow"
+      ],
+      "current_treatment": "Pale flow hypothesis; official operator closure takes precedence when current."
+    },
+    "blue-hole-wimberley": {
+      "name": "Blue Hole — Wimberley",
+      "archetype": "spring_supported_karst",
+      "waterbody": "Cypress Creek",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "Approximate named place or reach; exact water-entry point not independently verified",
+        "source": "https://wimberleyparksandrec.com/blue-hole-regional-park/",
+        "coordinate_method": "approximate_named_reach"
+      },
+      "reach_direction": "upstream spring feeding Cypress Creek",
+      "stations": [
+        {
+          "station_id": "08170990",
+          "position": "upstream spring feeding Cypress Creek",
+          "relationship_class": "rule_linked_hypothesis",
+          "confidence": "low",
+          "evidence": [
+            "Wimberley says downstream seeps also feed Blue Hole, so zero at Jacob’s Well is not zero flow at Blue Hole",
+            "https://waterdata.usgs.gov/monitoring-location/USGS-08170990/",
+            "2026-10-02: historical station-flow bracket is a hypothesis, not local swim-condition calibration"
+          ]
+        }
+      ],
+      "access_source": "https://wimberleyparksandrec.com/blue-hole-regional-park/",
+      "closure_source": "https://wimberleyparksandrec.com/blog/give-nature-a-chance-the-end-of-swim-season-at-blue-hole/",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "upstream spring feeding Cypress Creek",
+        "local_rule": "pale hypothetical station-flow cue only",
+        "fresh_data_path": "USGS 08170990"
+      },
+      "missing_for_color": [
+        "reach-specific depth and condition observations",
+        "current operator permission independent of flow"
+      ],
+      "current_treatment": "Pale flow hypothesis; official operator closure takes precedence when current."
+    },
+    "san-marcos-sewell": {
+      "name": "San Marcos River — Sewell Park",
+      "archetype": "spring_supported_karst",
+      "waterbody": "San Marcos River",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "OSM San Marcos River centerline by Sewell Park, Texas State University; nearby shore or stairs not surveyed",
+        "source": "https://www.openstreetmap.org/way/61357891",
+        "coordinate_method": "OSM river way 61357891 vertex within or beside named park boundary"
+      },
+      "reach_direction": "downstream of USGS 08170500 at Sewell Park on the same mapped San Marcos River centerline; intervening conditions unmeasured",
+      "stations": [
+        {
+          "station_id": "08170500",
+          "position": "downstream of USGS 08170500 at Sewell Park on the same mapped San Marcos River centerline; intervening conditions unmeasured",
+          "relationship_class": "rule_linked_hypothesis",
+          "confidence": "low",
+          "evidence": [
+            "https://www.txst.edu/about/history-traditions/sewell-park.html",
+            "https://www.openstreetmap.org/way/61357891",
+            "https://www.openstreetmap.org/way/45840024",
+            "USGS 08170500 is at the upstream end of Sewell Park; flow brackets remain unvalidated depth guesses"
+          ]
+        }
+      ],
+      "access_source": "https://www.txst.edu/about/history-traditions/sewell-park.html",
+      "closure_source": "https://www.txst.edu/about/history-traditions/sewell-park.html",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "downstream of USGS 08170500 at Sewell Park on the same mapped San Marcos River centerline; intervening conditions unmeasured",
+        "local_rule": "pale hypothetical station-flow cue only",
+        "fresh_data_path": "USGS 08170500"
+      },
+      "missing_for_color": [
+        "reach-specific depth, current and condition observations",
+        "current park access and closure check independent of flow"
+      ],
+      "current_treatment": "Pale station-flow hypothesis only; one upstream gauge does not establish depth, current or access at this river point."
+    },
+    "san-marcos-city": {
+      "name": "San Marcos River — City Park",
+      "archetype": "spring_supported_karst",
+      "waterbody": "San Marcos River",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "OSM San Marcos River centerline by San Marcos City Park; nearby shore or stairs not surveyed",
+        "source": "https://www.openstreetmap.org/way/61357891",
+        "coordinate_method": "OSM river way 61357891 vertex within or beside named park boundary"
+      },
+      "reach_direction": "downstream of USGS 08170500 at Sewell Park on the same mapped San Marcos River centerline; intervening conditions unmeasured",
+      "stations": [
+        {
+          "station_id": "08170500",
+          "position": "downstream of USGS 08170500 at Sewell Park on the same mapped San Marcos River centerline; intervening conditions unmeasured",
+          "relationship_class": "rule_linked_hypothesis",
+          "confidence": "low",
+          "evidence": [
+            "https://www.sanmarcostx.gov/Facilities/Facility/Details/City-Park-35",
+            "https://www.openstreetmap.org/way/61357891",
+            "https://www.openstreetmap.org/way/546922177",
+            "USGS 08170500 is at the upstream end of Sewell Park; flow brackets remain unvalidated depth guesses"
+          ]
+        }
+      ],
+      "access_source": "https://www.sanmarcostx.gov/Facilities/Facility/Details/City-Park-35",
+      "closure_source": "https://www.sanmarcostx.gov/Facilities/Facility/Details/City-Park-35",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "downstream of USGS 08170500 at Sewell Park on the same mapped San Marcos River centerline; intervening conditions unmeasured",
+        "local_rule": "pale hypothetical station-flow cue only",
+        "fresh_data_path": "USGS 08170500"
+      },
+      "missing_for_color": [
+        "reach-specific depth, current and condition observations",
+        "current park access and closure check independent of flow"
+      ],
+      "current_treatment": "Pale station-flow hypothesis only; one upstream gauge does not establish depth, current or access at this river point."
+    },
+    "san-marcos-rio-vista": {
+      "name": "San Marcos River — Rio Vista Park",
+      "archetype": "spring_supported_karst",
+      "waterbody": "San Marcos River",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "OSM San Marcos River centerline by Rio Vista Park; nearby shore or stairs not surveyed",
+        "source": "https://www.openstreetmap.org/way/61357891",
+        "coordinate_method": "OSM river way 61357891 vertex within or beside named park boundary"
+      },
+      "reach_direction": "downstream of USGS 08170500 at Sewell Park on the same mapped San Marcos River centerline; intervening conditions unmeasured",
+      "stations": [
+        {
+          "station_id": "08170500",
+          "position": "downstream of USGS 08170500 at Sewell Park on the same mapped San Marcos River centerline; intervening conditions unmeasured",
+          "relationship_class": "rule_linked_hypothesis",
+          "confidence": "low",
+          "evidence": [
+            "https://www.sanmarcostx.gov/facilities/facility/details/riovistapark-41",
+            "https://www.openstreetmap.org/way/61357891",
+            "https://www.openstreetmap.org/way/583977849",
+            "USGS 08170500 is at the upstream end of Sewell Park; flow brackets remain unvalidated depth guesses"
+          ]
+        }
+      ],
+      "access_source": "https://www.sanmarcostx.gov/facilities/facility/details/riovistapark-41",
+      "closure_source": "https://www.sanmarcostx.gov/facilities/facility/details/riovistapark-41",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "downstream of USGS 08170500 at Sewell Park on the same mapped San Marcos River centerline; intervening conditions unmeasured",
+        "local_rule": "pale hypothetical station-flow cue only",
+        "fresh_data_path": "USGS 08170500"
+      },
+      "missing_for_color": [
+        "reach-specific depth, current and condition observations",
+        "current park access and closure check independent of flow"
+      ],
+      "current_treatment": "Pale station-flow hypothesis only; one upstream gauge does not establish depth, current or access at this river point."
+    },
+    "onion-creek-greenbelt-playground": {
+      "name": "Onion Creek Greenbelt — by the playground (Onion Creek Dr.)",
+      "archetype": "runoff_creek",
+      "waterbody": "Onion Creek",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "Centerline node nearest the OSM playground inside the City PARD polygon of Onion Creek Greenbelt; the playground itself is 153 m from the channel; not a verified entry.",
+        "source": "https://www.openstreetmap.org/way/1212773237",
+        "coordinate_method": "derived_on_centerline",
+        "distance_to_channel_m": 0.0,
+        "osm_way": 417039996,
+        "metres_from_way_start": 5514.9
+      },
+      "reach_direction": "Onion Creek flows northeast past the greenbelt toward McKinney Falls and US 183.",
+      "stations": [
+        {
+          "station_id": "08158827",
+          "position": "≈14.5 km upstream of the playground reference, chained across OSM ways 194836554 → 195841340 → 417039996 (computed 2026-09-30)",
+          "relationship_class": "context_station_upstream",
+          "confidence": "low",
+          "evidence": [
+            "geometry: station at ≈10.16 km on way 194836554 (253 m before its end), way 195841340 is 8.73 km, playground reference at ≈5.51 km on way 417039996",
+            "USGS metadata: Onion Ck at Twin Creeks Rd nr Manchaca, 181 sq mi drainage; live discharge; daily record 2003-04-03 onward (probe and collect 2026-09-30)"
+          ]
+        },
+        {
+          "station_id": "08159000",
+          "position": "≈9.7 km downstream of the playground reference on the same mapped way",
+          "relationship_class": "context_station_downstream",
+          "confidence": "low",
+          "evidence": [
+            "geometry: playground reference at ≈5.51 km, Williamson Creek mouth at ≈11.29 km, 08159000 at ≈15.17 km on OSM way 417039996",
+            "the station reads Onion plus Williamson; 08158970 gives the Williamson share as context"
+          ]
+        }
+      ],
+      "access_source": "https://www.austintexas.gov/parks/locations/park-directory",
+      "closure_source": "https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "two context stations, 14.5 km up and 9.7 km down",
+        "local_rule": false,
+        "fresh_data_path": "USGS 08158827 and 08159000 (context only)"
+      },
+      "missing_for_color": [
+        "verified water-entry point by the playground",
+        "tributary inventory between Twin Creeks Rd and US 183 (Slaughter Creek mouth)",
+        "local rule"
+      ],
+      "current_treatment": "No place color: two distant context stations, no verified water entry or local flow rule."
+    }
+  },
+  "recomputed_2026_09_29": "Entry geometry and station positions were recomputed after the marker audit moved the Barton, Bull Creek, and pool coordinates onto sourced points (data/model/austin-marker-audit.json); text that names a specific distance now comes from data/model/austin-reach-geometry.json on those coordinates."
+}

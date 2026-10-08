@@ -1,0 +1,416 @@
+[
+  {
+    "id": "barton-flow-bands-v1",
+    "place_ids": [
+      "twin-falls",
+      "sculpture-falls",
+      "hill-of-life"
+    ],
+    "station_id": "08155240",
+    "parameter": "00060",
+    "unit": "ft^3/s",
+    "bands": [
+      {
+        "lt": 3,
+        "status": "red"
+      },
+      {
+        "gte": 3,
+        "lt": 10,
+        "status": "yellow"
+      },
+      {
+        "gte": 10,
+        "lt": 150,
+        "status": "green"
+      },
+      {
+        "gte": 150,
+        "lt": 300,
+        "status": "yellow"
+      },
+      {
+        "gte": 300,
+        "status": "red"
+      }
+    ],
+    "source": "https://greenbelter.io/bundle.js",
+    "evidence_label": "Flow estimate \u00b7 recorded third-party flow bands, unvalidated"
+  },
+  {
+    "id": "barton-flow-bands-loop360-v1",
+    "place_ids": [
+      "gus-fruh",
+      "campbells-hole",
+      "the-flats"
+    ],
+    "station_id": "08155300",
+    "parameter": "00060",
+    "unit": "ft^3/s",
+    "bands": [
+      {
+        "lt": 3,
+        "status": "red"
+      },
+      {
+        "gte": 3,
+        "lt": 10,
+        "status": "yellow"
+      },
+      {
+        "gte": 10,
+        "lt": 150,
+        "status": "green"
+      },
+      {
+        "gte": 150,
+        "lt": 300,
+        "status": "yellow"
+      },
+      {
+        "gte": 300,
+        "status": "red"
+      }
+    ],
+    "source": "https://greenbelter.io/bundle.js",
+    "evidence_label": "Flow estimate \u00b7 recorded third-party flow bands, unvalidated"
+  },
+  {
+    "id": "bull-creek-provisional-personal-v1",
+    "place_ids": [
+      "bull-creek-district"
+    ],
+    "station_id": "08154700",
+    "parameter": "00060",
+    "unit": "ft^3/s",
+    "bands": [
+      {
+        "lt": 0.5,
+        "status": "red"
+      },
+      {
+        "gte": 0.5,
+        "lt": 1.5,
+        "status": "yellow"
+      },
+      {
+        "gte": 1.5,
+        "lt": 10,
+        "status": "green"
+      },
+      {
+        "gte": 10,
+        "lt": 45,
+        "status": "yellow"
+      },
+      {
+        "gte": 45,
+        "status": "red"
+      }
+    ],
+    "source": "method.html#bull-creek-band",
+    "evidence_label": "Estimate \u00b7 limited evidence \u00b7 provisional band from 3 recorded visits",
+    "hypothetical": true,
+    "hypothesis_note": "provisional visit-reference band with limited evidence; station flow does not measure pool depth"
+  },
+  {
+    "id": "mckinney-lower-provisional-personal-v1",
+    "place_ids": [
+      "mckinney-lower"
+    ],
+    "station_id": "08159000",
+    "parameter": "00060",
+    "unit": "ft^3/s",
+    "bands": [
+      {
+        "lt": 1.19,
+        "status": "red"
+      },
+      {
+        "gte": 1.19,
+        "lt": 24.1,
+        "status": "green"
+      },
+      {
+        "gte": 24.1,
+        "lt": 258,
+        "status": "yellow"
+      },
+      {
+        "gte": 258,
+        "status": "red"
+      }
+    ],
+    "source": "method.html#mckinney-lower-band",
+    "evidence_label": "Estimate \u00b7 limited evidence \u00b7 provisional flow band; downstream station includes Williamson Creek",
+    "hypothetical": true,
+    "hypothesis_note": "provisional visit-reference band with limited evidence; station flow does not measure pool depth"
+  },
+  {
+    "id": "georgetown-blue-hole-hypothesis-v1",
+    "place_ids": [
+      "blue-hole-georgetown",
+      "blue-hole-georgetown-kiddie"
+    ],
+    "station_id": "08104900",
+    "parameter": "00060",
+    "unit": "ft^3/s",
+    "bands": [
+      {
+        "lt": 50,
+        "status": "yellow"
+      },
+      {
+        "gte": 50,
+        "lt": 150,
+        "status": "green"
+      },
+      {
+        "gte": 150,
+        "lt": 500,
+        "status": "yellow"
+      },
+      {
+        "gte": 500,
+        "status": "red"
+      }
+    ],
+    "hypothetical": true,
+    "red_stage_ft": 7,
+    "rapid_rise_hours": 2,
+    "rapid_rise_ratio": 1.5,
+    "rapid_rise_min_cfs": 30,
+    "source": "method.html#georgetown-blue-hole-hypothesis",
+    "evidence_label": "Hypothesis \u00b7 one park-level favorable report; no pool-specific depth validation",
+    "basis": "A park-level favorable report coincided with 105 cfs at the upstream USGS station. The later flood makes rapid rises and high flow exclusion gates essential. These bands are guesses, not calibrated pool-depth or safety thresholds.",
+    "limitations": "Both dams can retain water when upstream discharge is low. The station is upstream and measures neither pool. NWS action stage 7 ft is at the station, not a park-stage threshold."
+  },
+  {
+    "id": "new-braunfels-comal-recreation-flow-v1",
+    "place_ids": [
+      "comal-prince-solms"
+    ],
+    "station_id": "08169000",
+    "parameter": "00060",
+    "unit": "ft^3/s",
+    "bands": [
+      {
+        "gte": 100,
+        "lt": 500,
+        "status": "green"
+      },
+      {
+        "gte": 500,
+        "lt": 600,
+        "status": "yellow"
+      },
+      {
+        "gte": 600,
+        "status": "red"
+      }
+    ],
+    "source": "https://www.newbraunfels.gov/3368/Comal-River"
+  },
+  {
+    "id": "mckinney-upper-hypothesis-v1",
+    "place_ids": [
+      "mckinney-upper"
+    ],
+    "station_id": "08159000",
+    "parameter": "00060",
+    "unit": "ft^3/s",
+    "bands": [
+      {
+        "lt": 1.19,
+        "status": "yellow"
+      },
+      {
+        "gte": 1.19,
+        "lt": 24.1,
+        "status": "green"
+      },
+      {
+        "gte": 24.1,
+        "lt": 258,
+        "status": "yellow"
+      },
+      {
+        "gte": 258,
+        "status": "red"
+      }
+    ],
+    "hypothetical": true,
+    "source": "method.html#regional-flow-hypotheses",
+    "evidence_label": "Pale hypothesis \u00b7 station-flow pattern, no reach-depth validation",
+    "hypothesis_note": "Downstream station includes Williamson Creek below both falls. Upper Falls has no reach-specific favorable observation; this is a weak Onion Creek flow guess, not a pool depth or swim approval.",
+    "rapid_rise_hours": 2,
+    "rapid_rise_min_cfs": 10,
+    "rapid_rise_ratio": 2
+  },
+  {
+    "id": "williamson-central-flow-hypothesis-v1",
+    "place_ids": [
+      "williamson-central-greenbelt"
+    ],
+    "station_id": "08158930",
+    "parameter": "00060",
+    "unit": "ft^3/s",
+    "bands": [
+      {
+        "lt": 0.5,
+        "status": "yellow"
+      },
+      {
+        "gte": 0.5,
+        "lt": 8,
+        "status": "green"
+      },
+      {
+        "gte": 8,
+        "lt": 85,
+        "status": "yellow"
+      },
+      {
+        "gte": 85,
+        "status": "red"
+      }
+    ],
+    "hypothetical": true,
+    "source": "method.html#regional-flow-hypotheses",
+    "evidence_label": "Pale hypothesis \u00b7 station-flow pattern, no reach-depth validation",
+    "hypothesis_note": "Creek-flow context at a park reference, not a verified swimming entry. The station is upstream; flow and depth here remain unmeasured.",
+    "rapid_rise_hours": 2,
+    "rapid_rise_min_cfs": 2,
+    "rapid_rise_ratio": 2
+  },
+  {
+    "id": "williamson-east-flow-hypothesis-v1",
+    "place_ids": [
+      "williamson-east-greenbelt"
+    ],
+    "station_id": "08158970",
+    "parameter": "00060",
+    "unit": "ft^3/s",
+    "bands": [
+      {
+        "lt": 1,
+        "status": "yellow"
+      },
+      {
+        "gte": 1,
+        "lt": 26,
+        "status": "green"
+      },
+      {
+        "gte": 26,
+        "lt": 177,
+        "status": "yellow"
+      },
+      {
+        "gte": 177,
+        "status": "red"
+      }
+    ],
+    "hypothetical": true,
+    "source": "method.html#regional-flow-hypotheses",
+    "evidence_label": "Pale hypothesis \u00b7 station-flow pattern, no reach-depth validation",
+    "hypothesis_note": "Creek-flow context at a park reference, not a verified swimming entry. The station is downstream and integrates this reach; flow and depth here remain unmeasured.",
+    "rapid_rise_hours": 2,
+    "rapid_rise_min_cfs": 20,
+    "rapid_rise_ratio": 2
+  },
+  {
+    "id": "jacobs-well-spring-hypothesis-v1",
+    "place_ids": [
+      "jacobs-well"
+    ],
+    "station_id": "08170990",
+    "parameter": "00060",
+    "unit": "ft^3/s",
+    "bands": [
+      {
+        "lt": 1,
+        "status": "yellow"
+      },
+      {
+        "gte": 1,
+        "lt": 32,
+        "status": "green"
+      },
+      {
+        "gte": 32,
+        "status": "yellow"
+      }
+    ],
+    "hypothetical": true,
+    "source": "method.html#regional-flow-hypotheses",
+    "evidence_label": "Pale hypothesis \u00b7 station-flow pattern, no reach-depth validation",
+    "hypothesis_note": "Spring-discharge guess only. The County swimming closure overrides every flow color; spring-pool depth and permission are separate."
+  },
+  {
+    "id": "wimberley-blue-hole-hypothesis-v1",
+    "place_ids": [
+      "blue-hole-wimberley"
+    ],
+    "station_id": "08170990",
+    "parameter": "00060",
+    "unit": "ft^3/s",
+    "bands": [
+      {
+        "lt": 1,
+        "status": "yellow"
+      },
+      {
+        "gte": 1,
+        "lt": 32,
+        "status": "green"
+      },
+      {
+        "gte": 32,
+        "status": "yellow"
+      }
+    ],
+    "hypothetical": true,
+    "source": "method.html#regional-flow-hypotheses",
+    "evidence_label": "Pale hypothesis \u00b7 station-flow pattern, no reach-depth validation",
+    "hypothesis_note": "Upstream spring-flow guess only. Other seeps feed Cypress Creek; zero spring discharge does not prove Blue Hole is dry. City swimming season and reservations govern access."
+  },
+  {
+    "id": "san-marcos-upper-river-hypothesis-v1",
+    "place_ids": [
+      "san-marcos-sewell",
+      "san-marcos-city",
+      "san-marcos-rio-vista"
+    ],
+    "station_id": "08170500",
+    "parameter": "00060",
+    "unit": "ft^3/s",
+    "bands": [
+      {
+        "lt": 90,
+        "status": "yellow"
+      },
+      {
+        "gte": 90,
+        "lt": 306,
+        "status": "green"
+      },
+      {
+        "gte": 306,
+        "lt": 350,
+        "status": "yellow"
+      },
+      {
+        "gte": 350,
+        "status": "red"
+      }
+    ],
+    "hypothetical": true,
+    "source": "method.html#regional-flow-hypotheses",
+    "evidence_label": "Pale hypothesis \u00b7 station-flow pattern, no reach-depth validation",
+    "hypothesis_note": "Upstream station-flow guess for Sewell Park, City Park and Rio Vista Park. It measures neither local depth nor current at any entry, and intervening conditions can differ.",
+    "rapid_rise_hours": 2,
+    "rapid_rise_min_cfs": 50,
+    "rapid_rise_ratio": 1.5
+  }
+]
