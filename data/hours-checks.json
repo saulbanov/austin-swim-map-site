@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-10-08T22:22:28.541369+00:00",
+  "generated_by": "austin-swim-map tools/browser_hours.py assess",
+  "capture": "data/raw/browser-hours/20261008T222200Z",
+  "browser": "chromium_headless_shell-1248",
+  "meaning": "For each facility whose hours page renders only in a browser: whether every phrase recorded with its posted hours was on the page at retrieved_at. The map colors the facility for 30 hours after a passing check.",
+  "checks": {
+    "pflugerville-gilleland-creek-pool": {
+      "url": "https://www.pflugervilletx.gov/gilleland-creek-pool-0",
+      "retrieved_at": "2026-10-08T22:22:08.721077+00:00",
+      "verified": true,
+      "sha256": "fff5d008f53de084c1bf59e753794a857b6857f4739201e07bcafa542b5e735f",
+      "capture_file": "data/raw/browser-hours/20261008T222200Z/www-pflugervilletx-gov-gilleland-creek-pool-0.html",
+      "text_chars": 4749,
+      "missing": []
+    },
+    "pflugerville-scott-mentzer-pool": {
+      "url": "https://www.pflugervilletx.gov/scott-mentzer-pool-0",
+      "retrieved_at": "2026-10-08T22:22:20.971259+00:00",
+      "verified": true,
+      "sha256": "1c3b89553405b5ab0c8e669a3b426f5c79d1f800d8d55204af3fc64a2e5fd793",
+      "capture_file": "data/raw/browser-hours/20261008T222200Z/www-pflugervilletx-gov-scott-mentzer-pool-0.html",
+      "text_chars": 9129,
+      "missing": []
+    },
+    "pflugerville-windermere-pool": {
+      "url": "https://www.pflugervilletx.gov/windermere-pool-0",
+      "retrieved_at": "2026-10-08T22:22:28.375858+00:00",
+      "verified": true,
+      "sha256": "310fb99f2134b635fc88dd06c9116fcd8dda56b671dc225ab741ee8902f88241",
+      "capture_file": "data/raw/browser-hours/20261008T222200Z/www-pflugervilletx-gov-windermere-pool-0.html",
+      "text_chars": 6144,
+      "missing": []
+    },
+    "pflugerville-falcon-pointe-splash-pad": {
+      "url": "https://www.pflugervilletx.gov/falcon-pointe-splash-pad-0",
+      "retrieved_at": "2026-10-08T22:22:07.268143+00:00",
+      "verified": true,
+      "sha256": "bff366f919e536d627fd0530e6e5d17bcab4e690906f592c2b98b73f1c795368",
+      "capture_file": "data/raw/browser-hours/20261008T222200Z/www-pflugervilletx-gov-falcon-pointe-splash-pad-0.html",
+      "text_chars": 5984,
+      "missing": []
+    },
+    "pflugerville-stone-hill-splash-pad": {
+      "url": "https://www.pflugervilletx.gov/stone-hill-splash-pad-0",
+      "retrieved_at": "2026-10-08T22:22:25.339248+00:00",
+      "verified": true,
+      "sha256": "b093adc5bf978d4ac90e1809085cd729d32582debe69f8202a4541cc158961e5",
+      "capture_file": "data/raw/browser-hours/20261008T222200Z/www-pflugervilletx-gov-stone-hill-splash-pad-0.html",
+      "text_chars": 6958,
+      "missing": []
+    },
+    "pflugerville-lake-pflugerville-park": {
+      "url": "https://www.pflugervilletx.gov/home?contentId=e5d77f12-98ee-45ff-8c31-0e6ec1aef14a",
+      "retrieved_at": "2026-10-08T22:22:17.874514+00:00",
+      "verified": true,
+      "sha256": "7e33fa37d00e1b911c77cf51bafd0974722a9fd420a4ee2bd7795a8581ef8567",
+      "capture_file": "data/raw/browser-hours/20261008T222200Z/www-pflugervilletx-gov-home-contentid-e5d77f12-98ee-45ff-8c31-0e6ec1aef14a.html",
+      "text_chars": 10532,
+      "missing": []
+    }
+  }
+}
