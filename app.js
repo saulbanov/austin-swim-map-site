@@ -2,7 +2,7 @@
    Static files provide the place inventory, rules and geometry. Personal visit records are excluded. */
 'use strict';
 const $=s=>document.querySelector(s);
-const APP_VERSION='2026-10-08-lcra-proxy';
+const APP_VERSION='2026-10-08-pools';
 const detailBody=$('#detail-body'), detailPanel=$('#detail'), list=$('#place-list'), poolList=$('#pool-list'), freshness=$('#freshness');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const AUSTIN_BOUNDS=[[30.16,-97.93],[30.44,-97.66]];
@@ -16,6 +16,9 @@ const FLOW_PLANNING_MAX_AGE_MS=6*3600000;
 
 let places=[],gauges=[],cityGauges=[],cityHydrometMeta={},readings={},visits=[],flowMeta={},operatorMeta={},noticeContext={},hazards={},outdoor={},context={stations:{}},relationships={places:{}},layers=[],selectedId=null,creekLayer=null,parkLayer=null,groupsBeyond=[];
 const layerChoice={holes:true,pools:true,context:false,gauges:false,cityGauges:false};
+// Hide closed: drops places whose current answer is a closure (kindOf key 'closed'), on every layer. Red flow stays visible.
+let hideClosed=false;
+try{ hideClosed=localStorage.getItem('austin-swim-map-hide-closed')==='1'; }catch(e){}
 let cityHoursView='today';
 try{ const saved=JSON.parse(localStorage.getItem('austin-swim-map-layers')||'{}'); layerChoice.holes=saved.holes!==false; layerChoice.pools=saved.pools!==false; layerChoice.context=saved.context===true; layerChoice.gauges=saved.gauges===true; layerChoice.cityGauges=saved.cityGauges===true;
   cityHoursView=localStorage.getItem('austin-swim-map-city-hours')==='now'?'now':'today'; }catch(e){}
@@ -137,10 +140,10 @@ function shortTag(p){
 }
 function symbolFor(p){ return p.place_role==='managed_pool'?'◉':p.place_role==='park_reference'?'⌂':p.place_role==='creek_context'?'○':'★'; }
 function shapeClass(p){ return p.place_role==='managed_pool'?'pool':p.place_role==='park_reference'?'park':p.place_role==='creek_context'?'ctx':'star'; }
-function unverified(p){ return ['derived_on_centerline','park_centroid','park_reference','unresolved'].includes(p.coordinate_method)||(!p.coordinate_method&&isAustin(p)); }
+function unverified(p){ return ['derived_on_centerline','park_centroid','park_reference','unresolved','geocoded_address'].includes(p.coordinate_method)||(!p.coordinate_method&&isAustin(p)); }
 function categoryOf(p){ return p.place_role==='managed_pool'?'pool':p.place_role==='park_reference'?'park':p.place_role==='creek_context'?'context':'creek'; }
 function layerForPlace(p){ return p.place_role==='managed_pool'?'pools':p.place_role==='creek_context'?'context':'holes'; }
-function visiblePlace(p){ return layerChoice[layerForPlace(p)]; }
+function visiblePlace(p){ return layerChoice[layerForPlace(p)]&&!(hideClosed&&kindOf(p).key==='closed'); }
 function revealPlaceLayer(p){ const key=layerForPlace(p); if(layerChoice[key]) return; layerChoice[key]=true; $('#show-'+key).checked=true; saveLayerChoice(); buildGroups(); renderRim(); }
 function saveLayerChoice(){ try{localStorage.setItem('austin-swim-map-layers',JSON.stringify(layerChoice));}catch(e){} }
 function areaOf(p){
@@ -148,7 +151,7 @@ function areaOf(p){
   if(p.region==='Barton Creek Greenbelt') return 'Barton Creek Greenbelt';
   if(p.creek==='Bull Creek') return 'Bull Creek';
   if(p.region==='Austin / Lake Austin') return 'Lake Austin parks';
-  if(p.place_role==='managed_pool') return 'City pools (individually checked)';
+  if(p.place_role==='managed_pool') return 'City pools and splash pads';
   return 'Other Austin creeks';
 }
 
@@ -515,7 +518,7 @@ function flyToRegion(region){
 /* ---------- lists ---------- */
 function renderList(){
   const austin=places.filter(isAustin), regional=places.filter(p=>!isAustin(p));
-  const areas=['Barton Creek Greenbelt','Bull Creek','Other Austin creeks','Lake Austin parks','City pools (individually checked)','Creek and gauge context (not swimming places)'];
+  const areas=['Barton Creek Greenbelt','Bull Creek','Other Austin creeks','Lake Austin parks','City pools and splash pads','Creek and gauge context (not swimming places)'];
   const row=p=>{const a=effective(p);
     return `<div class="place-row"><button data-id="${esc(p.id)}" type="button" aria-label="${esc(p.name)}, ${a.status==='gray'?'no current rating':esc(shortTag(p))}"><span class="sym ${shapeClass(p)} ${displayStatus(a.status)}${a.hypothetical&&!a.hazard_override?' hypothetical':''}${unverified(p)?' unverified':''}" aria-hidden="true">${symbolFor(p)}</span><span>${esc(p.name)}${p.map_display==='list_only'?' <small class="muted">(not drawn)</small>':''}</span></button>${hasRating(a.status)?`<span class="tag ${esc(a.status)}">${esc(shortTag(p))}</span>`:''}</div>`;};
   list.innerHTML=areas.map(area=>{const items=austin.filter(p=>areaOf(p)===area); return items.length?`<h3>${esc(area)} <small>${items.length}</small></h3>`+items.map(row).join(''):'';}).join('')
@@ -543,13 +546,17 @@ function renderFreshness(){
 function renderPools(data){
   if(!data?.generated_at||data.pools.length<30){poolList.textContent='City pool index could not be checked. The map will retry.';$('#pool-count').textContent='(current index unavailable)';return;}
   const stale=NOW()-Date.parse(data.generated_at)>48*3600000;
-  $('#pool-count').textContent=`(${data.pools.length} pools · checked ${fmt(data.generated_at)}${stale?' · needs refresh':''})`;
+  const pads=data.pools.filter(p=>p.facility_type==='splash_pad').length;
+  $('#pool-count').textContent=`(${data.pools.length-pads} pools, ${pads} splash pads · checked ${fmt(data.generated_at)}${stale?' · needs refresh':''})`;
   poolList.innerHTML=data.pools.map(p=>`<div class="pool-row"><span><b>${esc(p.name)}</b><small>${esc(p.address)}</small></span><span class="operator ${stale?'stale':esc(p.operator_status.replaceAll(' ','-'))}">${stale?'index needs refresh':esc('generally '+p.operator_status)}</span></div>`).join('');
 }
 
 /* ---------- controls ---------- */
 function setPressed(id){ ['austin','barton','san-marcos','all'].forEach(x=>$('#'+x).setAttribute('aria-pressed',String(x===id))); }
 for(const key of ['holes','pools','context','gauges','cityGauges']){ const input=$('#show-'+key); input.checked=layerChoice[key]; input.addEventListener('change',()=>{layerChoice[key]=input.checked; saveLayerChoice(); buildGroups(); render(); renderRim();}); }
+{ const input=$('#hide-closed'); input.checked=hideClosed; input.addEventListener('change',()=>{hideClosed=input.checked;
+  try{localStorage.setItem('austin-swim-map-hide-closed',hideClosed?'1':'0');}catch(e){}
+  buildGroups(); render(); renderRim();}); }
 document.querySelectorAll('input[name="open-view"]').forEach(input=>{
   input.checked=input.value===cityHoursView;
   input.addEventListener('change',()=>{if(!input.checked)return;cityHoursView=input.value;
@@ -706,7 +713,8 @@ function startLiveRefresh(){
 }
 const gaugeInventory=getJson('data/gauges.json');
 fetch('data/water-map-links.json?v=20261005-water-map-links',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>{if(d){waterMap=d;if(selectedId){const g=gauges.find(x=>x.id===selectedId);if(g)selectGauge(g);}}}).catch(()=>{});
-Promise.all([getJson('data/holes.json?v=20261003-place-history-v35'),gaugeInventory,gaugeInventory.then(g=>publicFlowStatus(g.map(station=>station.id))),publicCityStatus(),getVisits(),
+Promise.all([Promise.all([getJson('data/holes.json?v=20261003-place-history-v35'),
+    optionalJson('data/city-pools.json?v=20261008-pools',{places:[]},'City pool and splash pad locations unavailable.')]).then(([holes,city])=>[...holes,...city.places]),gaugeInventory,gaugeInventory.then(g=>publicFlowStatus(g.map(station=>station.id))),publicCityStatus(),getVisits(),
   optionalJson('hydro-context.json',{stations:{}},'Hydrologic context unavailable.'),optionalJson('data/model/place-relationships.json?v=20261003-place-history-v35',{places:{}},'Place relationships unavailable.')])
  .then(([h,g,flow,operator,notes,ctx,rel])=>{ context=ctx; relationships=rel;
    flowMeta=flow; operatorMeta=operator;

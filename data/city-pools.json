@@ -1,0 +1,2270 @@
+{
+  "generated_by": "tools/city_pool_places.py normalize",
+  "capture": "data/raw/city-pool-places/20261008T211406Z",
+  "sources": {
+    "austin_index": {
+      "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+      "url": "https://www.austintexas.gov/pools",
+      "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+      "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+    },
+    "outlying": null
+  },
+  "meaning": "Location only. Austin status comes live from the City index; outlying facilities carry no status.",
+  "counts": {
+    "austin_pools": 31,
+    "austin_splash_pads": 11,
+    "outlying": 0,
+    "osm_points": 32,
+    "address_points": 10
+  },
+  "places": [
+    {
+      "id": "bartholomew-pool",
+      "name": "Bartholomew Pool",
+      "city_index_name": "Bartholomew",
+      "city": "Austin",
+      "lat": 30.302785,
+      "lon": -97.696952,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "1800 E. 51st St.",
+      "phone": "512-974-1650",
+      "entry_fee": "Yes",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap pool feature center (ODbL) inside the City PARD boundary of Bartholomew District Park, 78 m from the Census point for the address 1800 E. 51st St..",
+      "coordinate_source": "https://www.openstreetmap.org/way/900539165",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/bartholomew-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/bartholomew-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-bartholomew-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1800+E.+51st+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:08.082138+00:00",
+          "status": 200,
+          "sha256": "79da77b4eff25e7fafabf884871962aa0edbf76844126842d638a109132734f4",
+          "error": null,
+          "matched_address": "1800 E 51ST ST, AUSTIN, TX, 78723"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/900539165",
+          "name": null,
+          "name_match": false,
+          "park": "Bartholomew District Park",
+          "distance_from_address_m": 78
+        }
+      }
+    },
+    {
+      "id": "colony-park-district-pool",
+      "name": "Colony Park Pool",
+      "city_index_name": "Colony Park",
+      "city": "Austin",
+      "lat": 30.296724,
+      "lon": -97.639098,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "7400 Loyola Ln.",
+      "phone": "512-974-1236",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "U.S. Census geocoder address-range interpolation of 7400 Loyola Ln. (matched 7400 LOYOLA LN, AUSTIN, TX, 78724); may sit on the street in front of the facility.",
+      "coordinate_source": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=7400+Loyola+Ln.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/colony-park-district-pool",
+      "gauge": null,
+      "coordinate_method": "geocoded_address",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/colony-park-district-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-colony-park-district-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=7400+Loyola+Ln.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:10.265018+00:00",
+          "status": 200,
+          "sha256": "3c3080a797da05a8fd5e240e341101df48b13e94c719ebb2cdb82eeff6094fb4",
+          "error": null,
+          "matched_address": "7400 LOYOLA LN, AUSTIN, TX, 78724"
+        },
+        "osm": null
+      }
+    },
+    {
+      "id": "springwoods-pool",
+      "name": "Springwoods Pool",
+      "city_index_name": "Springwoods",
+      "city": "Austin",
+      "lat": 30.468167,
+      "lon": -97.783414,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "13320 Lyndhurst St.",
+      "phone": "512-996-8978",
+      "entry_fee": "Yes",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap named pool feature center (ODbL) inside the City PARD boundary of Forest North Neighborhood Park, 159 m from the Census point for the address 13320 Lyndhurst St..",
+      "coordinate_source": "https://www.openstreetmap.org/way/31064109",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/springwoods-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/springwoods-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-springwoods-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=13320+Lyndhurst+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:12.187336+00:00",
+          "status": 200,
+          "sha256": "a7a29e516fb20742b2c70b55111689c6f420a2c4a6d7e0c076cab2f7a8ba8e70",
+          "error": null,
+          "matched_address": "13320 LYNDHURST ST, AUSTIN, TX, 78729"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/31064109",
+          "name": "Springwoods Pool",
+          "name_match": true,
+          "park": "Forest North Neighborhood Park",
+          "distance_from_address_m": 159
+        }
+      }
+    },
+    {
+      "id": "balcones-pool",
+      "name": "Balcones Pool",
+      "city_index_name": "Balcones",
+      "city": "Austin",
+      "lat": 30.412452,
+      "lon": -97.720029,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "12017 Amherst Dr.",
+      "phone": "512-821-2053",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap named pool feature center (ODbL) inside the City PARD boundary of Balcones District Park; no geocoder matched the address 12017 Amherst Dr., so the feature was found by name.",
+      "coordinate_source": "https://www.openstreetmap.org/way/110165334",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/balcones-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/balcones-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": null,
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/110165334",
+          "name": "Balcones Pool",
+          "name_match": true,
+          "park": "Balcones District Park",
+          "distance_from_address_m": null
+        }
+      }
+    },
+    {
+      "id": "brentwood-pool",
+      "name": "Brentwood Pool",
+      "city_index_name": "Brentwood",
+      "city": "Austin",
+      "lat": 30.340649,
+      "lon": -97.730573,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "6710 Arroyo Seco St.",
+      "phone": "512-453-1725",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap pool feature center (ODbL) inside the City PARD boundary of Brentwood Neighborhood Park, 81 m from the Census point for the address 6710 Arroyo Seco St..",
+      "coordinate_source": "https://www.openstreetmap.org/way/206610754",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/brentwood-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/brentwood-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-brentwood-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=6710+Arroyo+Seco+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:18.541642+00:00",
+          "status": 200,
+          "sha256": "eeb68338607ec155fe2d60a9b876b815b693698ca381e3b2015923ab6ccf54b6",
+          "error": null,
+          "matched_address": "6710 ARROYO SECO, AUSTIN, TX, 78757"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/206610754",
+          "name": null,
+          "name_match": false,
+          "park": "Brentwood Neighborhood Park",
+          "distance_from_address_m": 81
+        }
+      }
+    },
+    {
+      "id": "canyon-vista-pool",
+      "name": "Canyon Vista Pool",
+      "city_index_name": "Canyon Vista",
+      "city": "Austin",
+      "lat": 30.431766,
+      "lon": -97.778034,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "8455 Spicewood Springs Rd.",
+      "phone": "512-996-8038",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "U.S. Census geocoder address-range interpolation of 8455 Spicewood Springs Rd. (matched 8455 SPICEWOOD SPRINGS RD, AUSTIN, TX, 78759); may sit on the street in front of the facility.",
+      "coordinate_source": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=8455+Spicewood+Springs+Rd.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/canyon-vista-pool",
+      "gauge": null,
+      "coordinate_method": "geocoded_address",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/canyon-vista-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-canyon-vista-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=8455+Spicewood+Springs+Rd.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:20.434002+00:00",
+          "status": 200,
+          "sha256": "85527230a675459a0c7ef6be5e656cbcd8dbbc9f0931361ea81f4f0b55fbe498",
+          "error": null,
+          "matched_address": "8455 SPICEWOOD SPRINGS RD, AUSTIN, TX, 78759"
+        },
+        "osm": null
+      }
+    },
+    {
+      "id": "civitan-pool",
+      "name": "Civitan Pool",
+      "city_index_name": "Civitan",
+      "city": "Austin",
+      "lat": 30.23669,
+      "lon": -97.691393,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "513 Vargas Rd.",
+      "phone": "512-386-5743",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap pool feature center (ODbL) inside the City PARD boundary of Civitan Neighborhood Park, 82 m from the Census point for the address 513 Vargas Rd..",
+      "coordinate_source": "https://www.openstreetmap.org/way/206757211",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/civitan-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/civitan-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-civitan-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=513+Vargas+Rd.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:22.231020+00:00",
+          "status": 200,
+          "sha256": "ffcaaf4b587c67b0dc5056fd218d515b33a0729239f6d710605a003c91d4e53c",
+          "error": null,
+          "matched_address": "513 VARGAS RD, AUSTIN, TX, 78741"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/206757211",
+          "name": null,
+          "name_match": false,
+          "park": "Civitan Neighborhood Park",
+          "distance_from_address_m": 82
+        }
+      }
+    },
+    {
+      "id": "dick-nichols-pool",
+      "name": "Dick Nichols Pool",
+      "city_index_name": "Dick Nichols",
+      "city": "Austin",
+      "lat": 30.213714,
+      "lon": -97.862086,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "8011 Beckett Rd.",
+      "phone": "512-899-0348",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap pool feature center (ODbL) inside the City PARD boundary of Dick Nichols District Park, 190 m from the Census point for the address 8011 Beckett Rd..",
+      "coordinate_source": "https://www.openstreetmap.org/way/44622902",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/dick-nichols-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/dick-nichols-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-dick-nichols-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=8011+Beckett+Rd.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:24.097360+00:00",
+          "status": 200,
+          "sha256": "252678d7150f6f1bd714d082eceff0c94cf79ef62d60ef3a4cbcea9cbefa4ed5",
+          "error": null,
+          "matched_address": "8011 BECKETT RD, AUSTIN, TX, 78749"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/44622902",
+          "name": null,
+          "name_match": false,
+          "park": "Dick Nichols District Park",
+          "distance_from_address_m": 190
+        }
+      }
+    },
+    {
+      "id": "dittmar-pool",
+      "name": "Dittmar Pool",
+      "city_index_name": "Dittmar",
+      "city": "Austin",
+      "lat": 30.184747,
+      "lon": -97.80203,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "1009 W. Dittmar Dr.",
+      "phone": "512-693-4698",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap named pool feature center (ODbL) inside the City PARD boundary of A.B. Dittmar Neighborhood Park, 118 m from the Census point for the address 1009 W. Dittmar Dr..",
+      "coordinate_source": "https://www.openstreetmap.org/way/431249555",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/dittmar-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/dittmar-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-dittmar-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1009+W.+Dittmar+Dr.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:25.363187+00:00",
+          "status": 200,
+          "sha256": "5b0230066ee54e2fd31ac771a5e9d22d61bec978de15406f3c6e17148895065b",
+          "error": null,
+          "matched_address": "1009 DITTMAR RD W, AUSTIN, TX, 78745"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/431249555",
+          "name": "Dittmar Pool",
+          "name_match": true,
+          "park": "A.B. Dittmar Neighborhood Park",
+          "distance_from_address_m": 118
+        }
+      }
+    },
+    {
+      "id": "dottie-jordan-pool",
+      "name": "Dottie Jordan Pool",
+      "city_index_name": "Dottie Jordan",
+      "city": "Austin",
+      "lat": 30.313953,
+      "lon": -97.673993,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "2803 Loyola Ln.",
+      "phone": "512-928-3721",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap pool feature center (ODbL) inside the City PARD boundary of Dottie Jordan Neighborhood Park, 102 m from the Census point for the address 2803 Loyola Ln..",
+      "coordinate_source": "https://www.openstreetmap.org/way/309269114",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/dottie-jordan-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/dottie-jordan-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-dottie-jordan-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2803+Loyola+Ln.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:27.147438+00:00",
+          "status": 200,
+          "sha256": "d0ff96c18239aa2931460385b7ce5ae8ac1d221e66b802ba67d20c866e64c518",
+          "error": null,
+          "matched_address": "2803 LOYOLA LN, AUSTIN, TX, 78723"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/309269114",
+          "name": null,
+          "name_match": false,
+          "park": "Dottie Jordan Neighborhood Park",
+          "distance_from_address_m": 102
+        }
+      }
+    },
+    {
+      "id": "dove-springs-pool",
+      "name": "Dove Springs Pool",
+      "city_index_name": "Dove Springs",
+      "city": "Austin",
+      "lat": 30.186502,
+      "lon": -97.738228,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "5801 Ainez Dr.",
+      "phone": "512-444-6136",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap pool feature center (ODbL) inside the City PARD boundary of Dove Springs District Park, 173 m from the Census point for the address 5801 Ainez Dr..",
+      "coordinate_source": "https://www.openstreetmap.org/way/767456791",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/dove-springs-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/dove-springs-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-dove-springs-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=5801+Ainez+Dr.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:29.082366+00:00",
+          "status": 200,
+          "sha256": "894eaa690c9a437d2cf91350c54be8056ad76bfdafb5ad4f3d2fef20bc724fe9",
+          "error": null,
+          "matched_address": "5801 AINEZ DR, AUSTIN, TX, 78744"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/767456791",
+          "name": null,
+          "name_match": false,
+          "park": "Dove Springs District Park",
+          "distance_from_address_m": 173
+        }
+      }
+    },
+    {
+      "id": "garrison-pool",
+      "name": "Garrison Pool",
+      "city_index_name": "Garrison",
+      "city": "Austin",
+      "lat": 30.213585,
+      "lon": -97.800914,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "6001 Menchaca Rd.",
+      "phone": "512-442-4048",
+      "entry_fee": "Yes",
+      "status_source": "austin_index",
+      "coordinate_precision": "U.S. Census geocoder address-range interpolation of 6001 Menchaca Rd. (matched 6001 MANCHACA RD, AUSTIN, TX, 78745); may sit on the street in front of the facility.",
+      "coordinate_source": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=6001+Menchaca+Rd.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/garrison-pool",
+      "gauge": null,
+      "coordinate_method": "geocoded_address",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/garrison-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-garrison-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=6001+Menchaca+Rd.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:30.710079+00:00",
+          "status": 200,
+          "sha256": "7790df2932fd24dc9a967d94845539a22eb20e0e1230673806c27304a23909a0",
+          "error": null,
+          "matched_address": "6001 MANCHACA RD, AUSTIN, TX, 78745"
+        },
+        "osm": null
+      }
+    },
+    {
+      "id": "gillis-pool",
+      "name": "Gillis Pool",
+      "city_index_name": "Gillis",
+      "city": "Austin",
+      "lat": 30.240992,
+      "lon": -97.759819,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "2410 Durwood Ave.",
+      "phone": "512-974-9330",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap pool feature center (ODbL) inside the City PARD boundary of Gillis Neighborhood Park, 144 m from the Census point for the address 2410 Durwood Ave..",
+      "coordinate_source": "https://www.openstreetmap.org/way/734614904",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/gillis-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/gillis-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-gillis-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2410+Durwood+Ave.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:32.302145+00:00",
+          "status": 200,
+          "sha256": "d7e01829e1b45afe28393327f9a82578c7ca8ff42e0be5c1f678a9e9c9df2b9d",
+          "error": null,
+          "matched_address": "2410 DURWOOD ST, AUSTIN, TX, 78704"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/734614904",
+          "name": null,
+          "name_match": false,
+          "park": "Gillis Neighborhood Park",
+          "distance_from_address_m": 144
+        }
+      }
+    },
+    {
+      "id": "givens-district-pool",
+      "name": "Givens Pool",
+      "city_index_name": "Givens",
+      "city": "Austin",
+      "lat": 30.277546,
+      "lon": -97.692146,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "3811 E. 12th St.",
+      "phone": "512-593-6537",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap named pool feature center (ODbL) inside the City PARD boundary of Givens District Park, 164 m from the Census point for the address 3811 E. 12th St..",
+      "coordinate_source": "https://www.openstreetmap.org/way/583734038",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/givens-district-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/givens-district-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-givens-district-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3811+E.+12th+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:33.554133+00:00",
+          "status": 200,
+          "sha256": "040b01149e13cb92a49b7110e2b04c31d9b46af7bf7744c31b686804af9f1a0e",
+          "error": null,
+          "matched_address": "3811 E 12TH ST, AUSTIN, TX, 78721"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/583734038",
+          "name": "Givens Pool",
+          "name_match": true,
+          "park": "Givens District Park",
+          "distance_from_address_m": 164
+        }
+      }
+    },
+    {
+      "id": "govalle-pool",
+      "name": "Govalle Pool",
+      "city_index_name": "Govalle",
+      "city": "Austin",
+      "lat": 30.259816,
+      "lon": -97.691205,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "5200 Bolm Rd.",
+      "phone": "512-974-1255",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap named pool feature center (ODbL) inside the City PARD boundary of Govalle Neighborhood Park, 128 m from the Census point for the address 5200 Bolm Rd..",
+      "coordinate_source": "https://www.openstreetmap.org/way/368787452",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/govalle-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/govalle-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-govalle-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=5200+Bolm+Rd.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:34.911211+00:00",
+          "status": 200,
+          "sha256": "cfafee1b7e0c3019986f875e1a729683da46e8478b7aebfec46a4e8ff5dd4ff9",
+          "error": null,
+          "matched_address": "5200 BOLM RD, AUSTIN, TX, 78721"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/368787452",
+          "name": "Govalle Neighborhood Pool",
+          "name_match": true,
+          "park": "Govalle Neighborhood Park",
+          "distance_from_address_m": 128
+        }
+      }
+    },
+    {
+      "id": "kennemer-pool",
+      "name": "Kennemer Pool",
+      "city_index_name": "Kennemer",
+      "city": "Austin",
+      "lat": 30.360074,
+      "lon": -97.705826,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "1031 Peyton Gin Rd.",
+      "phone": "512-821-2454",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap pool feature center (ODbL) inside the City PARD boundary of Kennemer Pool, 76 m from the Census point for the address 1031 Peyton Gin Rd..",
+      "coordinate_source": "https://www.openstreetmap.org/way/1253443448",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/kennemer-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/kennemer-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-kennemer-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1031+Peyton+Gin+Rd.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:36.375815+00:00",
+          "status": 200,
+          "sha256": "83cce0ff926756ae4e1e70cd036c0baf09f56c86965c00173e486349e8706736",
+          "error": null,
+          "matched_address": "1031 PAYTON GIN RD, AUSTIN, TX, 78758"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/1253443448",
+          "name": null,
+          "name_match": false,
+          "park": "Kennemer Pool",
+          "distance_from_address_m": 76
+        }
+      }
+    },
+    {
+      "id": "mabel-davis-pool",
+      "name": "Mabel Davis Pool",
+      "city_index_name": "Mabel Davis",
+      "city": "Austin",
+      "lat": 30.219628,
+      "lon": -97.741786,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "3427 Parker Ln.",
+      "phone": "512-441-5247",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap pool feature center (ODbL) inside the City PARD boundary of Mabel Davis District Park, 126 m from the Census point for the address 3427 Parker Ln..",
+      "coordinate_source": "https://www.openstreetmap.org/way/548032234",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/mabel-davis-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/mabel-davis-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-mabel-davis-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3427+Parker+Ln.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:38.266366+00:00",
+          "status": 200,
+          "sha256": "a63c7f28c1042c169938a6eaf6481c472fbbb330bbb8159ed1ec77b111820bdc",
+          "error": null,
+          "matched_address": "3427 PARKER LN, AUSTIN, TX, 78741"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/548032234",
+          "name": null,
+          "name_match": false,
+          "park": "Mabel Davis District Park",
+          "distance_from_address_m": 126
+        }
+      }
+    },
+    {
+      "id": "martin-pool",
+      "name": "Martin Pool",
+      "city_index_name": "Martin",
+      "city": "Austin",
+      "lat": 30.250373,
+      "lon": -97.729158,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "1626 Nash Hernandez Sr. Dr.",
+      "phone": "512-469-0948",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap named pool feature center (ODbL) inside the City PARD boundary of Edward Rendon Sr. Metro Park at Festival Beach, 267 m from the Census point for the address 1626 Nash Hernandez Sr. Dr..",
+      "coordinate_source": "https://www.openstreetmap.org/way/1232070526",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/martin-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/martin-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-martin-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1626+Nash+Hernandez+Sr.+Dr.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:39.038671+00:00",
+          "status": 200,
+          "sha256": "ff8d549eeeeb4e19ae733e72ea3ccf3b65776f8115b163560ddfae5eae67043f",
+          "error": null,
+          "matched_address": "1626 NASH HERNANDEZ SR RD, AUSTIN, TX, 78702"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/1232070526",
+          "name": "Martin Pool",
+          "name_match": true,
+          "park": "Edward Rendon Sr. Metro Park at Festival Beach",
+          "distance_from_address_m": 267
+        }
+      }
+    },
+    {
+      "id": "metz-pool",
+      "name": "Metz Pool",
+      "city_index_name": "Metz",
+      "city": "Austin",
+      "lat": 30.252858,
+      "lon": -97.719335,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "2309 Canterbury St.",
+      "phone": "512-391-6212",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap named pool feature center (ODbL) inside the City PARD boundary of Metz Neighborhood Park, 91 m from the Census point for the address 2309 Canterbury St..",
+      "coordinate_source": "https://www.openstreetmap.org/way/997235527",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/metz-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/metz-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-metz-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2309+Canterbury+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:39.767602+00:00",
+          "status": 200,
+          "sha256": "f3d63c981806e4ab8ff1ca44e55b1d8c28e453e9c966d3927a0ad537e35e364a",
+          "error": null,
+          "matched_address": "2309 CANTERBURY ST, AUSTIN, TX, 78702"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/997235527",
+          "name": "Metz Swimming Pool",
+          "name_match": true,
+          "park": "Metz Neighborhood Park",
+          "distance_from_address_m": 91
+        }
+      }
+    },
+    {
+      "id": "montopolis-pool",
+      "name": "Montopolis Pool",
+      "city_index_name": "Montopolis",
+      "city": "Austin",
+      "lat": 30.231878,
+      "lon": -97.700566,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "1200 Montopolis Dr.",
+      "phone": "512-389-6022",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap pool feature center (ODbL) inside the City PARD boundary of Montopolis Neighborhood Park, 167 m from the Census point for the address 1200 Montopolis Dr..",
+      "coordinate_source": "https://www.openstreetmap.org/way/585192067",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/montopolis-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/montopolis-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-montopolis-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1200+Montopolis+Dr.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:40.080510+00:00",
+          "status": 200,
+          "sha256": "ab5c5e7469963610c569f61b030bd115b4e3c5158b2a67184e5e66b43b911fa5",
+          "error": null,
+          "matched_address": "1200 MONTOPOLIS DR, AUSTIN, TX, 78741"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/585192067",
+          "name": null,
+          "name_match": false,
+          "park": "Montopolis Neighborhood Park",
+          "distance_from_address_m": 167
+        }
+      }
+    },
+    {
+      "id": "murchison-pool",
+      "name": "Murchison Pool",
+      "city_index_name": "Murchison",
+      "city": "Austin",
+      "lat": 30.35483,
+      "lon": -97.757237,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "7022 Hart Ln.",
+      "phone": "512-241-0618",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap pool feature center (ODbL) inside the City PARD boundary of Murchison Pool, 151 m from the Census point for the address 7022 Hart Ln..",
+      "coordinate_source": "https://www.openstreetmap.org/way/1069075396",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/murchison-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/murchison-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-murchison-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=7022+Hart+Ln.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:40.400158+00:00",
+          "status": 200,
+          "sha256": "7e93b7e45d1ab6ce86caaf2057e329103774847319cef6d93601f698c7ffa5f4",
+          "error": null,
+          "matched_address": "7022 HART LN, AUSTIN, TX, 78731"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/1069075396",
+          "name": null,
+          "name_match": false,
+          "park": "Murchison Pool",
+          "distance_from_address_m": 151
+        }
+      }
+    },
+    {
+      "id": "parque-zaragoza-pool",
+      "name": "Parque Zaragoza Pool",
+      "city_index_name": "Parque Zaragoza",
+      "city": "Austin",
+      "lat": 30.262761,
+      "lon": -97.711988,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "2611 Webberville Rd.",
+      "phone": "512-243-5217",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap pool feature center (ODbL) inside the City PARD boundary of Parque Zaragoza Neighborhood Park, 71 m from the Census point for the address 2611 Webberville Rd..",
+      "coordinate_source": "https://www.openstreetmap.org/way/1259732357",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/parque-zaragoza-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/parque-zaragoza-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-parque-zaragoza-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2611+Webberville+Rd.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:40.808180+00:00",
+          "status": 200,
+          "sha256": "f2116e172b90fcf535aafd45e89c16b44616401605911c46ec98878de3e96678",
+          "error": null,
+          "matched_address": "2611 WEBBERVILLE RD, AUSTIN, TX, 78702"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/1259732357",
+          "name": null,
+          "name_match": false,
+          "park": "Parque Zaragoza Neighborhood Park",
+          "distance_from_address_m": 71
+        }
+      }
+    },
+    {
+      "id": "patterson-pool",
+      "name": "Patterson Pool",
+      "city_index_name": "Patterson",
+      "city": "Austin",
+      "lat": 30.296805,
+      "lon": -97.710199,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "4200 Brookview Dr.",
+      "phone": "512-542-9685",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap named pool feature center (ODbL) inside the City PARD boundary of Patterson Neighborhood Park, 85 m from the Census point for the address 4200 Brookview Dr..",
+      "coordinate_source": "https://www.openstreetmap.org/way/210116250",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/patterson-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/patterson-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-patterson-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4200+Brookview+Dr.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:41.417760+00:00",
+          "status": 200,
+          "sha256": "980b5058586b2b2a75bca303dfa3cc071e04e2a625ca76e32c965dcb84937a55",
+          "error": null,
+          "matched_address": "4200 BROOKVIEW RD, AUSTIN, TX, 78722"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/210116250",
+          "name": "Patterson Neighborhood Pool",
+          "name_match": true,
+          "park": "Patterson Neighborhood Park",
+          "distance_from_address_m": 85
+        }
+      }
+    },
+    {
+      "id": "ramsey-pool",
+      "name": "Ramsey Pool",
+      "city_index_name": "Ramsey",
+      "city": "Austin",
+      "lat": 30.312274,
+      "lon": -97.743956,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "4201 Burnet Rd.",
+      "phone": "512-380-9131",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap pool feature center (ODbL) inside the City PARD boundary of Ramsey Neighborhood Park, 48 m from the Census point for the address 4201 Burnet Rd..",
+      "coordinate_source": "https://www.openstreetmap.org/way/566736644",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/ramsey-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/ramsey-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-ramsey-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4201+Burnet+Rd.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:41.734256+00:00",
+          "status": 200,
+          "sha256": "59445089202deec83e0901f419a2e3fa5eccab625696758cab1b98f772b5593b",
+          "error": null,
+          "matched_address": "4201 BURNET RD, AUSTIN, TX, 78756"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/566736644",
+          "name": null,
+          "name_match": false,
+          "park": "Ramsey Neighborhood Park",
+          "distance_from_address_m": 48
+        }
+      }
+    },
+    {
+      "id": "reed-pool",
+      "name": "Reed Pool",
+      "city_index_name": "Reed",
+      "city": "Austin",
+      "lat": 30.304919,
+      "lon": -97.77139,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "2614 Pecos St.",
+      "phone": "512-542-9782",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap pool feature center (ODbL) inside the City PARD boundary of Reed Neighborhood Park, 152 m from the Census point for the address 2614 Pecos St..",
+      "coordinate_source": "https://www.openstreetmap.org/way/1264632944",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/reed-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/reed-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-reed-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2614+Pecos+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:42.252606+00:00",
+          "status": 200,
+          "sha256": "a48bacfd879dff9048ebfc19df28aae827be58f8ec574c76d6aad07ed2e7cf8b",
+          "error": null,
+          "matched_address": "2614 PECOS ST, AUSTIN, TX, 78703"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/1264632944",
+          "name": null,
+          "name_match": false,
+          "park": "Reed Neighborhood Park",
+          "distance_from_address_m": 152
+        }
+      }
+    },
+    {
+      "id": "rosewood-pool",
+      "name": "Rosewood Pool",
+      "city_index_name": "Rosewood",
+      "city": "Austin",
+      "lat": 30.270409,
+      "lon": -97.715,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "2300 Rosewood Ave.",
+      "phone": "512-473-8469",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "U.S. Census geocoder address-range interpolation of 2300 Rosewood Ave. (matched 2300 ROSEWOOD AVE, AUSTIN, TX, 78702); may sit on the street in front of the facility.",
+      "coordinate_source": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2300+Rosewood+Ave.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/rosewood-pool",
+      "gauge": null,
+      "coordinate_method": "geocoded_address",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/rosewood-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-rosewood-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2300+Rosewood+Ave.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:42.737775+00:00",
+          "status": 200,
+          "sha256": "171e8575a280a546d0787019e54cea51c2694ef3f31e85635d5df711fbdcf950",
+          "error": null,
+          "matched_address": "2300 ROSEWOOD AVE, AUSTIN, TX, 78702"
+        },
+        "osm": null
+      }
+    },
+    {
+      "id": "shipe-pool",
+      "name": "Shipe Pool",
+      "city_index_name": "Shipe",
+      "city": "Austin",
+      "lat": 30.306876,
+      "lon": -97.727414,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "4400 Avenue G",
+      "phone": "512-974-1245",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap pool feature center (ODbL) inside the City PARD boundary of Shipe Neighborhood Park, 24 m from the Census point for the address 4400 Avenue G.",
+      "coordinate_source": "https://www.openstreetmap.org/way/944775170",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/shipe-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/shipe-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-shipe-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4400+Avenue+G%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:43.449511+00:00",
+          "status": 200,
+          "sha256": "9eb7438327dba43494e6b9f2709102cd549021cec22372b08c0371b24f7efe3e",
+          "error": null,
+          "matched_address": "4400 AVE G, AUSTIN, TX, 78751"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/944775170",
+          "name": null,
+          "name_match": false,
+          "park": "Shipe Neighborhood Park",
+          "distance_from_address_m": 24
+        }
+      }
+    },
+    {
+      "id": "beverly-s-sheffield-northwest-municipal-pool",
+      "name": "Sheffield Northwest Pool",
+      "city_index_name": "Sheffield Northwest",
+      "city": "Austin",
+      "lat": 30.349213,
+      "lon": -97.740791,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "7000 Ardath St.",
+      "phone": "512-453-0194",
+      "entry_fee": "Yes",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap pool feature center (ODbL) inside the City PARD boundary of Beverly S. Sheffield Northwest District Park, 133 m from the Census point for the address 7000 Ardath St..",
+      "coordinate_source": "https://www.openstreetmap.org/way/189871190",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/beverly-s-sheffield-northwest-municipal-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/beverly-s-sheffield-northwest-municipal-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-beverly-s-sheffield-northwest-municipal-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=7000+Ardath+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:44.214149+00:00",
+          "status": 200,
+          "sha256": "92b124c9365ad7c12ca15d2a6cc5771f4e2fa1cf2e42aedf680191f28a44a922",
+          "error": null,
+          "matched_address": "7000 ARDATH ST, AUSTIN, TX, 78757"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/189871190",
+          "name": "Northwest Pool",
+          "name_match": false,
+          "park": "Beverly S. Sheffield Northwest District Park",
+          "distance_from_address_m": 133
+        }
+      }
+    },
+    {
+      "id": "walnut-creek-pool",
+      "name": "Walnut Creek Pool",
+      "city_index_name": "Walnut Creek",
+      "city": "Austin",
+      "lat": 30.394839,
+      "lon": -97.680706,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "12138 N Lamar Blvd",
+      "phone": "512-834-0824",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "U.S. Census geocoder address-range interpolation of 12138 N Lamar Blvd (matched 12138 N LAMAR BLVD, AUSTIN, TX, 78753); may sit on the street in front of the facility.",
+      "coordinate_source": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=12138+N+Lamar+Blvd%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/walnut-creek-pool",
+      "gauge": null,
+      "coordinate_method": "geocoded_address",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/walnut-creek-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-walnut-creek-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=12138+N+Lamar+Blvd%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:44.716582+00:00",
+          "status": 200,
+          "sha256": "bf96f47bcf2f6c05f4c52e0ab4accf9d58c7b0cca5f7177205d4ec39e28f167c",
+          "error": null,
+          "matched_address": "12138 N LAMAR BLVD, AUSTIN, TX, 78753"
+        },
+        "osm": null
+      }
+    },
+    {
+      "id": "west-austin-pool",
+      "name": "West Austin Pool",
+      "city_index_name": "West Austin",
+      "city": "Austin",
+      "lat": 30.276905,
+      "lon": -97.757407,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "1317 W. 10th St.",
+      "phone": "512-236-1303",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap pool feature center (ODbL) inside the City PARD boundary of West Austin Neighborhood Park, 103 m from the Census point for the address 1317 W. 10th St..",
+      "coordinate_source": "https://www.openstreetmap.org/way/775668433",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/west-austin-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/west-austin-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-west-austin-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1317+W.+10th+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:45.528516+00:00",
+          "status": 200,
+          "sha256": "69dcdef4074b199d0f9d865202cc7a97ef2d57498cfaff0181d39f554be3785a",
+          "error": null,
+          "matched_address": "1317 W 10TH ST, AUSTIN, TX, 78703"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/775668433",
+          "name": null,
+          "name_match": false,
+          "park": "West Austin Neighborhood Park",
+          "distance_from_address_m": 103
+        }
+      }
+    },
+    {
+      "id": "westenfield-pool",
+      "name": "Westenfield Pool",
+      "city_index_name": "Westenfield",
+      "city": "Austin",
+      "lat": 30.2871,
+      "lon": -97.76445,
+      "region": "Austin",
+      "kind": "managed pool",
+      "place_role": "managed_pool",
+      "facility_type": "pool",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "2000 Enfield Rd.",
+      "phone": "512-474-2682",
+      "entry_fee": "No",
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap pool feature center (ODbL) inside the City PARD boundary of Don Baylor Neighborhood Park, 83 m from the Census point for the address 2000 Enfield Rd..",
+      "coordinate_source": "https://www.openstreetmap.org/way/206162845",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/westenfield-pool",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/westenfield-pool"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-westenfield-pool.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2000+Enfield+Rd.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:45.903312+00:00",
+          "status": 200,
+          "sha256": "8430f14e4b37a77680cd2e8666379d88b996f2a7bb7ff66a3345473d94cfe5a5",
+          "error": null,
+          "matched_address": "2000 ENFIELD RD, AUSTIN, TX, 78703"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/206162845",
+          "name": null,
+          "name_match": false,
+          "park": "Don Baylor Neighborhood Park",
+          "distance_from_address_m": 83
+        }
+      }
+    },
+    {
+      "id": "bailey-splash-pad",
+      "name": "Bailey Splash Pad",
+      "city_index_name": "Bailey Splash Pad",
+      "city": "Austin",
+      "lat": 30.30265,
+      "lon": -97.747046,
+      "region": "Austin",
+      "kind": "splash pad",
+      "place_role": "managed_pool",
+      "facility_type": "splash_pad",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "1201 W. 33rd St.",
+      "phone": "512-974-9332",
+      "entry_fee": null,
+      "status_source": "austin_index",
+      "coordinate_precision": "U.S. Census geocoder address-range interpolation of 1201 W. 33rd St. (matched 1201 W 33RD ST, AUSTIN, TX, 78705); may sit on the street in front of the facility.",
+      "coordinate_source": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1201+W.+33rd+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/bailey-splash-pad",
+      "gauge": null,
+      "coordinate_method": "geocoded_address",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/bailey-splash-pad"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-bailey-splash-pad.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1201+W.+33rd+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:46.590956+00:00",
+          "status": 200,
+          "sha256": "f353d98cf71e246b7990841248413ec763ee91cdedd246b86df2d008b97c1ba3",
+          "error": null,
+          "matched_address": "1201 W 33RD ST, AUSTIN, TX, 78705"
+        },
+        "osm": null
+      }
+    },
+    {
+      "id": "bartholomew-splash-pad",
+      "name": "Bartholomew Splash Pad",
+      "city_index_name": "Bartholomew Splash Pad",
+      "city": "Austin",
+      "lat": 30.305172,
+      "lon": -97.697418,
+      "region": "Austin",
+      "kind": "splash pad",
+      "place_role": "managed_pool",
+      "facility_type": "splash_pad",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "5201 Berkman Dr.",
+      "phone": "512-974-9332",
+      "entry_fee": null,
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap named splash pad feature center (ODbL) inside the City PARD boundary of Bartholomew District Park, 41 m from the Nominatim point for the address 5201 Berkman Dr..",
+      "coordinate_source": "https://www.openstreetmap.org/way/900554943",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/bartholomew-splash-pad",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/bartholomew-splash-pad"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/nominatim-bartholomew-splash-pad.json",
+          "url": "https://nominatim.openstreetmap.org/search?street=5201+Berkman+Dr.&city=Austin&state=TX&country=USA&format=jsonv2&addressdetails=1&limit=3",
+          "retrieved_at": "2026-10-08T21:14:48.820912+00:00",
+          "status": 200,
+          "sha256": "b9706e6864d4748ad9ac7fe4abef8f6d874f1409e401048486f71423c06ce769",
+          "error": null,
+          "license": "OpenStreetMap ODbL; https://www.openstreetmap.org/copyright",
+          "matched_address": "Bathroom and covered picnic table, 5201, Berkman Drive, Austin, Travis County, Texas, 78723, United States"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/900554943",
+          "name": "Bartholomew Splash Pad",
+          "name_match": true,
+          "park": "Bartholomew District Park",
+          "distance_from_address_m": 41
+        }
+      }
+    },
+    {
+      "id": "chestnut-splash-pad",
+      "name": "Chestnut Splash Pad",
+      "city_index_name": "Chestnut Splash Pad",
+      "city": "Austin",
+      "lat": 30.277011,
+      "lon": -97.717087,
+      "region": "Austin",
+      "kind": "splash pad",
+      "place_role": "managed_pool",
+      "facility_type": "splash_pad",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "2205 E. 16th St.",
+      "phone": "512-974-9332",
+      "entry_fee": null,
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap named splash pad feature center (ODbL) inside the City PARD boundary of Chestnut Pocket Park, 42 m from the Census point for the address 2205 E. 16th St..",
+      "coordinate_source": "https://www.openstreetmap.org/way/902489048",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/chestnut-splash-pad",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/chestnut-splash-pad"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-chestnut-splash-pad.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2205+E.+16th+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:49.137276+00:00",
+          "status": 200,
+          "sha256": "3299290b2eda713cb2fddb1215fef712a01bfb75fd3ac7180bbe4241c37fd9fe",
+          "error": null,
+          "matched_address": "2205 E 16TH ST, AUSTIN, TX, 78702"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/902489048",
+          "name": "Chestnut Splash Pad",
+          "name_match": true,
+          "park": "Chestnut Pocket Park",
+          "distance_from_address_m": 42
+        }
+      }
+    },
+    {
+      "id": "clarksville-splash-pad",
+      "name": "Clarksville Splash Pad",
+      "city_index_name": "Clarksville Splash Pad",
+      "city": "Austin",
+      "lat": 30.281692,
+      "lon": -97.763316,
+      "region": "Austin",
+      "kind": "splash pad",
+      "place_role": "managed_pool",
+      "facility_type": "splash_pad",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "1811 W. 11th St.",
+      "phone": "512-974-9332",
+      "entry_fee": null,
+      "status_source": "austin_index",
+      "coordinate_precision": "U.S. Census geocoder address-range interpolation of 1811 W. 11th St. (matched 1811 W 11TH ST, AUSTIN, TX, 78703); may sit on the street in front of the facility.",
+      "coordinate_source": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1811+W.+11th+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/clarksville-splash-pad",
+      "gauge": null,
+      "coordinate_method": "geocoded_address",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/clarksville-splash-pad"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-clarksville-splash-pad.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1811+W.+11th+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:49.466349+00:00",
+          "status": 200,
+          "sha256": "7b4076c12f686320cc7e2d3c2ce6c74170ef20d7751fe0c6cd14cd106fb7067b",
+          "error": null,
+          "matched_address": "1811 W 11TH ST, AUSTIN, TX, 78703"
+        },
+        "osm": null
+      }
+    },
+    {
+      "id": "eastwoods-splash-pad",
+      "name": "Eastwoods Splash Pad",
+      "city_index_name": "Eastwoods Splash Pad",
+      "city": "Austin",
+      "lat": 30.290936,
+      "lon": -97.73166,
+      "region": "Austin",
+      "kind": "splash pad",
+      "place_role": "managed_pool",
+      "facility_type": "splash_pad",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "3001 Harris Park Blvd.",
+      "phone": "512-974-9332",
+      "entry_fee": null,
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap splash pad feature center (ODbL) inside the City PARD boundary of Eastwoods Neighborhood Park, 45 m from the Census point for the address 3001 Harris Park Blvd..",
+      "coordinate_source": "https://www.openstreetmap.org/way/1222957008",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/eastwoods-splash-pad",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/eastwoods-splash-pad"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-eastwoods-splash-pad.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3001+Harris+Park+Blvd.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:49.892641+00:00",
+          "status": 200,
+          "sha256": "f802ebbc008b715ab7f639571dd8e34c04f5d5170e503d10fd8e3b60a5d4d13e",
+          "error": null,
+          "matched_address": "3001 HARRIS PARK AVE, AUSTIN, TX, 78705"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/1222957008",
+          "name": null,
+          "name_match": false,
+          "park": "Eastwoods Neighborhood Park",
+          "distance_from_address_m": 45
+        }
+      }
+    },
+    {
+      "id": "liz-carpenter-splash-pad",
+      "name": "Liz Carpenter Splash Pad",
+      "city_index_name": "Liz Carpenter Splash Pad",
+      "city": "Austin",
+      "lat": 30.262141,
+      "lon": -97.754397,
+      "region": "Austin",
+      "kind": "splash pad",
+      "place_role": "managed_pool",
+      "facility_type": "splash_pad",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "200 Dawson Rd.",
+      "phone": "512-974-9332",
+      "entry_fee": null,
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap named splash pad feature center (ODbL) inside the City PARD boundary of Michael Butler Park at Town Lake Metro Park; no geocoder matched the address 200 Dawson Rd., so the feature was found by name.",
+      "coordinate_source": "https://www.openstreetmap.org/way/37692951",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/liz-carpenter-splash-pad",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/liz-carpenter-splash-pad"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": null,
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/37692951",
+          "name": "Liz Carpenter Fountain",
+          "name_match": true,
+          "park": "Michael Butler Park at Town Lake Metro Park",
+          "distance_from_address_m": null
+        }
+      }
+    },
+    {
+      "id": "lott-splash-pad",
+      "name": "Lott Splash Pad",
+      "city_index_name": "Lott Splash Pad",
+      "city": "Austin",
+      "lat": 30.270722,
+      "lon": -97.729761,
+      "region": "Austin",
+      "kind": "splash pad",
+      "place_role": "managed_pool",
+      "facility_type": "splash_pad",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "1180 Curve St.",
+      "phone": "512-974-9332",
+      "entry_fee": null,
+      "status_source": "austin_index",
+      "coordinate_precision": "U.S. Census geocoder address-range interpolation of 1180 Curve St. (matched 1180 CURVE ST, AUSTIN, TX, 78702); may sit on the street in front of the facility.",
+      "coordinate_source": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1180+Curve+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/lott-splash-pad",
+      "gauge": null,
+      "coordinate_method": "geocoded_address",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/lott-splash-pad"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-lott-splash-pad.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1180+Curve+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:52.690674+00:00",
+          "status": 200,
+          "sha256": "610fbf9424aaeb002faa2b97919a874a59078b7a41d5c7f26e039874883d80ba",
+          "error": null,
+          "matched_address": "1180 CURVE ST, AUSTIN, TX, 78702"
+        },
+        "osm": null
+      }
+    },
+    {
+      "id": "metz-splash-pad",
+      "name": "Metz Splash Pad",
+      "city_index_name": "Metz Splash Pad",
+      "city": "Austin",
+      "lat": 30.252802,
+      "lon": -97.71846,
+      "region": "Austin",
+      "kind": "splash pad",
+      "place_role": "managed_pool",
+      "facility_type": "splash_pad",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "2407 Canterbury St.",
+      "phone": "512-974-9332",
+      "entry_fee": null,
+      "status_source": "austin_index",
+      "coordinate_precision": "U.S. Census geocoder address-range interpolation of 2407 Canterbury St. (matched 2407 CANTERBURY ST, AUSTIN, TX, 78702); may sit on the street in front of the facility.",
+      "coordinate_source": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2407+Canterbury+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/metz-splash-pad",
+      "gauge": null,
+      "coordinate_method": "geocoded_address",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/metz-splash-pad"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-metz-splash-pad.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2407+Canterbury+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:53.299365+00:00",
+          "status": 200,
+          "sha256": "21985d51dfdaaa16e5c8593d77450a3a730c01222064411cdc044ecd5544f9f8",
+          "error": null,
+          "matched_address": "2407 CANTERBURY ST, AUSTIN, TX, 78702"
+        },
+        "osm": null
+      }
+    },
+    {
+      "id": "ricky-guerrero-splash-pad",
+      "name": "Ricky Guerrero Splash Pad",
+      "city_index_name": "Ricky Guerrero Splash Pad",
+      "city": "Austin",
+      "lat": 30.246968,
+      "lon": -97.763615,
+      "region": "Austin",
+      "kind": "splash pad",
+      "place_role": "managed_pool",
+      "facility_type": "splash_pad",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "1100 Brodie St.",
+      "phone": "512-974-9332",
+      "entry_fee": null,
+      "status_source": "austin_index",
+      "coordinate_precision": "U.S. Census geocoder address-range interpolation of 1100 Brodie St. (matched 1100 BRODIE ST, AUSTIN, TX, 78704); may sit on the street in front of the facility.",
+      "coordinate_source": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1100+Brodie+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/ricky-guerrero-splash-pad",
+      "gauge": null,
+      "coordinate_method": "geocoded_address",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/ricky-guerrero-splash-pad"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-ricky-guerrero-splash-pad.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1100+Brodie+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:53.602827+00:00",
+          "status": 200,
+          "sha256": "58ce0cae07f6599cad4cd0cde8c7821b9f6cd45ae1fae632d5e9c313e704f1a4",
+          "error": null,
+          "matched_address": "1100 BRODIE ST, AUSTIN, TX, 78704"
+        },
+        "osm": null
+      }
+    },
+    {
+      "id": "rosewood-splash-pad",
+      "name": "Rosewood Splash Pad",
+      "city_index_name": "Rosewood Splash Pad",
+      "city": "Austin",
+      "lat": 30.271213,
+      "lon": -97.713776,
+      "region": "Austin",
+      "kind": "splash pad",
+      "place_role": "managed_pool",
+      "facility_type": "splash_pad",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "2300 Rosewood Ave.",
+      "phone": "512-974-9332",
+      "entry_fee": null,
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap named splash pad feature center (ODbL) inside the City PARD boundary of Rosewood Neighborhood Park, 148 m from the Census point for the address 2300 Rosewood Ave..",
+      "coordinate_source": "https://www.openstreetmap.org/way/210286953",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/rosewood-splash-pad",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/rosewood-splash-pad"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-rosewood-splash-pad.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2300+Rosewood+Ave.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:54.299599+00:00",
+          "status": 200,
+          "sha256": "171e8575a280a546d0787019e54cea51c2694ef3f31e85635d5df711fbdcf950",
+          "error": null,
+          "matched_address": "2300 ROSEWOOD AVE, AUSTIN, TX, 78702"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "way/210286953",
+          "name": "Rosewood Pool & Splash Pad",
+          "name_match": true,
+          "park": "Rosewood Neighborhood Park",
+          "distance_from_address_m": 148
+        }
+      }
+    },
+    {
+      "id": "pease-splash-pad",
+      "name": "Pease Splashpad",
+      "city_index_name": "Pease Splashpad",
+      "city": "Austin",
+      "lat": 30.281711,
+      "lon": -97.752196,
+      "region": "Austin",
+      "kind": "splash pad",
+      "place_role": "managed_pool",
+      "facility_type": "splash_pad",
+      "indoor": false,
+      "operator": "City of Austin Parks and Recreation",
+      "address": "1100 Kingsbury St.",
+      "phone": "512-842-9018",
+      "entry_fee": null,
+      "status_source": "austin_index",
+      "coordinate_precision": "OpenStreetMap named splash pad feature center (ODbL) inside the City PARD boundary of Pease District Park, 111 m from the Census point for the address 1100 Kingsbury St..",
+      "coordinate_source": "https://www.openstreetmap.org/node/4677333434",
+      "access": "City operator schedule and general status control",
+      "source": "https://www.austintexas.gov/parks/locations/pease-splash-pad",
+      "gauge": null,
+      "coordinate_method": "sourced_point",
+      "identity_sources": [
+        "https://www.austintexas.gov/pools",
+        "https://www.austintexas.gov/parks/locations/pease-splash-pad"
+      ],
+      "map_display": "point",
+      "provenance": {
+        "inventory": {
+          "file": "data/raw/austin-pools/20261008T121423134245Z-pools.html",
+          "url": "https://www.austintexas.gov/pools",
+          "retrieved_at": "2026-10-08T12:14:23.134245+00:00",
+          "sha256": "9f4cbc724de6ff71b6f4e3204e9aea206859494794ba3f8eb8ffc885d8fc928e"
+        },
+        "address_point": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/geocode-pease-splash-pad.json",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1100+Kingsbury+St.%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
+          "retrieved_at": "2026-10-08T21:14:54.792206+00:00",
+          "status": 200,
+          "sha256": "2e2c7710cc56e5acb1f40ecef44521deb8742d2873c0298066f3e374eaad3ef3",
+          "error": null,
+          "matched_address": "1100 KINGSBURY ST, AUSTIN, TX, 78703"
+        },
+        "osm": {
+          "file": "data/raw/city-pool-places/20261008T211406Z/osm.json",
+          "sha256": "a1d726f48b2e9ff46b7e74abb273ff8a693eeaf412fbedbc915bb32e7ed27f98",
+          "retrieved_at": "2026-10-08T21:15:05.470835+00:00",
+          "element": "node/4677333434",
+          "name": "Pease Splash Pad",
+          "name_match": true,
+          "park": "Pease District Park",
+          "distance_from_address_m": 111
+        }
+      }
+    }
+  ]
+}

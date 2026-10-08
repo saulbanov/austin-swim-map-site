@@ -26,10 +26,11 @@
     </div>
     <fieldset class="layer-controls"><legend>Show on map</legend>
       <label><input id="show-holes" type="checkbox" checked> Swimming holes &amp; parks</label>
-      <label><input id="show-pools" type="checkbox" checked> City pools</label>
+      <label><input id="show-pools" type="checkbox" checked> City pools &amp; splash pads</label>
       <label><input id="show-context" type="checkbox"> Creek context points</label>
       <label><input id="show-gauges" type="checkbox"> USGS gauges</label>
       <label><input id="show-cityGauges" type="checkbox"> City Hydromet gauges</label>
+      <label><input id="hide-closed" type="checkbox"> Hide closed places</label>
     </fieldset>
     <fieldset class="layer-controls"><legend>City hours</legend>
       <label><input type="radio" name="open-view" value="today" checked> Open today</label>
@@ -52,7 +53,7 @@
         <p class="legend-title">Shapes say what a place is</p>
         <ul class="shapes">
           <li><i class="sw star">★</i> creek swimming place</li>
-          <li><i class="sw pool">◉</i> City pool</li>
+          <li><i class="sw pool">◉</i> City pool or splash pad</li>
           <li><i class="sw park">⌂</i> park reference (not a water entry)</li>
           <li><i class="sw ctx">○</i> creek context only (optional layer; not a swimming place)</li>
           <li><i class="sw gauge">◆</i> USGS gauge (optional layer; measures its station, not a swimming hole)</li>
@@ -106,7 +107,7 @@
   <div class="section-head">
     <p class="eyebrow">City pool index · separate from creek flow</p>
     <h2 id="pool-heading">All City of Austin pools</h2>
-    <p class="muted">The City’s index gives each pool’s general status. Only pools with an individually checked schedule appear on the map. An unexpected maintenance or weather closure may not appear here yet.</p>
+    <p class="muted">The City’s index gives each pool’s and splash pad’s general status, and every one appears on the map. Closed ones are red. Open ones are colored only where their posted hours are encoded and re-checked; the rest stay uncolored with a link to their City page. A marker with a dashed outline sits at the street address, not on the pool itself. An unexpected maintenance or weather closure may not appear here yet.</p>
   </div>
   <details><summary>Show the full City pool index <span id="pool-count"></span></summary><div id="pool-list"></div></details>
 </section>
@@ -118,10 +119,10 @@
 <script src="vendor/leaflet/leaflet.js"></script>
 <script src="public-flow.js?v=20261008-gage-height"></script>
 <script src="public-hydromet.js?v=20261008-lcra-proxy"></script>
-<script src="public-city.js?v=20261001-today"></script>
+<script src="public-city.js?v=20261008-pools"></script>
 <script src="public-hazards.js?v=20261003-place-history-v35"></script>
 <script src="public-outdoor.js?v=20261001-local-forecast-v12"></script>
 <script src="history.js?v=20261008-gage-height"></script>
-<script src="app.js?v=20261008-lcra-proxy"></script>
+<script src="app.js?v=20261008-pools"></script>
 </body>
 </html>

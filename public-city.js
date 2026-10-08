@@ -11,7 +11,12 @@ const CITY_URLS={
   little:'https://www.austintexas.gov/parks/locations/little-stacy-wading-pool',
   commons:'https://www.austintexas.gov/parks/locations/commons-ford-ranch',
   emma:'https://www.austintexas.gov/parks/emma-long-metropolitan-park',
-  closures:'https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures'
+  closures:'https://www.austintexas.gov/parks/parks-and-recreation-facilities-closures',
+  bartholomew:'https://www.austintexas.gov/parks/locations/bartholomew-pool',
+  colony:'https://www.austintexas.gov/parks/locations/colony-park-district-pool',
+  springwoods:'https://www.austintexas.gov/parks/locations/springwoods-pool',
+  // Nine splash pads publish the same hours; this one page is re-read for all nine (see SPLASH_SHARED).
+  splash:'https://www.austintexas.gov/parks/locations/bailey-splash-pad'
 };
 const CITY_REQUIRED={
   directory:['all parks are open for public use each day from 5 a.m. to 10 p.m. unless otherwise posted'],
@@ -21,10 +26,19 @@ const CITY_REQUIRED={
   little:['June 13, 2026 - August 16, 2026','Closed Wednesdays','1:00 pm - 8:00 pm','1:00 pm - 7:00 pm'],
   commons:['swimming area','Lake Austin'],
   emma:['designated beach entry swimming area','open year-round from 7:00am to 10:00pm'],
-  closures:['Date of closure','Description:','Updated:']
+  closures:['Date of closure','Description:','Updated:'],
+  bartholomew:['October 1, 2026 - March 12, 2027','12:15 pm - 3:00 pm','3:00 pm - 8:00 pm','12:00 pm - 7:00 pm','November 26','Pool closes at 4:00 PM'],
+  colony:['October 1, 2026 - March 12, 2027','12:15 pm - 3:00 pm','3:00 pm - 8:00 pm','12:00 pm - 7:00 pm','open 15 minutes late on Tuesday','November 26','Pool closes at 4:00 PM'],
+  springwoods:['October 1, 2026 - March 12, 2027','Weekdays 3:00 pm - 8:00 pm','12:00 pm - 7:00 pm','November 26','Pool closes at 4:00 PM'],
+  splash:['Daily 9:00 am - 8:00 pm','October 1, 2026 - October 31, 2026','Daily 9:00 am - 6:00 pm']
 };
+const SPLASH_SEASON_PHRASE='All splashpads are open May 1 to October 31, 2026';
+const PEASE_PHRASE='Pease Park Splash Pad will be open on a limited schedule from 8:00 a.m. to 2:30 pm';
+// Splash pads whose own City pages carried the same hours as Bailey's when read on 2026-10-08.
+const SPLASH_SHARED=['bailey','bartholomew','chestnut','clarksville','eastwoods','lott','metz','ricky-guerrero','rosewood'].map(s=>`${s}-splash-pad`);
 const CITY_POOLS=[['barton-springs','Barton Springs','barton'],['deep-eddy','Deep Eddy','deep'],
-  ['big-stacy-pool','Big Stacy','big'],['little-stacy-pool','Stacy Wading','little']];
+  ['big-stacy-pool','Big Stacy','big'],['little-stacy-pool','Stacy Wading','little'],
+  ['bartholomew-pool','Bartholomew','bartholomew'],['colony-park-district-pool','Colony Park','colony'],['springwoods-pool','Springwoods','springwoods']];
 const CITY_KEYWORDS={
   'barton-springs':['Barton Springs'],'deep-eddy':['Deep Eddy'],'big-stacy-pool':['Big Stacy'],
   'little-stacy-pool':['Little Stacy','Stacy Wading'],'commons-ford':['Commons Ford'],'emma-long':['Emma Long'],
@@ -33,7 +47,9 @@ const CITY_KEYWORDS={
   'campbells-hole':['Barton Creek Greenbelt'],'the-flats':['Barton Creek Greenbelt'],
   'bull-creek-district':['Bull Creek'],'st-edwards':['St. Edward'],
   'blunn-big-stacey':['Blunn','Big Stacy'],'blunn-little-stacey':['Blunn','Little Stacy'],
-  'shoal-creek':['Shoal Creek'],'walnut-domain':['Walnut Creek']
+  'shoal-creek':['Shoal Creek'],'walnut-domain':['Walnut Creek'],
+  'bartholomew-pool':['Bartholomew Pool'],'colony-park-district-pool':['Colony Park Pool','Colony Park District Pool'],
+  'springwoods-pool':['Springwoods Pool'],'liz-carpenter-splash-pad':['Liz Carpenter'],'pease-splash-pad':['Pease Park Splash Pad','Pease Splash']
 };
 
 async function acquireCityPage([key,url]){
@@ -76,13 +92,18 @@ function parseCitySource(capture,required=[]){
 }
 function parseCityIndex(source){
   if(!source.available) return [];
-  const rows=[...source.doc.querySelectorAll('tr')].map(tr=>[...tr.querySelectorAll('td,th')].map(c=>c.textContent.replace(/\s+/g,' ').trim()));
-  return rows.filter(c=>c.length===5&&['open','closed','closed for repairs'].includes(c[0].toLowerCase()))
-    .map(c=>({name:c[1].replaceAll('*','').trim(),operator_status:c[0].toLowerCase(),address:c[4],source_url:CITY_URLS.index,retrieved_at:source.retrieved_at}));
+  const rows=[...source.doc.querySelectorAll('tr')].map(tr=>({cells:[...tr.querySelectorAll('td,th')].map(c=>c.textContent.replace(/\s+/g,' ').trim()),
+    href:tr.querySelector('a[href]')?.getAttribute('href')||''}));
+  const seen=new Set();
+  return rows.filter(({cells:c})=>(c.length===5||c.length===4)&&['open','closed','closed for repairs'].includes(c[0].toLowerCase()))
+    .map(({cells:c,href})=>({name:c[1].replaceAll('*','').trim(),operator_status:c[0].toLowerCase(),address:c[c.length-1],
+      facility_type:c.length===5?'pool':'splash_pad',slug:href.split(/[?#]/)[0].replace(/\/+$/,'').split('/').pop()||null,
+      source_url:CITY_URLS.index,retrieved_at:source.retrieved_at}))
+    .filter(r=>{const key=r.slug||r.name;if(seen.has(key))return false;seen.add(key);return true;});
 }
 function dateFromCity(text){const m=/^\s*(?:[A-Z][a-z]+day,\s*)?([A-Z][a-z]+) (\d{1,2}), (\d{4})/.exec(text); if(!m) return null; const month=new Date(`${m[1]} 1, 2000`).getMonth(); if(!Number.isFinite(month)) return null; return `${m[3]}-${String(month+1).padStart(2,'0')}-${m[2].padStart(2,'0')}`;}
 function parseCityClosures(text){
-  const entries=[],rx=/([^:]{3,140}?) Dates? of closure: (.+?) Description: (.+?) Updated: ([A-Z][a-z]+ \d{1,2}, \d{4})/g;
+  const entries=[],rx=/([^:]{3,140}?) Dates? of (?:work and )?closure: (.+?) Description: (.+?) Updated: ([A-Z][a-z]+ \d{1,2}, \d{4})/g;
   for(const m of text.matchAll(rx)){
     let title=m[1].trim();
     for(const marker of ['Park Projects','Trails','Pools and Splash Pads','Pools','Buildings','Playgrounds','Parks','Austin311.org']){const at=title.lastIndexOf(marker);if(at>=0) title=title.slice(at+marker.length).trim();}
@@ -121,6 +142,25 @@ function poolSchedule(id,local){
     if(day===2) return [false,'Closed Wednesdays'];
     return [day>=5?hour>=12&&hour<19:hour>=13&&hour<20,'Published 2026 seasonal hours'];
   }
+  if(['bartholomew-pool','colony-park-district-pool','springwoods-pool'].includes(id)){
+    if(date<'2026-10-01'||date>'2027-03-12') return [null,'No verified schedule for this date'];
+    if(['2026-11-26','2026-12-24','2026-12-25','2027-01-01','2027-01-18','2027-02-15'].includes(date)) return [false,'City lists this date as a holiday closure'];
+    const open=day>=5?12:id==='springwoods-pool'?15:id==='colony-park-district-pool'&&[1,3].includes(day)?12.5:12.25;
+    const close=date==='2026-12-31'?16:day>=5?19:20;
+    const notes={'bartholomew-pool':'Published Oct–Mar hours: weekdays 12:15–8 p.m. (lap swim until 3), weekends noon–7 p.m.; lap pool only, recreation pools and slides closed',
+      'colony-park-district-pool':'Published Oct–Mar hours: weekdays 12:15–8 p.m. (12:30 Tuesday and Thursday; lap swim until 3), weekends noon–7 p.m.; slide closed',
+      'springwoods-pool':'Published Oct–Mar hours: weekdays 3–8 p.m., weekends noon–7 p.m.'};
+    return [hour>=open&&hour<close,notes[id]+(date==='2026-12-31'?"; New Year's Eve closes 4 p.m.":'')];
+  }
+  if(SPLASH_SHARED.includes(id)){
+    if(date<'2026-05-01'||date>'2026-10-31') return [false,'City splash pad season is May 1–October 31, 2026'];
+    const close=date>='2026-10-01'?18:20;
+    return [hour>=9&&hour<close,`Published splash pad hours: daily 9 a.m.–${close===18?'6':'8'} p.m.${close===18?' (October)':''}`];
+  }
+  if(id==='pease-splash-pad'){
+    if(date==='2026-10-12') return [hour>=8&&hour<11.5,'City notice: open 8–11:30 a.m. on October 12 for maintenance'];
+    return [hour>=8&&hour<14.5,'City notice: limited schedule, 8 a.m.–2:30 p.m. until further notice'];
+  }
   return [null,'No encoded schedule'];
 }
 const CITY_COLOR_MAX_AGE_MS=2*60*60000;
@@ -154,7 +194,8 @@ function nextCityChange(id,at,checker){const current=checker(at),minuteStart=Mat
   for(let minutes=1;minutes<=120;minutes++){const t=new Date(minuteStart+minutes*60000);if(checker(t)!==current) return t.toISOString();}
   return new Date(at.getTime()+CITY_COLOR_MAX_AGE_MS).toISOString();}
 function namedPoolClosure(id,text){
-  const names={'barton-springs':'Barton Springs Pool','deep-eddy':'Deep Eddy Pool','big-stacy-pool':'Big Stacy Pool','little-stacy-pool':'Little Stacy Wading Pool'};
+  const names={'barton-springs':'Barton Springs Pool','deep-eddy':'Deep Eddy Pool','big-stacy-pool':'Big Stacy Pool','little-stacy-pool':'Little Stacy Wading Pool',
+    'bartholomew-pool':'Bartholomew Pool','colony-park-district-pool':'Colony Park','springwoods-pool':'Springwoods Pool'};
   const name=names[id],section=text.includes('Pools and Splash Pads')?text.split('Pools and Splash Pads')[1].split('Trails')[0]:'';
   const direct=new RegExp(name+'[^.]{0,160}(?:will be closed|closed for|swimming will be prohibited)','i').test(text);
   return section.toLowerCase().includes(name.toLowerCase())||direct;
@@ -180,6 +221,41 @@ function publicPoolAssessment(id,name,slug,sources,indexRows,closures,at){
   if(general.operator_status!=='open'||state===false) return {...base,...todayFields,status:'red',reason:`${note}; City index: generally ${general.operator_status}.`};
   if(state===true) return {...base,...todayFields,status:'green',reason:`Scheduled open · ${note}; City index: generally open. Confirm unplanned closures with the City.`};
   return {...gray(`${note}; City index: generally ${general.operator_status}.`),...todayFields};
+}
+/* Every index facility without a hand-checked page: the index status, the closure list, and,
+   for splash pads, the shared published hours. A facility with no encoded hours stays uncolored when open. */
+function publicIndexAssessment(row,sources,closures,at){
+  const id=row.slug,index=sources.index,closure=sources.closures,local=cityNow(at);
+  const name=row.facility_type==='pool'&&!/pool/i.test(row.name)?`${row.name} Pool`:row.name;
+  if(!CITY_KEYWORDS[id]) CITY_KEYWORDS[id]=[name];
+  const notices=noticesFor(id,closures,local.date);
+  const base={id,category:'managed_pool',rule_id:SPLASH_SHARED.includes(id)||id==='pease-splash-pad'?`austin-city-pool-schedule-${id}`:'austin-city-index-status-v1',
+    evidence:'City pool and splash pad index + closure list · not a water or safety measurement',operator_status:row.operator_status,
+    source_retrieved_at:index.retrieved_at||null,index_source:CITY_URLS.index,index_retrieved_at:index.retrieved_at||null,
+    closure_source:CITY_URLS.closures,closure_retrieved_at:closure.retrieved_at||null,checked_at:at.toISOString(),notices,
+    valid_until:cityColorDeadline(at,index,closure)};
+  const both=(status,reason,extra={})=>({...base,...extra,status,reason,today_status:status,today_reason:reason,
+    today_valid_until:[base.valid_until,nextCityMidnight(local.date)].sort()[0]});
+  if(!index.available||!closure.available||closures.length<3) return both('gray','A required City source could not be checked now.');
+  const closed=notices.find(n=>n.in_effect===true&&/\bclosed\b/i.test(n.description)&&!/limited schedule|will be open/i.test(n.description));
+  if(closed) return both('red',`City closure list: ${closed.title} — ${closed.dates_text}. ${closed.description}`);
+  if(row.operator_status!=='open') return both('red',`City pool index lists it ${row.operator_status}.`);
+  let page=null,checks=[];
+  if(SPLASH_SHARED.includes(id)){page=sources.splash;checks=[page.verified,index.text?.includes(SPLASH_SEASON_PHRASE)];
+    base.hours_source=CITY_URLS.splash;base.hours_source_retrieved_at=page.retrieved_at||null;
+    base.valid_until=[base.valid_until,cityColorDeadline(at,page)].sort()[0];}
+  else if(id==='pease-splash-pad') checks=[closure.text?.includes(PEASE_PHRASE)];
+  else return both('gray',`City index lists it open; its hours are not encoded here. Check its City page.`);
+  if(!checks.every(Boolean)) return both('gray','A City page changed; the encoded hours cannot be verified against it.');
+  const [state,note]=poolSchedule(id,local),[todayState,todayNote]=todayPoolSchedule(id,local);
+  const shared=SPLASH_SHARED.includes(id)?' Hours re-read from Bailey Splash Pad’s page, which matched this pad’s page on 2026-10-08.':'';
+  const todayFields={today_status:todayState===true?'green':todayState===false?'red':'gray',
+    today_reason:`${todayState===true?'Published hours include a window today · ':''}${todayNote}; City index: generally open.${shared}`,
+    today_valid_until:[base.valid_until,nextCityMidnight(local.date)].sort()[0]};
+  base.valid_until=[base.valid_until,nextCityChange(id,at,t=>poolSchedule(id,cityNow(t))[0])].sort()[0];
+  if(state===true) return {...base,...todayFields,status:'green',reason:`Scheduled open · ${note}; City index: generally open.${shared} Confirm unplanned closures with the City.`};
+  if(state===false) return {...base,...todayFields,status:'red',reason:`${note}; City index: generally open.${shared}`};
+  return {...base,...todayFields,status:'gray',reason:`${note}; City index: generally open.`};
 }
 function clockHour(text){const m=/(\d{1,2}):(\d{2})\s?([ap]m)/i.exec(text||'');return m?Number(m[1])%12+(m[3].toLowerCase()==='pm'?12:0)+Number(m[2])/60:null;}
 function publicLakeAssessment(id,slug,sources,closures,at){
@@ -214,6 +290,8 @@ async function publicCityStatus(){
   const sources=Object.fromEntries(Object.keys(CITY_URLS).map(k=>[k,parseCitySource(captures[k],CITY_REQUIRED[k]||[])]));
   const indexRows=parseCityIndex(sources.index),closures=sources.closures.available?parseCityClosures(sources.closures.text):[];
   const places=CITY_POOLS.map(([id,name,slug])=>publicPoolAssessment(id,name,slug,sources,indexRows,closures,at));
+  const checked=new Set(CITY_POOLS.map(([,name])=>name));
+  places.push(...indexRows.filter(r=>r.slug&&!checked.has(r.name)).map(r=>publicIndexAssessment(r,sources,closures,at)));
   places.push(publicLakeAssessment('commons-ford','commons',sources,closures,at),publicLakeAssessment('emma-long','emma',sources,closures,at));
   const notice_context=Object.keys(CITY_KEYWORDS).filter(id=>!places.some(p=>p.id===id)).map(id=>({id,notices:noticesFor(id,closures,cityNow(at).date)}));
   return {generated_at:at.toISOString(),closure_list_retrieved_at:sources.closures.retrieved_at||null,places,notice_context,failures,
