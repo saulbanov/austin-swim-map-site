@@ -2,7 +2,7 @@
    Static files provide the place inventory, rules and geometry. Personal visit records are excluded. */
 'use strict';
 const $=s=>document.querySelector(s);
-const APP_VERSION='2026-10-08-river-beaches';
+const APP_VERSION='2026-10-08-river-reaches';
 const detailBody=$('#detail-body'), detailPanel=$('#detail'), list=$('#place-list'), poolList=$('#pool-list'), freshness=$('#freshness');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const AUSTIN_BOUNDS=[[30.16,-97.93],[30.44,-97.66]];
@@ -143,7 +143,7 @@ function symbolFor(p){ return isBeach(p)?'≈':p.place_role==='managed_pool'?'�
 function shapeClass(p){ return isBeach(p)?'beach':p.place_role==='managed_pool'?'pool':p.place_role==='park_reference'?'park':p.place_role==='creek_context'?'ctx':'star'; }
 function unverified(p){ return ['derived_on_centerline','park_centroid','park_reference','unresolved','geocoded_address'].includes(p.coordinate_method)||(!p.coordinate_method&&isAustin(p)); }
 function categoryOf(p){ return isBeach(p)?'beach':p.place_role==='managed_pool'?'pool':p.place_role==='park_reference'?'park':p.place_role==='creek_context'?'context':'creek'; }
-function isBeach(p){ return p.place_role==='lake_beach'||p.place_role==='river_beach'||p.kind==='lake park'; }
+function isBeach(p){ return p.place_role==='lake_beach'||p.kind==='lake park'; }
 function layerForPlace(p){ return isBeach(p)?'beaches':p.place_role==='managed_pool'?'pools':p.place_role==='creek_context'?'context':'holes'; }
 function visiblePlace(p){ return layerChoice[layerForPlace(p)]&&!(hideClosed&&kindOf(p).key==='closed'); }
 function revealPlaceLayer(p){ const key=layerForPlace(p); if(layerChoice[key]) return; layerChoice[key]=true; $('#show-'+key).checked=true; saveLayerChoice(); buildGroups(); renderRim(); }
@@ -153,6 +153,7 @@ function areaOf(p){
   if(p.region==='Barton Creek Greenbelt') return 'Barton Creek Greenbelt';
   if(p.creek==='Bull Creek') return 'Bull Creek';
   if(p.region==='Austin / Lake Austin') return 'Lake Austin parks';
+  if(p.region==='Austin / Colorado River') return 'Colorado River below Longhorn Dam';
   if(p.place_role==='managed_pool') return 'City pools and splash pads';
   return 'Other Austin creeks';
 }
@@ -206,7 +207,7 @@ function groupPie(group){
     return `${colors[status]} ${start}% ${cursor}%`;
   });
   const kind=categoryOf(group[0]);
-  const kinds={beach:['lake and river beaches','≈'],pool:['pools and splash pads','◉'],park:['park references','⌂'],context:['creek context points','○'],creek:['swimming holes','★']};
+  const kinds={beach:['lake beaches','≈'],pool:['pools and splash pads','◉'],park:['park references','⌂'],context:['creek context points','○'],creek:['swimming holes','★']};
   return {counts,background:slices.length?`conic-gradient(from -90deg, ${slices.join(', ')})`:'var(--paper)',
     what:kinds[kind][0],glyph:kinds[kind][1],
     summary:Object.entries(counts).filter(([,count])=>count).map(([status,count])=>`${count} ${status==='unrated'?'without a current rating':status}`).join(' · ')};
@@ -369,14 +370,12 @@ function selectPlace(p,reveal=true){
   selectedId=p.id; render();
   const a=effective(p), k=kindOf(p), gauge=gauges.find(g=>g.id===p.gauge), v=visitRows(p), notices=a.notices||noticeContext[p.id]||[], rows=relationRows(p);
   const measured= rows.length?`<p class="muted">Measured at the station, not at the place.</p>${rows.map(stationBlock).join('')}`
-    : p.place_role==='river_beach'?'<p>No river flow or water quality is pulled into this card. The Colorado below Austin rises with Longhorn Dam releases and rain.</p>'
     : p.place_role==='lake_beach'?'<p>No water measurement is pulled into this card. Lake level and water quality are not checked here.</p>'
     : p.place_role==='managed_pool'||p.place_role==='park_reference'?`<p>No water measurement applies. This card is about the ${isAustin(p)?'City’s':'operator’s'} schedule and notices only.</p>`
     : p.creek==='Blunn Creek'?blunnCityBlock(p)
     : `<p>No gauge reading is pulled into this place card. ${esc(p.gauge_context||'Nearby stations, if any, are shown separately as station context.')}</p>`;
   const bandCaveat=a.hypothetical?'This pale cue is a site-specific station-flow guess. It has no measured depth or condition calibration at this place. A rapid rise can signal flood danger.':(a.evidence||'').includes('limited evidence')?'This provisional band comes from a small set of recorded visits and has no independent validation.':'This band is a recorded third-party flow cue with no independent swimming validation.';
-  const depth=p.place_role==='river_beach'?'<p>No depth is measured at this beach; the river’s level changes with releases and rain.</p>'
-    :p.place_role==='lake_beach'?'<p>No depth is measured at this beach, and the shoreline moves with the lake level.</p>'
+  const depth=p.place_role==='lake_beach'?'<p>No depth is measured at this beach, and the shoreline moves with the lake level.</p>'
     :p.place_role==='managed_pool'?'<p>No verified pool depth range is stored here. Check the City pool page for facility details.</p>'
     :p.place_role==='park_reference'||p.place_role==='creek_context'?'<p>No swimming area or water depth is established for this reference point.</p>'
     :gauge||p.creek==='Blunn Creek'?'<p>Station discharge is this map’s proxy for likely water at the reach. No direct depth measurement exists here; station stage uses the gauge’s own reference point.</p><p class="evidence"><a href="https://www.usgs.gov/faqs/why-doesnt-usgs-measure-gage-height-bottom-stream" target="_blank" rel="noreferrer">How USGS defines gage height ↗</a></p>'
@@ -409,7 +408,7 @@ function selectPlace(p,reveal=true){
       ${p.gauge?historySection('usgs',p.gauge,gauge?.name||'Linked station'):p.creek==='Blunn Creek'?historySection('city','122','Blunn Creek at Stacy Park · downstream'):historySection(null,null)}
       ${outdoorBlock(p)}
       <div class="fact unknown"><h3>Depth at this place</h3>${depth}</div>
-      <div class="fact inferred"><h3>${p.hours?'Posted hours rule':a.category||p.place_role==='managed_pool'?'City schedule rule':'Inferred'}</h3>${inferred}</div>
+      <div class="fact inferred"><h3>${p.hours&&!p.hours.display_only?'Posted hours rule':a.category||p.place_role==='managed_pool'?'City schedule rule':'Inferred'}</h3>${inferred}</div>
       <div class="fact city"><h3>${isAustin(p)?'City notices &amp; access':'Operator access'}</h3>${operator}<p><b>${isAustin(p)?'Access':'Saved access note'}:</b> ${esc(p.access)}</p>${noticeBlock}</div>
       ${relationBlock(p)}
       <div class="fact unknown"><h3>Not assessed</h3><p>Water quality, clarity, rescue coverage, and permission are not established by this map.</p></div>
@@ -529,7 +528,7 @@ function flyToRegion(region){
 /* ---------- lists ---------- */
 function renderList(){
   const austin=places.filter(isAustin), regional=places.filter(p=>!isAustin(p));
-  const areas=['Barton Creek Greenbelt','Bull Creek','Other Austin creeks','Lake Austin parks','City pools and splash pads','Creek and gauge context (not swimming places)'];
+  const areas=['Barton Creek Greenbelt','Bull Creek','Other Austin creeks','Colorado River below Longhorn Dam','Lake Austin parks','City pools and splash pads','Creek and gauge context (not swimming places)'];
   const row=p=>{const a=effective(p);
     return `<div class="place-row"><button data-id="${esc(p.id)}" type="button" aria-label="${esc(p.name)}, ${a.status==='gray'?'no current rating':esc(shortTag(p))}"><span class="sym ${shapeClass(p)} ${displayStatus(a.status)}${a.hypothetical&&!a.hazard_override?' hypothetical':''}${unverified(p)?' unverified':''}" aria-hidden="true">${symbolFor(p)}</span><span>${esc(p.name)}${p.map_display==='list_only'?' <small class="muted">(not drawn)</small>':''}</span></button>${hasRating(a.status)?`<span class="tag ${esc(a.status)}">${esc(shortTag(p))}</span>`:''}</div>`;};
   list.innerHTML=areas.map(area=>{const items=austin.filter(p=>areaOf(p)===area); return items.length?`<h3>${esc(area)} <small>${items.length}</small></h3>`+items.map(row).join(''):'';}).join('')

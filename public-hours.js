@@ -82,7 +82,7 @@ function postedNow(place,local){
 }
 function publicHoursAssessment(place,page,at){
   const h=place.hours,local=cityNow(at),posted=`Posted hours (read ${h.as_posted}): ${h.text}`;
-  const base={id:place.id,category:place.place_role==='lake_beach'||place.place_role==='river_beach'?'lake_beach':'managed_pool',rule_id:'posted-hours-v1',
+  const base={id:place.id,category:place.place_role==='lake_beach'?'lake_beach':'managed_pool',rule_id:'posted-hours-v1',
     evidence:`${place.operator} page, re-read through this site’s proxy · posted hours only, not a water or safety measurement`,
     hours_source:h.source_url,source_retrieved_at:page.retrieved_at||null,checked_at:at.toISOString(),
     valid_until:cityColorDeadline(at,page)};
@@ -117,7 +117,8 @@ async function acquireDailyChecks(){
     return response.ok?await response.json():null;}catch(e){return null;}
 }
 async function publicHoursStatus(places){
-  const at=new Date(),targets=places.filter(p=>p.hours);
+  // display_only hours (river reaches, whose color means flow) are shown on the card, never assessed.
+  const at=new Date(),targets=places.filter(p=>p.hours&&!p.hours.display_only);
   const urls=targets.filter(p=>!p.hours.needs_browser&&!p.hours.conflict).map(p=>p.hours.source_url);
   const [captures,daily]=await Promise.all([acquireHoursPages(urls),targets.some(p=>p.hours.needs_browser)?acquireDailyChecks():null]);
   const pages=Object.fromEntries(Object.entries(captures).map(([url,capture])=>[url,parseHoursPage(capture)]));
@@ -125,4 +126,4 @@ async function publicHoursStatus(places){
   return {generated_at:at.toISOString(),pages_checked:Object.values(pages).filter(p=>p.available).length,pages_total:Object.keys(pages).length,
     daily_checked_at:daily?.generated_at||null,places:targets.map(p=>publicHoursAssessment(p,pageFor(p),at))};
 }
-if(typeof module!=='undefined') module.exports={solarEvent,hourOf,postedDay,postedNow,publicHoursAssessment,clockText};
+if(typeof module!=='undefined') module.exports={solarEvent,hourOf,postedDay,postedNow,publicHoursAssessment,publicHoursStatus,clockText};

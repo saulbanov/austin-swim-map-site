@@ -20,7 +20,7 @@
     "austin_splash_pads": 11,
     "outlying": 38,
     "lake_beaches": 21,
-    "river_beaches": 3,
+    "river_reaches": 3,
     "osm_points": 61,
     "address_points": 34,
     "park_centroids": 9
@@ -8170,10 +8170,10 @@
       "city": "Austin",
       "lat": 30.247733,
       "lon": -97.700052,
-      "region": "Colorado River below Austin",
-      "kind": "river beach",
-      "place_role": "river_beach",
-      "facility_type": "river_beach",
+      "region": "Austin / Colorado River",
+      "kind": "river reach",
+      "place_role": "water_place",
+      "facility_type": "river_reach",
       "indoor": false,
       "operator": "City of Austin Parks and Recreation (inside Roy G. Guerrero Colorado River Metropolitan Park)",
       "address": "400 Grove Blvd.",
@@ -8251,13 +8251,15 @@
           }
         ],
         "closed_outside_periods": false,
-        "conflict": "Sources disagree on swimming here. Time Out (2017) says \"swimming isn’t allowed\"; City Cast (2025) calls it a place to \"enjoy a dip\"; no City page names the beach or sets its rule. City Code bans swimming in Lady Bird Lake, which ends at Longhorn Dam; this beach is downstream of the dam on the City’s 2014 map and in OpenStreetMap, though City Cast places it west of the dam."
+        "conflict": "Sources disagree on swimming here. Time Out (2017) says \"swimming isn’t allowed\"; City Cast (2025) calls it a place to \"enjoy a dip\"; no City page names the beach or sets its rule. City Code bans swimming in Lady Bird Lake, which ends at Longhorn Dam; this beach is downstream of the dam on the City’s 2014 map and in OpenStreetMap, though City Cast places it west of the dam.",
+        "display_only": true
       },
       "notes": "Informal beach; no City page names it or sets a rule for it. Park in the lot next to the Montopolis Youth Sports Complex and walk the trail across the street (City Cast). After storms, stay out: the City says bacteria can take at least three days to return to earlier levels, and Longhorn Dam releases can raise the river suddenly (sirens give a rising \"slow whoop\").",
+      "gauge_context": "No Colorado River gauge is linked on this map yet, so there is no flow reading or flow rule for this reach.",
       "provenance": {
         "inventory": {
-          "file": "data/river-beaches.json",
-          "sha256": "432232d135d44066892dd0a9102978cdbe1b04c9ee54cd6c4756e4c9b0c111ff",
+          "file": "data/river-reaches.json",
+          "sha256": "3b499656aff629796847106dc77af42fbfd0f0950a0caeadd99c1ba6e7701953",
           "evidence": {
             "file": "data/raw/colorado-river-access/pages/nongov-secret-beach-citycast-austin-stairs.html",
             "quote": "a nice, secluded area to enjoy a dip in the water",
@@ -8276,10 +8278,10 @@
       "city": "Austin",
       "lat": 30.248627,
       "lon": -97.692499,
-      "region": "Colorado River below Austin",
-      "kind": "river beach",
-      "place_role": "river_beach",
-      "facility_type": "river_beach",
+      "region": "Austin / Colorado River",
+      "kind": "river reach",
+      "place_role": "water_place",
+      "facility_type": "river_reach",
       "indoor": false,
       "operator": "City of Austin Parks and Recreation (river-access parking owned by TxDOT)",
       "address": "5827 Levander Loop",
@@ -8354,13 +8356,15 @@
             }
           }
         ],
-        "closed_outside_periods": false
+        "closed_outside_periods": false,
+        "display_only": true
       },
       "notes": "Nature preserve on the north bank, across from Roy G. Guerrero Park; a 1.3-mile trail ends at the river. No dogs. After storms, stay out: the City says bacteria can take at least three days to return to earlier levels, and Longhorn Dam releases can raise the river suddenly (sirens give a rising \"slow whoop\").",
+      "gauge_context": "No Colorado River gauge is linked on this map yet, so there is no flow reading or flow rule for this reach.",
       "provenance": {
         "inventory": {
-          "file": "data/river-beaches.json",
-          "sha256": "432232d135d44066892dd0a9102978cdbe1b04c9ee54cd6c4756e4c9b0c111ff",
+          "file": "data/river-reaches.json",
+          "sha256": "3b499656aff629796847106dc77af42fbfd0f0950a0caeadd99c1ba6e7701953",
           "evidence": {
             "file": "data/raw/colorado-river-access/pages/austin-nature-preserves-list-pdfbytes.pdf",
             "quote": "the parking area is actually owned by TXDot and is a “swim at your own risk” area."
@@ -8386,10 +8390,10 @@
       "city": "Bastrop",
       "lat": 30.0735,
       "lon": -97.3106,
-      "region": "Colorado River below Austin",
-      "kind": "river beach",
-      "place_role": "river_beach",
-      "facility_type": "river_beach",
+      "region": "Bastrop / Colorado River",
+      "kind": "river reach",
+      "place_role": "water_place",
+      "facility_type": "river_reach",
       "indoor": false,
       "operator": "Bastrop County General Services",
       "address": "375 East Riverside Drive",
@@ -8415,13 +8419,15 @@
           "Swimming allowed"
         ],
         "periods": [],
-        "closed_outside_periods": false
+        "closed_outside_periods": false,
+        "display_only": true
       },
       "notes": "River \"Beach\" area and paddling-trail take-out (formerly Lost Pines Nature Trails). No glass or alcohol.",
+      "gauge_context": "No Colorado River gauge is linked on this map yet, so there is no flow reading or flow rule for this reach.",
       "provenance": {
         "inventory": {
-          "file": "data/river-beaches.json",
-          "sha256": "432232d135d44066892dd0a9102978cdbe1b04c9ee54cd6c4756e4c9b0c111ff",
+          "file": "data/river-reaches.json",
+          "sha256": "3b499656aff629796847106dc77af42fbfd0f0950a0caeadd99c1ba6e7701953",
           "evidence": {
             "file": "data/raw/colorado-river-access/pages/bastrop-county-our-parks.html",
             "quote": "\"Beach\" area Outdoor Classroom Paved parking Bathrooms (port a potty only) Swimming allowed"

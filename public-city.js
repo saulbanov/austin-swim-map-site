@@ -49,7 +49,8 @@ const CITY_KEYWORDS={
   'blunn-big-stacey':['Blunn','Big Stacy'],'blunn-little-stacey':['Blunn','Little Stacy'],
   'shoal-creek':['Shoal Creek'],'walnut-domain':['Walnut Creek'],
   'bartholomew-pool':['Bartholomew Pool'],'colony-park-district-pool':['Colony Park Pool','Colony Park District Pool'],
-  'springwoods-pool':['Springwoods Pool'],'liz-carpenter-splash-pad':['Liz Carpenter'],'pease-splash-pad':['Pease Park Splash Pad','Pease Splash']
+  'springwoods-pool':['Springwoods Pool'],'liz-carpenter-splash-pad':['Liz Carpenter'],
+  'austin-secret-beach':['Roy G. Guerrero'],'austin-colorado-river-wildlife-sanctuary':['Colorado River Wildlife Sanctuary'],'pease-splash-pad':['Pease Park Splash Pad','Pease Splash']
 };
 
 async function acquireCityPage([key,url]){
