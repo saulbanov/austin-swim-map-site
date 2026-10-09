@@ -1325,6 +1325,188 @@
         "local rule"
       ],
       "current_treatment": "No place color: two distant context stations, no verified water entry or local flow rule."
+    },
+    "martindale-dam-west": {
+      "name": "Martindale Dam — west bank portage",
+      "archetype": "dam_pool",
+      "waterbody": "San Marcos River",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "West end of Martindale Dam (OSM way 1298222119); portage not surveyed",
+        "source": "https://www.openstreetmap.org/way/1298222119",
+        "coordinate_method": "sourced_point"
+      },
+      "reach_direction": "upstream of USGS 08171400 (San Marcos River near Martindale), about 1 km",
+      "stations": [
+        {
+          "station_id": "08171400",
+          "position": "upstream of USGS 08171400 (San Marcos River near Martindale), about 1 km",
+          "relationship_class": "context_station_downstream",
+          "confidence": "low",
+          "evidence": [
+            "https://waterdata.usgs.gov/monitoring-location/USGS-08171400/",
+            "Added 2026-10-08; press reports at Martindale are being paired with this station's daily means; no band yet"
+          ]
+        }
+      ],
+      "access_source": "https://tpwd.texas.gov/fishboat/fish/recreational/rivers/lease_access/scull_rd.phtml",
+      "closure_source": "https://tpwd.texas.gov/fishboat/fish/recreational/rivers/lease_access/scull_rd.phtml",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "upstream of USGS 08171400 (San Marcos River near Martindale), about 1 km",
+        "local_rule": "none yet",
+        "fresh_data_path": "USGS 08171400"
+      },
+      "missing_for_color": [
+        "reach-specific depth and condition observations",
+        "a flow band checked against dated reports"
+      ],
+      "current_treatment": "Gray: station linked as context; no band yet."
+    },
+    "alan-bates-park": {
+      "name": "Alan Bates Park — river access (Martindale)",
+      "archetype": "spring_supported_karst",
+      "waterbody": "San Marcos River",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "Park reference point; water entry not surveyed",
+        "source": "https://naturerocksaustin.org/node/13351",
+        "coordinate_method": "park_reference"
+      },
+      "reach_direction": "upstream of USGS 08171400 (San Marcos River near Martindale), about 0.5 km",
+      "stations": [
+        {
+          "station_id": "08171400",
+          "position": "upstream of USGS 08171400 (San Marcos River near Martindale), about 0.5 km",
+          "relationship_class": "context_station_downstream",
+          "confidence": "low",
+          "evidence": [
+            "https://waterdata.usgs.gov/monitoring-location/USGS-08171400/",
+            "Added 2026-10-08; press reports at Martindale are being paired with this station's daily means; no band yet"
+          ]
+        }
+      ],
+      "access_source": "https://naturerocksaustin.org/node/13351",
+      "closure_source": "https://naturerocksaustin.org/node/13351",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "upstream of USGS 08171400 (San Marcos River near Martindale), about 0.5 km",
+        "local_rule": "none yet",
+        "fresh_data_path": "USGS 08171400"
+      },
+      "missing_for_color": [
+        "reach-specific depth and condition observations",
+        "a flow band checked against dated reports"
+      ],
+      "current_treatment": "Gray: station linked as context; no band yet."
+    },
+    "nancy-martindale-park": {
+      "name": "Nancy Martindale Park — river access (Martindale)",
+      "archetype": "spring_supported_karst",
+      "waterbody": "San Marcos River",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "Park reference point; water entry not surveyed",
+        "source": "https://www.google.com/maps/search/Nancy+Martindale+Park+Martindale+TX",
+        "coordinate_method": "park_reference"
+      },
+      "reach_direction": "upstream of USGS 08171400 (San Marcos River near Martindale), about 0.5 km",
+      "stations": [
+        {
+          "station_id": "08171400",
+          "position": "upstream of USGS 08171400 (San Marcos River near Martindale), about 0.5 km",
+          "relationship_class": "context_station_downstream",
+          "confidence": "low",
+          "evidence": [
+            "https://waterdata.usgs.gov/monitoring-location/USGS-08171400/",
+            "Added 2026-10-08; press reports at Martindale are being paired with this station's daily means; no band yet"
+          ]
+        }
+      ],
+      "access_source": "https://www.google.com/maps/search/Nancy+Martindale+Park+Martindale+TX",
+      "closure_source": "https://www.google.com/maps/search/Nancy+Martindale+Park+Martindale+TX",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "upstream of USGS 08171400 (San Marcos River near Martindale), about 0.5 km",
+        "local_rule": "none yet",
+        "fresh_data_path": "USGS 08171400"
+      },
+      "missing_for_color": [
+        "reach-specific depth and condition observations",
+        "a flow band checked against dated reports"
+      ],
+      "current_treatment": "Gray: station linked as context; no band yet."
+    },
+    "cypress-falls": {
+      "name": "Cypress Falls swimming hole (Cypress Creek)",
+      "archetype": "dam_pool",
+      "waterbody": "Cypress Creek",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "Approximate: Woodcreek on Cypress Creek; not surveyed",
+        "source": "https://www.openstreetmap.org/search?query=Woodcreek%2C%20Texas",
+        "coordinate_method": "park_reference"
+      },
+      "reach_direction": "Jacob's Well spring discharge, upstream on Cypress Creek",
+      "stations": [
+        {
+          "station_id": "08170990",
+          "position": "Jacob's Well spring discharge, upstream on Cypress Creek",
+          "relationship_class": "spring_discharge_context",
+          "confidence": "low",
+          "evidence": [
+            "https://waterdata.usgs.gov/monitoring-location/USGS-08170990/",
+            "Cypress Creek also gains from other seeps below Jacob's Well; zero at the well is not zero at the falls"
+          ]
+        }
+      ],
+      "access_source": "https://airial.travel/attractions/united-states/wimberley/cypress-falls-swimming-hole-kwfcMwGz",
+      "closure_source": "https://airial.travel/attractions/united-states/wimberley/cypress-falls-swimming-hole-kwfcMwGz",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "Jacob's Well spring discharge, upstream on Cypress Creek",
+        "local_rule": "none yet",
+        "fresh_data_path": "USGS 08170990"
+      },
+      "missing_for_color": [
+        "reach-specific depth and condition observations",
+        "operator status",
+        "a flow band checked against dated reports"
+      ],
+      "current_treatment": "Gray: spring discharge linked as context; no band yet."
+    },
+    "krause-springs": {
+      "name": "Krause Springs",
+      "archetype": "spring_supported_karst",
+      "waterbody": "Krause Springs (Trinity Aquifer)",
+      "entry_geometry": {
+        "is_water_entry": false,
+        "precision": "Approximate, from public listings; not surveyed",
+        "source": "https://www.krausesprings.net/",
+        "coordinate_method": "park_reference"
+      },
+      "reach_direction": "no stream gauge measures the spring or its creek",
+      "stations": [],
+      "access_source": "https://www.krausesprings.net/",
+      "closure_source": "https://www.krausesprings.net/",
+      "color_gate": {
+        "verified_entry": false,
+        "documented_relationship": "no stream gauge measures the spring or its creek",
+        "local_rule": "none yet",
+        "fresh_data_path": null
+      },
+      "missing_for_color": [
+        "a gauge or a validated groundwater proxy",
+        "a band checked against dated reports"
+      ],
+      "current_treatment": "Gray: no station. A Trinity Aquifer well 15 km away (TWDB 5747312) is being tested as a groundwater stand-in.",
+      "groundwater_proxy_candidate": {
+        "well": "TWDB 5747312",
+        "aquifer": "Trinity",
+        "distance_km": 15.4,
+        "source": "https://waterdatafortexas.org/groundwater/well/5747312",
+        "status": "under test (swimming-hole-decline calibration, 2026-10-08)"
+      }
     }
   },
   "recomputed_2026_09_29": "Entry geometry and station positions were recomputed after the marker audit moved the Barton, Bull Creek, and pool coordinates onto sourced points (data/model/austin-marker-audit.json); text that names a specific distance now comes from data/model/austin-reach-geometry.json on those coordinates."

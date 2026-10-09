@@ -254,5 +254,18 @@
     "unit": "ft3/s",
     "source": "https://waterdata.usgs.gov/monitoring-location/USGS-08159200/",
     "link_status": "Colorado River at Bastrop; station context only, no flow band"
+  },
+  {
+    "id": "08171400",
+    "name": "San Marcos Rv nr Martindale, TX",
+    "lat": 29.83228611111111,
+    "lon": -97.84238333333333,
+    "waterbody": null,
+    "parameter": "discharge (00060)",
+    "unit": "ft3/s",
+    "source": "https://waterdata.usgs.gov/monitoring-location/USGS-08171400/",
+    "county": "Caldwell County",
+    "tier": "regional-key",
+    "link_status": "regional context added 2026-10-01 (regional-key: San Marcos near Martindale); no place rule"
   }
 ]

@@ -2,7 +2,7 @@
    Static files provide the place inventory, rules and geometry. Personal visit records are excluded. */
 'use strict';
 const $=s=>document.querySelector(s);
-const APP_VERSION='2026-10-09-flood-links';
+const APP_VERSION='2026-10-09-martindale';
 const detailBody=$('#detail-body'), detailPanel=$('#detail'), list=$('#place-list'), poolList=$('#pool-list'), freshness=$('#freshness');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const AUSTIN_BOUNDS=[[30.16,-97.93],[30.44,-97.66]];
@@ -738,9 +738,9 @@ function startLiveRefresh(){
 }
 const gaugeInventory=getJson('data/gauges.json');
 fetch('data/water-map-links.json?v=20261005-water-map-links',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>{if(d){waterMap=d;if(selectedId){const g=gauges.find(x=>x.id===selectedId);if(g)selectGauge(g);}}}).catch(()=>{});
-Promise.all([Promise.all([getJson('data/holes.json?v=20261003-place-history-v35'),
+Promise.all([Promise.all([getJson('data/holes.json?v=20261009-martindale'),
     optionalJson('data/swim-facilities.json?v=20261008-beaches',{places:[]},'Pool, splash pad and beach locations unavailable.')]).then(([holes,city])=>[...holes,...city.places]),gaugeInventory,gaugeInventory.then(g=>publicFlowStatus(g.map(station=>station.id))),publicCityStatus(),getVisits(),
-  optionalJson('hydro-context.json',{stations:{}},'Hydrologic context unavailable.'),optionalJson('data/model/place-relationships.json?v=20261003-place-history-v35',{places:{}},'Place relationships unavailable.')])
+  optionalJson('hydro-context.json',{stations:{}},'Hydrologic context unavailable.'),optionalJson('data/model/place-relationships.json?v=20261009-martindale',{places:{}},'Place relationships unavailable.')])
  .then(([h,g,flow,operator,notes,ctx,rel])=>{ context=ctx; relationships=rel;
    flowMeta=flow; operatorMeta=operator;
    const assessed=Object.fromEntries([...(flow.places||[]),...(operator.places||[])].map(p=>[p.id,p]));
