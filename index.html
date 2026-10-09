@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Austin Swim Map</title>
-<meta name="description" content="Local, source-first map of Austin swimming places: creek gauge readings, City pool hours, park closure notices, and the gaps between them.">
+<meta name="description" content="Where you can swim around Austin: swimming holes, pools, splash pads and lake beaches, colored from live creek gauges, posted hours and official notices.">
 <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
-<link rel="stylesheet" href="style.css?v=20261005-water-map-links">
+<link rel="stylesheet" href="style.css?v=20261009-key">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%231c3b3b%27/%3E%3Cpath d=%27M9 33q9-9 18 0t18 0 18 0M9 44q9-9 18 0t18 0 18 0%27 fill=%27none%27 stroke=%27%23b6e0d2%27 stroke-width=%274%27/%3E%3C/svg%3E">
 </head>
 <body>
@@ -15,7 +15,7 @@
   <div class="title-block">
     <p class="eyebrow">Austin water notebook · saved map</p>
     <h1>Austin Swim Map <span class="wave" aria-hidden="true">〰</span></h1>
-    <p class="lede">Explore Austin and regional swimming places, creek gauges, City pools, and park notices. USGS and City Hydromet readings, City schedules, NWS notices, and forecasts refresh while this page is open. Creek colors describe documented flow bands; depth at swimming holes is unmeasured.</p>
+    <p class="lede">Swimming holes, pools, splash pads and lake beaches around Austin. Colors come from creek gauge readings, posted hours, City notices and NWS warnings, re-checked while this page is open. Depth at swimming holes is unmeasured.</p>
   </div>
   <div class="map-tools">
     <div class="actions" role="group" aria-label="Map extent">
@@ -25,15 +25,13 @@
       <button id="all" type="button">All saved places</button>
     </div>
     <fieldset class="layer-controls"><legend>Show on map</legend>
-      <label><input id="show-holes" type="checkbox" checked> Swimming holes &amp; parks</label>
-      <label><input id="show-pools" type="checkbox" checked> City pools &amp; splash pads</label>
-      <label><input id="show-beaches" type="checkbox" checked> Lake beaches</label>
-      <label><input id="show-context" type="checkbox"> Creek context points</label>
-      <label><input id="show-gauges" type="checkbox"> USGS gauges</label>
-      <label><input id="show-cityGauges" type="checkbox"> City Hydromet gauges</label>
+      <label><input id="show-holes" type="checkbox" checked> <i class="sw star" aria-hidden="true">★</i> Swimming holes</label>
+      <label><input id="show-pools" type="checkbox" checked> <i class="sw pool" aria-hidden="true">◉</i> Pools</label>
+      <label><input id="show-splash" type="checkbox" checked> <i class="sw splash" aria-hidden="true">✱</i> Splash pads</label>
+      <label><input id="show-beaches" type="checkbox" checked> <i class="sw beach" aria-hidden="true">≈</i> Lake beaches</label>
       <label><input id="hide-closed" type="checkbox"> Hide closed places</label>
     </fieldset>
-    <fieldset class="layer-controls"><legend>City hours</legend>
+    <fieldset class="layer-controls"><legend>Hours</legend>
       <label><input type="radio" name="open-view" value="today" checked> Open today</label>
       <label><input type="radio" name="open-view" value="now"> Open now</label>
     </fieldset>
@@ -46,39 +44,36 @@
 
 <main>
   <section class="map-wrap" aria-label="Interactive Austin swimming map">
-    <div id="map" role="application" aria-label="Geographic map of Austin swimming places, City pools, park references, and USGS gauges. Use the place list below the map for a keyboard alternative."></div>
+    <div id="map" role="application" aria-label="Map of swimming holes, pools, splash pads and lake beaches around Austin. Use the place list below the map for a keyboard alternative."></div>
     <div id="rim" class="rim" aria-hidden="true"></div>
     <details class="legend" id="legend">
       <summary><b>How to read this map</b></summary>
       <div class="legend-body">
         <p class="legend-title">Shapes say what a place is</p>
         <ul class="shapes">
-          <li><i class="sw star">★</i> creek swimming place</li>
-          <li><i class="sw pool">◉</i> City pool or splash pad</li>
-          <li><i class="sw beach">≈</i> Lake beach</li>
-          <li><i class="sw park">⌂</i> park reference (not a water entry)</li>
-          <li><i class="sw ctx">○</i> creek context only (optional layer; not a swimming place)</li>
-          <li><i class="sw gauge">◆</i> USGS gauge (optional layer; measures its station, not a swimming hole)</li>
-          <li><i class="sw gauge red">◆</i> red gauge = a fresh 0 cfs discharge reading at that station</li>
-          <li><i class="sw city-gauge">▣</i> City Hydromet gauge (optional layer; stage and discharge where reported)</li>
-          <li><i class="sw unverified">★</i> dashed ring = location approximate or derived</li>
-          <li><i class="sw rimchip">▲</i> chip on the frame edge = a saved destination off screen, arrow at its true direction, miles straight-line from downtown</li>
+          <li><i class="sw star">★</i> swimming hole: creek, river or spring</li>
+          <li><i class="sw pool">◉</i> pool or public water park</li>
+          <li><i class="sw splash">✱</i> splash pad (no swimming)</li>
+          <li><i class="sw beach">≈</i> lake beach</li>
+          <li><i class="sw park">⌂</i> park reference, not a water entry</li>
+          <li><i class="sw unverified">★</i> dashed outline: location approximate or derived</li>
+          <li><i class="sw rimchip">▲</i> chip on the frame edge: saved places 25 or more miles from downtown, pointing their true direction, with straight-line miles and how many of each kind</li>
         </ul>
         <p class="legend-title">Colors say what the evidence supports right now</p>
         <ul class="colors">
-          <li><i class="dot green"></i> <b>Green</b> — a gauge reading falls in a documented flow band, or a City schedule has a swim window today (switch to Open now for the current hour)</li>
+          <li><i class="dot green"></i> <b>Green</b> — a gauge reading falls in a documented flow band, or posted hours have the place open today (switch to Open now for the current hour)</li>
           <li><i class="dot yellow"></i> <b>Yellow</b> — the documented rule calls the fresh reading borderline</li>
-          <li><i class="dot red"></i> <b>Red</b> — too dry or too high under the rule, or a City closure / no published swim window in the selected view</li>
+          <li><i class="dot red"></i> <b>Red</b> — too dry or too high under the rule, or a closure or no posted opening in the selected view</li>
           <li><i class="dot unrated"></i> <b>No color</b> — no current rating. Open the place card for the missing evidence or expired check.</li>
         </ul>
-        <p class="legend-note">A zoomed-out pie counts nearby places of one kind: each slice is proportional to places currently red, yellow, green, or without a rating (ivory). The center is the number of places; the small symbol shows their kind. Tap for names and individual evidence. A red gauge means no measurable discharge at that station; it does not rate every swimming place nearby. Most USGS flow cues can remain dated planning cues for up to six hours. For <a href="method.html#blunn-visit-band">Blunn Creek</a>, a reading under 30 minutes old is current; an older green-band reading can remain a dated cue for at most two hours when the three-hour flow-history check passes and no six-hour station rain is reported. The card gives the observation age. City schedule colors expire at the next relevant boundary or two hours after the oldest required City page check. Green never means clean, safe, deep, or permitted. Park shading is City parkland, not swimming permission. Creek lines are the City’s channel lines, not proof of water. Official NWS notices, a heat/sun planning band, and each station's hydrologic context appear on the card only, never in the place marker color.</p>
+        <p class="legend-note">A zoomed-out pie stands for nearby places of one kind: the number is how many, and the slices show how many are red, yellow, green or unrated. Green never means clean, safe, deep or permitted. <a href="method.html#reading-the-map">How long each color lasts, and what a gauge can and cannot tell you</a>.</p>
         <p class="legend-note" id="geometry-note"></p>
       </div>
     </details>
   </section>
 
   <section class="beyond" id="beyond" aria-label="Saved destinations beyond Austin">
-    <p class="eyebrow">Beyond Austin · saved destinations · straight-line miles from downtown</p>
+    <p class="eyebrow">Trips · saved places 25 or more miles out · straight-line miles from downtown</p>
     <div class="beyond-row" id="beyond-row"></div>
     <p class="beyond-note">Regional USGS stations, NWS notices, and local forecasts refresh while this page is open. A chip flies the map there; the arrow shows the compass direction. Check the linked operator page for current access.</p>
   </section>
@@ -99,10 +94,7 @@
     <p class="muted">Keyboard and screen-reader alternative to the map. Colored badges appear only where a current rating exists; each card explains its evidence or gap.</p>
   </div>
   <div id="place-list"></div>
-  <h3 class="station-head">USGS gauges · measured context <small class="muted">Live readings and six-hour trends from every displayed station; place and gauge cards offer 24-hour, seven-day, and seasonal discharge context where records support it. A station alone is never a swim verdict.</small></h3>
-  <div id="station-list"></div>
-  <h3 class="station-head">City Hydromet · measured context <small class="muted">Official City creek gauges report stage, discharge, or both. Stage is not swimming depth. Tap a station for its observation time and source.</small></h3>
-  <div id="city-station-list"></div>
+  <p class="muted station-note">Each place card names the gauge behind its color, with the reading, its time and the station’s flow history. The <a href="https://saulbanov.github.io/hill-country-hydro-map/">Hill Country water map</a> holds each gauge’s full record wherever USGS keeps a daily one (20 of the 24).</p>
 </section>
 
 <section class="pools" aria-labelledby="pool-heading">
@@ -126,6 +118,6 @@
 <script src="public-hazards.js?v=20261009-all-places"></script>
 <script src="public-outdoor.js?v=20261001-local-forecast-v12"></script>
 <script src="history.js?v=20261008-gage-height"></script>
-<script src="app.js?v=20261009-pages"></script>
+<script src="app.js?v=20261009-key"></script>
 </body>
 </html>

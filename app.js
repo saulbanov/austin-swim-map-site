@@ -2,7 +2,7 @@
    Static files provide the place inventory, rules and geometry. Personal visit records are excluded. */
 'use strict';
 const $=s=>document.querySelector(s);
-const APP_VERSION='2026-10-09-pages';
+const APP_VERSION='2026-10-09-key';
 const detailBody=$('#detail-body'), detailPanel=$('#detail'), list=$('#place-list'), poolList=$('#pool-list'), freshness=$('#freshness');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const AUSTIN_BOUNDS=[[30.16,-97.93],[30.44,-97.66]];
@@ -15,12 +15,12 @@ const FLOW_READING_MAX_AGE_MS=90*60000;
 const FLOW_PLANNING_MAX_AGE_MS=6*3600000;
 
 let places=[],gauges=[],cityGauges=[],cityHydrometMeta={},readings={},visits=[],flowMeta={},operatorMeta={},noticeContext={},hazards={},outdoor={},context={stations:{}},relationships={places:{}},layers=[],selectedId=null,creekLayer=null,parkLayer=null,groupsBeyond=[];
-const layerChoice={holes:true,pools:true,beaches:true,context:false,gauges:false,cityGauges:false};
+const layerChoice={holes:true,pools:true,splash:true,beaches:true};
 // Hide closed: drops places whose current answer is a closure (kindOf key 'closed'), on every layer. Red flow stays visible.
 let hideClosed=false;
 try{ hideClosed=localStorage.getItem('austin-swim-map-hide-closed')==='1'; }catch(e){}
 let cityHoursView='today';
-try{ const saved=JSON.parse(localStorage.getItem('austin-swim-map-layers')||'{}'); layerChoice.holes=saved.holes!==false; layerChoice.pools=saved.pools!==false; layerChoice.beaches=saved.beaches!==false; layerChoice.context=saved.context===true; layerChoice.gauges=saved.gauges===true; layerChoice.cityGauges=saved.cityGauges===true;
+try{ const saved=JSON.parse(localStorage.getItem('austin-swim-map-layers')||'{}'); layerChoice.holes=saved.holes!==false; layerChoice.pools=saved.pools!==false; layerChoice.splash=saved.splash!==false; layerChoice.beaches=saved.beaches!==false;
   cityHoursView=localStorage.getItem('austin-swim-map-city-hours')==='now'?'now':'today'; }catch(e){}
 const CLASS_LABEL={rule_linked_product_baseline:'Rule link · recorded third-party product baseline',rule_linked_provisional_personal:'Rule link · provisional band from recorded visits (limited evidence)',rule_linked_hypothesis:'Hypothetical flow link · station relationship and local depth uncertain',context_station_upstream:'Context · station upstream of this place',context_station_downstream:'Context · station downstream of this place',context_same_waterbody_unpositioned:'Context · same creek, position not computed',spring_discharge_context:'Context · spring discharge feeding the pool',none:'No station relationship'};
 let map=null; const hasLeaflet=typeof L!=='undefined';
@@ -134,27 +134,27 @@ function shortTag(p){
   if(a.conflict) return 'notices conflict';
   if(p.map_display==='list_only') return 'not on map · unresolved';
   if(p.place_role==='park_reference') return 'reference · no verdict';
-  if(p.place_role==='creek_context') return 'context only';
   if(p.creek==='Blunn Creek') return /rain/i.test(a.reason||'')?'station rain · flow cue paused':a.observed_at&&NOW()-Date.parse(a.observed_at)>=CITY_HYDROMET_MAX_AGE_MS?'earlier station reading · no supported flow cue':'City station linked · no current flow cue';
   if(p.gauge&&!a.rule_source) return 'station only · no rule';
   return 'no gauge linked';
 }
-function symbolFor(p){ return isBeach(p)?'≈':p.place_role==='managed_pool'?'◉':p.place_role==='park_reference'?'⌂':p.place_role==='creek_context'?'○':'★'; }
-function shapeClass(p){ return isBeach(p)?'beach':p.place_role==='managed_pool'?'pool':p.place_role==='park_reference'?'park':p.place_role==='creek_context'?'ctx':'star'; }
+function symbolFor(p){ return isBeach(p)?'≈':isSplash(p)?'✱':p.place_role==='managed_pool'?'◉':p.place_role==='park_reference'?'⌂':'★'; }
+function shapeClass(p){ return isBeach(p)?'beach':isSplash(p)?'splash':p.place_role==='managed_pool'?'pool':p.place_role==='park_reference'?'park':'star'; }
 function unverified(p){ return ['derived_on_centerline','park_centroid','park_reference','unresolved','geocoded_address'].includes(p.coordinate_method)||(!p.coordinate_method&&isAustin(p)); }
-function categoryOf(p){ return isBeach(p)?'beach':p.place_role==='managed_pool'?'pool':p.place_role==='park_reference'?'park':p.place_role==='creek_context'?'context':'creek'; }
+function categoryOf(p){ return isBeach(p)?'beach':isSplash(p)?'splash':p.place_role==='managed_pool'?'pool':p.place_role==='park_reference'?'park':'creek'; }
 function isBeach(p){ return p.place_role==='lake_beach'||p.kind==='lake park'; }
-function layerForPlace(p){ return isBeach(p)?'beaches':p.place_role==='managed_pool'?'pools':p.place_role==='creek_context'?'context':'holes'; }
+function isSplash(p){ return p.place_role==='managed_pool'&&p.kind==='splash pad'; }
+function layerForPlace(p){ return isBeach(p)?'beaches':isSplash(p)?'splash':p.place_role==='managed_pool'?'pools':'holes'; }
 function visiblePlace(p){ return layerChoice[layerForPlace(p)]&&!(hideClosed&&kindOf(p).key==='closed'); }
 function revealPlaceLayer(p){ const key=layerForPlace(p); if(layerChoice[key]) return; layerChoice[key]=true; $('#show-'+key).checked=true; saveLayerChoice(); buildGroups(); renderRim(); }
 function saveLayerChoice(){ try{localStorage.setItem('austin-swim-map-layers',JSON.stringify(layerChoice));}catch(e){} }
 function areaOf(p){
-  if(p.place_role==='creek_context') return 'Creek and gauge context (not swimming places)';
   if(p.region==='Barton Creek Greenbelt') return 'Barton Creek Greenbelt';
   if(p.creek==='Bull Creek') return 'Bull Creek';
   if(p.region==='Austin / Lake Austin') return 'Lake Austin parks';
   if(p.region==='Austin / Colorado River') return 'Colorado River below Longhorn Dam';
-  if(p.place_role==='managed_pool') return 'City pools and splash pads';
+  if(isSplash(p)) return 'City splash pads';
+  if(p.place_role==='managed_pool') return 'City pools';
   return 'Other Austin creeks';
 }
 
@@ -207,7 +207,7 @@ function groupPie(group){
     return `${colors[status]} ${start}% ${cursor}%`;
   });
   const kind=categoryOf(group[0]);
-  const kinds={beach:['lake beaches','≈'],pool:['pools and splash pads','◉'],park:['park references','⌂'],context:['creek context points','○'],creek:['swimming holes','★']};
+  const kinds={beach:['lake beaches','≈'],pool:['pools','◉'],splash:['splash pads','✱'],park:['park references','⌂'],creek:['swimming holes','★']};
   return {counts,background:slices.length?`conic-gradient(from -90deg, ${slices.join(', ')})`:'var(--paper)',
     what:kinds[kind][0],glyph:kinds[kind][1],
     summary:Object.entries(counts).filter(([,count])=>count).map(([status,count])=>`${count} ${status==='unrated'?'without a current rating':status}`).join(' · ')};
@@ -221,18 +221,6 @@ function addGroup(group){
   marker.bindTooltip(esc(label),{direction:'top',offset:[0,-26]});
   marker.on('click',()=>{ if(map.getZoom()<15) map.flyTo([lat,lon],Math.min(map.getZoom()+2,16)); showGroup(group); });
   layers.push(marker);
-}
-function addGauge(g){
-  const zero=gaugeFlowColor(g)==='red';
-  const m=L.marker([g.lat,g.lon],{icon:markerIcon('gauge',zero?'red':null,'◆',g.id===selectedId?'selected':''),title:`USGS gauge: ${g.name}${zero?' — 0 cfs at station':''}`,keyboard:true,alt:`USGS gauge ${g.name}${zero?', fresh reading of 0 cfs at station':''}`}).addTo(map);
-  m.bindTooltip(`Gauge · ${esc(g.name)}${zero?' · 0 cfs at station':''}`,{direction:'bottom',offset:[0,18]}); m.on('click',()=>selectGauge(g)); layers.push(m);
-}
-function addCityGauge(g){
-  const zero=!cityHydrometMeta.failed&&cityHydrometCurrent(g)&&g.flow_cfs===0;
-  const m=L.marker([g.lat,g.lon],{icon:markerIcon('city-gauge',zero?'red':null,'▣',`city-gauge${'city-'+g.id===selectedId?' selected':''}`),
-    title:`City Hydromet: ${g.name}${zero?' — 0 cfs at station':''}`,keyboard:true,alt:`City Hydromet ${g.name}`}).addTo(map);
-  m.bindTooltip(`City Hydromet · ${esc(g.name)}${zero?' · 0 cfs at station':''}`,{direction:'bottom',offset:[0,18]});
-  m.on('click',()=>selectCityGauge(g));layers.push(m);
 }
 function render(){
   if(!hasLeaflet) return;
@@ -249,8 +237,6 @@ function render(){
     }
     groups.forEach(g=>g.length>1?addGroup(g):addPlace(g[0]));
   } else local.forEach(addPlace);
-  if(layerChoice.gauges) gauges.forEach(addGauge);
-  if(layerChoice.cityGauges) cityGauges.forEach(addCityGauge);
   styleCreeks();
 }
 
@@ -309,18 +295,6 @@ function relationBlock(p){ const rec=relationships.places?.[p.id]; if(!rec) retu
   return `<div class="fact relation"><h3>Relationship · evidence and limits</h3><p><b>Water:</b> ${esc(rec.waterbody)} · <b>type:</b> ${esc(String(rec.archetype||'').replaceAll('_',' '))}</p>${rec.missing_for_color?.length?`<p><b>Remaining gaps:</b></p><ul>${rec.missing_for_color.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}<p class="muted">${esc(rec.current_treatment||'')}</p></div>`; }
 function hydroBlock(rows){ const withCtx=rows.filter(s=>context.stations?.[s.station_id]); if(!withCtx.length) return '';
   return `<div class="fact hydro"><h3>Hydrologic context · station, not a swim verdict</h3>${withCtx.map(s=>stationContext(s.station_id)).join('')}</div>`; }
-function renderStations(){ const holder=$('#station-list'); if(!holder) return;
-  holder.innerHTML=gauges.length?gauges.map(g=>{const q=(readings['USGS-'+g.id]||[]).find(r=>r.parameter==='00060'),h=(readings['USGS-'+g.id]||[]).find(r=>r.parameter==='00065');
-    const age=q?NOW()-Date.parse(q.observed_at):NaN,stageAge=h?NOW()-Date.parse(h.observed_at):NaN;
-    const current=Number.isFinite(age)&&age>=-300000&&age<FLOW_READING_MAX_AGE_MS;
-    const earlier=Number.isFinite(age)&&age>=FLOW_READING_MAX_AGE_MS&&age<FLOW_PLANNING_MAX_AGE_MS;
-    const stageCurrent=Number.isFinite(stageAge)&&stageAge>=-300000&&stageAge<FLOW_READING_MAX_AGE_MS;
-    const stageRecent=Number.isFinite(stageAge)&&stageAge>=-300000&&stageAge<FLOW_PLANNING_MAX_AGE_MS,stage=stageRecent?` · ${h.value} ft`:'';
-    const trend=flowMeta.live_flow_trends?.[g.id];
-    const failed=flowMeta.live_flow_failures?.includes(g.id),zero=gaugeFlowColor(g)==='red',tag=zero?`0 cfs${stage} · no measurable flow`:q&&current?`${q.value} cfs${stage} · ${failed?'last fetched':trend?trend.direction:'current'}`:q&&earlier?`${q.value} cfs${stage} · earlier reading`
-      :stageRecent?`${h.value} ft stage · ${stageCurrent?(failed?'last fetched':'current'):'earlier reading'}`:'no recent reading';
-    return `<div class="place-row"><button data-station="${esc(g.id)}" type="button"><span class="sym gauge-list ${zero?'red':''}" aria-hidden="true">◆</span><span>${esc(g.name)}</span></button><span class="tag ${zero?'red':''}">${esc(tag)}</span></div>`; }).join(''):'<p class="muted">No USGS gauges in this inventory.</p>';
-  holder.querySelectorAll('button[data-station]').forEach(b=>b.onclick=()=>{ const g=gauges.find(x=>x.id===b.dataset.station); if(g){ if(hasLeaflet) map.flyTo([g.lat,g.lon],14); selectGauge(g); if(window.innerWidth>780) detailPanel.scrollIntoView({behavior:'smooth',block:'nearest'}); } }); }
 function cityMeasurement(g){
   const age=NOW()-Date.parse(g.observed_at),recent=Number.isFinite(age)&&age>=-300000&&age<FLOW_PLANNING_MAX_AGE_MS;
   const current=!cityHydrometMeta.failed&&cityHydrometCurrent(g);
@@ -330,15 +304,6 @@ function cityMeasurement(g){
   const rain=!recent?'No recent station rain reading':g.rainfall_1h==null?'Past-hour station rain not reported':g.rainfall_1h>0?'Rain reported at station in the past hour':'No station rain reported in the past hour';
   return `<p>${flow}<br>${stage}<br>${rain}</p><p class="evidence">Observed ${fmt(g.observed_at)} · ${note} · source checked ${fmt(cityHydrometMeta.checked_at)}</p>
     <p class="muted">Stage is water level at this gauge, not depth at a swimming reach. The station reading alone does not rate a place.</p>`;
-}
-function renderCityStations(){const holder=$('#city-station-list');if(!holder)return;
-  holder.innerHTML=cityGauges.length?cityGauges.map(g=>{const current=!cityHydrometMeta.failed&&cityHydrometCurrent(g),zero=current&&g.flow_cfs===0;
-    const age=NOW()-Date.parse(g.observed_at),recent=Number.isFinite(age)&&age>=-300000&&age<FLOW_PLANNING_MAX_AGE_MS;
-    const label=current?(g.flow_cfs!==null?`${g.flow_cfs} cfs${g.stage_ft!==null?` · ${g.stage_ft} ft`:''}`:`${g.stage_ft} ft stage`):cityHydrometMeta.failed?'check failed':recent?'earlier reading':'no recent reading';
-    return `<div class="place-row"><button data-city-station="${esc(g.id)}" type="button"><span class="sym city-gauge-list ${zero?'red':''}" aria-hidden="true">▣</span><span>${esc(g.name)}</span></button><span class="tag ${zero?'red':''}">${esc(label)}</span></div>`;}).join('')
-    :`<p class="muted">${cityHydrometMeta.failed?'City Hydromet check failed; the map will retry.':'Checking City Hydromet stations…'}</p>`;
-  holder.querySelectorAll('button[data-city-station]').forEach(button=>button.onclick=()=>{const g=cityGauges.find(item=>item.id===button.dataset.cityStation);
-    if(g){if(hasLeaflet)map.flyTo([g.lat,g.lon],14);selectCityGauge(g);if(window.innerWidth>780)detailPanel.scrollIntoView({behavior:'smooth',block:'nearest'});}});
 }
 function blunnCityBlock(p){
   if(!['blunn-big-stacey','blunn-little-stacey'].includes(p.id))return '';
@@ -378,7 +343,7 @@ function selectPlace(p,reveal=true){
   const bandCaveat=a.hypothetical?'This pale cue is a site-specific station-flow guess. It has no measured depth or condition calibration at this place. A rapid rise can signal flood danger.':(a.evidence||'').includes('limited evidence')?'This provisional band comes from a small set of recorded visits and has no independent validation.':'This band is a recorded third-party flow cue with no independent swimming validation.';
   const depth=p.place_role==='lake_beach'?'<p>No depth is measured at this beach, and the shoreline moves with the lake level.</p>'
     :p.place_role==='managed_pool'?'<p>No verified pool depth range is stored here. Check the City pool page for facility details.</p>'
-    :p.place_role==='park_reference'||p.place_role==='creek_context'?'<p>No swimming area or water depth is established for this reference point.</p>'
+    :p.place_role==='park_reference'?'<p>No swimming area or water depth is established for this reference point.</p>'
     :gauge||p.creek==='Blunn Creek'?'<p>Station discharge is this map’s proxy for likely water at the reach. No direct depth measurement exists here; station stage uses the gauge’s own reference point.</p><p class="evidence"><a href="https://www.usgs.gov/faqs/why-doesnt-usgs-measure-gage-height-bottom-stream" target="_blank" rel="noreferrer">How USGS defines gage height ↗</a></p>'
     :'<p>No direct reach-depth measurement or linked flow proxy is available.</p>';
   const inferred= a.operator_override?`<p>${esc(a.reason)}</p><p class="muted">Official operator access decision, checked ${fmt(a.observed_at)}. The station-flow guess is separate and does not reopen swimming.</p>`
@@ -442,19 +407,6 @@ function selectGauge(g){
   mountHistory('usgs',g.id,currentHistoryReadings('usgs',g.id));
   openSheet();
 }
-function selectCityGauge(g){
-  selectedId='city-'+g.id;render();
-  const linked=g.id==='122'?places.filter(p=>['blunn-big-stacey','blunn-little-stacey'].includes(p.id)):[];
-  detailBody.innerHTML=`<p class="eyebrow">City of Austin Hydromet · station ${esc(g.id)}</p><h2>${esc(g.name)}</h2>
-    <div class="badges"><span class="kind-badge measured">Measured at the station</span>${!cityHydrometMeta.failed&&cityHydrometCurrent(g)&&g.flow_cfs===0?'<span class="status red">0 cfs at station</span>':''}</div>
-    <div class="reading">${cityMeasurement(g)}</div>
-    ${g.id==='122'?historySection('city','122',g.name):'<div class="fact hydro"><h3>Flow history</h3><p class="muted">No place-linked discharge history is configured for this City station.</p></div>'}
-    ${linked.length?`<p><b>Mapped places upstream:</b></p>${linked.map(p=>`<p><button class="btn" data-place="${esc(p.id)}" type="button">${esc(p.name)}</button></p>`).join('')}`:''}
-    <p class="sources"><a href="${esc(g.source)}" target="_blank" rel="noreferrer">Official City Hydromet history ↗</a></p>`;
-  detailBody.querySelectorAll('button[data-place]').forEach(button=>button.onclick=()=>{const p=places.find(item=>item.id===button.dataset.place);flyTo(p);selectPlace(p);});
-  if(g.id==='122')mountHistory('city','122',currentHistoryReadings('city','122'));
-  openSheet();
-}
 function showGroup(group){
   const pie=groupPie(group);
   detailBody.innerHTML=`<p class="eyebrow">${esc(pie.what)} nearby · individual ratings</p><h2>${group.length} places</h2><p>${esc(pie.summary)}. Pick a place for its evidence.</p>`
@@ -465,20 +417,29 @@ function showGroup(group){
 function flyTo(p){ if(!hasLeaflet) return; map.flyTo([p.lat,p.lon],Math.max(map.getZoom(),15),{duration:.6}); }
 
 /* ---------- destination rim (Study A) ----------
-   Saved places outside Austin are grouped by region. When a group's centroid is off screen, a chip sits on the
-   map frame edge at the true compass bearing from the current map center, with straight-line miles from
-   downtown Austin written on it. Distance is written, never drawn, so nothing is out of scale. */
+   Trips: saved places TRIP_MILES or more from downtown, grouped by region. When a group's centroid is off screen,
+   a chip sits on the map frame edge at the true compass bearing from the current map center, with straight-line
+   miles from downtown Austin and a count of each kind of place written on it. Distance is written, never drawn,
+   so nothing is out of scale. Nearer towns (Cedar Park, Pflugerville, Kyle) are ordinary map markers. */
+const TRIP_MILES=25;
+const KIND_WORDS={creek:['★','swimming hole','swimming holes'],park:['⌂','park reference','park references'],pool:['◉','pool','pools'],splash:['✱','splash pad','splash pads'],beach:['≈','lake beach','lake beaches']};
+function kindCounts(ps){ const c={}; ps.forEach(p=>{const k=categoryOf(p); c[k]=(c[k]||0)+1;}); return Object.keys(KIND_WORDS).filter(k=>c[k]).map(k=>[k,c[k]]); }
+function kindGlyphs(counts){ return counts.map(([k,n])=>KIND_WORDS[k][0]+(n>1?n:'')).join(' '); }
+function kindPhrase(counts){ return counts.map(([k,n])=>`${n} ${KIND_WORDS[k][n>1?2:1]}`).join(', '); }
 function haversineMi(a,b){ const R=3958.8,p=Math.PI/180; const x=Math.sin((b[0]-a[0])*p/2)**2+Math.cos(a[0]*p)*Math.cos(b[0]*p)*Math.sin((b[1]-a[1])*p/2)**2; return 2*R*Math.asin(Math.sqrt(x)); }
 function bearingDeg(a,b){ const p=Math.PI/180; const y=Math.sin((b[1]-a[1])*p)*Math.cos(b[0]*p), x=Math.cos(a[0]*p)*Math.sin(b[0]*p)-Math.sin(a[0]*p)*Math.cos(b[0]*p)*Math.cos((b[1]-a[1])*p); return (Math.atan2(y,x)*180/Math.PI+360)%360; }
 function shortRegion(r){ return String(r).replace('New Braunfels / Comal','New Braunfels').replace('New Braunfels / Guadalupe','New Braunfels').replace('Concan / Frio','Concan · Frio').replace('North / Georgetown','Georgetown'); }
 function buildGroups(){
   const by={}; places.filter(p=>!isAustin(p)&&visiblePlace(p)).forEach(p=>{ const k=shortRegion(p.region); (by[k]=by[k]||[]).push(p); });
   groupsBeyond=Object.entries(by).map(([region,ps])=>{ const lat=ps.reduce((a,p)=>a+p.lat,0)/ps.length, lon=ps.reduce((a,p)=>a+p.lon,0)/ps.length;
-    return {region,places:ps,lat,lon,mi:Math.round(Math.min(...ps.map(p=>haversineMi(DOWNTOWN,[p.lat,p.lon])))),statuses:[...new Set(ps.map(p=>effective(p).status).filter(hasRating))]}; }).sort((a,b)=>a.mi-b.mi);
+    return {region,places:ps,lat,lon,kinds:kindCounts(ps),mi:Math.round(Math.min(...ps.map(p=>haversineMi(DOWNTOWN,[p.lat,p.lon])))),statuses:[...new Set(ps.map(p=>effective(p).status).filter(hasRating))]}; })
+    .filter(g=>g.mi>=TRIP_MILES).sort((a,b)=>a.mi-b.mi);
 }
 function chipHtml(g,bearing,extra=''){
   const dots=g.statuses.map(c=>`<span class="dot ${esc(c)}"></span>`).join('');
-  return `<button type="button" class="chip ${extra}" data-region="${esc(g.region)}" title="${esc(g.places.map(p=>p.name).join(' · '))}"><span class="arrow" style="transform:rotate(${Math.round(bearing)}deg)"></span>${dots}${esc(g.region)}${g.places.length>1?` · ${g.places.length}`:''}<span class="mi">${g.mi} mi</span></button>`;
+  const kinds=g.kinds?.length?kindGlyphs(g.kinds):'';
+  const label=g.kinds?.length?`${g.region}: ${kindPhrase(g.kinds)}, ${g.mi} miles from downtown`:`${g.region}, ${g.mi} miles`;
+  return `<button type="button" class="chip ${extra}" data-region="${esc(g.region)}" aria-label="${esc(label)}" title="${esc(g.places.map(p=>p.name).join(' · '))}"><span class="arrow" style="transform:rotate(${Math.round(bearing)}deg)"></span>${dots}${esc(g.region)}${kinds?`<span class="kinds" aria-hidden="true">${esc(kinds)}</span>`:''}<span class="mi">${g.mi} mi</span></button>`;
 }
 function rimGeometry(rim){ const W=rim.clientWidth||900,H=rim.clientHeight||600; const ix=Math.round(W*0.06), top=Math.round(H*0.09), ib=Math.round(H*0.06);
   const w=W-2*ix, h=H-top-ib; return {W,H,ix,top,ib,w,h,P:2*(w+h)}; }
@@ -496,7 +457,7 @@ function renderRim(){
   const rim=$('#rim'), strip=$('#beyond-row'); if(!rim||!hasLeaflet) return;
   const c=map.getCenter(), b=map.getBounds(), center=[c.lat,c.lng], G=rimGeometry(rim);
   const items=[];
-  groupsBeyond.forEach(g=>{ if(b.contains([g.lat,g.lon])) return; items.push({g,bearing:bearingDeg(center,[g.lat,g.lon]),home:false,label:`${g.region}${g.places.length>1?' · '+g.places.length:''} ${g.mi} mi`}); });
+  groupsBeyond.forEach(g=>{ if(b.contains([g.lat,g.lon])) return; items.push({g,bearing:bearingDeg(center,[g.lat,g.lon]),home:false,label:`${g.region} ${kindGlyphs(g.kinds)} ${g.mi} mi`}); });
   if(!b.contains(DOWNTOWN)) items.push({g:{region:'Back to Austin',places:[],mi:Math.round(haversineMi(center,DOWNTOWN)),statuses:[]},bearing:bearingDeg(center,DOWNTOWN),home:true,label:'Back to Austin 000 mi'});
   items.forEach(i=>i.d=i.bearing/360*G.P);
   for(let it=0;it<60&&items.length>1;it++){ let moved=false; items.sort((a,q)=>a.d-q.d);
@@ -529,7 +490,7 @@ function flyToRegion(region){
 /* ---------- lists ---------- */
 function renderList(){
   const austin=places.filter(isAustin), regional=places.filter(p=>!isAustin(p));
-  const areas=['Barton Creek Greenbelt','Bull Creek','Other Austin creeks','Colorado River below Longhorn Dam','Lake Austin parks','City pools and splash pads','Creek and gauge context (not swimming places)'];
+  const areas=['Barton Creek Greenbelt','Bull Creek','Other Austin creeks','Colorado River below Longhorn Dam','Lake Austin parks','City pools','City splash pads'];
   const row=p=>{const a=effective(p);
     return `<div class="place-row"><button data-id="${esc(p.id)}" type="button" aria-label="${esc(p.name)}, ${a.status==='gray'?'no current rating':esc(shortTag(p))}"><span class="sym ${shapeClass(p)} ${displayStatus(a.status)}${a.hypothetical&&!a.hazard_override?' hypothetical':''}${unverified(p)?' unverified':''}" aria-hidden="true">${symbolFor(p)}</span><span>${esc(p.name)}${p.map_display==='list_only'?' <small class="muted">(not drawn)</small>':''}</span></button>${hasRating(a.status)?`<span class="tag ${esc(a.status)}">${esc(shortTag(p))}</span>`:''}</div>`;};
   list.innerHTML=areas.map(area=>{const items=austin.filter(p=>areaOf(p)===area); return items.length?`<h3>${esc(area)} <small>${items.length}</small></h3>`+items.map(row).join(''):'';}).join('')
@@ -546,11 +507,17 @@ function renderFreshness(){
   const cityAt=operatorMeta.closure_list_retrieved_at||operatorMeta.generated_at;
   freshness.classList.toggle('expired',anyExpired);
   const flowAt=flowMeta.live_flow_checked_at||flowMeta.generated_at;
-  freshness.innerHTML=`<span class="pill">${flowMeta.live_flow_checked_at?'Creek flow checked':'Snapshot generated'} <b>${fmt(flowAt)}</b>${flowAt?` <span class="muted">(${ago(flowAt)})</span>`:''}</span>`
+  // One line names the OLDEST source check, so it never overstates freshness; the per-source detail opens beneath it.
+  const checks=[flowAt,cityAt,cityHydrometMeta.failed?null:cityHydrometMeta.checked_at,places.some(p=>p.hours)&&!hoursMeta.failed?hoursMeta.generated_at:null].map(s=>Date.parse(s)).filter(Number.isFinite);
+  const oldest=checks.length?new Date(Math.min(...checks)).toISOString():null;
+  const open=freshness.querySelector('details')?.open?' open':'';
+  freshness.innerHTML=`<details class="source-checks"${open}><summary>Live sources checked <b>${oldest?fmt(oldest):'—'}</b>${oldest?` <span class="muted">(${ago(oldest)})</span>`:''}</summary><div class="pills">`
+    +`<span class="pill">${flowMeta.live_flow_checked_at?'Creek flow checked':'Snapshot generated'} <b>${fmt(flowAt)}</b>${flowAt?` <span class="muted">(${ago(flowAt)})</span>`:''}</span>`
     +`<span class="pill">Current discharge <b>${currentDischarge}/${gauges.length} gauges</b> · newest ${newest?fmt(newest):'none'}</span>`
     +`<span class="pill">City Hydromet <b>${cityHydrometMeta.failed?'check failed':cityHydrometMeta.checked_at?fmt(cityHydrometMeta.checked_at):'checking'}</b> · ${cityHydrometMeta.failed?0:cityGauges.filter(g=>cityHydrometCurrent(g)).length}/${cityGauges.length} current creek stations · ${cityGauges.filter(g=>g.flow_cfs!==null).length} report flow</span>`
     +(places.some(p=>p.hours)?`<span class="pill">Posted hours pages <b>${hoursMeta.failed?'check failed':hoursMeta.generated_at?fmt(hoursMeta.generated_at):'checking'}</b>${hoursMeta.pages_total?` · ${hoursMeta.pages_checked}/${hoursMeta.pages_total} re-read`:''}</span>`:'')
     +`<span class="pill">City pages checked <b>${fmt(cityAt)}</b>${cityAt?` <span class="muted">(${ago(cityAt)})</span>`:''}</span>`
+    +'</div></details>'
     +(flowMeta.live_flow_failures?.length?`<span class="warn">USGS source check failed for ${flowMeta.live_flow_failures.length} gauges. Any earlier fetched reading is shown with its observation time; place ratings are withheld. The map will retry.</span>`:'')
     +(operatorMeta.failures?.length?`<span class="warn">Some City pages could not be checked (${esc(operatorMeta.failures.join(', '))}); affected ratings are withheld. The map will retry.</span>`:'')
     +(anyExpired?`<span class="warn">Some ratings have expired and are hidden. Official creek and City checks retry automatically while this page is open.</span>`:'');
@@ -565,7 +532,7 @@ function renderPools(data){
 
 /* ---------- controls ---------- */
 function setPressed(id){ ['austin','barton','san-marcos','all'].forEach(x=>$('#'+x).setAttribute('aria-pressed',String(x===id))); }
-for(const key of ['holes','pools','beaches','context','gauges','cityGauges']){ const input=$('#show-'+key); input.checked=layerChoice[key]; input.addEventListener('change',()=>{layerChoice[key]=input.checked; saveLayerChoice(); buildGroups(); render(); renderRim();}); }
+for(const key of ['holes','pools','splash','beaches']){ const input=$('#show-'+key); input.checked=layerChoice[key]; input.addEventListener('change',()=>{layerChoice[key]=input.checked; saveLayerChoice(); buildGroups(); render(); renderRim();}); }
 { const input=$('#hide-closed'); input.checked=hideClosed; input.addEventListener('change',()=>{hideClosed=input.checked;
   try{localStorage.setItem('austin-swim-map-hide-closed',hideClosed?'1':'0');}catch(e){}
   buildGroups(); render(); renderRim();}); }
@@ -590,12 +557,11 @@ async function getVisits(){ return []; }
 async function optionalJson(path,fallback,message){ try{ return await getJson(path); }catch(e){ note(message); return fallback; } }
 function refreshCurrentView(){
   if(!places.length) return;
-  buildGroups(); renderFreshness(); renderList(); renderStations();renderCityStations();
-  const selectedPlace=places.find(p=>p.id===selectedId), selectedGauge=gauges.find(g=>g.id===selectedId),selectedCityGauge=cityGauges.find(g=>'city-'+g.id===selectedId);
+  buildGroups(); renderFreshness(); renderList();
+  const selectedPlace=places.find(p=>p.id===selectedId), selectedGauge=gauges.find(g=>g.id===selectedId);
   const detailScroll=detailPanel.scrollTop;
   if(detailPanel.classList.contains('open')&&selectedPlace) selectPlace(selectedPlace,false);
   else if(detailPanel.classList.contains('open')&&selectedGauge) selectGauge(selectedGauge);
-  else if(detailPanel.classList.contains('open')&&selectedCityGauge) selectCityGauge(selectedCityGauge);
   else render();
   detailPanel.scrollTop=detailScroll;
   renderRim();
@@ -624,8 +590,8 @@ function restoreAfterUpgrade(){
     if(!saved) return;
     if(hasLeaflet&&Array.isArray(saved.center)&&saved.center.length===2&&Number.isFinite(saved.zoom))
       map.setView(saved.center,saved.zoom,{animate:false});
-    const place=places.find(p=>p.id===saved.selectedId),gauge=gauges.find(g=>g.id===saved.selectedId),cityGauge=cityGauges.find(g=>'city-'+g.id===saved.selectedId);
-    if(place) selectPlace(place); else if(gauge) selectGauge(gauge); else if(cityGauge) selectCityGauge(cityGauge);
+    const place=places.find(p=>p.id===saved.selectedId),gauge=gauges.find(g=>g.id===saved.selectedId);
+    if(place) selectPlace(place); else if(gauge) selectGauge(gauge);
   }catch(e){}
 }
 function currentStatusSignature(){return places.map(p=>{const a=effective(p);return `${p.id}:${a.status}:${a.expired?'expired':''}`;}).join('|')
@@ -736,8 +702,9 @@ function startLiveRefresh(){
   window.addEventListener('pageshow',refreshOnWake);
   window.addEventListener('online',refreshOnWake);
 }
-const gaugeInventory=getJson('data/gauges.json');
-fetch('data/water-map-links.json?v=20261009-pages',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>{if(d){waterMap=d;if(selectedId){const g=gauges.find(x=>x.id===selectedId);if(g)selectGauge(g);}}}).catch(()=>{});
+// The gauge list is refreshed from the water map's master list (scripts/build-gauges.py); the stations live there.
+const gaugeInventory=getJson('data/gauges.json?v=20261009-master').then(d=>Array.isArray(d)?d:d.gauges);
+fetch('data/water-map-links.json?v=20261009-key',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>{if(d){waterMap=d;if(selectedId){const g=gauges.find(x=>x.id===selectedId);if(g)selectGauge(g);}}}).catch(()=>{});
 Promise.all([Promise.all([getJson('data/holes.json?v=20261009-sync12'),
     optionalJson('data/swim-facilities.json?v=20261008-beaches',{places:[]},'Pool, splash pad and beach locations unavailable.')]).then(([holes,city])=>[...holes,...city.places]),gaugeInventory,gaugeInventory.then(g=>publicFlowStatus(g.map(station=>station.id))),publicCityStatus(),getVisits(),
   optionalJson('hydro-context.json',{stations:{}},'Hydrologic context unavailable.'),optionalJson('data/model/place-relationships.json?v=20261009-sync12',{places:{}},'Place relationships unavailable.')])
@@ -745,9 +712,9 @@ Promise.all([Promise.all([getJson('data/holes.json?v=20261009-sync12'),
    flowMeta=flow; operatorMeta=operator;
    const assessed=Object.fromEntries([...(flow.places||[]),...(operator.places||[])].map(p=>[p.id,p]));
    noticeContext=Object.fromEntries((operator.notice_context||[]).map(c=>[c.id,c.notices]));
-   places=h.map(p=>({...p,status:'gray',reason:'No current assessment in this snapshot',evidence:'Coverage gap',...(assessed[p.id]||{})}));
+   places=h.filter(p=>p.place_role!=='creek_context').map(p=>({...p,status:'gray',reason:'No current assessment in this snapshot',evidence:'Coverage gap',...(assessed[p.id]||{})}));
    gauges=g; readings={...(window.publicLiveReadings||{})}; visits=notes;
-   buildGroups(); renderFreshness(); renderList(); renderStations();renderCityStations(); render(); renderRim(); loadGeometry();restoreAfterUpgrade();openFromAddress();window.addEventListener('hashchange',openFromAddress);
+   buildGroups(); renderFreshness(); renderList(); render(); renderRim(); loadGeometry();restoreAfterUpgrade();openFromAddress();window.addEventListener('hashchange',openFromAddress);
    renderPools(operator.pool_index);lastFlowCheck=Date.parse(flow.live_flow_checked_at)||NOW();lastCityCheck=NOW();startLiveRefresh();refreshLiveHours(true);refreshLiveHazards(true);refreshLiveHydromet(true);
    checkAppVersion();
    if(!hasLeaflet){ $('#map').innerHTML='<p style="padding:20px">The map library did not load. The place list below still shows every place with its current badge and sources.</p>'; }

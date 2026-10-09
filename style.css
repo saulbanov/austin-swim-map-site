@@ -221,3 +221,16 @@ footer a{color:#dcf0ae}footer p{margin:0}
   .detail.open{transform:none}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none !important;scroll-behavior:auto}}
+/* splash pads: own symbol, pool-like shape (2026-10-09) */
+.sw.splash{border-radius:6px;background:#e4f2f5}
+.geo-marker.splash{border-radius:11px}
+.geo-marker.splash.unrated{background:#e4f2f5}
+.place-row .sym.splash{border-radius:6px;background:#e4f2f5}
+/* the checkboxes carry the key */
+.layer-controls label .sw{width:20px;height:20px;font-size:12px}
+.chip .kinds{font-weight:700;letter-spacing:.02em}
+/* one line of source checks; detail on demand */
+.freshness .source-checks{flex:1 1 100%}
+.freshness .source-checks summary{cursor:pointer;list-style-position:inside}
+.freshness .source-checks .pills{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:8px}
+.station-note{margin:18px 0 0;max-width:70ch}
