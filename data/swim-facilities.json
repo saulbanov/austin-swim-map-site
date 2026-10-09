@@ -8184,7 +8184,7 @@
       "coordinate_source": "https://www.openstreetmap.org/way/455320079",
       "access": "City of Austin Parks and Recreation (inside Roy G. Guerrero Colorado River Metropolitan Park) sets hours and access; not checked here",
       "source": "https://austin.citycast.fm/urban-almanac/secret-beach-stairs-austin",
-      "gauge": null,
+      "gauge": "08158000",
       "coordinate_method": "sourced_point",
       "identity_sources": [
         "https://austin.citycast.fm/urban-almanac/secret-beach-stairs-austin",
@@ -8255,11 +8255,16 @@
         "display_only": true
       },
       "notes": "Informal beach; no City page names it or sets a rule for it. Park in the lot next to the Montopolis Youth Sports Complex and walk the trail across the street (City Cast). After storms, stay out: the City says bacteria can take at least three days to return to earlier levels, and Longhorn Dam releases can raise the river suddenly (sirens give a rising \"slow whoop\").",
-      "gauge_context": "No Colorado River gauge is linked on this map yet, so there is no flow reading or flow rule for this reach.",
+      "gauge_context": "USGS 08158000, Colorado River at Austin, is 1.9 km downstream of this beach. No flow band is set for this reach, so the reading is context, not a condition color.",
+      "gauge_relation": {
+        "relationship_class": "context_station_downstream",
+        "confidence": "low",
+        "position": "≈1.9 km straight-line downstream of the beach on the Colorado; inflow between them unmeasured"
+      },
       "provenance": {
         "inventory": {
           "file": "data/river-reaches.json",
-          "sha256": "3b499656aff629796847106dc77af42fbfd0f0950a0caeadd99c1ba6e7701953",
+          "sha256": "26da90e04a2d1d733eeb9bac63befcb4fee36bba34f547a09aa1d496d2f186c3",
           "evidence": {
             "file": "data/raw/colorado-river-access/pages/nongov-secret-beach-citycast-austin-stairs.html",
             "quote": "a nice, secluded area to enjoy a dip in the water",
@@ -8292,7 +8297,7 @@
       "coordinate_source": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=5827+Levander+Loop%2C+Austin%2C+TX&benchmark=Public_AR_Current&format=json",
       "access": "City of Austin Parks and Recreation (river-access parking owned by TxDOT) sets hours and access; not checked here",
       "source": "https://www.austintexas.gov/parks/natural-resources-and-nature-based-programs",
-      "gauge": null,
+      "gauge": "08158000",
       "coordinate_method": "geocoded_address",
       "identity_sources": [
         "https://www.austintexas.gov/parks/natural-resources-and-nature-based-programs",
@@ -8360,11 +8365,16 @@
         "display_only": true
       },
       "notes": "Nature preserve on the north bank, across from Roy G. Guerrero Park; a 1.3-mile trail ends at the river. No dogs. After storms, stay out: the City says bacteria can take at least three days to return to earlier levels, and Longhorn Dam releases can raise the river suddenly (sirens give a rising \"slow whoop\").",
-      "gauge_context": "No Colorado River gauge is linked on this map yet, so there is no flow reading or flow rule for this reach.",
+      "gauge_context": "USGS 08158000, Colorado River at Austin, is 1.2 km downstream of the preserve. No flow band is set for this reach, so the reading is context, not a condition color.",
+      "gauge_relation": {
+        "relationship_class": "context_station_downstream",
+        "confidence": "low",
+        "position": "≈1.2 km straight-line downstream of the preserve on the Colorado; inflow between them unmeasured"
+      },
       "provenance": {
         "inventory": {
           "file": "data/river-reaches.json",
-          "sha256": "3b499656aff629796847106dc77af42fbfd0f0950a0caeadd99c1ba6e7701953",
+          "sha256": "26da90e04a2d1d733eeb9bac63befcb4fee36bba34f547a09aa1d496d2f186c3",
           "evidence": {
             "file": "data/raw/colorado-river-access/pages/austin-nature-preserves-list-pdfbytes.pdf",
             "quote": "the parking area is actually owned by TXDot and is a “swim at your own risk” area."
@@ -8404,7 +8414,7 @@
       "coordinate_source": "https://tpwd.texas.gov/boating/paddling-trails/prairies-and-lakes/bastrop-el-camino-real/",
       "access": "Bastrop County General Services sets hours and access; not checked here",
       "source": "https://www.bastropcounty.gov/page/par.ourparks",
-      "gauge": null,
+      "gauge": "08159200",
       "coordinate_method": "sourced_point",
       "identity_sources": [
         "https://www.bastropcounty.gov/page/par.ourparks",
@@ -8423,11 +8433,16 @@
         "display_only": true
       },
       "notes": "River \"Beach\" area and paddling-trail take-out (formerly Lost Pines Nature Trails). No glass or alcohol.",
-      "gauge_context": "No Colorado River gauge is linked on this map yet, so there is no flow reading or flow rule for this reach.",
+      "gauge_context": "USGS 08159200, Colorado River at Bastrop, is 3.6 km upstream of the park. No flow band is set for this reach, so the reading is context, not a condition color.",
+      "gauge_relation": {
+        "relationship_class": "context_station_upstream",
+        "confidence": "low",
+        "position": "≈3.6 km straight-line upstream of the park on the Colorado; inflow between them unmeasured"
+      },
       "provenance": {
         "inventory": {
           "file": "data/river-reaches.json",
-          "sha256": "3b499656aff629796847106dc77af42fbfd0f0950a0caeadd99c1ba6e7701953",
+          "sha256": "26da90e04a2d1d733eeb9bac63befcb4fee36bba34f547a09aa1d496d2f186c3",
           "evidence": {
             "file": "data/raw/colorado-river-access/pages/bastrop-county-our-parks.html",
             "quote": "\"Beach\" area Outdoor Classroom Paved parking Bathrooms (port a potty only) Swimming allowed"

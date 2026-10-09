@@ -2,7 +2,7 @@
    Static files provide the place inventory, rules and geometry. Personal visit records are excluded. */
 'use strict';
 const $=s=>document.querySelector(s);
-const APP_VERSION='2026-10-08-river-reaches';
+const APP_VERSION='2026-10-09-colorado-gauges';
 const detailBody=$('#detail-body'), detailPanel=$('#detail'), list=$('#place-list'), poolList=$('#pool-list'), freshness=$('#freshness');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const AUSTIN_BOUNDS=[[30.16,-97.93],[30.44,-97.66]];
@@ -297,7 +297,8 @@ function stationContext(id){ const c=context.stations?.[id]; if(!c) return '<p c
   const q=c.parameters?.['00060'],h=c.parameters?.['00065']; const stale=context.generated_at&&NOW()-Date.parse(context.generated_at)>7200000;
   return `<p class="narrative">${esc(c.narrative)}</p>${q?sparkline(q.series,q.unit,h?'Discharge':''):''}${h?sparkline(h.series,h.unit,'Gage height'):''}<p class="evidence">${esc(c.evidence_strength||'')} · generated ${fmt(context.generated_at)}${stale?' · <span class="stale">context older than two hours</span>':''}</p>`; }
 function relationRows(p){ const rec=relationships.places?.[p.id]; const rows=rec?.stations||[];
-  if(!rows.length&&p.gauge){ const g=gauges.find(x=>x.id===p.gauge); return g?[{station_id:g.id,relationship_class:'none',position:g.link_status,confidence:'none'}]:[]; }
+  if(!rows.length&&p.gauge){ const g=gauges.find(x=>x.id===p.gauge),r=p.gauge_relation||{};
+    return g?[{station_id:g.id,relationship_class:r.relationship_class||'none',position:r.position||g.link_status,confidence:r.confidence||'none'}]:[]; }
   return rows; }
 let waterMap={stations:{}};
 function waterMapLink(id){const w=waterMap.stations?.[id];if(!w)return '';return `<a class="water-map-link" href="${esc(waterMap.water_map_url+'#'+w.anchor)}" target="_blank" rel="noreferrer">Full record ${esc(w.first)}–${esc(w.last)} and earlier floods on the water map ↗</a>`;}
