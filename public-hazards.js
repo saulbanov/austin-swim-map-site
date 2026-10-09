@@ -62,7 +62,7 @@ function assessPublicHazards(links,alertsCapture,gaugeCaptures,now=new Date()){
   return {generated_at:now.toISOString(),places};
 }
 async function publicHazardsStatus(){
-  const links=await getJson('data/hazard-links.json?v=20261003-place-history-v35'),lids=[...new Set(links.places.map(p=>p.flood_gauge?.lid).filter(Boolean))];
+  const links=await getJson('data/hazard-links.json?v=20261009-all-places'),lids=[...new Set(links.places.map(p=>p.flood_gauge?.lid).filter(Boolean))];
   const [alerts,...results]=await Promise.allSettled([
     acquireHazardJson('https://api.weather.gov/alerts/active?area=TX'),
     ...lids.map(lid=>acquireHazardJson(`https://api.water.noaa.gov/nwps/v1/gauges/${lid}`))]);

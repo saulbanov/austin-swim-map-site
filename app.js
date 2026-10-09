@@ -2,7 +2,7 @@
    Static files provide the place inventory, rules and geometry. Personal visit records are excluded. */
 'use strict';
 const $=s=>document.querySelector(s);
-const APP_VERSION='2026-10-09-colorado-gauges';
+const APP_VERSION='2026-10-09-flood-links';
 const detailBody=$('#detail-body'), detailPanel=$('#detail'), list=$('#place-list'), poolList=$('#pool-list'), freshness=$('#freshness');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const AUSTIN_BOUNDS=[[30.16,-97.93],[30.44,-97.66]];
