@@ -320,7 +320,7 @@
     "rapid_rise_ratio": 2
   },
   {
-    "id": "jacobs-well-spring-hypothesis-v1",
+    "id": "jacobs-well-spring-hypothesis-v2",
     "place_ids": [
       "jacobs-well"
     ],
@@ -330,10 +330,15 @@
     "bands": [
       {
         "lt": 1,
-        "status": "yellow"
+        "status": "red"
       },
       {
         "gte": 1,
+        "lt": 2.5,
+        "status": "yellow"
+      },
+      {
+        "gte": 2.5,
         "lt": 32,
         "status": "green"
       },
@@ -344,7 +349,7 @@
     ],
     "hypothetical": true,
     "source": "method.html#regional-flow-hypotheses",
-    "evidence_label": "Pale hypothesis \u00b7 station-flow pattern, no reach-depth validation",
+    "evidence_label": "Pale hypothesis \u00b7 bands checked against dated reports and County open seasons; no reach-depth validation",
     "hypothesis_note": "Spring-discharge guess only. The County swimming closure overrides every flow color; spring-pool depth and permission are separate."
   },
   {
@@ -376,7 +381,7 @@
     "hypothesis_note": "Upstream spring-flow guess only. Other seeps feed Cypress Creek; zero spring discharge does not prove Blue Hole is dry. City swimming season and reservations govern access."
   },
   {
-    "id": "san-marcos-upper-river-hypothesis-v1",
+    "id": "san-marcos-upper-river-hypothesis-v2",
     "place_ids": [
       "san-marcos-sewell",
       "san-marcos-city",
@@ -387,27 +392,27 @@
     "unit": "ft^3/s",
     "bands": [
       {
-        "lt": 90,
+        "lt": 110,
         "status": "yellow"
       },
       {
-        "gte": 90,
-        "lt": 306,
+        "gte": 110,
+        "lt": 350,
         "status": "green"
       },
       {
-        "gte": 306,
-        "lt": 350,
+        "gte": 350,
+        "lt": 500,
         "status": "yellow"
       },
       {
-        "gte": 350,
+        "gte": 500,
         "status": "red"
       }
     ],
     "hypothetical": true,
     "source": "method.html#regional-flow-hypotheses",
-    "evidence_label": "Pale hypothesis \u00b7 station-flow pattern, no reach-depth validation",
+    "evidence_label": "Pale hypothesis \u00b7 bands checked against dated reports; no reach-depth validation",
     "hypothesis_note": "Upstream station-flow guess for Sewell Park, City Park and Rio Vista Park. It measures neither local depth nor current at any entry, and intervening conditions can differ.",
     "rapid_rise_hours": 2,
     "rapid_rise_min_cfs": 50,

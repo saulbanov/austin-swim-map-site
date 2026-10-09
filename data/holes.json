@@ -174,10 +174,10 @@
   "source": "https://www.austintexas.gov/parks/locations/park-directory",
   "gauge": "08154700",
   "rule": "Provisional personal-reference band (bull-creek-provisional-personal-v1): <0.5 red, 0.5–1.5 yellow, 1.5–10 green, 10–45 yellow, ≥45 red cfs; limited evidence",
-  "coordinate_precision": "Bull Creek centerline point inside Bull Creek District Park, near the mapped park falls. The particular fall and water-entry point remain unverified.",
+  "coordinate_precision": "Bull Creek centerline point inside the City PARD boundary of Bull Creek District Park (6701 Lakewood Dr.), nearest the park centroid and between the two mapped park falls. This is the creek inside the park, not a verified water entry.",
   "coordinate_source": "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/INLANDWATERS_creeks_lines/FeatureServer/0",
   "place_role": "water_place",
-  "gauge_context": "USGS 08154700 is about 0.5 km upstream on the same mapped channel. A provisional, limited-evidence flow band applies to this park reach.",
+  "gauge_context": "USGS 08154700 is ≈0.5 km upstream of the creek reference inside the park on the same mapped channel (recomputed 2026-09-29 after the marker audit). Colored only under the provisional personal-reference band; not validated.",
   "coordinate_method": "derived_on_centerline",
   "identity_sources": [
    "https://www.austintexas.gov/parks/locations/park-directory",
@@ -291,7 +291,7 @@
   "coordinate_precision": "OpenStreetMap waterfall node 'Upper McKinney Falls' (ODbL), 3 m from the City Onion Creek centerline. TPWD park rules, not this map, govern swimming.",
   "coordinate_source": "https://www.openstreetmap.org/node/4514426134",
   "place_role": "water_place",
-  "gauge_context": "USGS 08159000 is mapped separately as station context; no place-condition rule is established.",
+  "gauge_context": "USGS 08159000 is ≈4.6 km downstream on the same mapped channel; Williamson Creek joins ≈720 m below the Upper Falls, so the station reads both creeks.",
   "coordinate_method": "sourced_point",
   "creek": "Onion Creek",
   "previous_coordinate": {
@@ -311,11 +311,11 @@
   "kind": "creek pool",
   "access": "TPWD says swimming in Onion Creek; check notices",
   "source": "https://tpwd.texas.gov/state-parks/mckinney-falls",
-  "gauge": null,
+  "gauge": "08159000",
   "coordinate_precision": "OpenStreetMap waterfall node 'Lower McKinney Falls' (ODbL), 1 m from the City Onion Creek centerline. The earlier marker was 640 m off. TPWD park rules govern swimming.",
   "coordinate_source": "https://www.openstreetmap.org/node/4514426139",
   "place_role": "water_place",
-  "gauge_context": "A provisional flow band uses USGS 08159000, about 4 km downstream after Williamson Creek joins Onion Creek. Confidence is low; this is a flow cue, not a depth or safety reading.",
+  "gauge_context": "USGS 08159000 is ≈4.0 km downstream on the same mapped channel; Williamson Creek joins ≈76 m below the Lower Falls, so the station reads both creeks. Colored only under the provisional personal-reference band; not validated.",
   "coordinate_method": "sourced_point",
   "creek": "Onion Creek",
   "previous_coordinate": {
@@ -323,7 +323,8 @@
    "lon": -97.724,
    "replaced": "2026-09-29 marker audit"
   },
-  "map_display": "point"
+  "map_display": "point",
+  "rule": "Provisional personal-reference band (mckinney-lower-provisional-personal-v1): <1.19 red, 1.19–24.1 green, 24.1–258 yellow, ≥258 red cfs at 08159000; limited evidence; TPWD rules govern swimming"
  },
  {
   "id": "williamson-creek",
@@ -441,7 +442,7 @@
   "coordinate_source": "https://www.hayscountytx.com/jacobswell/",
   "place_role": "water_place",
   "map_display": "point",
-  "rule": "Pale spring-discharge hypothesis; County closure governs swimming (jacobs-well-spring-hypothesis-v1)",
+  "rule": "Pale spring-discharge hypothesis; County closure governs swimming (jacobs-well-spring-hypothesis-v2)",
   "operator_notice": {
    "reason": "Hays County says swimming at Jacob’s Well is canceled until further notice due to low water levels and unsafe conditions.",
    "source": "https://www.hayscountytx.gov/449/Things-to-Do",
@@ -463,7 +464,7 @@
   "coordinate_source": "https://www.openstreetmap.org/way/61357891",
   "place_role": "water_place",
   "map_display": "point",
-  "rule": "Pale upper San Marcos River station-flow hypothesis (san-marcos-upper-river-hypothesis-v1)",
+  "rule": "Pale upper San Marcos River station-flow hypothesis (san-marcos-upper-river-hypothesis-v2)",
   "coordinate_method": "derived_on_centerline"
  },
  {
@@ -480,7 +481,7 @@
   "coordinate_source": "https://www.openstreetmap.org/way/61357891",
   "place_role": "water_place",
   "map_display": "point",
-  "rule": "Pale upper San Marcos River station-flow hypothesis (san-marcos-upper-river-hypothesis-v1)",
+  "rule": "Pale upper San Marcos River station-flow hypothesis (san-marcos-upper-river-hypothesis-v2)",
   "coordinate_method": "derived_on_centerline"
  },
  {
@@ -497,7 +498,7 @@
   "coordinate_source": "https://www.openstreetmap.org/way/61357891",
   "place_role": "water_place",
   "map_display": "point",
-  "rule": "Pale upper San Marcos River station-flow hypothesis (san-marcos-upper-river-hypothesis-v1)",
+  "rule": "Pale upper San Marcos River station-flow hypothesis (san-marcos-upper-river-hypothesis-v2)",
   "coordinate_method": "derived_on_centerline"
  },
  {
@@ -651,7 +652,7 @@
   "access": "City park directory identifies the greenbelt; specific water entry and current permission unverified",
   "source": "https://www.austintexas.gov/parks/locations/park-directory",
   "gauge": "08154700",
-  "gauge_context": "USGS 08154700 is about 7.1 km downstream on the same mapped channel. It is context only; no place-specific flow band applies here.",
+  "gauge_context": "USGS 08154700 is ≈7.1 km downstream on the same mapped channel; context only. A provisional band for this reach was withdrawn on 2026-09-30; no source describes swimming here.",
   "coordinate_method": "park_reference",
   "identity_sources": [
    "https://www.austintexas.gov/parks/locations/park-directory",
@@ -852,10 +853,10 @@
   "lon": -97.74255,
   "region": "Austin",
   "kind": "creek context",
-  "access": "City Onion Creek Greenbelt near its playground; the mapped point is a creek reference, with no documented swimming entry in the sources checked.",
+  "access": "City greenbelt (park directory: Onion Creek Greenbelt, 7004 Onion Creek Dr., 78744); no documented swimming entry in the sources checked.",
   "source": "https://www.austintexas.gov/parks/locations/park-directory",
   "gauge": null,
-  "coordinate_precision": "Onion Creek centerline node nearest the OpenStreetMap playground (way 1212773237) inside the City PARD Onion Creek Greenbelt polygon. The playground is about 153 m from the channel; the point is not a verified water entry.",
+  "coordinate_precision": "Onion Creek centerline node nearest the OpenStreetMap playground (way 1212773237, 'Onion Creek Greenbelt Pedestrian Walkway 3'), which sits 153 m from the channel inside the City PARD polygon of Onion Creek Greenbelt (point-in-polygon check 2026-09-30). The described spot names the playground, not a bank or pool. Not a verified water entry.",
   "coordinate_source": "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/BOUNDARIES_city_of_austin_parks/FeatureServer/0 + https://www.openstreetmap.org/way/1212773237",
   "place_role": "creek_context",
   "gauge_context": "USGS 08158827 (Onion Creek at Twin Creeks Rd) is ≈14.5 km upstream along the mapped channel (chained across three OSM ways) and USGS 08159000 (US 183) is ≈9.7 km downstream; Williamson Creek joins below this spot, and the Slaughter Creek mouth position is unverified. No place-condition rule.",

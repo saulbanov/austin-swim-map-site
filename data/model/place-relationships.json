@@ -328,10 +328,10 @@
           "confidence": "medium",
           "evidence": [
             "geometry: 08154700 at ≈10.4 km, park reference at ≈12.0 km on OSM way 31511193; way runs from (30.419, -97.808) upstream to (30.347, -97.792) at the mouth",
+            "OSM waterfall nodes inside the park: Middle Bull Creek Falls ≈115 m and Lower Bull Creek Falls ≈678 m below the gauge on the same way (Nominatim lookup 2026-09-30); the park reference sits between them",
             "USGS metadata: Bull Ck at Loop 360 nr Austin, 22.3 sq mi drainage",
             "West Bull Creek (catalog station 08154750, no series) joins near Loop 360; whether its confluence lies between the gauge and the park was not verified",
-            "possible Lake Austin backwater on the lowest reach unverified",
-            "The provisional flow band applies only to the District Park reach; the particular fall remains unresolved."
+            "possible Lake Austin backwater on the lowest reach unverified"
           ]
         }
       ],
@@ -344,11 +344,31 @@
         "fresh_data_path": "USGS 08154700 (context only)"
       },
       "missing_for_color": [
-        "verified water-entry coordinate at the park falls",
+        "verified water-entry coordinate for the falls inside the park (the reach is resolved only approximately)",
         "West Bull Creek confluence position",
-        "independent validation of the provisional flow band"
+        "validation of the provisional band: negative labels and independent dated labels"
       ],
-      "current_treatment": "Colored under the limited-evidence provisional band for the District Park reach; hydrograph context and notices remain separate."
+      "current_treatment": "Colored under the limited-evidence provisional band for the District Park reach; hydrograph context and notices remain separate.",
+      "candidate_falls": {
+        "note": "OpenStreetMap maps two named falls inside the park, both on OSM way 31511193 below USGS 08154700; which one is the swimming spot is not established.",
+        "candidates": [
+          {
+            "name": "Middle Bull Creek Falls",
+            "osm": "node/5552013588",
+            "lat": 30.3710823,
+            "lon": -97.7850168,
+            "along_channel_m_below_gauge": 115.4
+          },
+          {
+            "name": "Lower Bull Creek Falls",
+            "osm": "node/10832410129",
+            "lat": 30.3663323,
+            "lon": -97.785391,
+            "along_channel_m_below_gauge": 678.0
+          }
+        ],
+        "source": "https://nominatim.openstreetmap.org/ (OpenStreetMap, ODbL)"
+      }
     },
     "st-edwards": {
       "name": "St. Edward’s Greenbelt — Bull Creek",
@@ -374,8 +394,7 @@
             "geometry: greenbelt reference at ≈3.3 km, 08154700 at ≈10.4 km on OSM way 31511193",
             "catalog station 08154645 (Bull Ck N Cem on Spicewood Spgs Rd, ≈1.6 km north of the greenbelt reference) has no time series (probe 2026-09-29), so there is no closer live station",
             "tributaries between the greenbelt and Loop 360 not inventoried",
-            "the City historical monitoring mention is context, not a live proxy",
-            "No place-specific flow rule applies at this greenbelt reference."
+            "the City historical monitoring mention is context, not a live proxy"
           ]
         }
       ],
@@ -384,15 +403,15 @@
       "color_gate": {
         "verified_entry": false,
         "documented_relationship": "geometry-resolved downstream station",
-        "local_rule": "none; the provisional band applies to the District Park reach only",
+        "local_rule": "none (provisional band withdrawn 2026-09-30; no note describes this reach)",
         "fresh_data_path": "USGS 08154700 (context only)"
       },
       "missing_for_color": [
         "verified water-entry reach",
-        "tributary inventory between this greenbelt and the downstream gauge",
-        "dated labels and a documented local rule for this reach"
+        "tributary inventory between the greenbelt and the gauge",
+        "a documented place-specific rule"
       ],
-      "current_treatment": "No current rating; the downstream USGS station is context only."
+      "current_treatment": "Gray with a measured hydrograph-context card; the station is downstream context only."
     },
     "barton-springs": {
       "name": "Barton Springs Pool",
@@ -502,7 +521,8 @@
           "stage",
           "flow"
         ],
-        "use": "provisional visit-reference flow cue; not a depth or safety rating"
+        "use": "provisional visit-reference flow cue; not a depth or safety rating",
+        "last_verified": "2026-10-01"
       },
       "candidate_stations_rejected": [
         {
@@ -550,7 +570,8 @@
           "stage",
           "flow"
         ],
-        "use": "provisional visit-reference flow cue; not a depth or safety rating"
+        "use": "provisional visit-reference flow cue; not a depth or safety rating",
+        "last_verified": "2026-10-01"
       },
       "candidate_stations_rejected": [
         {
@@ -594,9 +615,8 @@
           "relationship_class": "rule_linked_hypothesis",
           "confidence": "medium",
           "evidence": [
-            "geometry: falls at ≈10.6 km, 08159000 at ≈15.2 km on OSM way 417039996",
-            "Williamson Creek confluence position relative to the station not verified",
-            "TPWD directs visitors to the park for current creek conditions; TPWD park-alert page was not retrievable (HTTP 404 on 2026-09-29)",
+            "geometry: falls at ≈10.6 km, Williamson Creek mouth at ≈11.29 km, 08159000 at ≈15.2 km on OSM way 417039996 (confluence position computed 2026-09-30; between the place and the station)",
+            "the station reads Onion plus Williamson; 08158970 gives the Williamson share as context",
             "2026-10-02: pale flow-context hypothesis only; no reach-depth calibration or access certification"
           ]
         }
@@ -632,13 +652,12 @@
       "stations": [
         {
           "station_id": "08159000",
-          "position": "≈4.0 km downstream of the falls; Williamson Creek joins Onion Creek between the falls and the station",
+          "position": "≈4.0 km downstream of the falls on the same mapped way; Williamson Creek enters ≈76 m below the falls, between the place and the station (computed 2026-09-30)",
           "relationship_class": "rule_linked_provisional_personal",
           "confidence": "low",
           "evidence": [
             "TPWD page places both falls on Onion Creek inside the park",
-            "mapped Lower Falls point is on the Onion Creek channel",
-            "the station combines Onion and Williamson Creek flow; the rule is provisional"
+            "geometry: Lower Falls at ≈11.22 km, Williamson Creek mouth (end of OSM way 585249961) at ≈11.29 km, 08159000 at ≈15.17 km on OSM way 417039996"
           ]
         }
       ],
@@ -646,13 +665,14 @@
       "closure_source": "https://tpwd.texas.gov/state-parks/mckinney-falls",
       "color_gate": {
         "verified_entry": false,
-        "documented_relationship": "downstream station with tributary between",
-        "local_rule": "provisional flow band, limited evidence",
+        "documented_relationship": "geometry-resolved downstream station, tributary between",
+        "local_rule": "provisional personal-reference band, limited evidence",
         "fresh_data_path": "USGS 08159000"
       },
       "missing_for_color": [
-        "independent validation of the provisional band",
-        "verified water-entry point at the Lower Falls"
+        "verified water-entry point at the Lower Falls",
+        "validation of the provisional band: negative labels, independent dated labels, and a pinned flow for the late-May/June note",
+        "TPWD swim-closure history for a bacteria/closure layer"
       ],
       "current_treatment": "Provisional flow cue; low confidence because the station is downstream after the Williamson confluence. TPWD rules govern swimming."
     },
@@ -919,7 +939,6 @@
         "fresh_data_path": "USGS 08158930 / 08158970 (context only)"
       },
       "missing_for_color": [
-        "a swimming or wading spot named by a source or by a local observer",
         "local rule; no labels yet"
       ],
       "current_treatment": "Gray creek context with both station cards; ready to hold a spot once one is named."

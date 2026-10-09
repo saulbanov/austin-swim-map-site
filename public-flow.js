@@ -161,7 +161,7 @@ function assessGeorgetownHypothesis(rule,reading,stage,series,checkedAt){
 }
 
 async function publicFlowStatus(stationIds) {
-  const [saved,rules]=await Promise.all([getJson('status.json?v=20261003-place-history-v35'),getJson('data/public-flow-rules.json?v=20261003-place-history-v35')]);
+  const [saved,rules]=await Promise.all([getJson('status.json?v=20261003-place-history-v35'),getJson('data/public-flow-rules.json?v=20261009-sync12')]);
   const stations=[...new Set([...rules.map(r=>r.station_id),...stationIds])];
   const prior=storedFlowCapture(stations);
   let capture=null,parsed={},failure=null,firstError=null,cacheMode=null;
