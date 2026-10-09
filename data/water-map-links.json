@@ -1,5 +1,5 @@
 {
- "water_map_url": "https://hill-country-hydro.saul-elbein.chatgpt.site/",
+ "water_map_url": "https://saulbanov.github.io/hill-country-hydro-map/",
  "source": "hill-country-hydro app/history/index.json",
  "source_sha256": "0b6548917491e3e0a05f017adabe0e660b11fcd7257c74f50d9929b8ecf9ed9e",
  "meaning": "gauges that have a full-record page on the water map; a link opens that gauge there",
