@@ -2,7 +2,7 @@
    Static files provide the place inventory, rules and geometry. Personal visit records are excluded. */
 'use strict';
 const $=s=>document.querySelector(s);
-const APP_VERSION='2026-10-10-whole-cfs';
+const APP_VERSION='2026-10-10-all-chips';
 const detailBody=$('#detail-body'), detailPanel=$('#detail'), list=$('#place-list'), poolList=$('#pool-list'), freshness=$('#freshness');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const AUSTIN_BOUNDS=[[30.16,-97.93],[30.44,-97.66]];
@@ -417,11 +417,11 @@ function showGroup(group){
 function flyTo(p){ if(!hasLeaflet) return; map.flyTo([p.lat,p.lon],Math.max(map.getZoom(),15),{duration:.6}); }
 
 /* ---------- destination rim (Study A) ----------
-   Trips: saved places TRIP_MILES or more from downtown, grouped by region. When a group's centroid is off screen,
-   a chip sits on the map frame edge at the true compass bearing from the current map center, with straight-line
-   miles from downtown Austin and a count of each kind of place written on it. Distance is written, never drawn,
-   so nothing is out of scale. Nearer towns (Cedar Park, Pflugerville, Kyle) are ordinary map markers. */
-const TRIP_MILES=25;
+   Saved places outside Austin are grouped by region, near towns (Cedar Park, Kyle) and far trips (Concan) alike.
+   When a group's centroid is off screen, a chip sits on the map frame edge at the true compass bearing from the
+   current map center, with straight-line miles from downtown Austin and a count of each kind of place written on
+   it. Distance is written, never drawn, so nothing is out of scale. (A 25-mile cutoff tried on 2026-10-09 dropped
+   the near-town chips; Saul wanted them back on 2026-10-10.) */
 const KIND_WORDS={creek:['★','swimming hole','swimming holes'],park:['⌂','park reference','park references'],pool:['◉','pool','pools'],splash:['✱','splash pad','splash pads'],beach:['≈','lake beach','lake beaches']};
 function kindCounts(ps){ const c={}; ps.forEach(p=>{const k=categoryOf(p); c[k]=(c[k]||0)+1;}); return Object.keys(KIND_WORDS).filter(k=>c[k]).map(k=>[k,c[k]]); }
 function kindGlyphs(counts){ return counts.map(([k,n])=>KIND_WORDS[k][0]+(n>1?n:'')).join(' '); }
@@ -433,7 +433,7 @@ function buildGroups(){
   const by={}; places.filter(p=>!isAustin(p)&&visiblePlace(p)).forEach(p=>{ const k=shortRegion(p.region); (by[k]=by[k]||[]).push(p); });
   groupsBeyond=Object.entries(by).map(([region,ps])=>{ const lat=ps.reduce((a,p)=>a+p.lat,0)/ps.length, lon=ps.reduce((a,p)=>a+p.lon,0)/ps.length;
     return {region,places:ps,lat,lon,kinds:kindCounts(ps),mi:Math.round(Math.min(...ps.map(p=>haversineMi(DOWNTOWN,[p.lat,p.lon])))),statuses:[...new Set(ps.map(p=>effective(p).status).filter(hasRating))]}; })
-    .filter(g=>g.mi>=TRIP_MILES).sort((a,b)=>a.mi-b.mi);
+    .sort((a,b)=>a.mi-b.mi);
 }
 function chipHtml(g,bearing,extra=''){
   const dots=g.statuses.map(c=>`<span class="dot ${esc(c)}"></span>`).join('');
