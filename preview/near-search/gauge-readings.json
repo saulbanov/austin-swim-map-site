@@ -1,0 +1,387 @@
+{
+  "generated_at": "2026-09-29T14:10:07.811756+00:00",
+  "readings": {
+    "USGS-08169000": [
+      {
+        "parameter": "00065",
+        "unit": "ft",
+        "observed_at": "2026-09-16T01:45:00+00:00",
+        "value": 3.68,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00060",
+        "unit": "ft^3/s",
+        "observed_at": "2026-09-16T01:45:00+00:00",
+        "value": 161.0,
+        "qualifiers": []
+      }
+    ],
+    "USGS-08155240": [
+      {
+        "parameter": "00065",
+        "unit": "ft",
+        "observed_at": "2026-09-29T13:45:00+00:00",
+        "value": 1.41,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00060",
+        "unit": "ft^3/s",
+        "observed_at": "2026-09-29T13:45:00+00:00",
+        "value": 0.27,
+        "qualifiers": []
+      }
+    ],
+    "USGS-08154700": [
+      {
+        "parameter": "00060",
+        "unit": "ft^3/s",
+        "observed_at": "2026-09-29T13:00:00+00:00",
+        "value": 0.0,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00065",
+        "unit": "ft",
+        "observed_at": "2026-09-29T13:00:00+00:00",
+        "value": 1.03,
+        "qualifiers": []
+      }
+    ],
+    "USGS-08170990": [
+      {
+        "parameter": "00010",
+        "unit": "degC",
+        "observed_at": "2026-09-15T19:30:00+00:00",
+        "value": 21.1,
+        "qualifiers": []
+      },
+      {
+        "parameter": "63680",
+        "unit": "_FNU",
+        "observed_at": "2026-09-15T19:30:00+00:00",
+        "value": 1.6,
+        "qualifiers": []
+      },
+      {
+        "parameter": "99133",
+        "unit": "mg/l",
+        "observed_at": "2026-09-15T19:30:00+00:00",
+        "value": 0.9,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00060",
+        "unit": "ft^3/s",
+        "observed_at": "2026-09-15T19:30:00+00:00",
+        "value": 0.0,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00011",
+        "unit": "degF",
+        "observed_at": "2026-09-15T19:30:00+00:00",
+        "value": 69.9,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00095",
+        "unit": "uS/cm",
+        "observed_at": "2026-09-15T19:30:00+00:00",
+        "value": 624.0,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00065",
+        "unit": "ft",
+        "observed_at": "2026-09-15T19:30:00+00:00",
+        "value": 0.4,
+        "qualifiers": []
+      }
+    ],
+    "USGS-08170500": [
+      {
+        "parameter": "00065",
+        "unit": "ft",
+        "observed_at": "2026-09-15T19:45:00+00:00",
+        "value": 3.64,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00060",
+        "unit": "ft^3/s",
+        "observed_at": "2026-09-15T19:45:00+00:00",
+        "value": 93.5,
+        "qualifiers": []
+      }
+    ],
+    "USGS-08170860": [
+      {
+        "parameter": "00065",
+        "unit": "ft",
+        "observed_at": "2026-09-15T20:00:00+00:00",
+        "value": 12.35,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00045",
+        "unit": "in",
+        "observed_at": "2026-09-15T20:00:00+00:00",
+        "value": 0.0,
+        "qualifiers": []
+      }
+    ],
+    "USGS-08156800": [
+      {
+        "parameter": "00065",
+        "unit": "ft",
+        "observed_at": "2026-09-29T13:50:00+00:00",
+        "value": 1.11,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00060",
+        "unit": "ft^3/s",
+        "observed_at": "2026-09-29T13:15:00+00:00",
+        "value": 0.0,
+        "qualifiers": []
+      }
+    ],
+    "USGS-08158970": [
+      {
+        "parameter": "00060",
+        "unit": "ft^3/s",
+        "observed_at": "2026-09-29T13:45:00+00:00",
+        "value": 0.0,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00065",
+        "unit": "ft",
+        "observed_at": "2026-09-29T13:45:00+00:00",
+        "value": 5.19,
+        "qualifiers": []
+      }
+    ],
+    "USGS-08159000": [
+      {
+        "parameter": "00065",
+        "unit": "ft",
+        "observed_at": "2026-09-29T13:20:00+00:00",
+        "value": 3.44,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00060",
+        "unit": "ft^3/s",
+        "observed_at": "2026-09-29T13:20:00+00:00",
+        "value": 0.0,
+        "qualifiers": []
+      }
+    ],
+    "USGS-08155300": [
+      {
+        "parameter": "00065",
+        "unit": "ft",
+        "observed_at": "2026-09-29T13:50:00+00:00",
+        "value": 1.68,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00060",
+        "unit": "ft^3/s",
+        "observed_at": "2026-09-29T13:50:00+00:00",
+        "value": 0.0,
+        "qualifiers": []
+      }
+    ],
+    "USGS-08158930": [
+      {
+        "parameter": "00060",
+        "unit": "ft^3/s",
+        "observed_at": "2026-09-29T13:25:00+00:00",
+        "value": 0.0,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00065",
+        "unit": "ft",
+        "observed_at": "2026-09-29T13:25:00+00:00",
+        "value": 1.9,
+        "qualifiers": []
+      }
+    ],
+    "USGS-08155400": [
+      {
+        "parameter": "00060",
+        "unit": "ft^3/s",
+        "observed_at": "2026-09-29T13:20:00+00:00",
+        "value": 0.0,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00065",
+        "unit": "ft",
+        "observed_at": "2026-09-29T13:20:00+00:00",
+        "value": 1.41,
+        "qualifiers": []
+      }
+    ],
+    "USGS-08195000": [
+      {
+        "parameter": "00045",
+        "unit": "in",
+        "observed_at": "2026-09-16T01:45:00+00:00",
+        "value": 0.0,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00060",
+        "unit": "ft^3/s",
+        "observed_at": "2026-09-16T01:45:00+00:00",
+        "value": 70.0,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00065",
+        "unit": "ft",
+        "observed_at": "2026-09-16T01:45:00+00:00",
+        "value": 3.7,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00010",
+        "unit": "degC",
+        "observed_at": "2026-09-16T01:45:00+00:00",
+        "value": 28.4,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00095",
+        "unit": "uS/cm",
+        "observed_at": "2026-09-16T01:45:00+00:00",
+        "value": 528.0,
+        "qualifiers": []
+      },
+      {
+        "parameter": "99133",
+        "unit": "mg/l",
+        "observed_at": "2026-09-16T01:00:00+00:00",
+        "value": 0.69,
+        "qualifiers": []
+      }
+    ],
+    "USGS-08169500": [
+      {
+        "parameter": "00065",
+        "unit": "ft",
+        "observed_at": "2026-09-16T01:00:00+00:00",
+        "value": 9.55,
+        "qualifiers": []
+      }
+    ],
+    "USGS-08168500": [
+      {
+        "parameter": "00060",
+        "unit": "ft^3/s",
+        "observed_at": "2026-09-16T01:45:00+00:00",
+        "value": 194.0,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00065",
+        "unit": "ft",
+        "observed_at": "2026-09-16T01:45:00+00:00",
+        "value": 2.13,
+        "qualifiers": []
+      }
+    ],
+    "USGS-08155500": [
+      {
+        "parameter": "00011",
+        "unit": "degF",
+        "observed_at": "2026-09-29T13:00:00+00:00",
+        "value": 71.7,
+        "qualifiers": []
+      },
+      {
+        "parameter": "72253",
+        "unit": "degC",
+        "observed_at": "2026-09-29T13:00:00+00:00",
+        "value": 28.3,
+        "qualifiers": []
+      },
+      {
+        "parameter": "99133",
+        "unit": "mg/l",
+        "observed_at": "2026-09-29T13:00:00+00:00",
+        "value": 1.41,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00065",
+        "unit": "ft",
+        "observed_at": "2026-09-29T13:00:00+00:00",
+        "value": 21.68,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00060",
+        "unit": "ft^3/s",
+        "observed_at": "2026-09-29T13:00:00+00:00",
+        "value": 19.5,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00400",
+        "unit": "pH Units",
+        "observed_at": "2026-09-29T13:00:00+00:00",
+        "value": 6.8,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00010",
+        "unit": "degC",
+        "observed_at": "2026-09-29T13:00:00+00:00",
+        "value": 22.0,
+        "qualifiers": []
+      },
+      {
+        "parameter": "32295",
+        "unit": "QSE",
+        "observed_at": "2026-09-29T13:00:00+00:00",
+        "value": 3.38,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00095",
+        "unit": "uS/cm",
+        "observed_at": "2026-09-29T13:00:00+00:00",
+        "value": 725.0,
+        "qualifiers": []
+      },
+      {
+        "parameter": "00300",
+        "unit": "mg/l",
+        "observed_at": "2026-09-29T13:00:00+00:00",
+        "value": 4.4,
+        "qualifiers": []
+      },
+      {
+        "parameter": "74207",
+        "unit": "%",
+        "observed_at": "2026-09-29T13:00:00+00:00",
+        "value": 11.0,
+        "qualifiers": []
+      },
+      {
+        "parameter": "63680",
+        "unit": "_FNU",
+        "observed_at": "2026-09-29T13:00:00+00:00",
+        "value": 1.5,
+        "qualifiers": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,128 @@
+{
+ "water_map_url": "https://saulbanov.github.io/hill-country-hydro-map/",
+ "source": "hill-country-hydro app/history/index.json",
+ "source_sha256": "e20fd5af02f2aa036f8becedb548eacfd30bc3bb332b156b75ac757e0cef7123",
+ "meaning": "gauges that have a full-record page on the water map; a link opens that gauge there",
+ "stations": {
+  "08104900": {
+   "name": "S Fk San Gabriel Rv at Georgetown, TX",
+   "first": "1967",
+   "last": "2026",
+   "anchor": "USGS.08104900"
+  },
+  "08154700": {
+   "name": "Bull Ck at Loop 360 nr Austin, TX",
+   "first": "1978",
+   "last": "2026",
+   "anchor": "USGS.08154700"
+  },
+  "08155240": {
+   "name": "Barton Ck at Lost Ck Blvd nr Austin, TX",
+   "first": "1988",
+   "last": "2026",
+   "anchor": "USGS.08155240"
+  },
+  "08155300": {
+   "name": "Barton Ck at Loop 360, Austin, TX",
+   "first": "1977",
+   "last": "2026",
+   "anchor": "USGS.08155300"
+  },
+  "08155400": {
+   "name": "Barton Ck abv Barton Spgs at Austin, TX",
+   "first": "1998",
+   "last": "2026",
+   "anchor": "USGS.08155400"
+  },
+  "08155500": {
+   "name": "Barton Spgs at Austin, TX",
+   "first": "1978",
+   "last": "2026",
+   "anchor": "USGS.08155500"
+  },
+  "08156800": {
+   "name": "Shoal Ck at W 12th St, Austin, TX",
+   "first": "1983",
+   "last": "2026",
+   "anchor": "USGS.08156800"
+  },
+  "08158000": {
+   "name": "Colorado Rv at Austin, TX",
+   "first": "1898",
+   "last": "2026",
+   "anchor": "USGS.08158000"
+  },
+  "08158827": {
+   "name": "Onion Ck at Twin Creeks Rd nr Manchaca, TX",
+   "first": "2003",
+   "last": "2026",
+   "anchor": "USGS.08158827"
+  },
+  "08158930": {
+   "name": "Williamson Ck at Manchaca Rd, Austin, TX",
+   "first": "1984",
+   "last": "2026",
+   "anchor": "USGS.08158930"
+  },
+  "08158970": {
+   "name": "Williamson Ck at Jimmy Clay Rd, Austin, TX",
+   "first": "1975",
+   "last": "2026",
+   "anchor": "USGS.08158970"
+  },
+  "08159000": {
+   "name": "Onion Ck at US Hwy 183, Austin, TX",
+   "first": "1924",
+   "last": "2026",
+   "anchor": "USGS.08159000"
+  },
+  "08159200": {
+   "name": "Colorado Rv at Bastrop, TX",
+   "first": "1960",
+   "last": "2026",
+   "anchor": "USGS.08159200"
+  },
+  "08168500": {
+   "name": "Guadalupe Rv abv Comal Rv at New Braunfels, TX",
+   "first": "1927",
+   "last": "2026",
+   "anchor": "USGS.08168500"
+  },
+  "08169000": {
+   "name": "Comal Rv at New Braunfels, TX",
+   "first": "1927",
+   "last": "2026",
+   "anchor": "USGS.08169000"
+  },
+  "08169500": {
+   "name": "Guadalupe Rv at New Braunfels, TX",
+   "first": "1915",
+   "last": "2011",
+   "anchor": "USGS.08169500"
+  },
+  "08170500": {
+   "name": "San Marcos Rv at San Marcos, TX",
+   "first": "1915",
+   "last": "2026",
+   "anchor": "USGS.08170500"
+  },
+  "08170990": {
+   "name": "Jacobs Well Spg nr Wimberley, TX",
+   "first": "2005",
+   "last": "2026",
+   "anchor": "USGS.08170990"
+  },
+  "08171400": {
+   "name": "San Marcos Rv nr Martindale, TX",
+   "first": "2011",
+   "last": "2026",
+   "anchor": "USGS.08171400"
+  },
+  "08195000": {
+   "name": "Frio Rv at Concan, TX",
+   "first": "1924",
+   "last": "2026",
+   "anchor": "USGS.08195000"
+  }
+ }
+}
