@@ -2,7 +2,7 @@
    Static files provide the place inventory, rules and geometry. Personal visit records are excluded. */
 'use strict';
 const $=s=>document.querySelector(s);
-const APP_VERSION='2026-10-09-key';
+const APP_VERSION='2026-10-10-whole-cfs';
 const detailBody=$('#detail-body'), detailPanel=$('#detail'), list=$('#place-list'), poolList=$('#pool-list'), freshness=$('#freshness');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const AUSTIN_BOUNDS=[[30.16,-97.93],[30.44,-97.66]];
@@ -128,7 +128,7 @@ function shortTag(p){
   if(k.key==='warning') return 'official warning · red';
   if(a.operator_override) return 'official swimming closure · check operator';
   if(k.key==='hypothesis') return `pale ${a.status} flow guess · ${a.observed_at?(NOW()-Date.parse(a.observed_at)>=FLOW_READING_MAX_AGE_MS?'earlier planning cue; station observed ':'current station observation; observed ')+ago(a.observed_at):'station time unavailable'} · depth here unknown`;
-  if(k.key==='measured'){ const m=/measured ([0-9.]+) (ft\^3\/s|cfs|ft3\/s)/.exec(a.reason||''); const word=a.status==='green'?'flow in band':a.status==='yellow'?'borderline flow':'flow outside band'; return (m?`${word} · ${m[1]} ${m[2].replace('ft^3/s','cfs')}`:word)+(NOW()-Date.parse(a.observed_at)>=flowCurrentAgeMs(p)?' · earlier planning cue':'')+' · depth unmeasured'; }
+  if(k.key==='measured'){ const m=/measured ([0-9.]+) (ft\^3\/s|cfs|ft3\/s)/.exec(a.reason||''); const word=a.status==='green'?'flow in band':a.status==='yellow'?'borderline flow':'flow outside band'; return (m?`${word} · ${m[1]==='0'&&p.creek==='Blunn Creek'?'under 1 cfs':m[1]+' '+m[2].replace('ft^3/s','cfs')}`:word)+(NOW()-Date.parse(a.observed_at)>=flowCurrentAgeMs(p)?' · earlier planning cue':'')+' · depth unmeasured'; }
   if(k.key==='scheduled') return cityHoursView==='today'?'open today':'scheduled open now';
   if(k.key==='closed') return cityHoursView==='today'?'closed today':'closed now';
   if(a.conflict) return 'notices conflict';
@@ -299,7 +299,7 @@ function cityMeasurement(g){
   const age=NOW()-Date.parse(g.observed_at),recent=Number.isFinite(age)&&age>=-300000&&age<FLOW_PLANNING_MAX_AGE_MS;
   const current=!cityHydrometMeta.failed&&cityHydrometCurrent(g);
   const note=cityHydrometMeta.failed?'last captured · source check failed':current?`current measurement (${ago(g.observed_at)})`:recent?`earlier station observation (${ago(g.observed_at)})`:'no recent reading';
-  const flow=!recent?'No recent discharge reading':g.flow_cfs===null?'No discharge value reported':`Discharge: <b>${esc(g.flow_cfs)} cfs</b>${current&&g.flow_cfs===0?' · no measurable flow at this station':''}`;
+  const flow=!recent?'No recent discharge reading':g.flow_cfs===null?'No discharge value reported':g.flow_cfs===0?'Discharge: <b>under 1 cfs</b> (reported as 0; this station reports whole cfs, so a trickle reads 0)':`Discharge: <b>${esc(g.flow_cfs)} cfs</b>`;
   const stage=!recent?'No recent stage reading':g.stage_ft===null?'No stage value reported':`Stage: <b>${esc(g.stage_ft)} ft</b> above the station datum`;
   const rain=!recent?'No recent station rain reading':g.rainfall_1h==null?'Past-hour station rain not reported':g.rainfall_1h>0?'Rain reported at station in the past hour':'No station rain reported in the past hour';
   return `<p>${flow}<br>${stage}<br>${rain}</p><p class="evidence">Observed ${fmt(g.observed_at)} · ${note} · source checked ${fmt(cityHydrometMeta.checked_at)}</p>

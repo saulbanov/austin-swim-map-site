@@ -91,7 +91,7 @@ function assessBlunnFlow(station,at=Date.now(),history=null){
       observed_at:station.observed_at,
       valid_until:new Date(Date.parse(station.observed_at)+CITY_HYDROMET_MAX_AGE_MS).toISOString(),rule_source:null};
   const meaning=flow<0.5?'near-zero station flow':flow<5?'below the reported good-visit flow range':flow<12?'near the reported good-visit flow range':flow<22?'above the visit range':'high relative to the station’s May–June daily record';
-  return {status,reason:`City Hydromet 122 measured ${flow} cfs; ${current?'current reading':'earlier planning cue after a favorable three-hour station-history window and no reported six-hour station rain'}; ${BLUNN_RULE_ID} is a provisional ${meaning} cue at this downstream station`,
+  return {status,reason:`City Hydromet 122 measured ${flow} cfs${flow===0?' (the station reports whole numbers, so 0 means under 1 cfs, not necessarily a dry creek)':''}; ${current?'current reading':'earlier planning cue after a favorable three-hour station-history window and no reported six-hour station rain'}; ${BLUNN_RULE_ID} is a provisional ${meaning} cue at this downstream station`,
     evidence:`Estimate · limited evidence · ${current?'measurement current':'earlier station flow, not a current measurement'} · two reported good visits at different upstream reaches; band not independently validated`,
     observed_at:station.observed_at,valid_until:new Date(Date.parse(station.observed_at)+(current?CITY_HYDROMET_MAX_AGE_MS:BLUNN_PLANNING_MAX_AGE_MS)).toISOString(),
     rule_source:BLUNN_RULE_SOURCE};
