@@ -2,7 +2,7 @@
    Static files provide the place inventory, rules and geometry. Personal visit records are excluded. */
 'use strict';
 const $=s=>document.querySelector(s);
-const APP_VERSION='2026-10-10-all-chips';
+const APP_VERSION='2026-10-10-near-search';
 const detailBody=$('#detail-body'), detailPanel=$('#detail'), list=$('#place-list'), poolList=$('#pool-list'), freshness=$('#freshness');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const AUSTIN_BOUNDS=[[30.16,-97.93],[30.44,-97.66]];
@@ -487,6 +487,77 @@ function flyToRegion(region){
   openSheet();
 }
 
+/* ---------- address search and Near me (public-near.js) ----------
+   A picked suggestion or the phone's location becomes the origin: a pin on the map and, in the card, the
+   ten nearest places that the Show on map checkboxes and Hide closed would draw, by straight-line miles. */
+let nearOrigin=null,nearMarker=null,nearAbort=null;
+function nearShowing(){ return Boolean(nearOrigin&&detailPanel.classList.contains('open')&&$('#near-clear')); }
+function setNearOrigin(o){
+  nearOrigin=o;
+  if(hasLeaflet){
+    if(nearMarker) nearMarker.remove();
+    nearMarker=L.marker([o.lat,o.lon],{icon:L.divIcon({className:'',html:'<span class="near-pin" aria-hidden="true"></span>',iconSize:[26,26],iconAnchor:[13,13]}),title:o.label,alt:o.label,keyboard:false,zIndexOffset:1000}).addTo(map);
+    const near=nearestPlaces(o,places,{limit:5,keep:visiblePlace});
+    map.fitBounds([[o.lat,o.lon],...near.map(n=>[n.place.lat,n.place.lon])],{padding:[40,40],maxZoom:14});
+  }
+  $('#near-list').hidden=false;
+  showNearest();
+}
+function showNearest(){
+  if(!nearOrigin) return;
+  const near=nearestPlaces(nearOrigin,places,{limit:10,keep:visiblePlace});
+  detailBody.innerHTML=`<p class="eyebrow">Nearest saved places · straight-line miles</p><h2>Near ${esc(nearOrigin.label)}</h2>`
+    +(near.length?near.map(({place:p,mi})=>{const a=effective(p);
+      return `<p class="near-row"><button class="btn" data-near="${esc(p.id)}" type="button">${symbolFor(p)} ${esc(p.name)}</button><span class="near-mi">${nearMilesText(mi)}</span>${hasRating(a.status)?`<span class="tag ${esc(a.status)}">${esc(shortTag(p))}</span>`:'<span class="muted">no current rating</span>'}</p>`;}).join('')
+      :'<p class="muted">Nothing is showing with the current checkboxes.</p>')
+    +`<p class="muted">Follows the Show on map checkboxes and Hide closed places. Miles are straight lines, not driving or walking distance. ${nearOrigin.typed?'Typed searches are looked up by Photon and Nominatim, from OpenStreetMap data (© OpenStreetMap contributors).':'Your location stays on this device.'}</p><p><button class="btn" id="near-clear" type="button">Clear search</button></p>`;
+  detailBody.querySelectorAll('button[data-near]').forEach(b=>b.onclick=()=>{const p=places.find(x=>x.id===b.dataset.near); if(p){ flyTo(p); selectPlace(p); }});
+  $('#near-clear').onclick=clearNear;
+  openSheet();
+}
+function clearNear(){ nearOrigin=null; if(nearMarker){ nearMarker.remove(); nearMarker=null; } $('#near-q').value=''; $('#near-list').hidden=true; closeSheet(); }
+{ const form=$('#near-form'),input=$('#near-q'),list=$('#near-hits'); let hits=[],sel=-1,timer=null;
+  const show=(none='',hint='')=>{ list.innerHTML=hits.map((h,i)=>`<li role="option" data-i="${i}"${i===sel?' aria-selected="true"':''}><b>${esc(h.label)}</b><span>${esc(h.sub)}</span></li>`).join('')
+    +(!hits.length&&none?`<li class="none">${esc(none)}</li>`:'')+(hint?`<li class="none">${esc(hint)}</li>`:''); list.hidden=!hits.length&&!none&&!hint; };
+  const pick=h=>{ list.hidden=true; input.value=h.label; input.blur(); setNearOrigin({label:h.label,lat:h.lat,lon:h.lon,typed:!h.place_id}); };
+  // remote: false (this map's names only), 'suggest' (Photon, while typing) or 'search' (Nominatim then Photon, on Search).
+  const run=async remote=>{
+    const q=input.value.trim(); sel=-1;
+    if(!q){ hits=[]; show(); return hits; }
+    hits=nearLocalMatches(q,places,5); show(hits.length||!remote?'':'Looking it up…');
+    if(!remote) return hits;
+    if(nearAbort) nearAbort.abort();
+    const ctl=nearAbort=new AbortController();
+    const [exact,more]=await Promise.all([remote==='search'?nearNominatim(q,ctl.signal):[],nearPhoton(q,ctl.signal)]);
+    if(ctl.signal.aborted||input.value.trim()!==q) return null;
+    if(/^\d/.test(q)) hits=[...exact,...hits]; else hits.push(...exact);
+    const seen=new Set(hits.map(h=>nearNorm(h.label))); for(const h of more) if(!seen.has(nearNorm(h.label))){ seen.add(nearNorm(h.label)); hits.push(h); }
+    show(hits.length?'':'No match. Try a street address with its town (1100 Barton Springs Rd, Austin), a town, or a swimming hole on this map.',
+      remote==='suggest'&&/^\d/.test(q)?'Press Search to place this exact address.':'');
+    return hits;
+  };
+  input.addEventListener('input',()=>{ clearTimeout(timer); run(false); timer=setTimeout(()=>run('suggest'),450); });
+  input.addEventListener('keydown',ev=>{
+    if(ev.key==='ArrowDown'){ sel=Math.min(hits.length-1,sel+1); show(); ev.preventDefault(); }
+    else if(ev.key==='ArrowUp'){ sel=Math.max(0,sel-1); show(); ev.preventDefault(); }
+    else if(ev.key==='Escape') list.hidden=true; });
+  form.addEventListener('submit',async ev=>{ ev.preventDefault(); clearTimeout(timer);
+    if(sel>=0&&hits[sel]) return pick(hits[sel]);
+    const got=await run('search'); if(got?.length) pick(got[0]); });
+  list.addEventListener('pointerdown',ev=>{ const li=ev.target.closest('li[data-i]'); if(!li) return; ev.preventDefault(); pick(hits[+li.dataset.i]); });
+  input.addEventListener('blur',()=>setTimeout(()=>{ list.hidden=true; },150));
+  $('#near-me').onclick=()=>{
+    const b=$('#near-me');
+    if(!navigator.geolocation){ detailBody.innerHTML='<p class="eyebrow">Near me</p><h2>Location unavailable</h2><p>This browser does not share a location. Type an address instead.</p>'; openSheet(); return; }
+    b.disabled=true; b.textContent='Finding you…';
+    navigator.geolocation.getCurrentPosition(
+      pos=>{ b.disabled=false; b.textContent='Near me'; setNearOrigin({label:'your location',lat:pos.coords.latitude,lon:pos.coords.longitude,typed:false}); },
+      err=>{ b.disabled=false; b.textContent='Near me';
+        detailBody.innerHTML=`<p class="eyebrow">Near me</p><h2>Location unavailable</h2><p>${err.code===1?'Location permission was declined. Type an address instead, or allow location for this site in the browser settings.':'Your location could not be found just now. Try again, or type an address.'}</p>`; openSheet(); },
+      {enableHighAccuracy:false,timeout:10000,maximumAge:60000}); };
+  $('#near-list').onclick=showNearest;
+}
+
 /* ---------- lists ---------- */
 function renderList(){
   const austin=places.filter(isAustin), regional=places.filter(p=>!isAustin(p));
@@ -532,10 +603,10 @@ function renderPools(data){
 
 /* ---------- controls ---------- */
 function setPressed(id){ ['austin','barton','san-marcos','all'].forEach(x=>$('#'+x).setAttribute('aria-pressed',String(x===id))); }
-for(const key of ['holes','pools','splash','beaches']){ const input=$('#show-'+key); input.checked=layerChoice[key]; input.addEventListener('change',()=>{layerChoice[key]=input.checked; saveLayerChoice(); buildGroups(); render(); renderRim();}); }
+for(const key of ['holes','pools','splash','beaches']){ const input=$('#show-'+key); input.checked=layerChoice[key]; input.addEventListener('change',()=>{layerChoice[key]=input.checked; saveLayerChoice(); buildGroups(); render(); renderRim(); if(nearShowing()) showNearest();}); }
 { const input=$('#hide-closed'); input.checked=hideClosed; input.addEventListener('change',()=>{hideClosed=input.checked;
   try{localStorage.setItem('austin-swim-map-hide-closed',hideClosed?'1':'0');}catch(e){}
-  buildGroups(); render(); renderRim();}); }
+  buildGroups(); render(); renderRim(); if(nearShowing()) showNearest();}); }
 document.querySelectorAll('input[name="open-view"]').forEach(input=>{
   input.checked=input.value===cityHoursView;
   input.addEventListener('change',()=>{if(!input.checked)return;cityHoursView=input.value;
@@ -562,7 +633,7 @@ function refreshCurrentView(){
   const detailScroll=detailPanel.scrollTop;
   if(detailPanel.classList.contains('open')&&selectedPlace) selectPlace(selectedPlace,false);
   else if(detailPanel.classList.contains('open')&&selectedGauge) selectGauge(selectedGauge);
-  else render();
+  else { if(nearShowing()) showNearest(); render(); }
   detailPanel.scrollTop=detailScroll;
   renderRim();
   lastStatusSignature=currentStatusSignature();
