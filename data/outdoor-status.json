@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-13T12:47:07-05:00",
+ "generated_at": "2026-10-13T15:17:08-05:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-10-13",
- "sunrise": "07:31",
+ "sunrise": "07:32",
  "sunset": "19:02",
  "places": [
   {
@@ -24,7 +24,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.242277,
+    "lon": -97.81513
+   }
   },
   {
    "id": "hill-of-life",
@@ -45,7 +49,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.268902,
+    "lon": -97.84617
+   }
   },
   {
    "id": "sculpture-falls",
@@ -66,7 +74,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.268982,
+    "lon": -97.81524
+   }
   },
   {
    "id": "gus-fruh",
@@ -87,7 +99,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.242373,
+    "lon": -97.78421
+   }
   },
   {
    "id": "campbells-hole",
@@ -108,7 +124,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.269077,
+    "lon": -97.78431
+   }
   },
   {
    "id": "the-flats",
@@ -129,7 +149,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.269077,
+    "lon": -97.78431
+   }
   },
   {
    "id": "bull-creek-district",
@@ -150,7 +174,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.375927,
+    "lon": -97.7847
+   }
   },
   {
    "id": "barton-springs",
@@ -164,14 +192,18 @@
    },
    "best_block": [
     "07:00",
-    "10:00"
+    "11:00"
    ],
-   "reason": "midday window Orange; best block 07:00-10:00; early Yellow, midday Orange, evening Orange; peak heat band 3/4, UV band 3/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Orange; best block 07:00-11:00; early Yellow, midday Orange, evening Orange; peak heat band 3/4, UV band 3/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.269077,
+    "lon": -97.78431
+   }
   },
   {
    "id": "shoal-creek",
@@ -192,7 +224,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.269146,
+    "lon": -97.75338
+   }
   },
   {
    "id": "blunn-big-stacey",
@@ -213,7 +249,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.24244,
+    "lon": -97.753296
+   }
   },
   {
    "id": "blunn-little-stacey",
@@ -234,70 +274,86 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.24244,
+    "lon": -97.753296
+   }
   },
   {
    "id": "mckinney-upper",
    "name": "McKinney Falls \u2014 Upper Falls",
-   "status": "Orange",
+   "status": "VETO",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Orange",
+    "midday": "VETO",
     "evening": "Yellow"
    },
    "best_block": [
     "07:00",
-    "13:00"
+    "11:00"
    ],
-   "reason": "midday window Orange; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 90 min",
+   "reason": "midday window VETO; best block 07:00-11:00; early Green, midday VETO, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.189095,
+    "lon": -97.72224
+   }
   },
   {
    "id": "mckinney-lower",
    "name": "McKinney Falls \u2014 Lower Falls",
-   "status": "Orange",
+   "status": "VETO",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Orange",
+    "midday": "VETO",
     "evening": "Yellow"
    },
    "best_block": [
     "07:00",
-    "13:00"
+    "11:00"
    ],
-   "reason": "midday window Orange; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 90 min",
+   "reason": "midday window VETO; best block 07:00-11:00; early Green, midday VETO, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.189095,
+    "lon": -97.72224
+   }
   },
   {
    "id": "williamson-creek",
    "name": "Williamson Creek \u2014 location unresolved",
-   "status": "Orange",
+   "status": "VETO",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Orange",
+    "midday": "VETO",
     "evening": "Yellow"
    },
    "best_block": [
     "07:00",
-    "13:00"
+    "11:00"
    ],
-   "reason": "midday window Orange; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 60 min",
+   "reason": "midday window VETO; best block 07:00-11:00; early Green, midday VETO, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.162403,
+    "lon": -97.72216
+   }
   },
   {
    "id": "walnut-domain",
@@ -318,7 +374,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.4028,
+    "lon": -97.72283
+   }
   },
   {
    "id": "blue-hole-georgetown",
@@ -339,7 +399,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.6434,
+    "lon": -97.69244
+   }
   },
   {
    "id": "blue-hole-georgetown-kiddie",
@@ -360,7 +424,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.6434,
+    "lon": -97.69244
+   }
   },
   {
    "id": "blue-hole-wimberley",
@@ -381,7 +449,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.000788,
+    "lon": -98.09158
+   }
   },
   {
    "id": "jacobs-well",
@@ -402,7 +474,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.027304,
+    "lon": -98.12262
+   }
   },
   {
    "id": "san-marcos-sewell",
@@ -423,7 +499,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 29.89477,
+    "lon": -97.93689
+   }
   },
   {
    "id": "san-marcos-city",
@@ -444,7 +524,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 29.89477,
+    "lon": -97.93689
+   }
   },
   {
    "id": "san-marcos-rio-vista",
@@ -465,7 +549,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 29.868092,
+    "lon": -97.936745
+   }
   },
   {
    "id": "blanco-state-park",
@@ -486,7 +574,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.105398,
+    "lon": -98.40101
+   }
   },
   {
    "id": "pedernales-designated-swim",
@@ -507,28 +599,36 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.32025,
+    "lon": -98.2487
+   }
   },
   {
    "id": "south-llano",
    "name": "South Llano River State Park",
-   "status": "Orange",
+   "status": "Yellow",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Orange",
+    "midday": "Yellow",
     "evening": "Yellow"
    },
    "best_block": [
     "07:00",
-    "13:00"
+    "20:00"
    ],
-   "reason": "midday window Orange; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Yellow; best block 07:00-20:00; early Green, midday Yellow, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.431704,
+    "lon": -99.7995
+   }
   },
   {
    "id": "guadalupe-river",
@@ -549,7 +649,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 29.864088,
+    "lon": -98.52137
+   }
   },
   {
    "id": "garner-frio",
@@ -563,14 +667,18 @@
    },
    "best_block": [
     "07:00",
-    "13:00"
+    "14:00"
    ],
-   "reason": "midday window Orange; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Orange; best block 07:00-14:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 29.578436,
+    "lon": -99.74433
+   }
   },
   {
    "id": "comal-prince-solms",
@@ -591,7 +699,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 29.707088,
+    "lon": -98.120125
+   }
   },
   {
    "id": "guadalupe-cypress-bend",
@@ -612,7 +724,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 29.707088,
+    "lon": -98.120125
+   }
   },
   {
    "id": "guadalupe-river-acres",
@@ -633,7 +749,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 29.707088,
+    "lon": -98.120125
+   }
   },
   {
    "id": "inks-devils-waterhole",
@@ -647,14 +767,18 @@
    },
    "best_block": [
     "07:00",
-    "10:00"
+    "11:00"
    ],
-   "reason": "midday window Orange; best block 07:00-10:00; early Yellow, midday Orange, evening Orange; peak heat band 3/4, UV band 3/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Orange; best block 07:00-11:00; early Yellow, midday Orange, evening Orange; peak heat band 3/4, UV band 3/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: lake beach or park: open shoreline assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.746931,
+    "lon": -98.377205
+   }
   },
   {
    "id": "st-edwards",
@@ -675,7 +799,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.402649,
+    "lon": -97.78478
+   }
   },
   {
    "id": "commons-ford",
@@ -696,7 +824,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.348923,
+    "lon": -97.877464
+   }
   },
   {
    "id": "emma-long",
@@ -710,14 +842,18 @@
    },
    "best_block": [
     "07:00",
-    "10:00"
+    "11:00"
    ],
-   "reason": "midday window Orange; best block 07:00-10:00; early Yellow, midday Orange, evening Orange; peak heat band 3/4, UV band 3/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Orange; best block 07:00-11:00; early Yellow, midday Orange, evening Orange; peak heat band 3/4, UV band 3/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: lake beach or park: open shoreline assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.349031,
+    "lon": -97.84652
+   }
   },
   {
    "id": "deep-eddy",
@@ -731,14 +867,18 @@
    },
    "best_block": [
     "07:00",
-    "10:00"
+    "11:00"
    ],
-   "reason": "midday window Orange; best block 07:00-10:00; early Yellow, midday Orange, evening Orange; peak heat band 3/4, UV band 3/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Orange; best block 07:00-11:00; early Yellow, midday Orange, evening Orange; peak heat band 3/4, UV band 3/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.269077,
+    "lon": -97.78431
+   }
   },
   {
    "id": "big-stacy-pool",
@@ -759,7 +899,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.24244,
+    "lon": -97.753296
+   }
   },
   {
    "id": "little-stacy-pool",
@@ -780,7 +924,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.24244,
+    "lon": -97.753296
+   }
   },
   {
    "id": "williamson-west-greenbelt",
@@ -801,7 +949,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.215473,
+    "lon": -97.84594
+   }
   },
   {
    "id": "williamson-central-greenbelt",
@@ -822,49 +974,61 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.21565,
+    "lon": -97.78413
+   }
   },
   {
    "id": "williamson-east-greenbelt",
    "name": "Williamson Creek East Greenbelt (Dove Springs)",
-   "status": "Orange",
+   "status": "VETO",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Orange",
+    "midday": "VETO",
     "evening": "Yellow"
    },
    "best_block": [
     "07:00",
-    "13:00"
+    "11:00"
    ],
-   "reason": "midday window Orange; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 60 min",
+   "reason": "midday window VETO; best block 07:00-11:00; early Green, midday VETO, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.189041,
+    "lon": -97.75313
+   }
   },
   {
    "id": "onion-creek-greenbelt-playground",
    "name": "Onion Creek Greenbelt \u2014 by the playground (Onion Creek Dr.)",
-   "status": "Orange",
+   "status": "VETO",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Orange",
+    "midday": "VETO",
     "evening": "Yellow"
    },
    "best_block": [
     "07:00",
-    "13:00"
+    "11:00"
    ],
-   "reason": "midday window Orange; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 60 min",
+   "reason": "midday window VETO; best block 07:00-11:00; early Green, midday VETO, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.162321,
+    "lon": -97.753044
+   }
   },
   {
    "id": "martindale-dam-west",
@@ -885,7 +1049,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 29.841753,
+    "lon": -97.844315
+   }
   },
   {
    "id": "alan-bates-park",
@@ -906,7 +1074,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 29.841753,
+    "lon": -97.844315
+   }
   },
   {
    "id": "nancy-martindale-park",
@@ -927,7 +1099,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 29.841753,
+    "lon": -97.844315
+   }
   },
   {
    "id": "cypress-falls",
@@ -948,7 +1124,11 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.027304,
+    "lon": -98.12262
+   }
   },
   {
    "id": "krause-springs",
@@ -969,21 +1149,32 @@
    "hazard_notice": "not checked",
    "observed_at": "2026-10-13T07:00-05:00",
    "valid_until": "2026-10-13T19:00-05:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands"
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 30.48117,
+    "lon": -98.157196
+   }
   }
  ],
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "a294699b2082d61bff3b244f216ff056fe690ad1904765222737d7f42866894e",
-   "fetched_at": "2026-10-13T17:47:07+00:00",
+   "sha256": "8ac5248f92fdf38a6deab50d2a40004d55c419bf35cc655b1f2b2b12e0c40c9b",
+   "fetched_at": "2026-10-13T20:17:06+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
+  },
+  {
+   "lane": "weather-places",
+   "sha256": "632f4f1cae7efa9e0771cacf8a456b85c6b2c94b2863dad82a080a0e51760bd9",
+   "fetched_at": "2026-10-13T20:17:08+00:00",
+   "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
-  "source_count": 1,
+  "source_count": 2,
   "derived_from": [
-   "sha256:a294699b2082d61bff3b244f216ff056fe690ad1904765222737d7f42866894e"
+   "sha256:8ac5248f92fdf38a6deab50d2a40004d55c419bf35cc655b1f2b2b12e0c40c9b",
+   "sha256:632f4f1cae7efa9e0771cacf8a456b85c6b2c94b2863dad82a080a0e51760bd9"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
