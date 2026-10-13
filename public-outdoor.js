@@ -21,7 +21,9 @@ function readOutdoorStatus(doc,places,hazards){
     const entry=byId.get(place.id);
     if(!entry) return outdoorUnavailable(place);
     const limit=Math.min(Date.parse(entry.valid_until),staleAt);
-    const out={...entry,valid_until:new Date(Number.isFinite(limit)?limit:0).toISOString()};
+    // The card prints observed_at as when the forecast was checked. austin-heat's value is the day's first daylight
+    // hour, so show the forecast's own fetch time instead, the one the file names for the bundle it was scored from.
+    const out={...entry,observed_at:new Date(fetchedAt).toISOString(),valid_until:new Date(Number.isFinite(limit)?limit:0).toISOString()};
     const hazard=hazards?.[place.id];
     if(hazard?.hazard_notice==='active'){out.status='VETO';out.reason=`Official notice: ${hazard.reason}; ${entry.reason}`;}
     else if(hazard?.hazard_notice==='caution') out.reason=`Official caution: ${hazard.reason}; ${entry.reason}`;
