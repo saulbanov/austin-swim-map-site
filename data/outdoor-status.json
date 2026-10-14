@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-14T18:17:06-05:00",
+ "generated_at": "2026-10-14T18:47:08-05:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-10-14",
  "sunrise": "07:32",
@@ -483,18 +483,18 @@
   {
    "id": "san-marcos-sewell",
    "name": "San Marcos River \u2014 Sewell Park",
-   "status": "VETO",
+   "status": "Yellow",
    "status_window": "evening",
    "by_window": {
     "early": "Green",
     "midday": "Orange",
-    "evening": "VETO"
+    "evening": "Yellow"
    },
    "best_block": [
     "07:00",
     "13:00"
    ],
-   "reason": "evening window VETO; best block 07:00-13:00; early Green, midday Orange, evening VETO; peak heat band 3/4, UV band 2/4 for ordinary / mixed sun / 120 min",
+   "reason": "evening window Yellow; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 3/4, UV band 2/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-14T07:00-05:00",
@@ -508,18 +508,18 @@
   {
    "id": "san-marcos-city",
    "name": "San Marcos River \u2014 City Park",
-   "status": "VETO",
+   "status": "Yellow",
    "status_window": "evening",
    "by_window": {
     "early": "Green",
     "midday": "Orange",
-    "evening": "VETO"
+    "evening": "Yellow"
    },
    "best_block": [
     "07:00",
     "13:00"
    ],
-   "reason": "evening window VETO; best block 07:00-13:00; early Green, midday Orange, evening VETO; peak heat band 3/4, UV band 2/4 for ordinary / mixed sun / 120 min",
+   "reason": "evening window Yellow; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 3/4, UV band 2/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-14T07:00-05:00",
@@ -808,18 +808,18 @@
   {
    "id": "commons-ford",
    "name": "Commons Ford Ranch \u2014 Lake Austin",
-   "status": "Orange",
+   "status": "VETO",
    "status_window": "evening",
    "by_window": {
     "early": "Yellow",
     "midday": "Red",
-    "evening": "Orange"
+    "evening": "VETO"
    },
    "best_block": [
     "07:00",
     "10:00"
    ],
-   "reason": "evening window Orange; best block 07:00-10:00; early Yellow, midday Red, evening Orange; peak heat band 4/4, UV band 3/4 for ordinary / full sun / 120 min",
+   "reason": "evening window VETO; best block 07:00-10:00; early Yellow, midday Red, evening VETO; peak heat band 4/4, UV band 3/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: lake beach or park: open shoreline assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-14T07:00-05:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "873a4cf388be234ee8a30133f92a374ce801dbdac6222765a02d2c4ecdd3a174",
-   "fetched_at": "2026-10-14T23:17:03+00:00",
+   "sha256": "f4544c1e5876a549a046ac16be9ef04b558bfea9a4dadfadde34284312237037",
+   "fetched_at": "2026-10-14T23:47:05+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "f3e2a5e48e0d5caa735a1a4a4790b3f1d4d29fde6f47757aeb63b1772d05f233",
-   "fetched_at": "2026-10-14T23:17:06+00:00",
+   "sha256": "227a4b403d3ea702474988862e43b366d2e7b0d5000ec55dbe832a82ae2e8aa2",
+   "fetched_at": "2026-10-14T23:47:08+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:873a4cf388be234ee8a30133f92a374ce801dbdac6222765a02d2c4ecdd3a174",
-   "sha256:f3e2a5e48e0d5caa735a1a4a4790b3f1d4d29fde6f47757aeb63b1772d05f233"
+   "sha256:f4544c1e5876a549a046ac16be9ef04b558bfea9a4dadfadde34284312237037",
+   "sha256:227a4b403d3ea702474988862e43b366d2e7b0d5000ec55dbe832a82ae2e8aa2"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
