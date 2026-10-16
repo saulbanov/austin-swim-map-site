@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-16T14:47:12-05:00",
+ "generated_at": "2026-10-16T15:17:07-05:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-10-16",
  "sunrise": "07:34",
@@ -658,18 +658,18 @@
   {
    "id": "garner-frio",
    "name": "Garner State Park \u2014 Frio River",
-   "status": "VETO",
+   "status": "Green",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "VETO",
+    "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
     "07:00",
-    "14:00"
+    "20:00"
    ],
-   "reason": "midday window VETO; best block 07:00-14:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Green; best block 07:00-20:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-16T07:00-05:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "b75eceb180387231278f4d7d19b326bfad49ee6fb1c185fb07541a50e98442b7",
-   "fetched_at": "2026-10-16T19:47:08+00:00",
+   "sha256": "66dd5ac8ebaa326c60e2ca75c4788b418c913ec0528b2fb5ec9a092b716b95d8",
+   "fetched_at": "2026-10-16T20:17:05+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "c8f44d1342624d80efa510e976ccd7655f1f8515dc1862d1bb2f0ca2aaf70b52",
-   "fetched_at": "2026-10-16T19:47:12+00:00",
+   "sha256": "82cf1b140db96cbbc627cffcfea362a2fd294eb50dbd6429dc05b0110f541e7c",
+   "fetched_at": "2026-10-16T20:17:07+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:b75eceb180387231278f4d7d19b326bfad49ee6fb1c185fb07541a50e98442b7",
-   "sha256:c8f44d1342624d80efa510e976ccd7655f1f8515dc1862d1bb2f0ca2aaf70b52"
+   "sha256:66dd5ac8ebaa326c60e2ca75c4788b418c913ec0528b2fb5ec9a092b716b95d8",
+   "sha256:82cf1b140db96cbbc627cffcfea362a2fd294eb50dbd6429dc05b0110f541e7c"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
