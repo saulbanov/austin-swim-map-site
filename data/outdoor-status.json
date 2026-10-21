@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T11:17:25-05:00",
+ "generated_at": "2026-10-21T11:47:10-05:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-10-21",
  "sunrise": "07:37",
@@ -294,7 +294,7 @@
     "07:00",
     "19:00"
    ],
-   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 90 min",
+   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-21T07:00-05:00",
@@ -319,7 +319,7 @@
     "07:00",
     "19:00"
    ],
-   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 90 min",
+   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-21T07:00-05:00",
@@ -444,7 +444,7 @@
     "07:00",
     "19:00"
    ],
-   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 90 min",
+   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-21T07:00-05:00",
@@ -469,7 +469,7 @@
     "07:00",
     "19:00"
    ],
-   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 90 min",
+   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-21T07:00-05:00",
@@ -1019,7 +1019,7 @@
     "07:00",
     "19:00"
    ],
-   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 60 min",
+   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-21T07:00-05:00",
@@ -1119,7 +1119,7 @@
     "07:00",
     "19:00"
    ],
-   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 90 min",
+   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-21T07:00-05:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "9fc6a89162f13c9232270c3bb5aa96c1af4468b8dcf39561da6b09f871ea1bcb",
-   "fetched_at": "2026-10-21T16:17:20+00:00",
+   "sha256": "fc4ba4d25b6f141afe3d64e7b2c9547129ce1ece0d0e38681b6b479727e93fc2",
+   "fetched_at": "2026-10-21T16:47:07+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "ce267241af1b6ae1c0b76f4a18dffbf2c56d4c2b6466e39fa0e312967b5c5ce1",
-   "fetched_at": "2026-10-21T16:17:25+00:00",
+   "sha256": "d395d5ec3e9d00175aa68b3f6179f7cfe53c558387fe151e13b417856e764db1",
+   "fetched_at": "2026-10-21T16:47:10+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:9fc6a89162f13c9232270c3bb5aa96c1af4468b8dcf39561da6b09f871ea1bcb",
-   "sha256:ce267241af1b6ae1c0b76f4a18dffbf2c56d4c2b6466e39fa0e312967b5c5ce1"
+   "sha256:fc4ba4d25b6f141afe3d64e7b2c9547129ce1ece0d0e38681b6b479727e93fc2",
+   "sha256:d395d5ec3e9d00175aa68b3f6179f7cfe53c558387fe151e13b417856e764db1"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
