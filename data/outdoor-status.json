@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T17:17:25-05:00",
+ "generated_at": "2026-10-21T17:47:23-05:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-10-21",
  "sunrise": "07:37",
@@ -619,7 +619,7 @@
     "07:00",
     "20:00"
    ],
-   "reason": "evening window Green; best block 07:00-20:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 120 min",
+   "reason": "evening window Green; best block 07:00-20:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-21T07:00-05:00",
@@ -758,18 +758,18 @@
   {
    "id": "inks-devils-waterhole",
    "name": "Devil\u2019s Waterhole \u2014 Inks Lake",
-   "status": "Yellow",
+   "status": "Green",
    "status_window": "evening",
    "by_window": {
     "early": "Green",
     "midday": "Orange",
-    "evening": "Yellow"
+    "evening": "Green"
    },
    "best_block": [
     "07:00",
     "13:00"
    ],
-   "reason": "evening window Yellow; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 3/4 for ordinary / full sun / 120 min",
+   "reason": "evening window Green; best block 07:00-13:00; early Green, midday Orange, evening Green; peak heat band 2/4, UV band 3/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: lake beach or park: open shoreline assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-21T07:00-05:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "7284d651bf07c3eff7eacc359f2f79667f412031fc70577619305b88d023ff0d",
-   "fetched_at": "2026-10-21T22:17:22+00:00",
+   "sha256": "42640bb7d3c343f22f52823a2bba94d33d4328834b2bf08fff7f7ae20c820dbb",
+   "fetched_at": "2026-10-21T22:47:20+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "81265956b1f8b9a81325004d64b54ab436ebfd8a56ef6e12ecb418c2d03ab35d",
-   "fetched_at": "2026-10-21T22:17:25+00:00",
+   "sha256": "0f181268bc8076fffdcfd3fbd80c27bbdd09cf1c4c6c8dde9b37ed180638411d",
+   "fetched_at": "2026-10-21T22:47:23+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:7284d651bf07c3eff7eacc359f2f79667f412031fc70577619305b88d023ff0d",
-   "sha256:81265956b1f8b9a81325004d64b54ab436ebfd8a56ef6e12ecb418c2d03ab35d"
+   "sha256:42640bb7d3c343f22f52823a2bba94d33d4328834b2bf08fff7f7ae20c820dbb",
+   "sha256:0f181268bc8076fffdcfd3fbd80c27bbdd09cf1c4c6c8dde9b37ed180638411d"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
