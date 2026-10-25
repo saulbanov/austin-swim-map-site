@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T11:17:06-05:00",
+ "generated_at": "2026-10-25T11:47:04-05:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-10-25",
  "sunrise": "07:40",
@@ -758,18 +758,18 @@
   {
    "id": "inks-devils-waterhole",
    "name": "Devil\u2019s Waterhole \u2014 Inks Lake",
-   "status": "Orange",
+   "status": "Yellow",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Orange",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
     "07:00",
-    "14:00"
+    "19:00"
    ],
-   "reason": "midday window Orange; best block 07:00-14:00; early Green, midday Orange, evening Green; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: lake beach or park: open shoreline assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-25T07:00-05:00",
@@ -842,9 +842,9 @@
    },
    "best_block": [
     "07:00",
-    "13:00"
+    "14:00"
    ],
-   "reason": "midday window Orange; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Orange; best block 07:00-14:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: lake beach or park: open shoreline assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-25T07:00-05:00",
@@ -892,9 +892,9 @@
    },
    "best_block": [
     "07:00",
-    "13:00"
+    "14:00"
    ],
-   "reason": "midday window Orange; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Orange; best block 07:00-14:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-25T07:00-05:00",
@@ -917,9 +917,9 @@
    },
    "best_block": [
     "07:00",
-    "13:00"
+    "14:00"
    ],
-   "reason": "midday window Orange; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Orange; best block 07:00-14:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-25T07:00-05:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "d82055a9fb39f56a811d024bcab26ba27a124e9e2070e4352e35d49c7c359cd9",
-   "fetched_at": "2026-10-25T16:17:05+00:00",
+   "sha256": "2c01d59021293e53ff23c4d4dc3663c6d9928e9d22c98e4788c993dfd7d8a2e5",
+   "fetched_at": "2026-10-25T16:47:02+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "a6e8c5de9d5b23e893da6047fe48de96cc0108bb15fd113c1cbd47559ca0072e",
-   "fetched_at": "2026-10-25T16:17:06+00:00",
+   "sha256": "29650c023fc16d6bf540369c663981b68e72b69dfd85ecc6f5d556b732777930",
+   "fetched_at": "2026-10-25T16:47:04+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:d82055a9fb39f56a811d024bcab26ba27a124e9e2070e4352e35d49c7c359cd9",
-   "sha256:a6e8c5de9d5b23e893da6047fe48de96cc0108bb15fd113c1cbd47559ca0072e"
+   "sha256:2c01d59021293e53ff23c4d4dc3663c6d9928e9d22c98e4788c993dfd7d8a2e5",
+   "sha256:29650c023fc16d6bf540369c663981b68e72b69dfd85ecc6f5d556b732777930"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
