@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T06:17:07-05:00",
+ "generated_at": "2026-10-26T06:47:08-05:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-10-26",
  "sunrise": "07:41",
@@ -487,14 +487,14 @@
    "status_window": "early",
    "by_window": {
     "early": "Green",
-    "midday": "Green",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
     "07:00",
     "19:00"
    ],
-   "reason": "early window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window Green; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-26T07:00-05:00",
@@ -512,14 +512,14 @@
    "status_window": "early",
    "by_window": {
     "early": "Green",
-    "midday": "Green",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
     "07:00",
     "19:00"
    ],
-   "reason": "early window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window Green; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-26T07:00-05:00",
@@ -537,14 +537,14 @@
    "status_window": "early",
    "by_window": {
     "early": "Green",
-    "midday": "Green",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
     "07:00",
     "19:00"
    ],
-   "reason": "early window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window Green; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-26T07:00-05:00",
@@ -612,14 +612,14 @@
    "status_window": "early",
    "by_window": {
     "early": "Green",
-    "midday": "Yellow",
+    "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
     "07:00",
     "19:00"
    ],
-   "reason": "early window Green; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-26T07:00-05:00",
@@ -662,14 +662,14 @@
    "status_window": "early",
    "by_window": {
     "early": "Green",
-    "midday": "Green",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
     "07:00",
     "19:00"
    ],
-   "reason": "early window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window Green; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-26T07:00-05:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "4f9cc139f6f7e3d9e47dca6d40c15f02bb0a3c3835eda9bb910162fcb8f06432",
-   "fetched_at": "2026-10-26T11:17:05+00:00",
+   "sha256": "c3c6f92a2f695edd46aea19996f19c47f27a94c7555c47099349c276d75e9c6d",
+   "fetched_at": "2026-10-26T11:47:07+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "d7f08f893c79a6595e6aa8231ffff473b6f7191ed6a70f7e498428b6c7691376",
-   "fetched_at": "2026-10-26T11:17:07+00:00",
+   "sha256": "f5ba783bb106ac5e9d6e2f4cb5ba894a1851dfa7f24f61bde1067ea7a7e79cda",
+   "fetched_at": "2026-10-26T11:47:08+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:4f9cc139f6f7e3d9e47dca6d40c15f02bb0a3c3835eda9bb910162fcb8f06432",
-   "sha256:d7f08f893c79a6595e6aa8231ffff473b6f7191ed6a70f7e498428b6c7691376"
+   "sha256:c3c6f92a2f695edd46aea19996f19c47f27a94c7555c47099349c276d75e9c6d",
+   "sha256:f5ba783bb106ac5e9d6e2f4cb5ba894a1851dfa7f24f61bde1067ea7a7e79cda"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
