@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T10:47:09-05:00",
+ "generated_at": "2026-10-26T11:17:06-05:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-10-26",
  "sunrise": "07:41",
@@ -119,7 +119,7 @@
     "07:00",
     "19:00"
    ],
-   "reason": "midday window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "midday window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-26T07:00-05:00",
@@ -144,7 +144,7 @@
     "07:00",
     "19:00"
    ],
-   "reason": "midday window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "midday window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-26T07:00-05:00",
@@ -183,18 +183,18 @@
   {
    "id": "barton-springs",
    "name": "Barton Springs Pool",
-   "status": "Orange",
+   "status": "Yellow",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Orange",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
     "07:00",
-    "15:00"
+    "19:00"
    ],
-   "reason": "midday window Orange; best block 07:00-15:00; early Green, midday Orange, evening Green; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-26T07:00-05:00",
@@ -219,7 +219,7 @@
     "07:00",
     "19:00"
    ],
-   "reason": "midday window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "midday window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-26T07:00-05:00",
@@ -694,7 +694,7 @@
     "07:00",
     "19:00"
    ],
-   "reason": "midday window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-26T07:00-05:00",
@@ -719,7 +719,7 @@
     "07:00",
     "19:00"
    ],
-   "reason": "midday window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-26T07:00-05:00",
@@ -744,7 +744,7 @@
     "07:00",
     "19:00"
    ],
-   "reason": "midday window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-26T07:00-05:00",
@@ -808,18 +808,18 @@
   {
    "id": "commons-ford",
    "name": "Commons Ford Ranch \u2014 Lake Austin",
-   "status": "Orange",
+   "status": "Yellow",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Orange",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
     "07:00",
-    "15:00"
+    "19:00"
    ],
-   "reason": "midday window Orange; best block 07:00-15:00; early Green, midday Orange, evening Green; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: lake beach or park: open shoreline assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-26T07:00-05:00",
@@ -858,18 +858,18 @@
   {
    "id": "deep-eddy",
    "name": "Deep Eddy Pool",
-   "status": "Orange",
+   "status": "Yellow",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Orange",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
     "07:00",
-    "15:00"
+    "19:00"
    ],
-   "reason": "midday window Orange; best block 07:00-15:00; early Green, midday Orange, evening Green; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-26T07:00-05:00",
@@ -919,7 +919,7 @@
     "07:00",
     "19:00"
    ],
-   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-26T07:00-05:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "7d7fdc6abce6d60e653915c7749a6a6be2fb4111bedd87d380331f82206886e1",
-   "fetched_at": "2026-10-26T15:47:07+00:00",
+   "sha256": "dbffcf712f3567405ee1dab41ba8999a4c089dbb5ee4ece857186c7ccc901f14",
+   "fetched_at": "2026-10-26T16:17:04+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "2247d914d2d8b341f0782f4218a4b8ee13eb713d6d7597207b21bd948e66e6ed",
-   "fetched_at": "2026-10-26T15:47:09+00:00",
+   "sha256": "7fe2152c23eb26f6099608cddfe6347423a41290973d1635ea65a2760f60ebb9",
+   "fetched_at": "2026-10-26T16:17:06+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:7d7fdc6abce6d60e653915c7749a6a6be2fb4111bedd87d380331f82206886e1",
-   "sha256:2247d914d2d8b341f0782f4218a4b8ee13eb713d6d7597207b21bd948e66e6ed"
+   "sha256:dbffcf712f3567405ee1dab41ba8999a4c089dbb5ee4ece857186c7ccc901f14",
+   "sha256:7fe2152c23eb26f6099608cddfe6347423a41290973d1635ea65a2760f60ebb9"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
