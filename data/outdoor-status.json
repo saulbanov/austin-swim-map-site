@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T12:17:09-05:00",
+ "generated_at": "2026-10-27T12:47:04-05:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-10-27",
  "sunrise": "07:41",
@@ -608,18 +608,18 @@
   {
    "id": "south-llano",
    "name": "South Llano River State Park",
-   "status": "Yellow",
+   "status": "Green",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Yellow",
+    "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
     "07:00",
     "19:00"
    ],
-   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-27T07:00-05:00",
@@ -658,18 +658,18 @@
   {
    "id": "garner-frio",
    "name": "Garner State Park \u2014 Frio River",
-   "status": "Yellow",
+   "status": "Green",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Yellow",
+    "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
     "07:00",
     "19:00"
    ],
-   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-27T07:00-05:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "7075bf3d8c55578ea630dad7fd16ffaacc0a00a8c4f67308587de98a7df559e8",
-   "fetched_at": "2026-10-27T17:17:08+00:00",
+   "sha256": "45c39ab264219609d81902d764eb7ac971cb9d1699a85b0e853e3e29889528af",
+   "fetched_at": "2026-10-27T17:47:02+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "443fcc7c9560aa494397a271be346d278ef45235cea37bf3d8ac11e598d41c9c",
-   "fetched_at": "2026-10-27T17:17:09+00:00",
+   "sha256": "33267d7c789e0e7b7655c1a1d34f1942c585515e971f17d695697bb47d030ccf",
+   "fetched_at": "2026-10-27T17:47:04+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:7075bf3d8c55578ea630dad7fd16ffaacc0a00a8c4f67308587de98a7df559e8",
-   "sha256:443fcc7c9560aa494397a271be346d278ef45235cea37bf3d8ac11e598d41c9c"
+   "sha256:45c39ab264219609d81902d764eb7ac971cb9d1699a85b0e853e3e29889528af",
+   "sha256:33267d7c789e0e7b7655c1a1d34f1942c585515e971f17d695697bb47d030ccf"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
