@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T12:17:11-05:00",
+ "generated_at": "2026-10-28T12:47:04-05:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-10-28",
  "sunrise": "07:42",
@@ -192,9 +192,9 @@
    },
    "best_block": [
     "07:00",
-    "13:00"
+    "15:00"
    ],
-   "reason": "midday window Orange; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Orange; best block 07:00-15:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-28T07:00-05:00",
@@ -569,7 +569,7 @@
     "07:00",
     "19:00"
    ],
-   "reason": "midday window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-28T07:00-05:00",
@@ -583,18 +583,18 @@
   {
    "id": "pedernales-designated-swim",
    "name": "Pedernales Falls State Park \u2014 designated swimming area",
-   "status": "Green",
+   "status": "VETO",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Green",
+    "midday": "VETO",
     "evening": "Green"
    },
    "best_block": [
     "07:00",
-    "19:00"
+    "15:00"
    ],
-   "reason": "midday window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window VETO; best block 07:00-15:00; early Green, midday VETO, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-28T07:00-05:00",
@@ -644,7 +644,7 @@
     "07:00",
     "19:00"
    ],
-   "reason": "midday window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Green; best block 07:00-19:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-28T07:00-05:00",
@@ -758,18 +758,18 @@
   {
    "id": "inks-devils-waterhole",
    "name": "Devil\u2019s Waterhole \u2014 Inks Lake",
-   "status": "Orange",
+   "status": "Yellow",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Orange",
+    "midday": "Yellow",
     "evening": "Yellow"
    },
    "best_block": [
     "07:00",
-    "15:00"
+    "19:00"
    ],
-   "reason": "midday window Orange; best block 07:00-15:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: lake beach or park: open shoreline assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-28T07:00-05:00",
@@ -808,18 +808,18 @@
   {
    "id": "commons-ford",
    "name": "Commons Ford Ranch \u2014 Lake Austin",
-   "status": "Orange",
+   "status": "Yellow",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Orange",
+    "midday": "Yellow",
     "evening": "Yellow"
    },
    "best_block": [
     "07:00",
-    "13:00"
+    "19:00"
    ],
-   "reason": "midday window Orange; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: lake beach or park: open shoreline assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-28T07:00-05:00",
@@ -833,18 +833,18 @@
   {
    "id": "emma-long",
    "name": "Emma Long \u2014 Lake Austin beach",
-   "status": "Orange",
+   "status": "Yellow",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Orange",
+    "midday": "Yellow",
     "evening": "Yellow"
    },
    "best_block": [
     "07:00",
-    "15:00"
+    "19:00"
    ],
-   "reason": "midday window Orange; best block 07:00-15:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Yellow; best block 07:00-19:00; early Green, midday Yellow, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: lake beach or park: open shoreline assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-28T07:00-05:00",
@@ -867,9 +867,9 @@
    },
    "best_block": [
     "07:00",
-    "13:00"
+    "15:00"
    ],
-   "reason": "midday window Orange; best block 07:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Orange; best block 07:00-15:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-28T07:00-05:00",
@@ -892,9 +892,9 @@
    },
    "best_block": [
     "07:00",
-    "14:00"
+    "15:00"
    ],
-   "reason": "midday window Orange; best block 07:00-14:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Orange; best block 07:00-15:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-28T07:00-05:00",
@@ -917,9 +917,9 @@
    },
    "best_block": [
     "07:00",
-    "14:00"
+    "15:00"
    ],
-   "reason": "midday window Orange; best block 07:00-14:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Orange; best block 07:00-15:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-28T07:00-05:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "2d26a37543f0211af93acf33c5114d18b07d8f03bc812c642d08bf0b48837221",
-   "fetched_at": "2026-10-28T17:17:09+00:00",
+   "sha256": "db915e5abcf24792b4cafd611aae45cd9cc5bee7ee83c8db0f7718bc1d29df92",
+   "fetched_at": "2026-10-28T17:47:03+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "0349459c4303a0d06820a601366ec7d5fe030aecb05ef4c542fc626b7d29a7c5",
-   "fetched_at": "2026-10-28T17:17:11+00:00",
+   "sha256": "f009b43c7998890ccd73da3c9d5774a535d4c8a82a7cb9aa814d022dcdaefee8",
+   "fetched_at": "2026-10-28T17:47:04+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:2d26a37543f0211af93acf33c5114d18b07d8f03bc812c642d08bf0b48837221",
-   "sha256:0349459c4303a0d06820a601366ec7d5fe030aecb05ef4c542fc626b7d29a7c5"
+   "sha256:db915e5abcf24792b4cafd611aae45cd9cc5bee7ee83c8db0f7718bc1d29df92",
+   "sha256:f009b43c7998890ccd73da3c9d5774a535d4c8a82a7cb9aa814d022dcdaefee8"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
