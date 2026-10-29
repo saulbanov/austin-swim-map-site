@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T12:45:36.072030+00:00",
+  "generated_at": "2026-10-29T12:46:33.087807+00:00",
   "generated_by": "austin-swim-map tools/browser_hours.py assess",
   "capture": "data/raw/browser-hours/20261021T122855Z",
   "browser": "chromium_headless_shell-1234",
