@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T11:47:05-05:00",
+ "generated_at": "2026-10-29T12:17:06-05:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-10-29",
  "sunrise": "07:43",
@@ -466,10 +466,10 @@
     "evening": "Green"
    },
    "best_block": [
-    "13:00",
+    "14:00",
     "19:00"
    ],
-   "reason": "midday window VETO; best block 13:00-19:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "midday window VETO; best block 14:00-19:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-29T07:00-05:00",
@@ -566,10 +566,10 @@
     "evening": "Green"
    },
    "best_block": [
-    "14:00",
+    "15:00",
     "19:00"
    ],
-   "reason": "midday window VETO; best block 14:00-19:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 0/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window VETO; best block 15:00-19:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 0/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-29T07:00-05:00",
@@ -1116,10 +1116,10 @@
     "evening": "Green"
    },
    "best_block": [
-    "13:00",
+    "14:00",
     "19:00"
    ],
-   "reason": "midday window VETO; best block 13:00-19:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "midday window VETO; best block 14:00-19:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-10-29T07:00-05:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "30cf57aeda0f8500c3b40a2d70e61b5729295b1768367d490a11cd3e1e344ba5",
-   "fetched_at": "2026-10-29T16:47:03+00:00",
+   "sha256": "31d1b05eb50b591cfc8a5ecba1ff39ceaae427ba188bc03f9eae64facd15371d",
+   "fetched_at": "2026-10-29T17:17:04+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "8a3eaf77bc2370812f2307c3663fa2f9d170ff9b2d68024918bdf8af71f9f5a4",
-   "fetched_at": "2026-10-29T16:47:04+00:00",
+   "sha256": "9938226cf947bc476f152c898b65e8c1de8fb5b9b15d6a1f207a1d58561bd358",
+   "fetched_at": "2026-10-29T17:17:05+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:30cf57aeda0f8500c3b40a2d70e61b5729295b1768367d490a11cd3e1e344ba5",
-   "sha256:8a3eaf77bc2370812f2307c3663fa2f9d170ff9b2d68024918bdf8af71f9f5a4"
+   "sha256:31d1b05eb50b591cfc8a5ecba1ff39ceaae427ba188bc03f9eae64facd15371d",
+   "sha256:9938226cf947bc476f152c898b65e8c1de8fb5b9b15d6a1f207a1d58561bd358"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
