@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-01T15:17:08-06:00",
+ "generated_at": "2026-11-01T15:47:09-06:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-11-01",
  "sunrise": "06:45",
@@ -758,18 +758,18 @@
   {
    "id": "inks-devils-waterhole",
    "name": "Devil\u2019s Waterhole \u2014 Inks Lake",
-   "status": "Yellow",
+   "status": "Orange",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Yellow",
+    "midday": "Orange",
     "evening": "Green"
    },
    "best_block": [
     "06:00",
-    "18:00"
+    "14:00"
    ],
-   "reason": "midday window Yellow; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Orange; best block 06:00-14:00; early Green, midday Orange, evening Green; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: lake beach or park: open shoreline assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-01T06:00-06:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "c777e42c8adb5f7c8db602b51a3ea49d7e325b9a496f97ce287ab664ee41356f",
-   "fetched_at": "2026-11-01T21:17:07+00:00",
+   "sha256": "f339cadb21741b6b153f83db70b36325d8689a8fddaad65013a86e5461bdd5e3",
+   "fetched_at": "2026-11-01T21:47:06+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "87ac9b92e0ddf5e4163c2a4d125c8014ea241d879b9d2004577187d58406e6cb",
-   "fetched_at": "2026-11-01T21:17:08+00:00",
+   "sha256": "f82c0e77c72e7b403262e9fe48f7d100f4e24cf39ba529572c311c090eac51d6",
+   "fetched_at": "2026-11-01T21:47:09+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:c777e42c8adb5f7c8db602b51a3ea49d7e325b9a496f97ce287ab664ee41356f",
-   "sha256:87ac9b92e0ddf5e4163c2a4d125c8014ea241d879b9d2004577187d58406e6cb"
+   "sha256:f339cadb21741b6b153f83db70b36325d8689a8fddaad65013a86e5461bdd5e3",
+   "sha256:f82c0e77c72e7b403262e9fe48f7d100f4e24cf39ba529572c311c090eac51d6"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
