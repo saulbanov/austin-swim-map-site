@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02T14:17:09-06:00",
+ "generated_at": "2026-11-02T14:47:08-06:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-11-02",
  "sunrise": "06:46",
@@ -833,18 +833,18 @@
   {
    "id": "emma-long",
    "name": "Emma Long \u2014 Lake Austin beach",
-   "status": "Yellow",
+   "status": "Orange",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Yellow",
+    "midday": "Orange",
     "evening": "Yellow"
    },
    "best_block": [
     "06:00",
-    "18:00"
+    "12:00"
    ],
-   "reason": "midday window Yellow; best block 06:00-18:00; early Green, midday Yellow, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Orange; best block 06:00-12:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: lake beach or park: open shoreline assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-02T06:00-06:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "aade45e9419176f7dfb030af3034b97cca5635f6b86cd4a3c0860b7c964d2265",
-   "fetched_at": "2026-11-02T20:17:06+00:00",
+   "sha256": "abe4f1cfcfd3ec297c19fd1edb515e2b23ff5b17e524ca7145646b347244a402",
+   "fetched_at": "2026-11-02T20:47:07+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "daeba027941245bc770a9f6507a41030ab55597615d0fc205ae183458d430110",
-   "fetched_at": "2026-11-02T20:17:09+00:00",
+   "sha256": "7ec55a7c111ac98d79636dbfe38cd2b94012e96f031849295cd942416ff79f09",
+   "fetched_at": "2026-11-02T20:47:08+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:aade45e9419176f7dfb030af3034b97cca5635f6b86cd4a3c0860b7c964d2265",
-   "sha256:daeba027941245bc770a9f6507a41030ab55597615d0fc205ae183458d430110"
+   "sha256:abe4f1cfcfd3ec297c19fd1edb515e2b23ff5b17e524ca7145646b347244a402",
+   "sha256:7ec55a7c111ac98d79636dbfe38cd2b94012e96f031849295cd942416ff79f09"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
