@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-03T12:17:31-06:00",
+ "generated_at": "2026-11-03T12:47:27-06:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-11-03",
  "sunrise": "06:47",
@@ -633,18 +633,18 @@
   {
    "id": "guadalupe-river",
    "name": "Guadalupe River State Park",
-   "status": "Green",
+   "status": "Yellow",
    "status_window": "midday",
    "by_window": {
     "early": "VETO",
-    "midday": "Green",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
     "09:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Yellow; best block 09:00-18:00; early VETO, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-03T06:00-06:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "31a037669142ca4bebc2b267060242bc6e91f0a858e311463bd8ce8cb1ef2803",
-   "fetched_at": "2026-11-03T18:17:29+00:00",
+   "sha256": "d458a6c3cd9c168f7bb876ebda0fe08314f30eac8c8d81406b66d2bc74326b8b",
+   "fetched_at": "2026-11-03T18:47:25+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "460fab0771e8ac5ef74996c6aa1c9cb3104ab9286c5d4ff9bc8aafff60c0123b",
-   "fetched_at": "2026-11-03T18:17:31+00:00",
+   "sha256": "3806da3cf1c0438a3ea350172195dace860bd9a75283b6357f210685e5b14e84",
+   "fetched_at": "2026-11-03T18:47:27+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:31a037669142ca4bebc2b267060242bc6e91f0a858e311463bd8ce8cb1ef2803",
-   "sha256:460fab0771e8ac5ef74996c6aa1c9cb3104ab9286c5d4ff9bc8aafff60c0123b"
+   "sha256:d458a6c3cd9c168f7bb876ebda0fe08314f30eac8c8d81406b66d2bc74326b8b",
+   "sha256:3806da3cf1c0438a3ea350172195dace860bd9a75283b6357f210685e5b14e84"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
