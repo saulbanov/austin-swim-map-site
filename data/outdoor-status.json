@@ -1,29 +1,29 @@
 {
- "generated_at": "2026-11-03T16:47:09-06:00",
+ "generated_at": "2026-11-04T06:17:12-06:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
- "date": "2026-11-03",
+ "date": "2026-11-04",
  "sunrise": "06:47",
- "sunset": "17:42",
+ "sunset": "17:41",
  "places": [
   {
    "id": "twin-falls",
    "name": "Twin Falls",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.242277,
@@ -34,21 +34,21 @@
    "id": "hill-of-life",
    "name": "Hill of Life",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.268902,
@@ -59,21 +59,21 @@
    "id": "sculpture-falls",
    "name": "Sculpture Falls",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.268982,
@@ -84,21 +84,21 @@
    "id": "gus-fruh",
    "name": "Gus Fruh",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.242373,
@@ -109,21 +109,21 @@
    "id": "campbells-hole",
    "name": "Campbell\u2019s Hole",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.269077,
@@ -134,21 +134,21 @@
    "id": "the-flats",
    "name": "The Flats",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.269077,
@@ -159,21 +159,21 @@
    "id": "bull-creek-district",
    "name": "Bull Creek District Park",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "07:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 07:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.375927,
@@ -183,22 +183,22 @@
   {
    "id": "barton-springs",
    "name": "Barton Springs Pool",
-   "status": "Orange",
-   "status_window": "midday",
+   "status": "Green",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "Orange",
+    "early": "Green",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
-    "13:00"
+    "06:00",
+    "18:00"
    ],
-   "reason": "midday window Orange; best block 09:00-13:00; early VETO, midday Orange, evening Green; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.269077,
@@ -209,21 +209,21 @@
    "id": "shoal-creek",
    "name": "Shoal Creek \u2014 W 12th context",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.269146,
@@ -234,21 +234,21 @@
    "id": "blunn-big-stacey",
    "name": "Blunn Creek by Big Stacey Pool",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.24244,
@@ -259,21 +259,21 @@
    "id": "blunn-little-stacey",
    "name": "Blunn Creek behind Little Stacey Park",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.24244,
@@ -284,21 +284,21 @@
    "id": "mckinney-upper",
    "name": "McKinney Falls \u2014 Upper Falls",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.189095,
@@ -309,21 +309,21 @@
    "id": "mckinney-lower",
    "name": "McKinney Falls \u2014 Lower Falls",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.189095,
@@ -334,21 +334,21 @@
    "id": "williamson-creek",
    "name": "Williamson Creek \u2014 location unresolved",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.162403,
@@ -359,21 +359,21 @@
    "id": "walnut-domain",
    "name": "Walnut Creek by the Domain",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "07:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 07:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.4028,
@@ -384,7 +384,7 @@
    "id": "blue-hole-georgetown",
    "name": "Blue Hole \u2014 Imhoff pool (upper)",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
     "early": "Green",
     "midday": "Green",
@@ -394,11 +394,11 @@
     "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.6434,
@@ -409,7 +409,7 @@
    "id": "blue-hole-georgetown-kiddie",
    "name": "Blue Hole \u2014 Kiddie pool (lower)",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
     "early": "Green",
     "midday": "Green",
@@ -419,11 +419,11 @@
     "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.6434,
@@ -434,21 +434,21 @@
    "id": "blue-hole-wimberley",
    "name": "Blue Hole \u2014 Wimberley",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "08:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 08:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.000788,
@@ -459,21 +459,21 @@
    "id": "jacobs-well",
    "name": "Jacob's Well",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "08:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 08:00-18:00; early VETO, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.027304,
@@ -484,21 +484,21 @@
    "id": "san-marcos-sewell",
    "name": "San Marcos River \u2014 Sewell Park",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "Green",
+    "early": "Green",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
-    "10:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 10:00-18:00; early VETO, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 29.89477,
@@ -509,21 +509,21 @@
    "id": "san-marcos-city",
    "name": "San Marcos River \u2014 City Park",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "Green",
+    "early": "Green",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
-    "10:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 10:00-18:00; early VETO, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 29.89477,
@@ -534,21 +534,21 @@
    "id": "san-marcos-rio-vista",
    "name": "San Marcos River \u2014 Rio Vista Park",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "Green",
+    "early": "Green",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
-    "10:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 10:00-18:00; early VETO, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 29.868092,
@@ -559,7 +559,7 @@
    "id": "blanco-state-park",
    "name": "Blanco State Park swimming area",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
     "early": "Green",
     "midday": "Green",
@@ -569,11 +569,11 @@
     "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.105398,
@@ -584,21 +584,21 @@
    "id": "pedernales-designated-swim",
    "name": "Pedernales Falls State Park \u2014 designated swimming area",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "08:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 08:00-18:00; early VETO, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.32025,
@@ -609,7 +609,7 @@
    "id": "south-llano",
    "name": "South Llano River State Park",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
     "early": "Green",
     "midday": "Green",
@@ -619,11 +619,11 @@
     "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.431704,
@@ -633,33 +633,8 @@
   {
    "id": "guadalupe-river",
    "name": "Guadalupe River State Park",
-   "status": "Yellow",
-   "status_window": "midday",
-   "by_window": {
-    "early": "VETO",
-    "midday": "Yellow",
-    "evening": "Green"
-   },
-   "best_block": [
-    "09:00",
-    "18:00"
-   ],
-   "reason": "midday window Yellow; best block 09:00-18:00; early VETO, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 120 min",
-   "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
-   "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
-   "forecast_cell": {
-    "lat": 29.864088,
-    "lon": -98.52137
-   }
-  },
-  {
-   "id": "garner-frio",
-   "name": "Garner State Park \u2014 Frio River",
-   "status": "Yellow",
-   "status_window": "midday",
+   "status": "Green",
+   "status_window": "early",
    "by_window": {
     "early": "Green",
     "midday": "Yellow",
@@ -669,11 +644,36 @@
     "06:00",
     "18:00"
    ],
-   "reason": "midday window Yellow; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 29.864088,
+    "lon": -98.52137
+   }
+  },
+  {
+   "id": "garner-frio",
+   "name": "Garner State Park \u2014 Frio River",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Yellow",
+    "evening": "Green"
+   },
+   "best_block": [
+    "06:00",
+    "18:00"
+   ],
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 120 min",
+   "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
+   "hazard_notice": "not checked",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 29.578436,
@@ -684,21 +684,21 @@
    "id": "comal-prince-solms",
    "name": "Comal River \u2014 Prince Solms Park / Tube Chute reach",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "Green",
+    "early": "Green",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
-    "08:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 08:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 29.707088,
@@ -709,21 +709,21 @@
    "id": "guadalupe-cypress-bend",
    "name": "Guadalupe River \u2014 Cypress Bend Park reach",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "Green",
+    "early": "Green",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
-    "08:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 08:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 29.707088,
@@ -734,32 +734,7 @@
    "id": "guadalupe-river-acres",
    "name": "Guadalupe River \u2014 River Acres Park reach",
    "status": "Green",
-   "status_window": "midday",
-   "by_window": {
-    "early": "VETO",
-    "midday": "Green",
-    "evening": "Green"
-   },
-   "best_block": [
-    "08:00",
-    "18:00"
-   ],
-   "reason": "midday window Green; best block 08:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 120 min",
-   "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
-   "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
-   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
-   "forecast_cell": {
-    "lat": 29.707088,
-    "lon": -98.120125
-   }
-  },
-  {
-   "id": "inks-devils-waterhole",
-   "name": "Devil\u2019s Waterhole \u2014 Inks Lake",
-   "status": "Yellow",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
     "early": "Green",
     "midday": "Yellow",
@@ -769,11 +744,36 @@
     "06:00",
     "18:00"
    ],
-   "reason": "midday window Yellow; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 120 min",
+   "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
+   "hazard_notice": "not checked",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
+   "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
+   "forecast_cell": {
+    "lat": 29.707088,
+    "lon": -98.120125
+   }
+  },
+  {
+   "id": "inks-devils-waterhole",
+   "name": "Devil\u2019s Waterhole \u2014 Inks Lake",
+   "status": "Green",
+   "status_window": "early",
+   "by_window": {
+    "early": "Green",
+    "midday": "Yellow",
+    "evening": "Green"
+   },
+   "best_block": [
+    "06:00",
+    "18:00"
+   ],
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: lake beach or park: open shoreline assumed from the record",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.746931,
@@ -784,21 +784,21 @@
    "id": "st-edwards",
    "name": "St. Edward\u2019s Greenbelt \u2014 Bull Creek",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "07:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 07:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.402649,
@@ -808,22 +808,22 @@
   {
    "id": "commons-ford",
    "name": "Commons Ford Ranch \u2014 Lake Austin",
-   "status": "Orange",
-   "status_window": "midday",
+   "status": "Green",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "Orange",
+    "early": "Green",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
-    "14:00"
+    "06:00",
+    "18:00"
    ],
-   "reason": "midday window Orange; best block 09:00-14:00; early VETO, midday Orange, evening Green; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: lake beach or park: open shoreline assumed from the record",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.348923,
@@ -833,22 +833,22 @@
   {
    "id": "emma-long",
    "name": "Emma Long \u2014 Lake Austin beach",
-   "status": "Orange",
-   "status_window": "midday",
+   "status": "Green",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "Orange",
+    "early": "Green",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
-    "14:00"
+    "06:00",
+    "18:00"
    ],
-   "reason": "midday window Orange; best block 09:00-14:00; early VETO, midday Orange, evening Green; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: lake beach or park: open shoreline assumed from the record",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.349031,
@@ -858,22 +858,22 @@
   {
    "id": "deep-eddy",
    "name": "Deep Eddy Pool",
-   "status": "Orange",
-   "status_window": "midday",
+   "status": "Green",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "Orange",
+    "early": "Green",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
-    "13:00"
+    "06:00",
+    "18:00"
    ],
-   "reason": "midday window Orange; best block 09:00-13:00; early VETO, midday Orange, evening Green; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.269077,
@@ -883,22 +883,22 @@
   {
    "id": "big-stacy-pool",
    "name": "Big Stacy Pool",
-   "status": "Orange",
-   "status_window": "midday",
+   "status": "Green",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "Orange",
+    "early": "Green",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
-    "14:00"
+    "06:00",
+    "18:00"
    ],
-   "reason": "midday window Orange; best block 09:00-14:00; early VETO, midday Orange, evening Green; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.24244,
@@ -908,22 +908,22 @@
   {
    "id": "little-stacy-pool",
    "name": "Little Stacy Wading Pool",
-   "status": "Orange",
-   "status_window": "midday",
+   "status": "Green",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "Orange",
+    "early": "Green",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
-    "14:00"
+    "06:00",
+    "18:00"
    ],
-   "reason": "midday window Orange; best block 09:00-14:00; early VETO, midday Orange, evening Green; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.24244,
@@ -934,21 +934,21 @@
    "id": "williamson-west-greenbelt",
    "name": "Williamson Creek West Greenbelt",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "08:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 08:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.215473,
@@ -959,21 +959,21 @@
    "id": "williamson-central-greenbelt",
    "name": "Williamson Creek Central Greenbelt",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.21565,
@@ -984,21 +984,21 @@
    "id": "williamson-east-greenbelt",
    "name": "Williamson Creek East Greenbelt (Dove Springs)",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.189041,
@@ -1009,21 +1009,21 @@
    "id": "onion-creek-greenbelt-playground",
    "name": "Onion Creek Greenbelt \u2014 by the playground (Onion Creek Dr.)",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.162321,
@@ -1034,21 +1034,21 @@
    "id": "martindale-dam-west",
    "name": "Martindale Dam \u2014 west bank portage",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "Green",
+    "early": "Green",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: no matching rule; household default",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 29.841753,
@@ -1059,21 +1059,21 @@
    "id": "alan-bates-park",
    "name": "Alan Bates Park \u2014 river access (Martindale)",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "Green",
+    "early": "Green",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: no matching rule; household default",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 29.841753,
@@ -1084,21 +1084,21 @@
    "id": "nancy-martindale-park",
    "name": "Nancy Martindale Park \u2014 river access (Martindale)",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "Green",
+    "early": "Green",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
-    "09:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 0/4, UV band 2/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: no matching rule; household default",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 29.841753,
@@ -1109,21 +1109,21 @@
    "id": "cypress-falls",
    "name": "Cypress Falls swimming hole (Cypress Creek)",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "08:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 08:00-18:00; early VETO, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.027304,
@@ -1134,7 +1134,7 @@
    "id": "krause-springs",
    "name": "Krause Springs",
    "status": "Green",
-   "status_window": "midday",
+   "status_window": "early",
    "by_window": {
     "early": "Green",
     "midday": "Green",
@@ -1144,11 +1144,11 @@
     "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
-   "observed_at": "2026-11-03T06:00-06:00",
-   "valid_until": "2026-11-03T17:00-06:00",
+   "observed_at": "2026-11-04T06:00-06:00",
+   "valid_until": "2026-11-04T17:00-06:00",
    "source": "https://open-meteo.com/ (forecast) \u00b7 NWS/OSHA heat-index and EPA UV bands",
    "forecast_cell": {
     "lat": 30.48117,
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "be0c423fc4446065547a54ba11b35163db9f19696bd82b7c9b94a4dc646c5598",
-   "fetched_at": "2026-11-03T22:47:06+00:00",
+   "sha256": "b5640e071a2bc3a09a6ce257873448a3b306940879cca3ab2b8256e237f10442",
+   "fetched_at": "2026-11-04T12:17:11+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "77c10096746c28b49c47ab66f1e3ce0ca9da4303d80de84c4a2fde2d6ab48018",
-   "fetched_at": "2026-11-03T22:47:09+00:00",
+   "sha256": "e9de034cca1a6ea3e43640d9bd7b9c2f198c78cb6a38b29ff62d27da7752f6fa",
+   "fetched_at": "2026-11-04T12:17:12+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:be0c423fc4446065547a54ba11b35163db9f19696bd82b7c9b94a4dc646c5598",
-   "sha256:77c10096746c28b49c47ab66f1e3ce0ca9da4303d80de84c4a2fde2d6ab48018"
+   "sha256:b5640e071a2bc3a09a6ce257873448a3b306940879cca3ab2b8256e237f10442",
+   "sha256:e9de034cca1a6ea3e43640d9bd7b9c2f198c78cb6a38b29ff62d27da7752f6fa"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
