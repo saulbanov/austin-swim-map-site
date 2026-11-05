@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T15:17:08-06:00",
+ "generated_at": "2026-11-05T15:47:07-06:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-11-05",
  "sunrise": "06:48",
@@ -763,13 +763,13 @@
    "by_window": {
     "early": "Green",
     "midday": "Orange",
-    "evening": "Green"
+    "evening": "Yellow"
    },
    "best_block": [
     "06:00",
     "14:00"
    ],
-   "reason": "midday window Orange; best block 06:00-14:00; early Green, midday Orange, evening Green; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Orange; best block 06:00-14:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: lake beach or park: open shoreline assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-05T06:00-06:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "f6c42ba61837c6cc8e76311425fb791669afec4d1a6500119e9b025b91cf5067",
-   "fetched_at": "2026-11-05T21:17:05+00:00",
+   "sha256": "fea722449444f703bdefc9602969815052797e1b78a7705b7c1f3540db7da355",
+   "fetched_at": "2026-11-05T21:47:06+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "b6b634a8860c610379e11c1640ced11426b81b8b76c4cba542a32f74692cfcd3",
-   "fetched_at": "2026-11-05T21:17:08+00:00",
+   "sha256": "2b86888a2e3ced676d8f80974d31963d82ac9e442d0fb48206d26eff8abb63f4",
+   "fetched_at": "2026-11-05T21:47:07+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:f6c42ba61837c6cc8e76311425fb791669afec4d1a6500119e9b025b91cf5067",
-   "sha256:b6b634a8860c610379e11c1640ced11426b81b8b76c4cba542a32f74692cfcd3"
+   "sha256:fea722449444f703bdefc9602969815052797e1b78a7705b7c1f3540db7da355",
+   "sha256:2b86888a2e3ced676d8f80974d31963d82ac9e442d0fb48206d26eff8abb63f4"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
