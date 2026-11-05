@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T10:47:07-06:00",
+ "generated_at": "2026-11-05T11:17:09-06:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-11-05",
  "sunrise": "06:48",
@@ -344,7 +344,7 @@
     "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 1/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-05T06:00-06:00",
@@ -888,13 +888,13 @@
    "by_window": {
     "early": "Green",
     "midday": "Orange",
-    "evening": "Yellow"
+    "evening": "Green"
    },
    "best_block": [
     "06:00",
     "14:00"
    ],
-   "reason": "midday window Orange; best block 06:00-14:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "midday window Orange; best block 06:00-14:00; early Green, midday Orange, evening Green; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-05T06:00-06:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "0f9d3803a75521c0d0512e82c94e994ef4265caa5bb5b8845d5b6452e88cde91",
-   "fetched_at": "2026-11-05T16:47:06+00:00",
+   "sha256": "d051dd307d1acc9ae9b62fb24a60824e4d403d29cb388513b4bf5e396fd3fde4",
+   "fetched_at": "2026-11-05T17:17:08+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "56e5a857e3b2b9b4b29768ae14d6ffb845103a9d46a69ad3aabc6f2454c996ce",
-   "fetched_at": "2026-11-05T16:47:07+00:00",
+   "sha256": "37065213fd85e194bc5cce0103f5772594c478d13993330891f594839e097e28",
+   "fetched_at": "2026-11-05T17:17:09+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:0f9d3803a75521c0d0512e82c94e994ef4265caa5bb5b8845d5b6452e88cde91",
-   "sha256:56e5a857e3b2b9b4b29768ae14d6ffb845103a9d46a69ad3aabc6f2454c996ce"
+   "sha256:d051dd307d1acc9ae9b62fb24a60824e4d403d29cb388513b4bf5e396fd3fde4",
+   "sha256:37065213fd85e194bc5cce0103f5772594c478d13993330891f594839e097e28"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
