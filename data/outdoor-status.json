@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T08:47:08-06:00",
+ "generated_at": "2026-11-05T09:17:08-06:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-11-05",
  "sunrise": "06:48",
@@ -192,9 +192,9 @@
    },
    "best_block": [
     "06:00",
-    "14:00"
+    "13:00"
    ],
-   "reason": "early window Green; best block 06:00-14:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "early window Green; best block 06:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-05T06:00-06:00",
@@ -762,14 +762,14 @@
    "status_window": "early",
    "by_window": {
     "early": "Green",
-    "midday": "Orange",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
     "06:00",
-    "15:00"
+    "18:00"
    ],
-   "reason": "early window Green; best block 06:00-15:00; early Green, midday Orange, evening Green; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: lake beach or park: open shoreline assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-05T06:00-06:00",
@@ -838,13 +838,13 @@
    "by_window": {
     "early": "Green",
     "midday": "Orange",
-    "evening": "Green"
+    "evening": "Yellow"
    },
    "best_block": [
     "06:00",
     "14:00"
    ],
-   "reason": "early window Green; best block 06:00-14:00; early Green, midday Orange, evening Green; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "early window Green; best block 06:00-14:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: lake beach or park: open shoreline assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-05T06:00-06:00",
@@ -867,9 +867,9 @@
    },
    "best_block": [
     "06:00",
-    "14:00"
+    "13:00"
    ],
-   "reason": "early window Green; best block 06:00-14:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "early window Green; best block 06:00-13:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-05T06:00-06:00",
@@ -888,13 +888,13 @@
    "by_window": {
     "early": "Green",
     "midday": "Orange",
-    "evening": "Green"
+    "evening": "Yellow"
    },
    "best_block": [
     "06:00",
     "14:00"
    ],
-   "reason": "early window Green; best block 06:00-14:00; early Green, midday Orange, evening Green; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "early window Green; best block 06:00-14:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-05T06:00-06:00",
@@ -913,13 +913,13 @@
    "by_window": {
     "early": "Green",
     "midday": "Orange",
-    "evening": "Green"
+    "evening": "Yellow"
    },
    "best_block": [
     "06:00",
     "14:00"
    ],
-   "reason": "early window Green; best block 06:00-14:00; early Green, midday Orange, evening Green; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "early window Green; best block 06:00-14:00; early Green, midday Orange, evening Yellow; peak heat band 2/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-05T06:00-06:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "86737f38642add84b2297c276ecdac6d096c401865451c6dadc6c5f03b9e432b",
-   "fetched_at": "2026-11-05T14:47:07+00:00",
+   "sha256": "06464520ba2e06e562b75777d8645559d87db5412361b5e0de7604caffece669",
+   "fetched_at": "2026-11-05T15:17:07+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "72bab439e6733ccc1e9cf98e3bdafda9e70fb62ac45e6d4cc0b69fbe8a743c60",
-   "fetched_at": "2026-11-05T14:47:08+00:00",
+   "sha256": "06482463b294b1aafffe151f8865d2a00e65230d32f8c2dde34b52ba4c57e454",
+   "fetched_at": "2026-11-05T15:17:08+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:86737f38642add84b2297c276ecdac6d096c401865451c6dadc6c5f03b9e432b",
-   "sha256:72bab439e6733ccc1e9cf98e3bdafda9e70fb62ac45e6d4cc0b69fbe8a743c60"
+   "sha256:06464520ba2e06e562b75777d8645559d87db5412361b5e0de7604caffece669",
+   "sha256:06482463b294b1aafffe151f8865d2a00e65230d32f8c2dde34b52ba4c57e454"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
