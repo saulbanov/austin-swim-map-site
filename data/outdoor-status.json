@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T12:17:07-06:00",
+ "generated_at": "2026-11-07T12:47:08-06:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-11-07",
  "sunrise": "06:50",
@@ -563,13 +563,13 @@
    "by_window": {
     "early": "Green",
     "midday": "Green",
-    "evening": "Green"
+    "evening": "VETO"
    },
    "best_block": [
     "06:00",
-    "18:00"
+    "17:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Green; best block 06:00-17:00; early Green, midday Green, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-07T06:00-06:00",
@@ -617,9 +617,9 @@
    },
    "best_block": [
     "06:00",
-    "15:00"
+    "16:00"
    ],
-   "reason": "midday window VETO; best block 06:00-15:00; early Green, midday VETO, evening VETO; peak heat band 0/4, UV band 0/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window VETO; best block 06:00-16:00; early Green, midday VETO, evening VETO; peak heat band 0/4, UV band 0/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-07T06:00-06:00",
@@ -638,13 +638,13 @@
    "by_window": {
     "early": "Green",
     "midday": "Green",
-    "evening": "Green"
+    "evening": "VETO"
    },
    "best_block": [
     "06:00",
-    "18:00"
+    "17:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Green; best block 06:00-17:00; early Green, midday Green, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-07T06:00-06:00",
@@ -663,13 +663,13 @@
    "by_window": {
     "early": "Green",
     "midday": "Green",
-    "evening": "Green"
+    "evening": "VETO"
    },
    "best_block": [
     "06:00",
-    "18:00"
+    "17:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 0/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Green; best block 06:00-17:00; early Green, midday Green, evening VETO; peak heat band 0/4, UV band 0/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-07T06:00-06:00",
@@ -683,18 +683,18 @@
   {
    "id": "comal-prince-solms",
    "name": "Comal River \u2014 Prince Solms Park / Tube Chute reach",
-   "status": "Green",
+   "status": "VETO",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Green",
+    "midday": "VETO",
     "evening": "Green"
    },
    "best_block": [
     "06:00",
-    "18:00"
+    "14:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window VETO; best block 06:00-14:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-07T06:00-06:00",
@@ -708,18 +708,18 @@
   {
    "id": "guadalupe-cypress-bend",
    "name": "Guadalupe River \u2014 Cypress Bend Park reach",
-   "status": "Green",
+   "status": "VETO",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Green",
+    "midday": "VETO",
     "evening": "Green"
    },
    "best_block": [
     "06:00",
-    "18:00"
+    "14:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window VETO; best block 06:00-14:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-07T06:00-06:00",
@@ -733,18 +733,18 @@
   {
    "id": "guadalupe-river-acres",
    "name": "Guadalupe River \u2014 River Acres Park reach",
-   "status": "Green",
+   "status": "VETO",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Green",
+    "midday": "VETO",
     "evening": "Green"
    },
    "best_block": [
     "06:00",
-    "18:00"
+    "14:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window VETO; best block 06:00-14:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-07T06:00-06:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "08b231382e6424ef864f8ca62fd60ad0c69ae6349fc74d043950a495a8e2505e",
-   "fetched_at": "2026-11-07T18:17:06+00:00",
+   "sha256": "2884bb2f2b5e0638101f35e074a9380ee41279a6ada0eed052bfdae067f9b10e",
+   "fetched_at": "2026-11-07T18:47:06+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "638896447bb716570e1f4effdb43f85b270534009704bc277124e8784efa7972",
-   "fetched_at": "2026-11-07T18:17:07+00:00",
+   "sha256": "8dbba8478fa00345a0938244e227c584583fd3c0a8dbd52f1b4eb9b9d5ab0dad",
+   "fetched_at": "2026-11-07T18:47:08+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:08b231382e6424ef864f8ca62fd60ad0c69ae6349fc74d043950a495a8e2505e",
-   "sha256:638896447bb716570e1f4effdb43f85b270534009704bc277124e8784efa7972"
+   "sha256:2884bb2f2b5e0638101f35e074a9380ee41279a6ada0eed052bfdae067f9b10e",
+   "sha256:8dbba8478fa00345a0938244e227c584583fd3c0a8dbd52f1b4eb9b9d5ab0dad"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
