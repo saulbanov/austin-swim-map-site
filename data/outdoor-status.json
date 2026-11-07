@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T15:17:09-06:00",
+ "generated_at": "2026-11-07T15:47:08-06:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-11-07",
  "sunrise": "06:50",
@@ -463,13 +463,13 @@
    "by_window": {
     "early": "Green",
     "midday": "Green",
-    "evening": "Green"
+    "evening": "VETO"
    },
    "best_block": [
     "06:00",
-    "18:00"
+    "17:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "midday window Green; best block 06:00-17:00; early Green, midday Green, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-07T06:00-06:00",
@@ -563,13 +563,13 @@
    "by_window": {
     "early": "Green",
     "midday": "Green",
-    "evening": "Green"
+    "evening": "VETO"
    },
    "best_block": [
     "06:00",
-    "18:00"
+    "17:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Green; best block 06:00-17:00; early Green, midday Green, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-07T06:00-06:00",
@@ -608,18 +608,18 @@
   {
    "id": "south-llano",
    "name": "South Llano River State Park",
-   "status": "VETO",
+   "status": "Green",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "VETO",
-    "evening": "VETO"
+    "midday": "Green",
+    "evening": "Green"
    },
    "best_block": [
     "06:00",
-    "16:00"
+    "18:00"
    ],
-   "reason": "midday window VETO; best block 06:00-16:00; early Green, midday VETO, evening VETO; peak heat band 0/4, UV band 0/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 0/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-07T06:00-06:00",
@@ -633,18 +633,18 @@
   {
    "id": "guadalupe-river",
    "name": "Guadalupe River State Park",
-   "status": "Green",
+   "status": "VETO",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Green",
+    "midday": "VETO",
     "evening": "Green"
    },
    "best_block": [
     "06:00",
-    "18:00"
+    "16:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window VETO; best block 06:00-16:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-07T06:00-06:00",
@@ -663,13 +663,13 @@
    "by_window": {
     "early": "Green",
     "midday": "VETO",
-    "evening": "Green"
+    "evening": "VETO"
    },
    "best_block": [
     "06:00",
     "14:00"
    ],
-   "reason": "midday window VETO; best block 06:00-14:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 0/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window VETO; best block 06:00-14:00; early Green, midday VETO, evening VETO; peak heat band 0/4, UV band 0/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-07T06:00-06:00",
@@ -1113,13 +1113,13 @@
    "by_window": {
     "early": "Green",
     "midday": "Green",
-    "evening": "Green"
+    "evening": "VETO"
    },
    "best_block": [
     "06:00",
-    "18:00"
+    "17:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "midday window Green; best block 06:00-17:00; early Green, midday Green, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-07T06:00-06:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "377a417d515e3034ea6be68e4469919ba91eac34b33cee30bde640a6b53d3196",
-   "fetched_at": "2026-11-07T21:17:07+00:00",
+   "sha256": "eeb73bfdc44feab027a5e3a645c2606b5c94dd89c9f9311c65407d9f288df76c",
+   "fetched_at": "2026-11-07T21:47:07+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "a09851c0fe5f19ffe9a9ce511f2c33792a2c872b70775821e8054449c44daffe",
-   "fetched_at": "2026-11-07T21:17:09+00:00",
+   "sha256": "c042bff4c81af7d4fe96e30172f7b87db3ea6300294494dd4bfacb4ad5496ef1",
+   "fetched_at": "2026-11-07T21:47:08+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:377a417d515e3034ea6be68e4469919ba91eac34b33cee30bde640a6b53d3196",
-   "sha256:a09851c0fe5f19ffe9a9ce511f2c33792a2c872b70775821e8054449c44daffe"
+   "sha256:eeb73bfdc44feab027a5e3a645c2606b5c94dd89c9f9311c65407d9f288df76c",
+   "sha256:c042bff4c81af7d4fe96e30172f7b87db3ea6300294494dd4bfacb4ad5496ef1"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
