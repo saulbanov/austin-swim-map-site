@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T11:47:08-06:00",
+ "generated_at": "2026-11-07T12:17:07-06:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-11-07",
  "sunrise": "06:50",
@@ -617,9 +617,9 @@
    },
    "best_block": [
     "06:00",
-    "16:00"
+    "15:00"
    ],
-   "reason": "midday window VETO; best block 06:00-16:00; early Green, midday VETO, evening VETO; peak heat band 0/4, UV band 0/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window VETO; best block 06:00-15:00; early Green, midday VETO, evening VETO; peak heat band 0/4, UV band 0/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-07T06:00-06:00",
@@ -658,18 +658,18 @@
   {
    "id": "garner-frio",
    "name": "Garner State Park \u2014 Frio River",
-   "status": "VETO",
+   "status": "Green",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "VETO",
+    "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
     "06:00",
-    "15:00"
+    "18:00"
    ],
-   "reason": "midday window VETO; best block 06:00-15:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 0/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 0/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-07T06:00-06:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "72874eee0270a0964ec549b761bde08540902d4329a1d1946fd781165dbea871",
-   "fetched_at": "2026-11-07T17:47:07+00:00",
+   "sha256": "08b231382e6424ef864f8ca62fd60ad0c69ae6349fc74d043950a495a8e2505e",
+   "fetched_at": "2026-11-07T18:17:06+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "a178735165aa106e42da21a4ee5b308e5bfe1a10fc4138a9ec63bf815da658cd",
-   "fetched_at": "2026-11-07T17:47:08+00:00",
+   "sha256": "638896447bb716570e1f4effdb43f85b270534009704bc277124e8784efa7972",
+   "fetched_at": "2026-11-07T18:17:07+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:72874eee0270a0964ec549b761bde08540902d4329a1d1946fd781165dbea871",
-   "sha256:a178735165aa106e42da21a4ee5b308e5bfe1a10fc4138a9ec63bf815da658cd"
+   "sha256:08b231382e6424ef864f8ca62fd60ad0c69ae6349fc74d043950a495a8e2505e",
+   "sha256:638896447bb716570e1f4effdb43f85b270534009704bc277124e8784efa7972"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
