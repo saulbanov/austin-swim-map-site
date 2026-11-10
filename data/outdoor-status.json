@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-10T06:47:07-06:00",
+ "generated_at": "2026-11-10T07:17:08-06:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-11-10",
  "sunrise": "06:52",
@@ -8,18 +8,18 @@
   {
    "id": "twin-falls",
    "name": "Twin Falls",
-   "status": "VETO",
+   "status": "Green",
    "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "VETO",
-    "evening": "VETO"
+    "early": "Green",
+    "midday": "Green",
+    "evening": "Green"
    },
    "best_block": [
-    "10:00",
-    "13:00"
+    "06:00",
+    "18:00"
    ],
-   "reason": "early window VETO; best block 10:00-13:00; early VETO, midday VETO, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -33,18 +33,18 @@
   {
    "id": "hill-of-life",
    "name": "Hill of Life",
-   "status": "VETO",
+   "status": "Green",
    "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "VETO",
-    "evening": "VETO"
+    "early": "Green",
+    "midday": "Green",
+    "evening": "Green"
    },
    "best_block": [
-    "14:00",
-    "17:00"
+    "06:00",
+    "18:00"
    ],
-   "reason": "early window VETO; best block 14:00-17:00; early VETO, midday VETO, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -58,18 +58,18 @@
   {
    "id": "sculpture-falls",
    "name": "Sculpture Falls",
-   "status": "VETO",
+   "status": "Green",
    "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "VETO",
-    "evening": "VETO"
+    "early": "Green",
+    "midday": "Green",
+    "evening": "Green"
    },
    "best_block": [
-    "14:00",
-    "17:00"
+    "06:00",
+    "18:00"
    ],
-   "reason": "early window VETO; best block 14:00-17:00; early VETO, midday VETO, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -83,18 +83,18 @@
   {
    "id": "gus-fruh",
    "name": "Gus Fruh",
-   "status": "VETO",
+   "status": "Green",
    "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "VETO",
-    "evening": "VETO"
+    "early": "Green",
+    "midday": "Green",
+    "evening": "Green"
    },
    "best_block": [
-    "10:00",
-    "13:00"
+    "06:00",
+    "18:00"
    ],
-   "reason": "early window VETO; best block 10:00-13:00; early VETO, midday VETO, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -108,18 +108,18 @@
   {
    "id": "campbells-hole",
    "name": "Campbell\u2019s Hole",
-   "status": "VETO",
+   "status": "Green",
    "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "VETO",
+    "early": "Green",
+    "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "14:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "early window VETO; best block 14:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -133,18 +133,18 @@
   {
    "id": "the-flats",
    "name": "The Flats",
-   "status": "VETO",
+   "status": "Green",
    "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "VETO",
+    "early": "Green",
+    "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "14:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "early window VETO; best block 14:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -158,18 +158,18 @@
   {
    "id": "bull-creek-district",
    "name": "Bull Creek District Park",
-   "status": "VETO",
+   "status": "Green",
    "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "VETO",
     "evening": "Green"
    },
    "best_block": [
-    "11:00",
+    "12:00",
     "18:00"
    ],
-   "reason": "early window VETO; best block 11:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 12:00-18:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -183,18 +183,18 @@
   {
    "id": "barton-springs",
    "name": "Barton Springs Pool",
-   "status": "VETO",
+   "status": "Green",
    "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "VETO",
+    "early": "Green",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
-    "14:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "early window VETO; best block 14:00-18:00; early VETO, midday VETO, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -216,10 +216,10 @@
     "evening": "Green"
    },
    "best_block": [
-    "14:00",
+    "11:00",
     "18:00"
    ],
-   "reason": "early window VETO; best block 14:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "early window VETO; best block 11:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -241,10 +241,10 @@
     "evening": "Green"
    },
    "best_block": [
-    "14:00",
+    "11:00",
     "18:00"
    ],
-   "reason": "early window VETO; best block 14:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window VETO; best block 11:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -266,10 +266,10 @@
     "evening": "Green"
    },
    "best_block": [
-    "14:00",
+    "11:00",
     "18:00"
    ],
-   "reason": "early window VETO; best block 14:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window VETO; best block 11:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -291,10 +291,10 @@
     "evening": "Green"
    },
    "best_block": [
-    "14:00",
+    "12:00",
     "18:00"
    ],
-   "reason": "early window VETO; best block 14:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window VETO; best block 12:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -316,10 +316,10 @@
     "evening": "Green"
    },
    "best_block": [
-    "14:00",
+    "12:00",
     "18:00"
    ],
-   "reason": "early window VETO; best block 14:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window VETO; best block 12:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed; walk-in approach not scored",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -341,10 +341,10 @@
     "evening": "Green"
    },
    "best_block": [
-    "06:00",
-    "09:00"
+    "12:00",
+    "18:00"
    ],
-   "reason": "early window VETO; best block 06:00-09:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "early window VETO; best block 12:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -358,18 +358,18 @@
   {
    "id": "walnut-domain",
    "name": "Walnut Creek by the Domain",
-   "status": "VETO",
+   "status": "Green",
    "status_window": "early",
    "by_window": {
-    "early": "VETO",
+    "early": "Green",
     "midday": "VETO",
     "evening": "Green"
    },
    "best_block": [
-    "12:00",
-    "18:00"
+    "06:00",
+    "11:00"
    ],
-   "reason": "early window VETO; best block 12:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "early window Green; best block 06:00-11:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -392,9 +392,9 @@
    },
    "best_block": [
     "06:00",
-    "11:00"
+    "13:00"
    ],
-   "reason": "early window Green; best block 06:00-11:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-13:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -417,9 +417,9 @@
    },
    "best_block": [
     "06:00",
-    "11:00"
+    "13:00"
    ],
-   "reason": "early window Green; best block 06:00-11:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-13:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -437,14 +437,14 @@
    "status_window": "early",
    "by_window": {
     "early": "VETO",
-    "midday": "VETO",
-    "evening": "Green"
+    "midday": "Green",
+    "evening": "VETO"
    },
    "best_block": [
     "07:00",
-    "12:00"
+    "17:00"
    ],
-   "reason": "early window VETO; best block 07:00-12:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window VETO; best block 07:00-17:00; early VETO, midday Green, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -487,14 +487,14 @@
    "status_window": "early",
    "by_window": {
     "early": "VETO",
-    "midday": "Green",
+    "midday": "VETO",
     "evening": "Green"
    },
    "best_block": [
-    "10:00",
+    "12:00",
     "18:00"
    ],
-   "reason": "early window VETO; best block 10:00-18:00; early VETO, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window VETO; best block 12:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -512,14 +512,14 @@
    "status_window": "early",
    "by_window": {
     "early": "VETO",
-    "midday": "Green",
+    "midday": "VETO",
     "evening": "Green"
    },
    "best_block": [
-    "10:00",
+    "12:00",
     "18:00"
    ],
-   "reason": "early window VETO; best block 10:00-18:00; early VETO, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window VETO; best block 12:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -537,14 +537,14 @@
    "status_window": "early",
    "by_window": {
     "early": "VETO",
-    "midday": "Green",
+    "midday": "VETO",
     "evening": "Green"
    },
    "best_block": [
-    "10:00",
+    "12:00",
     "18:00"
    ],
-   "reason": "early window VETO; best block 10:00-18:00; early VETO, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window VETO; best block 12:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -558,18 +558,18 @@
   {
    "id": "blanco-state-park",
    "name": "Blanco State Park swimming area",
-   "status": "VETO",
+   "status": "Green",
    "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "VETO",
+    "early": "Green",
+    "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "13:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "early window VETO; best block 13:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -583,18 +583,18 @@
   {
    "id": "pedernales-designated-swim",
    "name": "Pedernales Falls State Park \u2014 designated swimming area",
-   "status": "VETO",
+   "status": "Green",
    "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "VETO",
-    "evening": "VETO"
+    "early": "Green",
+    "midday": "Green",
+    "evening": "Green"
    },
    "best_block": [
-    "11:00",
-    "17:00"
+    "06:00",
+    "18:00"
    ],
-   "reason": "early window VETO; best block 11:00-17:00; early VETO, midday VETO, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -637,14 +637,14 @@
    "status_window": "early",
    "by_window": {
     "early": "VETO",
-    "midday": "VETO",
-    "evening": "VETO"
+    "midday": "Green",
+    "evening": "Green"
    },
    "best_block": [
-    "13:00",
-    "17:00"
+    "10:00",
+    "18:00"
    ],
-   "reason": "early window VETO; best block 13:00-17:00; early VETO, midday VETO, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window VETO; best block 10:00-18:00; early VETO, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -687,14 +687,14 @@
    "status_window": "early",
    "by_window": {
     "early": "VETO",
-    "midday": "Green",
+    "midday": "VETO",
     "evening": "VETO"
    },
    "best_block": [
-    "09:00",
-    "17:00"
+    "10:00",
+    "13:00"
    ],
-   "reason": "early window VETO; best block 09:00-17:00; early VETO, midday Green, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window VETO; best block 10:00-13:00; early VETO, midday VETO, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -712,14 +712,14 @@
    "status_window": "early",
    "by_window": {
     "early": "VETO",
-    "midday": "Green",
+    "midday": "VETO",
     "evening": "VETO"
    },
    "best_block": [
-    "09:00",
-    "17:00"
+    "10:00",
+    "13:00"
    ],
-   "reason": "early window VETO; best block 09:00-17:00; early VETO, midday Green, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window VETO; best block 10:00-13:00; early VETO, midday VETO, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -737,14 +737,14 @@
    "status_window": "early",
    "by_window": {
     "early": "VETO",
-    "midday": "Green",
+    "midday": "VETO",
     "evening": "VETO"
    },
    "best_block": [
-    "09:00",
-    "17:00"
+    "10:00",
+    "13:00"
    ],
-   "reason": "early window VETO; best block 09:00-17:00; early VETO, midday Green, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window VETO; best block 10:00-13:00; early VETO, midday VETO, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -791,10 +791,10 @@
     "evening": "Green"
    },
    "best_block": [
-    "11:00",
+    "12:00",
     "18:00"
    ],
-   "reason": "early window VETO; best block 11:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "early window VETO; best block 12:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -812,14 +812,14 @@
    "status_window": "early",
    "by_window": {
     "early": "VETO",
-    "midday": "VETO",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
-    "11:00",
+    "08:00",
     "18:00"
    ],
-   "reason": "early window VETO; best block 11:00-18:00; early VETO, midday VETO, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "early window VETO; best block 08:00-18:00; early VETO, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: lake beach or park: open shoreline assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -833,18 +833,18 @@
   {
    "id": "emma-long",
    "name": "Emma Long \u2014 Lake Austin beach",
-   "status": "VETO",
+   "status": "Green",
    "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "VETO",
+    "early": "Green",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
-    "11:00",
-    "16:00"
+    "06:00",
+    "18:00"
    ],
-   "reason": "early window VETO; best block 11:00-16:00; early VETO, midday VETO, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: lake beach or park: open shoreline assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -858,18 +858,18 @@
   {
    "id": "deep-eddy",
    "name": "Deep Eddy Pool",
-   "status": "VETO",
+   "status": "Green",
    "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "VETO",
+    "early": "Green",
+    "midday": "Yellow",
     "evening": "Green"
    },
    "best_block": [
-    "14:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "early window VETO; best block 14:00-18:00; early VETO, midday VETO, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Yellow, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -891,10 +891,10 @@
     "evening": "Green"
    },
    "best_block": [
-    "14:00",
+    "11:00",
     "18:00"
    ],
-   "reason": "early window VETO; best block 14:00-18:00; early VETO, midday VETO, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "early window VETO; best block 11:00-18:00; early VETO, midday VETO, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -916,10 +916,10 @@
     "evening": "Green"
    },
    "best_block": [
-    "14:00",
+    "11:00",
     "18:00"
    ],
-   "reason": "early window VETO; best block 14:00-18:00; early VETO, midday VETO, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
+   "reason": "early window VETO; best block 11:00-18:00; early VETO, midday VETO, evening Green; peak heat band 1/4, UV band 2/4 for ordinary / full sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: City pool: open water and deck, no shade assumed from the record",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -933,18 +933,18 @@
   {
    "id": "williamson-west-greenbelt",
    "name": "Williamson Creek West Greenbelt",
-   "status": "VETO",
+   "status": "Green",
    "status_window": "early",
    "by_window": {
-    "early": "VETO",
-    "midday": "VETO",
+    "early": "Green",
+    "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "11:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "early window VETO; best block 11:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -963,13 +963,13 @@
    "by_window": {
     "early": "VETO",
     "midday": "VETO",
-    "evening": "VETO"
+    "evening": "Green"
    },
    "best_block": [
-    "10:00",
-    "13:00"
+    "12:00",
+    "18:00"
    ],
-   "reason": "early window VETO; best block 10:00-13:00; early VETO, midday VETO, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "early window VETO; best block 12:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -991,10 +991,10 @@
     "evening": "Green"
    },
    "best_block": [
-    "14:00",
+    "12:00",
     "18:00"
    ],
-   "reason": "early window VETO; best block 14:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "early window VETO; best block 12:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -1016,10 +1016,10 @@
     "evening": "Green"
    },
    "best_block": [
-    "06:00",
-    "09:00"
+    "12:00",
+    "18:00"
    ],
-   "reason": "early window VETO; best block 06:00-09:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "early window VETO; best block 12:00-18:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: creek context point, not a swimming entry: ordinary walk, mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -1037,14 +1037,14 @@
    "status_window": "early",
    "by_window": {
     "early": "VETO",
-    "midday": "VETO",
+    "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
     "09:00",
-    "16:00"
+    "18:00"
    ],
-   "reason": "early window VETO; best block 09:00-16:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "early window VETO; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: no matching rule; household default",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -1062,14 +1062,14 @@
    "status_window": "early",
    "by_window": {
     "early": "VETO",
-    "midday": "VETO",
+    "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
     "09:00",
-    "16:00"
+    "18:00"
    ],
-   "reason": "early window VETO; best block 09:00-16:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "early window VETO; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: no matching rule; household default",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -1087,14 +1087,14 @@
    "status_window": "early",
    "by_window": {
     "early": "VETO",
-    "midday": "VETO",
+    "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
     "09:00",
-    "16:00"
+    "18:00"
    ],
-   "reason": "early window VETO; best block 09:00-16:00; early VETO, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "early window VETO; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: no matching rule; household default",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -1137,14 +1137,14 @@
    "status_window": "early",
    "by_window": {
     "early": "Green",
-    "midday": "VETO",
+    "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "12:00",
+    "06:00",
     "18:00"
    ],
-   "reason": "early window Green; best block 12:00-18:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-10T06:00-06:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "ace3cf3843e3fa408b8623368a21937f8f39a5b5714cff5cf2135a5a83e4a04e",
-   "fetched_at": "2026-11-10T12:47:05+00:00",
+   "sha256": "bbdee1db1d2dc50ec7bd6bd847036d38afcc16efba4ddefa1cdb44345d2a3607",
+   "fetched_at": "2026-11-10T13:17:06+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "6d5b2a147c47ae6371ef11897c5995cc62854c6bd6f7c1125b4ba5b8a1a82ab5",
-   "fetched_at": "2026-11-10T12:47:07+00:00",
+   "sha256": "141e5c82dce1dafddcc43a8a869a522d6318b2178c29004fb93e490bd5a72a05",
+   "fetched_at": "2026-11-10T13:17:08+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:ace3cf3843e3fa408b8623368a21937f8f39a5b5714cff5cf2135a5a83e4a04e",
-   "sha256:6d5b2a147c47ae6371ef11897c5995cc62854c6bd6f7c1125b4ba5b8a1a82ab5"
+   "sha256:bbdee1db1d2dc50ec7bd6bd847036d38afcc16efba4ddefa1cdb44345d2a3607",
+   "sha256:141e5c82dce1dafddcc43a8a869a522d6318b2178c29004fb93e490bd5a72a05"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
