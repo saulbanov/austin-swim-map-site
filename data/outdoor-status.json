@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T13:47:08-06:00",
+ "generated_at": "2026-11-11T14:17:20-06:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-11-11",
  "sunrise": "06:53",
@@ -1033,18 +1033,18 @@
   {
    "id": "martindale-dam-west",
    "name": "Martindale Dam \u2014 west bank portage",
-   "status": "Green",
+   "status": "VETO",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Green",
+    "midday": "VETO",
     "evening": "Green"
    },
    "best_block": [
     "06:00",
-    "18:00"
+    "16:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "midday window VETO; best block 06:00-16:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: no matching rule; household default",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-11T06:00-06:00",
@@ -1058,18 +1058,18 @@
   {
    "id": "alan-bates-park",
    "name": "Alan Bates Park \u2014 river access (Martindale)",
-   "status": "Green",
+   "status": "VETO",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Green",
+    "midday": "VETO",
     "evening": "Green"
    },
    "best_block": [
     "06:00",
-    "18:00"
+    "16:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "midday window VETO; best block 06:00-16:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: no matching rule; household default",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-11T06:00-06:00",
@@ -1083,18 +1083,18 @@
   {
    "id": "nancy-martindale-park",
    "name": "Nancy Martindale Park \u2014 river access (Martindale)",
-   "status": "Green",
+   "status": "VETO",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "Green",
+    "midday": "VETO",
     "evening": "Green"
    },
    "best_block": [
     "06:00",
-    "18:00"
+    "16:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "midday window VETO; best block 06:00-16:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: no matching rule; household default",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-11T06:00-06:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "2c3b99e0e8253af72fc426869399ed25554f653d5c05a20806c79b950ca0df44",
-   "fetched_at": "2026-11-11T19:47:07+00:00",
+   "sha256": "a3abfac951ffe05f8cdd5adf5ce89cd4606bf0c50b4fcb8ca1fe1e9cd986f6e1",
+   "fetched_at": "2026-11-11T20:17:05+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "62f60bba94baf165fa89a4580d7f63dd405bfafd1685c3fbf10519edcdc2ead2",
-   "fetched_at": "2026-11-11T19:47:08+00:00",
+   "sha256": "0cbe86aa44cd41d644de19a514cc65fcbc6cc7fd8a049ed99a303f04d2f55af8",
+   "fetched_at": "2026-11-11T20:17:20+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:2c3b99e0e8253af72fc426869399ed25554f653d5c05a20806c79b950ca0df44",
-   "sha256:62f60bba94baf165fa89a4580d7f63dd405bfafd1685c3fbf10519edcdc2ead2"
+   "sha256:a3abfac951ffe05f8cdd5adf5ce89cd4606bf0c50b4fcb8ca1fe1e9cd986f6e1",
+   "sha256:0cbe86aa44cd41d644de19a514cc65fcbc6cc7fd8a049ed99a303f04d2f55af8"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
