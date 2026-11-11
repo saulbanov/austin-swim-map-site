@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T10:17:08-06:00",
+ "generated_at": "2026-11-11T10:47:07-06:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-11-11",
  "sunrise": "06:53",
@@ -533,18 +533,18 @@
   {
    "id": "san-marcos-rio-vista",
    "name": "San Marcos River \u2014 Rio Vista Park",
-   "status": "VETO",
+   "status": "Green",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "VETO",
+    "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
     "06:00",
-    "12:00"
+    "18:00"
    ],
-   "reason": "midday window VETO; best block 06:00-12:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-11T06:00-06:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "b8113387c009f8ebea542d9a1a9e48272ec2d90451993a0e7fc000877aef770e",
-   "fetched_at": "2026-11-11T16:17:05+00:00",
+   "sha256": "27897c910d8cc60d1b52d2103ce0b59f6ed9a047e25b4de0dffa7ef0e360a879",
+   "fetched_at": "2026-11-11T16:47:06+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "969ec474b9bd43e646dbec4fab599f1e14ef0124e5904960da18938ed811d52c",
-   "fetched_at": "2026-11-11T16:17:08+00:00",
+   "sha256": "89a7cf9f83b2b17235d6980f74525a4afe63b7b80b7a4ba622f747c59dbc880f",
+   "fetched_at": "2026-11-11T16:47:07+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:b8113387c009f8ebea542d9a1a9e48272ec2d90451993a0e7fc000877aef770e",
-   "sha256:969ec474b9bd43e646dbec4fab599f1e14ef0124e5904960da18938ed811d52c"
+   "sha256:27897c910d8cc60d1b52d2103ce0b59f6ed9a047e25b4de0dffa7ef0e360a879",
+   "sha256:89a7cf9f83b2b17235d6980f74525a4afe63b7b80b7a4ba622f747c59dbc880f"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
