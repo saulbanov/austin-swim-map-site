@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T08:47:04-06:00",
+ "generated_at": "2026-11-12T09:17:07-06:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-11-12",
  "sunrise": "06:54",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "f15373bf9e13bb9c4717881164aa50544b551499304dba4ede2c8f33ebdd9bb7",
-   "fetched_at": "2026-11-12T14:47:03+00:00",
+   "sha256": "d2608ce84e0cf049af3185194b7c376ba64101e42b4b5bc049dfad6563c17488",
+   "fetched_at": "2026-11-12T15:17:06+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "077d86c5465e081806f51dee486a932410414b2773a030da64947187c4bed0de",
-   "fetched_at": "2026-11-12T14:47:04+00:00",
+   "sha256": "dda55c14d457361bd6f0b4a82ce963ef3b27e30b9a46e3bf8bf00680e805fa6b",
+   "fetched_at": "2026-11-12T15:17:07+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:f15373bf9e13bb9c4717881164aa50544b551499304dba4ede2c8f33ebdd9bb7",
-   "sha256:077d86c5465e081806f51dee486a932410414b2773a030da64947187c4bed0de"
+   "sha256:d2608ce84e0cf049af3185194b7c376ba64101e42b4b5bc049dfad6563c17488",
+   "sha256:dda55c14d457361bd6f0b4a82ce963ef3b27e30b9a46e3bf8bf00680e805fa6b"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
