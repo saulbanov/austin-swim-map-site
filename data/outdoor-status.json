@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T15:17:08-06:00",
+ "generated_at": "2026-11-14T15:47:06-06:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-11-14",
  "sunrise": "06:56",
@@ -488,13 +488,13 @@
    "by_window": {
     "early": "Green",
     "midday": "Green",
-    "evening": "Green"
+    "evening": "VETO"
    },
    "best_block": [
     "06:00",
-    "18:00"
+    "17:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Green; best block 06:00-17:00; early Green, midday Green, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-14T06:00-06:00",
@@ -513,13 +513,13 @@
    "by_window": {
     "early": "Green",
     "midday": "Green",
-    "evening": "Green"
+    "evening": "VETO"
    },
    "best_block": [
     "06:00",
-    "18:00"
+    "17:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Green; best block 06:00-17:00; early Green, midday Green, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-14T06:00-06:00",
@@ -538,13 +538,13 @@
    "by_window": {
     "early": "Green",
     "midday": "Green",
-    "evening": "Green"
+    "evening": "VETO"
    },
    "best_block": [
     "06:00",
-    "18:00"
+    "17:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Green; best block 06:00-17:00; early Green, midday Green, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-14T06:00-06:00",
@@ -688,13 +688,13 @@
    "by_window": {
     "early": "Green",
     "midday": "Green",
-    "evening": "Green"
+    "evening": "VETO"
    },
    "best_block": [
     "06:00",
-    "18:00"
+    "17:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Green; best block 06:00-17:00; early Green, midday Green, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-14T06:00-06:00",
@@ -713,13 +713,13 @@
    "by_window": {
     "early": "Green",
     "midday": "Green",
-    "evening": "Green"
+    "evening": "VETO"
    },
    "best_block": [
     "06:00",
-    "18:00"
+    "17:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Green; best block 06:00-17:00; early Green, midday Green, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-14T06:00-06:00",
@@ -738,13 +738,13 @@
    "by_window": {
     "early": "Green",
     "midday": "Green",
-    "evening": "Green"
+    "evening": "VETO"
    },
    "best_block": [
     "06:00",
-    "18:00"
+    "17:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Green; best block 06:00-17:00; early Green, midday Green, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-14T06:00-06:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "c16441e7c38a924e4e59b487677b31ca1d614d0240ab03e049f2486655cd78e2",
-   "fetched_at": "2026-11-14T21:17:06+00:00",
+   "sha256": "5b8267b27d423eb368284c833441e8612e3926c26b654f42ef3ffaab93077b46",
+   "fetched_at": "2026-11-14T21:47:04+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "82a77777ab66d17cc2bcf59ae43797cf4660d2b4379582f5e870cd01d3e71591",
-   "fetched_at": "2026-11-14T21:17:08+00:00",
+   "sha256": "42c3c880228583399d4adf3c8b806dbd8a51c79ff25e6600bb337b575d65dc8d",
+   "fetched_at": "2026-11-14T21:47:06+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:c16441e7c38a924e4e59b487677b31ca1d614d0240ab03e049f2486655cd78e2",
-   "sha256:82a77777ab66d17cc2bcf59ae43797cf4660d2b4379582f5e870cd01d3e71591"
+   "sha256:5b8267b27d423eb368284c833441e8612e3926c26b654f42ef3ffaab93077b46",
+   "sha256:42c3c880228583399d4adf3c8b806dbd8a51c79ff25e6600bb337b575d65dc8d"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
