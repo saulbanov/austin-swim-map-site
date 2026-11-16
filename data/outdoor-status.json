@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T11:17:17-06:00",
+ "generated_at": "2026-11-16T11:47:11-06:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-11-16",
  "sunrise": "06:57",
@@ -669,7 +669,7 @@
     "07:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 07:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window Green; best block 07:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 0/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-16T07:00-06:00",
@@ -1044,7 +1044,7 @@
     "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 0/4 for ordinary / mixed sun / 60 min",
+   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: no matching rule; household default",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-16T06:00-06:00",
@@ -1069,7 +1069,7 @@
     "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 0/4 for ordinary / mixed sun / 60 min",
+   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: no matching rule; household default",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-16T06:00-06:00",
@@ -1094,7 +1094,7 @@
     "06:00",
     "18:00"
    ],
-   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 0/4 for ordinary / mixed sun / 60 min",
+   "reason": "midday window Green; best block 06:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: no matching rule; household default",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-16T06:00-06:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "e75ef38a342ad449c138fc5df1b2b43ffa141a380a9b6641a2b5740395444808",
-   "fetched_at": "2026-11-16T17:17:09+00:00",
+   "sha256": "794b59904af27c6171e6d932146fd2f9380801353db1e0ee89d281151a6ce9ff",
+   "fetched_at": "2026-11-16T17:47:08+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "497093789c4e0ead8ca50169f71c73eee52104db9cb7aecff95b13d6209217de",
-   "fetched_at": "2026-11-16T17:17:17+00:00",
+   "sha256": "883a57231c9720c0856a3acfdcb62fa87466918a81843aae7a9f0ebba90f594b",
+   "fetched_at": "2026-11-16T17:47:11+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:e75ef38a342ad449c138fc5df1b2b43ffa141a380a9b6641a2b5740395444808",
-   "sha256:497093789c4e0ead8ca50169f71c73eee52104db9cb7aecff95b13d6209217de"
+   "sha256:794b59904af27c6171e6d932146fd2f9380801353db1e0ee89d281151a6ce9ff",
+   "sha256:883a57231c9720c0856a3acfdcb62fa87466918a81843aae7a9f0ebba90f594b"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
