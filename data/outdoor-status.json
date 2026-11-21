@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-21T12:47:07-06:00",
+ "generated_at": "2026-11-21T13:17:02-06:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-11-21",
  "sunrise": "07:01",
@@ -438,13 +438,13 @@
    "by_window": {
     "early": "Green",
     "midday": "Green",
-    "evening": "VETO"
+    "evening": "Green"
    },
    "best_block": [
     "07:00",
-    "17:00"
+    "18:00"
    ],
-   "reason": "midday window Green; best block 07:00-17:00; early Green, midday Green, evening VETO; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "midday window Green; best block 07:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-21T07:00-06:00",
@@ -641,10 +641,10 @@
     "evening": "Green"
    },
    "best_block": [
-    "12:00",
+    "13:00",
     "18:00"
    ],
-   "reason": "midday window VETO; best block 12:00-18:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "midday window VETO; best block 13:00-18:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-21T07:00-06:00",
@@ -1033,18 +1033,18 @@
   {
    "id": "martindale-dam-west",
    "name": "Martindale Dam \u2014 west bank portage",
-   "status": "VETO",
+   "status": "Green",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "VETO",
+    "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
     "07:00",
-    "12:00"
+    "18:00"
    ],
-   "reason": "midday window VETO; best block 07:00-12:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "midday window Green; best block 07:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: no matching rule; household default",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-21T07:00-06:00",
@@ -1058,18 +1058,18 @@
   {
    "id": "alan-bates-park",
    "name": "Alan Bates Park \u2014 river access (Martindale)",
-   "status": "VETO",
+   "status": "Green",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "VETO",
+    "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
     "07:00",
-    "12:00"
+    "18:00"
    ],
-   "reason": "midday window VETO; best block 07:00-12:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "midday window Green; best block 07:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: no matching rule; household default",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-21T07:00-06:00",
@@ -1083,18 +1083,18 @@
   {
    "id": "nancy-martindale-park",
    "name": "Nancy Martindale Park \u2014 river access (Martindale)",
-   "status": "VETO",
+   "status": "Green",
    "status_window": "midday",
    "by_window": {
     "early": "Green",
-    "midday": "VETO",
+    "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
     "07:00",
-    "12:00"
+    "18:00"
    ],
-   "reason": "midday window VETO; best block 07:00-12:00; early Green, midday VETO, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
+   "reason": "midday window Green; best block 07:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 60 min",
    "evidence": "Planning band \u00b7 profile basis: no matching rule; household default",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-21T07:00-06:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "326ba02f0e3fb7f3b8c288f39a2f5192e48bc254333837458486e9fe844dac8c",
-   "fetched_at": "2026-11-21T18:47:05+00:00",
+   "sha256": "0b0899def8ba47ed693d885852a5aad4b3adc3230db8edea3e1fa5e209fa5220",
+   "fetched_at": "2026-11-21T19:17:01+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "137011d158704476409548022c8ac1799862a931af476897c34defac08593fa8",
-   "fetched_at": "2026-11-21T18:47:07+00:00",
+   "sha256": "d673c3a0f08cbafdb4a72743426188ce2534cc720ceb9197384a49ccdb6ca6a1",
+   "fetched_at": "2026-11-21T19:17:02+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:326ba02f0e3fb7f3b8c288f39a2f5192e48bc254333837458486e9fe844dac8c",
-   "sha256:137011d158704476409548022c8ac1799862a931af476897c34defac08593fa8"
+   "sha256:0b0899def8ba47ed693d885852a5aad4b3adc3230db8edea3e1fa5e209fa5220",
+   "sha256:d673c3a0f08cbafdb4a72743426188ce2534cc720ceb9197384a49ccdb6ca6a1"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
