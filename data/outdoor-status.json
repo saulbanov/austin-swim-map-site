@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T08:17:05-06:00",
+ "generated_at": "2026-11-22T08:47:04-06:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-11-22",
  "sunrise": "07:02",
@@ -683,18 +683,18 @@
   {
    "id": "comal-prince-solms",
    "name": "Comal River \u2014 Prince Solms Park / Tube Chute reach",
-   "status": "Green",
+   "status": "VETO",
    "status_window": "early",
    "by_window": {
-    "early": "Green",
+    "early": "VETO",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "07:00",
+    "09:00",
     "18:00"
    ],
-   "reason": "early window Green; best block 07:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window VETO; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-22T07:00-06:00",
@@ -708,18 +708,18 @@
   {
    "id": "guadalupe-cypress-bend",
    "name": "Guadalupe River \u2014 Cypress Bend Park reach",
-   "status": "Green",
+   "status": "VETO",
    "status_window": "early",
    "by_window": {
-    "early": "Green",
+    "early": "VETO",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "07:00",
+    "09:00",
     "18:00"
    ],
-   "reason": "early window Green; best block 07:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window VETO; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-22T07:00-06:00",
@@ -733,18 +733,18 @@
   {
    "id": "guadalupe-river-acres",
    "name": "Guadalupe River \u2014 River Acres Park reach",
-   "status": "Green",
+   "status": "VETO",
    "status_window": "early",
    "by_window": {
-    "early": "Green",
+    "early": "VETO",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "07:00",
+    "09:00",
     "18:00"
    ],
-   "reason": "early window Green; best block 07:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
+   "reason": "early window VETO; best block 09:00-18:00; early VETO, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 120 min",
    "evidence": "Planning band \u00b7 profile basis: river reach or state park: partial shade typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-22T07:00-06:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "0356db8d7ea8746598cb3a42e8ff515b7fbd63f870e6a38c65b04c4b17a8ad7f",
-   "fetched_at": "2026-11-22T14:17:04+00:00",
+   "sha256": "7f0ca616907ea90adfe3c818a683ddddd1a6d7104c5fb513bc02b25f6844e1da",
+   "fetched_at": "2026-11-22T14:47:03+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "06c3ad33c2bf332518a3cc011507167789e6064f277620c68927efb37b37125a",
-   "fetched_at": "2026-11-22T14:17:05+00:00",
+   "sha256": "264937908be0d3811d84655a2e13f596f0e8ba68d2de9c671498cd97fb694cf9",
+   "fetched_at": "2026-11-22T14:47:04+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:0356db8d7ea8746598cb3a42e8ff515b7fbd63f870e6a38c65b04c4b17a8ad7f",
-   "sha256:06c3ad33c2bf332518a3cc011507167789e6064f277620c68927efb37b37125a"
+   "sha256:7f0ca616907ea90adfe3c818a683ddddd1a6d7104c5fb513bc02b25f6844e1da",
+   "sha256:264937908be0d3811d84655a2e13f596f0e8ba68d2de9c671498cd97fb694cf9"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
