@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T07:47:05-06:00",
+ "generated_at": "2026-11-22T08:17:05-06:00",
  "meaning": "heat and sun planning bands for a person at the place, from the hourly forecast and an assumed sun profile; not a water, access, or safety claim and never a creek flow colour",
  "date": "2026-11-22",
  "sunrise": "07:02",
@@ -433,18 +433,18 @@
   {
    "id": "blue-hole-wimberley",
    "name": "Blue Hole \u2014 Wimberley",
-   "status": "Green",
+   "status": "VETO",
    "status_window": "early",
    "by_window": {
-    "early": "Green",
+    "early": "VETO",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "07:00",
+    "08:00",
     "18:00"
    ],
-   "reason": "early window Green; best block 07:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window VETO; best block 08:00-18:00; early VETO, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-22T07:00-06:00",
@@ -458,18 +458,18 @@
   {
    "id": "jacobs-well",
    "name": "Jacob's Well",
-   "status": "Green",
+   "status": "VETO",
    "status_window": "early",
    "by_window": {
-    "early": "Green",
+    "early": "VETO",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "07:00",
+    "08:00",
     "18:00"
    ],
-   "reason": "early window Green; best block 07:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window VETO; best block 08:00-18:00; early VETO, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-22T07:00-06:00",
@@ -1108,18 +1108,18 @@
   {
    "id": "cypress-falls",
    "name": "Cypress Falls swimming hole (Cypress Creek)",
-   "status": "Green",
+   "status": "VETO",
    "status_window": "early",
    "by_window": {
-    "early": "Green",
+    "early": "VETO",
     "midday": "Green",
     "evening": "Green"
    },
    "best_block": [
-    "07:00",
+    "08:00",
     "18:00"
    ],
-   "reason": "early window Green; best block 07:00-18:00; early Green, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
+   "reason": "early window VETO; best block 08:00-18:00; early VETO, midday Green, evening Green; peak heat band 0/4, UV band 1/4 for ordinary / mixed sun / 90 min",
    "evidence": "Planning band \u00b7 profile basis: creek or spring pool: canopy typical but not recorded; mixed sun assumed",
    "hazard_notice": "not checked",
    "observed_at": "2026-11-22T07:00-06:00",
@@ -1159,22 +1159,22 @@
  "input_rows": [
   {
    "lane": "weather-austin",
-   "sha256": "b2a8341c62c4063037d5a9b557dd6bc4418fa11bbbfff9079b47905137e10a9e",
-   "fetched_at": "2026-11-22T13:47:04+00:00",
+   "sha256": "0356db8d7ea8746598cb3a42e8ff515b7fbd63f870e6a38c65b04c4b17a8ad7f",
+   "fetched_at": "2026-11-22T14:17:04+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality bundle"
   },
   {
    "lane": "weather-places",
-   "sha256": "1bf3171c31348616688064527d66cbafba8b326b41dcc27e61255124382ac485",
-   "fetched_at": "2026-11-22T13:47:05+00:00",
+   "sha256": "06c3ad33c2bf332518a3cc011507167789e6064f277620c68927efb37b37125a",
+   "fetched_at": "2026-11-22T14:17:05+00:00",
    "source": "austin-heat collector: Open-Meteo forecast + air quality at each place's coordinates"
   }
  ],
  "_provenance": {
   "source_count": 2,
   "derived_from": [
-   "sha256:b2a8341c62c4063037d5a9b557dd6bc4418fa11bbbfff9079b47905137e10a9e",
-   "sha256:1bf3171c31348616688064527d66cbafba8b326b41dcc27e61255124382ac485"
+   "sha256:0356db8d7ea8746598cb3a42e8ff515b7fbd63f870e6a38c65b04c4b17a8ad7f",
+   "sha256:06c3ad33c2bf332518a3cc011507167789e6064f277620c68927efb37b37125a"
   ],
   "producer": "saulbanov/austin-heat tools/collect.py"
  }
